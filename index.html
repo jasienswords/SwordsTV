@@ -11,7 +11,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width
 <section class="hero"><div class="hero-content"><div class="eyebrow">A better way to decide what to watch</div><h2>Good shows.<br>Great nights in.</h2><p>Your family's viewing history, favorites, watchlist and next-show ideas—all in one place.</p><button class="btn primary" id="browseBtn">Explore your library&nbsp; →</button></div></section>
 <nav class="nav" id="nav"><button class="active" data-view="home">For You</button><button data-view="library">My Library</button><button data-view="watchlist">Watchlist</button><button data-view="profile">Taste Profile</button></nav>
 <main id="main"></main>
-<div class="footer">SwordsTV v2.4 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
+<div class="footer">SwordsTV v2.5 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
 </div>
 <div class="modal-bg" id="rateBg"><div class="modal"><h3 id="modalTitle">Rate this show</h3><form id="rateForm"><label for="status">My Library</label><select class="field" id="status"><option>Not in My Library</option><option>Watching</option><option>Want to Watch</option></select><label for="watched">Have you watched this show?</label><select class="field" id="watched"><option value="false">Not yet / still watching</option><option value="true">Yes, watched</option></select><label for="rating">Your rating</label><select class="field" id="rating"><option>Not rated</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select><label>Where did you watch it? (select all that apply)</label><div class="platform-checks"><label class="platform-check"><input type="checkbox" name="watchedOn" value="Netflix"> Netflix</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Hulu"> Hulu</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Disney+"> Disney+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Max"> Max</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Peacock"> Peacock</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Paramount+"> Paramount+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Apple TV+"> Apple TV+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="YouTube TV"> YouTube TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Prime Video"> Prime Video</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BritBox"> BritBox</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Acorn TV"> Acorn TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="PBS / PBS Passport"> PBS / PBS Passport</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Tubi"> Tubi</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="The Roku Channel"> The Roku Channel</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Plex"> Plex</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BBC Select"> BBC Select</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Other / not sure"> Other / not sure</label></div><label for="seasons">Seasons watched (optional)</label><input class="field" id="seasons" placeholder="e.g. 2"><label for="notes">Notes (optional)</label><textarea class="field" id="notes" placeholder="What did you think?"></textarea><div class="modal-actions"><button type="button" class="btn" id="cancelRate">Cancel</button><button class="btn primary" type="submit">Save rating</button></div></form></div></div>
 <div class="toast" id="toast"></div>
@@ -2714,6 +2714,379 @@ const RESEARCH={
       [
         "Rotten Tomatoes score",
         "https://www.rottentomatoes.com/tv/deutschland_83"
+      ]
+    ]
+  },
+  "Chef's Table": {
+    "availability": "Netflix",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "7 volumes / seasons; episode count varies by collection",
+    "imdb": "8.5/10",
+    "rt": "No series Tomatometer score verified",
+    "cast": "Various chefs; narrated by series presenters",
+    "genre": "Food documentary / culinary travel",
+    "synopsis": "An intimate documentary portrait of celebrated chefs around the world, exploring their craft, personal histories and creative philosophies.",
+    "rating": "TV-MA",
+    "cautions": "Some mature language and occasional intense kitchen or food imagery; generally focused on food and biography.",
+    "why": "Distinctive places, travel, craftsmanship and high-quality storytelling make this a strong lifestyle/documentary possibility.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Netflix title and availability",
+        "https://www.netflix.com/title/80007945"
+      ],
+      [
+        "IMDb series information",
+        "https://www.imdb.com/title/tt4295140/"
+      ]
+    ]
+  },
+  "Christina on the Coast": {
+    "availability": "Max; discovery+; HGTV via participating TV providers",
+    "platforms": [
+      "Max",
+      "discovery+"
+    ],
+    "seasons": "5 seasons; season availability varies by service",
+    "imdb": "5.8/10",
+    "rt": "No Tomatometer score verified",
+    "cast": "Christina Hall",
+    "genre": "Home renovation / design reality",
+    "synopsis": "Designer Christina Hall renovates and redesigns homes for clients in Southern California while balancing her own home and family life.",
+    "rating": "TV-G",
+    "cautions": "Renovation stress and occasional interpersonal tension; otherwise family-friendly.",
+    "why": "Southern California locations and substantial renovation projects align with your home-design interests, though it is another HGTV personality-led format.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "HGTV show information",
+        "https://www.hgtv.com/shows/christina-on-the-coast"
+      ],
+      [
+        "JustWatch U.S. streaming search",
+        "https://www.justwatch.com/us/search?q=Christina%20on%20the%20Coast"
+      ]
+    ]
+  },
+  "Christina in the Country": {
+    "availability": "Max; discovery+; HGTV via participating TV providers",
+    "platforms": [
+      "Max",
+      "discovery+"
+    ],
+    "seasons": "2 seasons",
+    "imdb": "5.8/10",
+    "rt": "No Tomatometer score verified",
+    "cast": "Christina Hall",
+    "genre": "Home renovation / lifestyle reality",
+    "synopsis": "Christina Hall takes on home renovation projects in Tennessee, blending country-inspired design with her work and family life.",
+    "rating": "TV-G",
+    "cautions": "Renovation challenges and mild interpersonal tension; otherwise family-friendly.",
+    "why": "The Tennessee setting and country-home projects may be more appealing than another coastal renovation series.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "HGTV show information",
+        "https://www.hgtv.com/shows/christina-in-the-country"
+      ],
+      [
+        "JustWatch U.S. streaming search",
+        "https://www.justwatch.com/us/search?q=Christina%20in%20the%20Country"
+      ]
+    ]
+  },
+  "Damages": {
+    "availability": "Hulu; purchase options",
+    "platforms": [
+      "Hulu"
+    ],
+    "seasons": "5 seasons; 59 episodes",
+    "imdb": "8.1/10",
+    "rt": "91% Tomatometer (season scores vary)",
+    "cast": "Glenn Close, Rose Byrne, Ted Danson, Tate Donovan",
+    "genre": "Legal thriller / psychological drama",
+    "synopsis": "A brilliant, ruthless attorney and her ambitious young protégé become entangled in high-stakes litigation, manipulation and personal betrayals.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, violence, sexual content, disturbing themes and a consistently dark tone.",
+    "why": "Intricate plotting and excellent performances, but the bleak, manipulative atmosphere and mature content make it a poor fit.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/damages"
+      ],
+      [
+        "Rotten Tomatoes series information",
+        "https://www.rottentomatoes.com/tv/damages"
+      ]
+    ]
+  },
+  "Dark Tourist": {
+    "availability": "Netflix",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "1 season; 8 episodes",
+    "imdb": "7.5/10",
+    "rt": "No Tomatometer score verified",
+    "cast": "David Farrier (host)",
+    "genre": "Travel documentary / dark tourism",
+    "synopsis": "Journalist David Farrier visits unusual destinations associated with disaster, death, crime and the macabre.",
+    "rating": "TV-MA",
+    "cautions": "Disturbing locations and subject matter, death, violence, tragedy and unsettling imagery.",
+    "why": "Travel and unusual destinations are interesting, but its deliberately macabre focus is not a good match for your preferences.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Netflix title page",
+        "https://www.netflix.com/title/80189791"
+      ],
+      [
+        "IMDb series information",
+        "https://www.imdb.com/title/tt813 bize/"
+      ]
+    ]
+  },
+  "Death and Other Details": {
+    "availability": "Hulu; Disney+ in some bundles/regions",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "1 season; 10 episodes; canceled",
+    "imdb": "6.7/10",
+    "rt": "55% Tomatometer; 59% Popcornmeter",
+    "cast": "Violett Beane, Mandy Patinkin, Lauren Patten, Rahul Kohli",
+    "genre": "Mystery / murder-mystery drama",
+    "synopsis": "A brilliant but disgraced detective investigates a murder aboard a luxurious Mediterranean cruise ship, with a young woman among the suspects.",
+    "rating": "TV-14",
+    "cautions": "Murder, peril, violence and some sexual references; serialized plotting.",
+    "why": "The cruise setting and puzzle-box mystery could be fun, but mixed reviews and a one-season unresolved-feeling cancellation are drawbacks.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. availability, seasons and IMDb",
+        "https://www.justwatch.com/us/tv-show/death-and-other-details"
+      ],
+      [
+        "Rotten Tomatoes scores",
+        "https://www.rottentomatoes.com/tv/death_and_other_details"
+      ]
+    ]
+  },
+  "Downton Abbey": {
+    "availability": "Peacock; PBS Masterpiece / PBS Passport availability may vary; digital purchase",
+    "platforms": [
+      "Peacock",
+      "PBS Passport"
+    ],
+    "seasons": "6 seasons; 52 episodes",
+    "imdb": "8.7/10",
+    "rt": "87% Tomatometer (series-level listing)",
+    "cast": "Hugh Bonneville, Elizabeth McGovern, Maggie Smith, Michelle Dockery, Jim Carter",
+    "genre": "British period drama / historical ensemble",
+    "synopsis": "The aristocratic Crawley family and their servants navigate love, loss, social change and the upheavals of early-20th-century Britain.",
+    "rating": "TV-PG",
+    "cautions": "Some mature relationship themes, grief, illness, war-related storylines and occasional language; generally restrained.",
+    "why": "An especially strong match for your interest in British ensemble stories, memorable characters, history and satisfying long-form arcs.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. streaming, seasons and IMDb",
+        "https://www.justwatch.com/us/tv-show/downton-abbey"
+      ],
+      [
+        "PBS series information",
+        "https://www.pbs.org/wgbh/masterpiece/shows/downton-abbey/"
+      ]
+    ]
+  },
+  "Dream Home Makeover": {
+    "availability": "Netflix",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "4 seasons; 24 episodes",
+    "imdb": "5.7/10",
+    "rt": "No Tomatometer score verified",
+    "cast": "Shea McGee, Syd McGee",
+    "genre": "Home renovation / design reality",
+    "synopsis": "Designers Shea and Syd McGee transform family homes with a polished, approachable style and a focus on practical family living.",
+    "rating": "TV-G",
+    "cautions": "Minor renovation stress; otherwise family-friendly.",
+    "why": "A married couple hosting home transformations, with family-oriented design and attractive homes; likely worth sampling, though the format is polished and staged.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Netflix title page",
+        "https://www.netflix.com/title/810243 原"
+      ],
+      [
+        "IMDb series information",
+        "https://www.imdb.com/title/tt12759384/"
+      ]
+    ]
+  },
+  "Elementary": {
+    "availability": "Paramount+; Hulu; purchase options",
+    "platforms": [
+      "Paramount+",
+      "Hulu"
+    ],
+    "seasons": "7 seasons; 154 episodes",
+    "imdb": "7.9/10",
+    "rt": "95% Tomatometer (season 1)",
+    "cast": "Jonny Lee Miller, Lucy Liu, Aidan Quinn, Jon Michael Hill",
+    "genre": "Crime procedural / detective mystery",
+    "synopsis": "A modern-day Sherlock Holmes works as a consulting detective in New York alongside Dr. Joan Watson, solving complex cases for the NYPD.",
+    "rating": "TV-14",
+    "cautions": "Murder investigations, crime-scene details, occasional violence and references to addiction.",
+    "why": "A clever, character-driven detective procedural with strong leads and seven seasons; a good mystery option if you enjoy Castle.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/elementary"
+      ],
+      [
+        "Rotten Tomatoes season score and series details",
+        "https://www.rottentomatoes.com/tv/elementary"
+      ]
+    ]
+  },
+  "Elsbeth": {
+    "availability": "Paramount+; CBS / live TV services; episodes may be available through Hulu",
+    "platforms": [
+      "Paramount+",
+      "YouTube TV",
+      "Hulu"
+    ],
+    "seasons": "3 seasons (ongoing)",
+    "imdb": "7.6/10",
+    "rt": "91% Tomatometer (season 1)",
+    "cast": "Carrie Preston, Wendell Pierce, Carra Patterson",
+    "genre": "Mystery procedural / legal comedy-drama",
+    "synopsis": "Quirky attorney Elsbeth Tascioni uses her unconventional perspective to help the NYPD solve murders in New York City.",
+    "rating": "TV-14",
+    "cautions": "Murder cases, occasional violence and mild adult themes; generally lighter in tone than many crime dramas.",
+    "why": "A distinctive lead, New York setting and mostly self-contained mysteries make this a promising lighter procedural.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/elsbeth"
+      ],
+      [
+        "Rotten Tomatoes series scores",
+        "https://www.rottentomatoes.com/tv/elsbeth"
+      ]
+    ]
+  },
+  "Endeavour": {
+    "availability": "BritBox; PBS Passport / Masterpiece availability varies; purchase options",
+    "platforms": [
+      "BritBox",
+      "PBS Passport"
+    ],
+    "seasons": "9 seasons; 36 episodes",
+    "imdb": "8.6/10",
+    "rt": "No single series score verified",
+    "cast": "Shaun Evans, Roger Allam, Anton Lesser, Sean Rigby",
+    "genre": "British period detective mystery",
+    "synopsis": "A young Endeavour Morse begins his police career in 1960s Oxford, solving intricate cases while developing the methods and personality of the iconic detective.",
+    "rating": "TV-14",
+    "cautions": "Murder, some violence and mature themes; atmospheric and sometimes somber, with deliberate pacing.",
+    "why": "Oxford locations, British period detail and intricate mysteries make it a strong genre match, although the pacing can be measured.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/endeavour"
+      ],
+      [
+        "PBS Masterpiece series information",
+        "https://www.pbs.org/wgbh/masterpiece/shows/endeavour/"
+      ]
+    ]
+  },
+  "Episodes": {
+    "availability": "Paramount+; purchase options",
+    "platforms": [
+      "Paramount+"
+    ],
+    "seasons": "5 seasons; 41 episodes",
+    "imdb": "7.8/10",
+    "rt": "86% Tomatometer",
+    "cast": "Matt LeBlanc, Stephen Mangan, Tamsin Greig, John Pankow",
+    "genre": "British-American showbiz sitcom",
+    "synopsis": "A British married writing team moves to Hollywood to adapt their successful sitcom, only to see their project and marriage tested by the entertainment business.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, sexual content, adult jokes and cynical show-business humor.",
+    "why": "British-American writing and workplace satire, but the explicit humor makes it a likely mismatch.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/episodes"
+      ],
+      [
+        "Rotten Tomatoes series information",
+        "https://www.rottentomatoes.com/tv/episodes"
+      ]
+    ]
+  },
+  "Father Brown": {
+    "availability": "BritBox; PBS Passport; selected seasons on free ad-supported services may vary",
+    "platforms": [
+      "BritBox",
+      "PBS Passport"
+    ],
+    "seasons": "13 seasons; episode count varies by season",
+    "imdb": "7.8/10",
+    "rt": "No Tomatometer score verified",
+    "cast": "Mark Williams, Sorcha Cusack, John Burton, Tom Chambers",
+    "genre": "British cozy crime / period mystery",
+    "synopsis": "A kindly Catholic priest in a 1950s English village uses his understanding of human nature to solve murders and uncover hidden motives.",
+    "rating": "TV-PG",
+    "cautions": "Murder themes and occasional peril, but generally gentle and low on graphic violence.",
+    "why": "A strong match for British village settings, recurring characters and accessible mysteries; a particularly good candidate to try.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons and streaming",
+        "https://www.justwatch.com/us/tv-show/father-brown"
+      ],
+      [
+        "BBC series information",
+        "https://www.bbc.co.uk/programmes/b03pmw4m"
+      ]
+    ]
+  },
+  "Fisk": {
+    "availability": "Netflix; ABC iview availability outside U.S.",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "3 seasons; 18 episodes",
+    "imdb": "7.8/10",
+    "rt": "100% Tomatometer",
+    "cast": "Kitty Flanagan, Marty Sheargold, Julia Zemiro, Aaron Chen",
+    "genre": "Australian workplace sitcom / legal comedy",
+    "synopsis": "A recently separated lawyer takes a job at a small wills-and-estates firm in Melbourne, where eccentric colleagues and unusual clients create everyday comic chaos.",
+    "rating": "TV-14",
+    "cautions": "Mild language, adult relationship references and dry, understated humor.",
+    "why": "A clever, low-stakes workplace comedy with a distinctive Australian setting; a promising option if the dry humor clicks.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Netflix title page",
+        "https://www.netflix.com/title/81509440"
+      ],
+      [
+        "Rotten Tomatoes scores and synopsis",
+        "https://www.rottentomatoes.com/tv/fisk"
       ]
     ]
   }
