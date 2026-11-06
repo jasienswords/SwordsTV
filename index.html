@@ -11,7 +11,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width
 <section class="hero"><div class="hero-content"><div class="eyebrow">A better way to decide what to watch</div><h2>Good shows.<br>Great nights in.</h2><p>Your family's viewing history, favorites, watchlist and next-show ideas—all in one place.</p><button class="btn primary" id="browseBtn">Explore your library&nbsp; →</button></div></section>
 <nav class="nav" id="nav"><button class="active" data-view="home">For You</button><button data-view="library">My Library</button><button data-view="watchlist">Watchlist</button><button data-view="profile">Taste Profile</button></nav>
 <main id="main"></main>
-<div class="footer">SwordsTV v2.0 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
+<div class="footer">SwordsTV v2.1 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
 </div>
 <div class="modal-bg" id="rateBg"><div class="modal"><h3 id="modalTitle">Rate this show</h3><form id="rateForm"><label for="status">My Library</label><select class="field" id="status"><option>Not in My Library</option><option>Watching</option><option>Want to Watch</option></select><label for="watched">Have you watched this show?</label><select class="field" id="watched"><option value="false">Not yet / still watching</option><option value="true">Yes, watched</option></select><label for="rating">Your rating</label><select class="field" id="rating"><option>Not rated</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select><label>Where did you watch it? (select all that apply)</label><div class="platform-checks"><label class="platform-check"><input type="checkbox" name="watchedOn" value="Netflix"> Netflix</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Hulu"> Hulu</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Disney+"> Disney+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Max"> Max</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Peacock"> Peacock</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Paramount+"> Paramount+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Apple TV+"> Apple TV+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="YouTube TV"> YouTube TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Prime Video"> Prime Video</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BritBox"> BritBox</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Acorn TV"> Acorn TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="PBS / PBS Passport"> PBS / PBS Passport</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Tubi"> Tubi</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="The Roku Channel"> The Roku Channel</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Plex"> Plex</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BBC Select"> BBC Select</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Other / not sure"> Other / not sure</label></div><label for="seasons">Seasons watched (optional)</label><input class="field" id="seasons" placeholder="e.g. 2"><label for="notes">Notes (optional)</label><textarea class="field" id="notes" placeholder="What did you think?"></textarea><div class="modal-actions"><button type="button" class="btn" id="cancelRate">Cancel</button><button class="btn primary" type="submit">Save rating</button></div></form></div></div>
 <div class="toast" id="toast"></div>
@@ -1837,6 +1837,243 @@ const RESEARCH={
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/better-call-saul"
+      ]
+    ]
+  },
+  "A Very English Scandal": {
+    "availability": "Prime Video (subscription or ads); no free option listed",
+    "platforms": [
+      "Prime Video"
+    ],
+    "seasons": "1 season; 3 episodes",
+    "imdb": "7.6/10",
+    "rt": "97% Tomatometer; 81% Popcornmeter",
+    "cast": "Hugh Grant, Ben Whishaw, Alex Jennings",
+    "genre": "British true-crime comedy-drama / political period drama",
+    "synopsis": "A sharply written dramatization of the Jeremy Thorpe scandal and the extraordinary events surrounding a British political leader's secret relationship.",
+    "rating": "TV-14",
+    "cautions": "Mature themes, sexuality, homophobia, political scandal and a murder plot; not a light comedy.",
+    "why": "British setting, excellent performances and darkly witty writing may appeal, though the subject matter is mature.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. streaming, episode count and IMDb score",
+        "https://www.justwatch.com/us/tv-show/a-very-english-scandal"
+      ],
+      [
+        "Rotten Tomatoes critic and audience scores",
+        "https://www.rottentomatoes.com/tv/a_very_english_scandal"
+      ]
+    ]
+  },
+  "Annika": {
+    "availability": "PBS / PBS Masterpiece channels; selected free ad-supported public-TV streams",
+    "platforms": [
+      "PBS",
+      "PBS Masterpiece",
+      "WETA+",
+      "Thirteen"
+    ],
+    "seasons": "2 seasons; 12 episodes",
+    "imdb": "7.3/10",
+    "rt": "83% Tomatometer; 81% Popcornmeter",
+    "cast": "Nicola Walker, Jamie Sives, Katie Leung, Ukweli Roach",
+    "genre": "British crime mystery / police procedural",
+    "synopsis": "A witty, direct-to-camera detective leads Glasgow's Marine Homicide Unit as it investigates unusual deaths connected to Scotland's waterways.",
+    "rating": "TV-14",
+    "cautions": "Murder investigations and references to violence; some cases are grim, but the tone often has dry humor.",
+    "why": "A compact British mystery with a strong lead, Scottish locations and a lighter, conversational streak.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. availability, seasons and IMDb score",
+        "https://www.justwatch.com/us/tv-show/annika"
+      ],
+      [
+        "Rotten Tomatoes scores and synopsis",
+        "https://www.rottentomatoes.com/tv/annika"
+      ]
+    ]
+  },
+  "Bad Sisters": {
+    "availability": "Apple TV; Apple TV Amazon Channel",
+    "platforms": [
+      "Apple TV+"
+    ],
+    "seasons": "2 seasons",
+    "imdb": "8.2/10",
+    "rt": "88% Tomatometer",
+    "cast": "Sharon Horgan, Anne-Marie Duff, Eva Birthistle, Sarah Greene, Eve Hewson",
+    "genre": "Irish dark comedy / mystery thriller",
+    "synopsis": "Five close-knit sisters find their loyalty tested after the death of a deeply disliked brother-in-law.",
+    "rating": "TV-MA",
+    "cautions": "Dark humor, murder, domestic abuse, strong language, sexual references and disturbing situations.",
+    "why": "A clever ensemble mystery, but its dark subject matter and mature content make it a likely poor fit.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. streaming and IMDb score",
+        "https://www.justwatch.com/us/tv-show/bad-sisters"
+      ]
+    ]
+  },
+  "Beyond Paradise": {
+    "availability": "PBS Masterpiece channel; purchase options also listed",
+    "platforms": [
+      "PBS Masterpiece"
+    ],
+    "seasons": "4 seasons",
+    "imdb": "7.4/10",
+    "rt": "Not verified",
+    "cast": "Kris Marshall, Sally Bretton, Zahra Ahmadi, Dylan Llewellyn",
+    "genre": "British cozy crime / mystery comedy-drama",
+    "synopsis": "DI Humphrey Goodman settles into a new life in a Devon coastal town, solving local crimes while navigating relationships and community life.",
+    "rating": "TV-PG",
+    "cautions": "Murder mysteries and occasional references to crime; generally gentler than many police procedurals.",
+    "why": "One of the strongest potential matches: British setting, charming community, warm ensemble and mostly self-contained mysteries.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, rating and streaming listings",
+        "https://www.justwatch.com/us/tv-show/beyond-paradise"
+      ]
+    ]
+  },
+  "Big Little Lies": {
+    "availability": "Max (HBO Max); purchase options",
+    "platforms": [
+      "Max"
+    ],
+    "seasons": "2 seasons; 14 episodes",
+    "imdb": "8.4/10",
+    "rt": "89% Tomatometer",
+    "cast": "Reese Witherspoon, Nicole Kidman, Shailene Woodley, Laura Dern, Zoë Kravitz",
+    "genre": "Mystery drama / dark domestic drama",
+    "synopsis": "A group of mothers in a wealthy California coastal community become entangled in a murder investigation as secrets surface.",
+    "rating": "TV-MA",
+    "cautions": "Domestic violence, sexual assault themes, strong language, nudity and mature relationship content; emotionally dark.",
+    "why": "Strong performances and an engaging mystery, but its mature content and bleak relationship dynamics make it a poor fit.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and RT score",
+        "https://www.justwatch.com/us/tv-show/big-little-lies"
+      ],
+      [
+        "Rotten Tomatoes series details and streaming",
+        "https://www.rottentomatoes.com/tv/big_little_lies"
+      ]
+    ]
+  },
+  "Chernobyl": {
+    "availability": "Max (HBO Max); purchase options",
+    "platforms": [
+      "Max"
+    ],
+    "seasons": "1 season; 5 episodes",
+    "imdb": "9.3/10",
+    "rt": "95% Tomatometer",
+    "cast": "Jared Harris, Stellan Skarsgård, Emily Watson, Paul Ritter",
+    "genre": "Historical drama / disaster miniseries",
+    "synopsis": "A dramatization of the 1986 nuclear disaster and the efforts of scientists, officials and ordinary people to contain its catastrophic consequences.",
+    "rating": "TV-MA",
+    "cautions": "Extremely disturbing injury imagery, radiation sickness, death, suffering and intense dread.",
+    "why": "Exceptional historical storytelling, but emphatically not recommended given the family's aversion to disturbing and hopeless material.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and RT score",
+        "https://www.justwatch.com/us/tv-show/chernobyl"
+      ]
+    ]
+  },
+  "Chuck": {
+    "availability": "No current U.S. subscription streamer confirmed in this check; digital purchase listed",
+    "platforms": [],
+    "seasons": "5 seasons; 91 episodes",
+    "imdb": "8.2/10",
+    "rt": "90% Tomatometer",
+    "cast": "Zachary Levi, Yvonne Strahovski, Adam Baldwin, Joshua Gomez",
+    "genre": "Action comedy / spy adventure / romantic comedy",
+    "synopsis": "An ordinary computer-store employee accidentally becomes a repository for government secrets and is pulled into a world of espionage with two handlers.",
+    "rating": "TV-14",
+    "cautions": "Frequent action violence and peril, occasional sexual humor and language; generally playful rather than grim.",
+    "why": "A promising match: upbeat spy adventure, humor, romance and an ensemble with a strong comedic center.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb, RT and availability",
+        "https://www.justwatch.com/us/tv-show/chuck"
+      ]
+    ]
+  },
+  "Call the Midwife": {
+    "availability": "Netflix; free on Hoopla; purchase options",
+    "platforms": [
+      "Netflix",
+      "Hoopla (free)"
+    ],
+    "seasons": "15 seasons",
+    "imdb": "8.6/10",
+    "rt": "Not verified",
+    "cast": "Vanessa Redgrave (narrator), Helen George, Jenny Agutter, Judy Parfitt",
+    "genre": "British period drama / medical ensemble",
+    "synopsis": "Midwives and nuns serve families in London's East End, beginning in the 1950s, as the neighborhood and medical practice evolve.",
+    "rating": "TV-MA",
+    "cautions": "Childbirth, medical complications, infant and maternal deaths, poverty, illness and emotionally intense stories; rating may reflect mature themes.",
+    "why": "A long-running British ensemble with warmth, community and historical detail, but episodes can be emotionally heavy.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. availability, seasons and IMDb score",
+        "https://www.justwatch.com/us/tv-show/call-the-midwife"
+      ],
+      [
+        "IMDb rating",
+        "https://www.imdb.com/title/tt1983079/ratings/"
+      ]
+    ]
+  },
+  "Bodyguard": {
+    "availability": "U.S. subscription availability not confirmed in this check; verify before watching",
+    "platforms": [],
+    "seasons": "1 season; 6 episodes",
+    "imdb": "8.0/10",
+    "rt": "93% Tomatometer",
+    "cast": "Richard Madden, Keeley Hawes, Sophie Rundle",
+    "genre": "British political action thriller",
+    "synopsis": "A war veteran assigned to protect a senior British politician becomes caught in a dangerous web of political intrigue and personal conflict.",
+    "rating": "TV-MA",
+    "cautions": "Intense violence, terrorism, bomb threats, gunfire, strong language and sustained tension.",
+    "why": "Gripping British thriller, but its intensity and violence are likely beyond the preferred comfort level.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. IMDb, RT and genre details",
+        "https://www.justwatch.com/us/tv-show/bodyguard"
+      ]
+    ]
+  },
+  "American Housewife": {
+    "availability": "Hulu and Disney+; purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "5 seasons; 103 episodes",
+    "imdb": "7.4/10",
+    "rt": "Not verified",
+    "cast": "Katy Mixon, Diedrich Bader, Meg Donnelly, Daniel DiMaggio",
+    "genre": "Family sitcom / suburban comedy",
+    "synopsis": "A confident, outspoken mother raises her three children in an affluent Connecticut town while resisting the pressures of its picture-perfect families.",
+    "rating": "TV-PG",
+    "cautions": "Some suggestive jokes, mild language and family/social satire.",
+    "why": "A relatively light family sitcom with a warm center and a suburban setting; worth sampling for easy comedy.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Rotten Tomatoes U.S. streaming and season information",
+        "https://www.rottentomatoes.com/tv/american_housewife"
       ]
     ]
   }
