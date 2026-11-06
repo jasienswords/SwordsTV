@@ -11,7 +11,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width
 <section class="hero"><div class="hero-content"><div class="eyebrow">A better way to decide what to watch</div><h2>Good shows.<br>Great nights in.</h2><p>Your family's viewing history, favorites, watchlist and next-show ideas—all in one place.</p><button class="btn primary" id="browseBtn">Explore your library&nbsp; →</button></div></section>
 <nav class="nav" id="nav"><button class="active" data-view="home">For You</button><button data-view="library">My Library</button><button data-view="watchlist">Watchlist</button><button data-view="profile">Taste Profile</button></nav>
 <main id="main"></main>
-<div class="footer">SwordsTV v2.1 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
+<div class="footer">SwordsTV v2.2 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
 </div>
 <div class="modal-bg" id="rateBg"><div class="modal"><h3 id="modalTitle">Rate this show</h3><form id="rateForm"><label for="status">My Library</label><select class="field" id="status"><option>Not in My Library</option><option>Watching</option><option>Want to Watch</option></select><label for="watched">Have you watched this show?</label><select class="field" id="watched"><option value="false">Not yet / still watching</option><option value="true">Yes, watched</option></select><label for="rating">Your rating</label><select class="field" id="rating"><option>Not rated</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select><label>Where did you watch it? (select all that apply)</label><div class="platform-checks"><label class="platform-check"><input type="checkbox" name="watchedOn" value="Netflix"> Netflix</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Hulu"> Hulu</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Disney+"> Disney+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Max"> Max</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Peacock"> Peacock</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Paramount+"> Paramount+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Apple TV+"> Apple TV+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="YouTube TV"> YouTube TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Prime Video"> Prime Video</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BritBox"> BritBox</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Acorn TV"> Acorn TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="PBS / PBS Passport"> PBS / PBS Passport</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Tubi"> Tubi</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="The Roku Channel"> The Roku Channel</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Plex"> Plex</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BBC Select"> BBC Select</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Other / not sure"> Other / not sure</label></div><label for="seasons">Seasons watched (optional)</label><input class="field" id="seasons" placeholder="e.g. 2"><label for="notes">Notes (optional)</label><textarea class="field" id="notes" placeholder="What did you think?"></textarea><div class="modal-actions"><button type="button" class="btn" id="cancelRate">Cancel</button><button class="btn primary" type="submit">Save rating</button></div></form></div></div>
 <div class="toast" id="toast"></div>
@@ -2074,6 +2074,211 @@ const RESEARCH={
       [
         "Rotten Tomatoes U.S. streaming and season information",
         "https://www.rottentomatoes.com/tv/american_housewife"
+      ]
+    ]
+  },
+  "Back": {
+    "availability": "Spectrum On Demand and Philo; digital purchase",
+    "platforms": [
+      "Spectrum On Demand",
+      "Philo"
+    ],
+    "seasons": "2 seasons; 12 episodes",
+    "imdb": "7.3/10",
+    "rt": "97% Tomatometer",
+    "cast": "David Mitchell, Robert Webb, Louise Brealey, Penny Downie",
+    "genre": "British dark comedy / family sitcom",
+    "synopsis": "After their father dies, an estranged foster-brother returns and disrupts the life of the sibling who has taken over the family pub.",
+    "rating": "TV-MA",
+    "cautions": "Cynical humor, strong language and adult themes; deliberately awkward and dark in places.",
+    "why": "British comedy and familiar comic leads, but its cynical tone may not be the most uplifting fit.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, rating and streaming",
+        "https://www.justwatch.com/us/tv-show/back"
+      ],
+      [
+        "Rotten Tomatoes season scores",
+        "https://www.rottentomatoes.com/tv/back"
+      ]
+    ]
+  },
+  "Better Things": {
+    "availability": "Hulu; Disney+; purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "5 seasons; 52 episodes",
+    "imdb": "7.9/10",
+    "rt": "98% Tomatometer; 84% Popcornmeter",
+    "cast": "Pamela Adlon, Celia Imrie, Mikey Madison, Hannah Riley",
+    "genre": "Comedy-drama / family dramedy",
+    "synopsis": "A working actor and single mother balances raising three daughters, caring for her mother and navigating everyday family life.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, sexual references and frank adult situations; grounded family struggles can be emotionally raw.",
+    "why": "Excellent writing and family-centered humor, but the TV-MA rating and adult tone are notable cautions.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, streaming and IMDb",
+        "https://www.justwatch.com/us/tv-show/better-things"
+      ],
+      [
+        "Rotten Tomatoes series scores and synopsis",
+        "https://www.rottentomatoes.com/tv/better_things"
+      ]
+    ]
+  },
+  "Big Boys": {
+    "availability": "Hulu and Disney+; Prime Video purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "3 seasons",
+    "imdb": "8.3/10",
+    "rt": "100% Tomatometer; 90% Popcornmeter",
+    "cast": "Dylan Llewellyn, Jon Pointing, Izuka Hoyle, Camille Coduri",
+    "genre": "British coming-of-age comedy / university sitcom",
+    "synopsis": "Two very different young men become friends during their first year at university and help one another navigate friendship, identity and adulthood.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, sexual references, drinking and frank LGBTQ+ themes; mature comedy.",
+    "why": "Warm friendship and British humor, though its mature content and subject matter may not be a fit for family viewing.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Rotten Tomatoes seasons, ratings and streaming",
+        "https://www.rottentomatoes.com/tv/big_boys"
+      ]
+    ]
+  },
+  "Billions": {
+    "availability": "Paramount+; purchase options",
+    "platforms": [
+      "Paramount+"
+    ],
+    "seasons": "7 seasons; 84 episodes",
+    "imdb": "8.3/10",
+    "rt": "Noted season scores vary; no single verified series average used",
+    "cast": "Paul Giamatti, Damian Lewis, Maggie Siff, David Costabile, Corey Stoll",
+    "genre": "Financial / legal drama",
+    "synopsis": "A ruthless hedge-fund billionaire and a determined U.S. attorney wage a high-stakes battle over money, power and influence.",
+    "rating": "TV-MA",
+    "cautions": "Frequent strong language, sexual content, drug use, manipulation and morally cynical behavior.",
+    "why": "The business, sales and negotiation dynamics may be compelling, but the explicit content and cynical tone are poor-fit warnings.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/billions"
+      ],
+      [
+        "Rotten Tomatoes season information and synopsis",
+        "https://www.rottentomatoes.com/tv/billions"
+      ]
+    ]
+  },
+  "Bless This Mess": {
+    "availability": "Hulu and Disney+; purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "2 seasons; 26 episodes",
+    "imdb": "7.0/10",
+    "rt": "82% Tomatometer; 76% Popcornmeter",
+    "cast": "Lake Bell, Dax Shepard, Ed Begley Jr., Pam Grier, Lennon Parham",
+    "genre": "Rural family sitcom / comedy",
+    "synopsis": "A newly married couple leaves New York for rural Nebraska, only to discover that farm life and small-town relationships are more complicated than expected.",
+    "rating": "TV-PG",
+    "cautions": "Mild language and occasional adult jokes; generally light.",
+    "why": "A married couple, rural setting and fish-out-of-water humor make this a promising easygoing match.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, streaming and IMDb",
+        "https://www.justwatch.com/us/tv-show/bless-this-mess"
+      ],
+      [
+        "Rotten Tomatoes scores, synopsis and streaming",
+        "https://www.rottentomatoes.com/tv/bless_this_mess"
+      ]
+    ]
+  },
+  "Blown Away": {
+    "availability": "Netflix",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "4 seasons; 40 episodes",
+    "imdb": "7.2/10",
+    "rt": "No reliable series Tomatometer score; Rotten Tomatoes audience score 26%",
+    "cast": "Nick Uhas, Hunter March, Katherine Gray",
+    "genre": "Glassblowing competition / reality",
+    "synopsis": "Skilled glass artists compete in elaborate timed challenges, creating sculptures and functional works under pressure.",
+    "rating": "TV-PG",
+    "cautions": "Competition eliminations and occasional tense moments; little conventional mature content.",
+    "why": "Creative craftsmanship and visually interesting challenges; a good fit if you enjoy the process and artistry more than high-stakes reality drama.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, streaming and IMDb",
+        "https://www.justwatch.com/us/tv-show/blown-away"
+      ],
+      [
+        "Rotten Tomatoes format, seasons and streaming",
+        "https://www.rottentomatoes.com/tv/blown_away"
+      ]
+    ]
+  },
+  "Blue Planet II": {
+    "availability": "Max; purchase options",
+    "platforms": [
+      "Max"
+    ],
+    "seasons": "1 season; 7 episodes (2017)",
+    "imdb": "9.3/10",
+    "rt": "97% Tomatometer",
+    "cast": "David Attenborough (narrator)",
+    "genre": "Nature documentary / ocean exploration",
+    "synopsis": "A spectacular exploration of the world's oceans, revealing the behavior of marine life and the challenges facing underwater ecosystems.",
+    "rating": "TV-PG",
+    "cautions": "Predation, animal injury and natural survival sequences; some scenes may be intense.",
+    "why": "A strong family viewing option with extraordinary visuals, discovery and an uplifting sense of wonder.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "Rotten Tomatoes seasons, score and streaming",
+        "https://www.rottentomatoes.com/tv/blue_planet_ii"
+      ]
+    ]
+  },
+  "Breeders": {
+    "availability": "Hulu and Disney+; purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "4 seasons; 40 episodes",
+    "imdb": "7.6/10",
+    "rt": "93% Tomatometer (season scores vary)",
+    "cast": "Martin Freeman, Daisy Haggard, Alex Eastwood, Eve Prenelle",
+    "genre": "British-American parenting comedy / dramedy",
+    "synopsis": "A couple who love their children deeply wrestle with the exhaustion, frustrations and absurdities of raising a family.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, sexual references, angry outbursts and frank parenting stress; intentionally irreverent.",
+    "why": "The parenting humor may feel familiar, but its frequent profanity and edgy tone make it a cautious recommendation.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, streaming and IMDb",
+        "https://www.justwatch.com/us/tv-show/breeders"
+      ],
+      [
+        "Rotten Tomatoes season scores, cast and synopsis",
+        "https://www.rottentomatoes.com/tv/breeders"
       ]
     ]
   }
