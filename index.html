@@ -11,7 +11,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width
 <section class="hero"><div class="hero-content"><div class="eyebrow">A better way to decide what to watch</div><h2>Good shows.<br>Great nights in.</h2><p>Your family's viewing history, favorites, watchlist and next-show ideas—all in one place.</p><button class="btn primary" id="browseBtn">Explore your library&nbsp; →</button></div></section>
 <nav class="nav" id="nav"><button class="active" data-view="home">For You</button><button data-view="library">My Library</button><button data-view="watchlist">Watchlist</button><button data-view="profile">Taste Profile</button></nav>
 <main id="main"></main>
-<div class="footer">SwordsTV v2.2 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
+<div class="footer">SwordsTV v2.3 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
 </div>
 <div class="modal-bg" id="rateBg"><div class="modal"><h3 id="modalTitle">Rate this show</h3><form id="rateForm"><label for="status">My Library</label><select class="field" id="status"><option>Not in My Library</option><option>Watching</option><option>Want to Watch</option></select><label for="watched">Have you watched this show?</label><select class="field" id="watched"><option value="false">Not yet / still watching</option><option value="true">Yes, watched</option></select><label for="rating">Your rating</label><select class="field" id="rating"><option>Not rated</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select><label>Where did you watch it? (select all that apply)</label><div class="platform-checks"><label class="platform-check"><input type="checkbox" name="watchedOn" value="Netflix"> Netflix</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Hulu"> Hulu</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Disney+"> Disney+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Max"> Max</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Peacock"> Peacock</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Paramount+"> Paramount+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Apple TV+"> Apple TV+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="YouTube TV"> YouTube TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Prime Video"> Prime Video</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BritBox"> BritBox</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Acorn TV"> Acorn TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="PBS / PBS Passport"> PBS / PBS Passport</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Tubi"> Tubi</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="The Roku Channel"> The Roku Channel</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Plex"> Plex</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BBC Select"> BBC Select</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Other / not sure"> Other / not sure</label></div><label for="seasons">Seasons watched (optional)</label><input class="field" id="seasons" placeholder="e.g. 2"><label for="notes">Notes (optional)</label><textarea class="field" id="notes" placeholder="What did you think?"></textarea><div class="modal-actions"><button type="button" class="btn" id="cancelRate">Cancel</button><button class="btn primary" type="submit">Save rating</button></div></form></div></div>
 <div class="toast" id="toast"></div>
@@ -2279,6 +2279,141 @@ const RESEARCH={
       [
         "Rotten Tomatoes season scores, cast and synopsis",
         "https://www.rottentomatoes.com/tv/breeders"
+      ]
+    ]
+  },
+  "Catastrophe": {
+    "availability": "Amazon Prime Video; Prime Video with Ads; purchase options",
+    "platforms": [
+      "Prime Video"
+    ],
+    "seasons": "4 seasons; 24 episodes",
+    "imdb": "8.2/10",
+    "rt": "98% Tomatometer",
+    "cast": "Sharon Horgan, Rob Delaney, Mark Bonnar, Ashley Jensen",
+    "genre": "British romantic comedy / relationship sitcom",
+    "synopsis": "An American man and an Irish woman try to build a life together in London after an unexpected pregnancy brings them together.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, explicit sexual humor, adult relationship themes and some crude comedy.",
+    "why": "Smart British writing and relationship humor, but the mature content is a significant caution.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. streaming, seasons, IMDb and RT score",
+        "https://www.justwatch.com/us/tv-show/catastrophe"
+      ]
+    ]
+  },
+  "Colin from Accounts": {
+    "availability": "Paramount+; fuboTV; purchase options",
+    "platforms": [
+      "Paramount+",
+      "fuboTV"
+    ],
+    "seasons": "3 seasons; 24 episodes; series ended in 2026",
+    "imdb": "8.1/10",
+    "rt": "100% Tomatometer; 91% Popcornmeter",
+    "cast": "Harriet Dyer, Patrick Brammall, Genevieve Hegney",
+    "genre": "Australian romantic comedy",
+    "synopsis": "Two flawed strangers are brought together by an injured dog and gradually discover an unexpected connection.",
+    "rating": "TV-MA",
+    "cautions": "Raunchy humor, strong language, sexual references and adult situations; definitely not family viewing.",
+    "why": "The offbeat romance and comic chemistry may appeal, but its explicit tone is likely a mismatch with your content preferences.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. availability, seasons and IMDb",
+        "https://www.justwatch.com/us/tv-show/colin-from-accounts"
+      ],
+      [
+        "Rotten Tomatoes critic and audience scores",
+        "https://www.rottentomatoes.com/tv/colin_from_accounts"
+      ]
+    ]
+  },
+  "Cobra Kai": {
+    "availability": "Netflix",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "6 seasons; 65 episodes; series ended in 2025",
+    "imdb": "8.4/10",
+    "rt": "94% Tomatometer; 90% Popcornmeter",
+    "cast": "Ralph Macchio, William Zabka, Xolo Maridueña, Mary Mouser, Tanner Buchanan",
+    "genre": "Action comedy / martial arts coming-of-age drama",
+    "synopsis": "Decades after the original Karate Kid tournament, Johnny Lawrence reopens the Cobra Kai dojo, reigniting his rivalry with Daniel LaRusso and drawing a new generation of students into the conflict.",
+    "rating": "TV-14",
+    "cautions": "Frequent martial-arts fights, bullying, teen relationship drama and some strong language; action violence is stylized rather than graphic.",
+    "why": "Nostalgia, humor, redemption and multi-generational characters make this a strong possibility, especially for family viewing with older teens.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. streaming, seasons and IMDb",
+        "https://www.justwatch.com/us/tv-show/cobra-kai"
+      ],
+      [
+        "Rotten Tomatoes critic and audience scores",
+        "https://www.rottentomatoes.com/tv/cobra_kai"
+      ]
+    ]
+  },
+  "Building Off the Grid": {
+    "availability": "Max; Discovery+; Magnolia Network; YouTube TV; Tubi (free with ads); Spectrum On Demand",
+    "platforms": [
+      "Max",
+      "Discovery+",
+      "Magnolia Network",
+      "YouTube TV",
+      "Tubi (free with ads)",
+      "Spectrum On Demand"
+    ],
+    "seasons": "13 seasons; episode availability varies by service",
+    "imdb": "7.0/10",
+    "rt": "No Tomatometer score listed",
+    "cast": "Jake Rademacher (narrator); rotating builders and homeowners",
+    "genre": "Homebuilding / construction reality documentary",
+    "synopsis": "Builders take on remote sites and challenging conditions to construct off-grid cabins, homes and self-sufficient retreats.",
+    "rating": "TV-G",
+    "cautions": "Construction hazards and weather challenges; otherwise family-friendly.",
+    "why": "A good match for your interest in homes, distinctive locations and seeing a project take shape, though it is more remote construction than married-couple renovation.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. availability, seasons and IMDb",
+        "https://www.justwatch.com/us/tv-show/building-off-the-grid"
+      ],
+      [
+        "Rotten Tomatoes series details",
+        "https://www.rottentomatoes.com/tv/building_off_the_grid"
+      ]
+    ]
+  },
+  "Black-ish": {
+    "availability": "Netflix; Hulu; Disney+; Philo",
+    "platforms": [
+      "Netflix",
+      "Hulu",
+      "Disney+",
+      "Philo"
+    ],
+    "seasons": "8 seasons; 175 episodes",
+    "imdb": "7.3/10",
+    "rt": "92% Tomatometer; 58% Popcornmeter",
+    "cast": "Anthony Anderson, Tracee Ellis Ross, Laurence Fishburne, Yara Shahidi",
+    "genre": "Family sitcom / social comedy",
+    "synopsis": "A successful father and his family navigate parenting, identity and everyday life in an affluent suburban neighborhood.",
+    "rating": "TV-14",
+    "cautions": "Some sexual references, language and social/political topics; generally a mainstream network sitcom.",
+    "why": "A family-centered ensemble with plenty of comedy and eight seasons; worth considering if the cultural and social commentary works for you.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. streaming, seasons and IMDb",
+        "https://www.justwatch.com/us/tv-show/black-ish"
+      ],
+      [
+        "Rotten Tomatoes critic and audience scores",
+        "https://www.rottentomatoes.com/tv/black_ish"
       ]
     ]
   }
