@@ -11,7 +11,7 @@ button,input,select,textarea{font:inherit}button{cursor:pointer}.shell{max-width
 <section class="hero"><div class="hero-content"><div class="eyebrow">A better way to decide what to watch</div><h2>Good shows.<br>Great nights in.</h2><p>Your family's viewing history, favorites, watchlist and next-show ideas—all in one place.</p><button class="btn primary" id="browseBtn">Explore your library&nbsp; →</button></div></section>
 <nav class="nav" id="nav"><button class="active" data-view="home">For You</button><button data-view="library">My Library</button><button data-view="watchlist">Watchlist</button><button data-view="profile">Taste Profile</button></nav>
 <main id="main"></main>
-<div class="footer">SwordsTV v2.3 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
+<div class="footer">SwordsTV v2.4 · Your edits are saved on this device. Use Export to back up or move your data. Streaming availability, cast, artwork and external scores are not yet researched; unverified information is intentionally not invented.</div>
 </div>
 <div class="modal-bg" id="rateBg"><div class="modal"><h3 id="modalTitle">Rate this show</h3><form id="rateForm"><label for="status">My Library</label><select class="field" id="status"><option>Not in My Library</option><option>Watching</option><option>Want to Watch</option></select><label for="watched">Have you watched this show?</label><select class="field" id="watched"><option value="false">Not yet / still watching</option><option value="true">Yes, watched</option></select><label for="rating">Your rating</label><select class="field" id="rating"><option>Not rated</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select><label>Where did you watch it? (select all that apply)</label><div class="platform-checks"><label class="platform-check"><input type="checkbox" name="watchedOn" value="Netflix"> Netflix</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Hulu"> Hulu</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Disney+"> Disney+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Max"> Max</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Peacock"> Peacock</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Paramount+"> Paramount+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Apple TV+"> Apple TV+</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="YouTube TV"> YouTube TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Prime Video"> Prime Video</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BritBox"> BritBox</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Acorn TV"> Acorn TV</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="PBS / PBS Passport"> PBS / PBS Passport</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Tubi"> Tubi</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="The Roku Channel"> The Roku Channel</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Plex"> Plex</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="BBC Select"> BBC Select</label><label class="platform-check"><input type="checkbox" name="watchedOn" value="Other / not sure"> Other / not sure</label></div><label for="seasons">Seasons watched (optional)</label><input class="field" id="seasons" placeholder="e.g. 2"><label for="notes">Notes (optional)</label><textarea class="field" id="notes" placeholder="What did you think?"></textarea><div class="modal-actions"><button type="button" class="btn" id="cancelRate">Cancel</button><button class="btn primary" type="submit">Save rating</button></div></form></div></div>
 <div class="toast" id="toast"></div>
@@ -2414,6 +2414,306 @@ const RESEARCH={
       [
         "Rotten Tomatoes critic and audience scores",
         "https://www.rottentomatoes.com/tv/black_ish"
+      ]
+    ]
+  },
+  "Castle": {
+    "availability": "Hulu; Hulu on Disney+; purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "8 seasons; 173 episodes",
+    "imdb": "8.1/10",
+    "rt": "Not verified",
+    "cast": "Nathan Fillion, Stana Katic, Susan Sullivan, Jon Huertas, Seamus Dever",
+    "genre": "Crime comedy-drama / mystery procedural",
+    "synopsis": "A successful mystery novelist teams up with a sharp NYPD detective to solve unusual murder cases while their partnership develops into a romance.",
+    "rating": "TV-14",
+    "cautions": "Murder investigations, occasional violence, mild sexual content and language.",
+    "why": "A very promising match: witty banter, an appealing ensemble, romance and mostly episodic mysteries.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/castle"
+      ]
+    ]
+  },
+  "Chicago P.D.": {
+    "availability": "Peacock; Hulu; purchase options",
+    "platforms": [
+      "Peacock",
+      "Hulu"
+    ],
+    "seasons": "13 seasons",
+    "imdb": "8.1/10",
+    "rt": "Not verified",
+    "cast": "Jason Beghe, Patrick John Flueger, Marina Squerciati, LaRoyce Hawkins",
+    "genre": "Police procedural / crime drama",
+    "synopsis": "The Intelligence Unit of the Chicago Police Department investigates serious crimes and confronts dangerous criminal networks.",
+    "rating": "TV-14",
+    "cautions": "Frequent violence, shootings, crime-scene imagery, strong language and intense themes.",
+    "why": "Fast-paced ensemble storytelling, but the violence and grim subject matter make it a likely poor fit.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/chicago-pd"
+      ]
+    ]
+  },
+  "Community": {
+    "availability": "Netflix; Hulu; Peacock; purchase options",
+    "platforms": [
+      "Netflix",
+      "Hulu",
+      "Peacock"
+    ],
+    "seasons": "6 seasons; 110 episodes",
+    "imdb": "8.5/10",
+    "rt": "88% Tomatometer; 85% Popcornmeter",
+    "cast": "Joel McHale, Gillian Jacobs, Danny Pudi, Alison Brie, Donald Glover, Ken Jeong",
+    "genre": "Ensemble sitcom / meta comedy",
+    "synopsis": "A mismatched study group at a community college forms an unlikely family through absurd campus adventures and inventive comedic episodes.",
+    "rating": "TV-14",
+    "cautions": "Sexual jokes, occasional language and irreverent humor; generally not graphic.",
+    "why": "Clever ensemble comedy with memorable characters and a playful, inventive style; worth sampling, though its humor can be quirky.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/community"
+      ],
+      [
+        "Rotten Tomatoes series scores and synopsis",
+        "https://www.rottentomatoes.com/tv/community"
+      ]
+    ]
+  },
+  "Conan O'Brien Must Go": {
+    "availability": "Max",
+    "platforms": [
+      "Max"
+    ],
+    "seasons": "2 seasons",
+    "imdb": "8.1/10",
+    "rt": "100% Tomatometer",
+    "cast": "Conan O'Brien",
+    "genre": "Travel comedy / unscripted",
+    "synopsis": "Conan travels internationally to meet people he encountered through his podcast, turning their visits into eccentric cultural adventures.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, adult jokes and irreverent humor; some crude moments.",
+    "why": "Travel, distinctive locations and spontaneous comedy are appealing, but the humor is decidedly adult.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/conan-obrien-must-go"
+      ],
+      [
+        "Rotten Tomatoes score and series details",
+        "https://www.rottentomatoes.com/tv/conan_obrien_must_go"
+      ]
+    ]
+  },
+  "Corporate": {
+    "availability": "Paramount+; purchase options",
+    "platforms": [
+      "Paramount+"
+    ],
+    "seasons": "3 seasons; 26 episodes",
+    "imdb": "7.7/10",
+    "rt": "91% Tomatometer",
+    "cast": "Matt Ingebretson, Jake Weisman, Anne Dudek, Adam Lustick",
+    "genre": "Workplace satire / dark comedy",
+    "synopsis": "Two junior executives navigate the absurd bureaucracy and moral compromises of a soulless multinational corporation.",
+    "rating": "TV-MA",
+    "cautions": "Dark and cynical humor, strong language, sexual references, disturbing workplace situations and bleak themes.",
+    "why": "The workplace satire may resonate professionally, but the relentlessly cynical tone is a poor match.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/corporate"
+      ],
+      [
+        "Rotten Tomatoes scores and series details",
+        "https://www.rottentomatoes.com/tv/corporate"
+      ]
+    ]
+  },
+  "Cougar Town": {
+    "availability": "Hulu; Disney+; purchase options",
+    "platforms": [
+      "Hulu",
+      "Disney+"
+    ],
+    "seasons": "6 seasons; 102 episodes",
+    "imdb": "7.0/10",
+    "rt": "Not verified",
+    "cast": "Courteney Cox, Christa Miller, Busy Philipps, Dan Byrd, Josh Hopkins",
+    "genre": "Ensemble sitcom / relationship comedy",
+    "synopsis": "A recently divorced mother and her close-knit group of friends navigate dating, family life and the rituals of adulthood in Florida.",
+    "rating": "TV-14",
+    "cautions": "Frequent sexual references, drinking and adult relationship humor.",
+    "why": "A long-running, warm ensemble sitcom with strong friendships, but the adult dating humor may be more than you prefer.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/cougar-town"
+      ]
+    ]
+  },
+  "Crazy Ex-Girlfriend": {
+    "availability": "Netflix; purchase options",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "4 seasons; 62 episodes",
+    "imdb": "7.8/10",
+    "rt": "98% Tomatometer; 76% Popcornmeter",
+    "cast": "Rachel Bloom, Vincent Rodriguez III, Donna Lynne Champlin, Pete Gardner",
+    "genre": "Musical romantic comedy / comedy-drama",
+    "synopsis": "A successful New York lawyer impulsively moves to California to pursue a former boyfriend, leading to a series of comic and increasingly revealing misadventures.",
+    "rating": "TV-14",
+    "cautions": "Musical numbers throughout, sexual humor, mental-health themes and occasional strong language.",
+    "why": "Acclaimed writing and character development, but the musical format and romantic obsession make it an unlikely fit.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/crazy-ex-girlfriend"
+      ],
+      [
+        "Rotten Tomatoes scores and synopsis",
+        "https://www.rottentomatoes.com/tv/crazy_ex_girlfriend"
+      ]
+    ]
+  },
+  "Dalgliesh": {
+    "availability": "Acorn TV; AMC+; purchase options",
+    "platforms": [
+      "Acorn TV",
+      "AMC+"
+    ],
+    "seasons": "3 seasons; 18 episodes",
+    "imdb": "7.6/10",
+    "rt": "Not verified",
+    "cast": "Bertie Carvel, Jeremy Irvine, Carlyss Peer",
+    "genre": "British period crime mystery",
+    "synopsis": "Detective Adam Dalgliesh investigates complex murders in 1970s England, adapting P. D. James mysteries.",
+    "rating": "TV-14",
+    "cautions": "Murder, occasional violence and somber subject matter; measured, atmospheric pacing.",
+    "why": "British period mysteries and literary detective work are a natural interest, though the pace is deliberate and the tone serious.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/dalgliesh"
+      ]
+    ]
+  },
+  "Detroiters": {
+    "availability": "Paramount+; purchase options",
+    "platforms": [
+      "Paramount+"
+    ],
+    "seasons": "2 seasons; 20 episodes",
+    "imdb": "8.0/10",
+    "rt": "Not verified",
+    "cast": "Sam Richardson, Tim Robinson, Shawntay Dalon, Pat Vern Harris",
+    "genre": "American buddy sitcom / workplace comedy",
+    "synopsis": "Two lifelong friends run a small Detroit advertising agency, making low-budget local commercials and stumbling through business and friendship.",
+    "rating": "TV-14",
+    "cautions": "Crude and awkward humor, sexual jokes and some language.",
+    "why": "A distinctive small-business setting and friendship comedy, but its deliberately awkward humor may not click.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/detroiters"
+      ]
+    ]
+  },
+  "Derry Girls": {
+    "availability": "Netflix",
+    "platforms": [
+      "Netflix"
+    ],
+    "seasons": "3 seasons; 19 episodes",
+    "imdb": "8.5/10",
+    "rt": "99% Tomatometer; 92% Popcornmeter",
+    "cast": "Saoirse-Monica Jackson, Louisa Harland, Nicola Coughlan, Jamie-Lee O'Donnell, Dylan Llewellyn",
+    "genre": "British-Irish coming-of-age sitcom",
+    "synopsis": "A group of teenage friends navigate school, family and everyday mishaps in 1990s Northern Ireland during the Troubles.",
+    "rating": "TV-MA",
+    "cautions": "Strong language, sexual references, irreverent humor and occasional references to political violence.",
+    "why": "Fast, warm ensemble comedy and a distinctive setting; the language is the main caution.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/derry-girls"
+      ],
+      [
+        "Rotten Tomatoes scores and synopsis",
+        "https://www.rottentomatoes.com/tv/derry_girls"
+      ]
+    ]
+  },
+  "Designated Survivor": {
+    "availability": "Netflix; Hulu; purchase options",
+    "platforms": [
+      "Netflix",
+      "Hulu"
+    ],
+    "seasons": "3 seasons; 53 episodes",
+    "imdb": "7.4/10",
+    "rt": "71% Tomatometer; 68% Popcornmeter",
+    "cast": "Kiefer Sutherland, Natascha McElhone, Maggie Q, Kal Penn",
+    "genre": "Political thriller / conspiracy drama",
+    "synopsis": "A low-level cabinet official unexpectedly becomes U.S. president after a catastrophic attack on the Capitol and must lead the country while uncovering a conspiracy.",
+    "rating": "TV-14",
+    "cautions": "Terrorism, violence, political threats and sustained suspense.",
+    "why": "Leadership, problem-solving and political maneuvering may be compelling, but the ongoing threat-driven tone can be intense.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/designated-survivor"
+      ],
+      [
+        "Rotten Tomatoes scores and synopsis",
+        "https://www.rottentomatoes.com/tv/designated_survivor"
+      ]
+    ]
+  },
+  "Deutschland 83": {
+    "availability": "Sundance Now; AMC+; purchase options",
+    "platforms": [
+      "Sundance Now",
+      "AMC+"
+    ],
+    "seasons": "3 seasons (Deutschland 83, 86 and 89); 26 episodes",
+    "imdb": "8.1/10",
+    "rt": "100% Tomatometer (season 1)",
+    "cast": "Jonas Nay, Maria Schrader, Ulrich Noethen, Sylvester Groth",
+    "genre": "German Cold War spy thriller / period drama",
+    "synopsis": "A young East German soldier is sent undercover in West Germany during the Cold War, becoming entangled in espionage and divided loyalties.",
+    "rating": "TV-MA",
+    "cautions": "Sexual content, violence, strong language, espionage danger and political tension.",
+    "why": "Excellent period setting and spy story, but mature content and sustained tension are caveats.",
+    "checked": "November 5, 2026",
+    "sources": [
+      [
+        "JustWatch U.S. seasons, IMDb and streaming",
+        "https://www.justwatch.com/us/tv-show/deutschland-83"
+      ],
+      [
+        "Rotten Tomatoes score",
+        "https://www.rottentomatoes.com/tv/deutschland_83"
       ]
     ]
   }
