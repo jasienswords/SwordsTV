@@ -62,7 +62,25 @@ function imdbOf(title) {
   return sc && sc.imdb && sc.imdb.rating != null ? +sc.imdb.rating : null;
 }
 
-function buildProfile(shows) {
+// Answers from the taste setup act like a few extra ratings for the traits they name, so a new
+// profile has a sensible starting point. Real ratings outweigh them as they build up.
+const PREF_WEIGHT = 3;
+function prefSeeds(prefs) {
+  const out = [], add = (key, delta, w = PREF_WEIGHT) => out.push({key, delta, w});
+  if (!prefs) return out;
+  (prefs.loveGenres || []).forEach(g => add('genre:' + g, 1.5));
+  (prefs.avoidGenres || []).forEach(g => add('genre:' + g, -2.5));
+  if (prefs.origin === 'GB') { add('country:GB', 1, 2); add('country:US', -0.3, 2); }
+  if (prefs.origin === 'US') { add('country:US', 1, 2); add('country:GB', -0.3, 2); }
+  if (prefs.length === 'short') { add('length:Single-season & limited series', 0.8, 2); add('length:2–4 seasons', 0.6, 2); }
+  if (prefs.length === 'long') add('length:Long-running (5+ seasons)', 0.8, 2);
+  if (prefs.era === 'recent') { add('era:2020', 0.6, 2); add('era:2010', 0.4, 2); }
+  if (prefs.mood === 'cozy') { add('rating:TV-MA', -1, 2); add('genre:Crime', -0.6, 2); add('genre:Family', 0.5, 2); }
+  if (prefs.mood === 'gritty') { add('rating:TV-MA', 0.5, 2); add('genre:Crime', 0.8, 2); add('genre:Drama', 0.4, 2); }
+  return out;
+}
+
+function buildProfile(shows, prefs = (typeof currentPrefs === 'function' ? currentPrefs() : null)) {
   const rated = shows.filter(s => s.rating in RATING_WEIGHT);
   const withData = rated.filter(s => TMDB[s.title]);
   const mean = withData.length ? withData.reduce((n, s) => n + RATING_WEIGHT[s.rating], 0) / withData.length : 0;
@@ -83,13 +101,18 @@ function buildProfile(shows) {
   }
   // Affinity: how much better (or worse) shows with this trait are rated than the family's
   // average rating, shrunk toward zero until there are enough ratings to trust it.
+  for (const sd of prefSeeds(prefs)) {
+    const [type, ...rest] = sd.key.split(':'), label = rest.join(':');
+    const x = traits[sd.key] || (traits[sd.key] = {key: sd.key, type, label: type === 'country' ? (COUNTRY_NAMES[label] || label) : type === 'era' ? label + 's shows' : type === 'rating' ? 'Rated ' + label : label, n: 0, sum: 0, loved: 0, liked: 0, rated: 0, passed: 0});
+    x.n += sd.w; x.sum += sd.w * (mean + sd.delta); x.seeded = true;
+  }
   // Plus a lift for traits whose shows you Love more often than you Love shows overall.
   const loveRate = withData.length ? withData.filter(s => s.rating === 'Loved').length / withData.length : 0;
   for (const x of Object.values(traits)) x.affinity = (x.sum - x.n * mean) / (x.n + SMOOTHING) + LOVE_LIFT * (x.loved - x.rated * loveRate) / (x.rated + SMOOTHING);
   const counts = {Loved: 0, Liked: 0, Okay: 0, Disliked: 0};
   rated.forEach(s => counts[s.rating]++);
   const avgImdb = r => { const v = rated.filter(s => s.rating === r).map(s => imdbOf(s.title)).filter(x => x != null); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
-  return {traits, mean, counts, total: rated.length, imdbLoved: avgImdb('Loved'), imdbDisliked: avgImdb('Disliked'),
+  return {prefs: prefs || {}, traits, mean, counts, total: rated.length, imdbLoved: avgImdb('Loved'), imdbDisliked: avgImdb('Disliked'),
     lovedTitles: rated.filter(s => s.rating === 'Loved').map(s => s.title),
     likedTitles: rated.filter(s => s.rating === 'Liked').map(s => s.title)};
 }
@@ -145,7 +168,9 @@ function matchShow(title, profile) {
   // IMDb is judged against the show's own genre: documentaries are rated higher across the board.
   if (imdb != null) score += Math.max(-0.8, Math.min(0.8, (imdb - imdbPivot(title)) * 0.4));
   const flags = contentFlags(title);
-  score -= 0.7 * flags.length;
+  // Dark-theme penalty follows the profile's comfort level ("Sometimes" by default).
+  const dark = (profile.prefs || {}).dark;
+  score -= (dark === 'fine' ? 0 : dark === 'avoid' ? 1.6 : 0.7) * flags.length;
   const reasons = traits.filter(tr => ['genre', 'country', 'network'].includes(tr.type)).map(tr => profile.traits[tr.key]).filter(Boolean)
     .filter(x => x.affinity > 0.05 && x.rated >= (x.type === 'network' ? 8 : 5) && (x.loved + x.liked) / x.rated >= 0.4)
     .sort((a, b) => b.affinity - a.affinity).slice(0, 2)

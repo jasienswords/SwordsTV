@@ -13,6 +13,7 @@ const ASSETS = [
   './search.js',
   './app-config.json',
   './guidance.json',
+  './setup.js',
   './release.json',
   './firebase-config.json',
   './discoveries.json',

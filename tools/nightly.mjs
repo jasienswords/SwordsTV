@@ -50,7 +50,7 @@ const newer = (a, b) => ((a && a._t) || 0) >= ((b && b._t) || 0) ? a : b;
 if (signals.length) {
   const profiles = [], added = {};
   for (const h of signals) {
-    for (const [pid, p] of Object.entries(h.profiles || {})) profiles.push({household: h.household, profile: pid, legacyCatalog: !!p.legacyCatalog, changes: p.changes || {}});
+    for (const [pid, p] of Object.entries(h.profiles || {})) profiles.push({household: h.household, profile: pid, legacyCatalog: !!p.legacyCatalog, ageGroup: p.ageGroup || 'adult', prefs: p.prefs || null, changes: p.changes || {}});
     for (const [t, a] of Object.entries(h.added || {})) added[t] = added[t] ? newer(added[t], a) : a;
   }
   const legacy = profiles.find(p => p.legacyCatalog);
