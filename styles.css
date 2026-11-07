@@ -341,3 +341,12 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .insights .insight strong{display:block;font-size:15px;font-weight:800;margin-bottom:4px}
 .insights .insight p{margin:0 0 8px;font-size:14px;line-height:1.5}
 .insights .insight .pill{cursor:pointer}
+
+/* Show page: choices that stay selected */
+.list-pick{grid-column:1/-1;display:flex;flex-direction:column;gap:6px}
+.list-pick>span{font-size:11px;font-weight:800;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.seg button,.pick-actions button{min-height:44px;padding:8px 6px;border-radius:12px;border:1.5px solid var(--line);background:var(--panel);color:var(--text);font-weight:700;font-size:14px}
+.seg button.on,.pick-actions button.on{background:var(--gold);border-color:var(--gold);color:#1c1e23}
+.pick-actions{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:10px;max-width:420px}
+.pick-actions button[data-hide="no"].on{background:var(--chrome2);border-color:var(--chrome2);color:#fff}
