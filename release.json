@@ -1,0 +1,8 @@
+{
+ "_about": "Weekly streaming release days the family knows to be right, used when TMDB's air date (the TV channel's day) differs from the streaming day. Days: 0 Sunday … 6 Saturday. A day set in the app still wins.",
+ "shows": {
+  "The Great British Baking Show": {"day": 5, "service": "Netflix"},
+  "Scrubs (2026)": {"day": 4, "service": "Hulu"},
+  "The Rise and Fall of Reggie Dinkins": {"day": 3, "service": "Peacock"}
+ }
+}
