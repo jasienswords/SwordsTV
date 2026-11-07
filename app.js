@@ -379,6 +379,8 @@ document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE
  const msg=w==="not"?({want:"Added to Want to Watch",no:"Won't suggest it again",none:"Marked not watched"})[RATE.plan]:w==="watching"?"In My Queue as Watching":RATINGS.includes(RATE.rating)?"Saved to My Library":"Marked watched";
  saveChange(currentTitle,obj,{msg});hideSheet();if(currentView==="detail")renderDetail()};
 document.getElementById("cancelRate").onclick=()=>hideSheet();
+// Opening "Where did you watch it?" brings it into view inside the sheet.
+document.getElementById("qWhere").addEventListener("toggle",e=>{if(e.target.open)setTimeout(()=>e.target.scrollIntoView({block:"start",behavior:"smooth"}),50)});
 document.getElementById("aboutBtn").onclick=()=>showSheet("aboutBg");
 document.getElementById("aboutClose").onclick=()=>hideSheet();
 document.getElementById("aboutBg").addEventListener("click",e=>{if(e.target.id==="aboutBg")hideSheet()});

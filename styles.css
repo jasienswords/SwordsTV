@@ -604,3 +604,15 @@ body.gated{overflow:hidden}
 .rm-want{background:var(--gold,#f6c75a);border-color:var(--gold,#f6c75a);color:#1c1e23}
 .focus-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
 .focus-chips button{font-size:13px;padding:7px 11px}
+
+/* ── Rate sheet: questions scroll in their own area; Save/Cancel sit in a fixed footer ──
+   (A sticky footer inside the scrolling sheet covered the last question on iPhone Safari.) */
+#rateBg .modal{display:flex;flex-direction:column;overflow:hidden;padding-bottom:0}
+#rateBg .modal h3{flex:0 0 auto}
+#rateForm{display:flex;flex-direction:column;flex:1 1 auto;min-height:0}
+#rateForm .sheet-body{flex:1 1 auto;min-height:0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;touch-action:pan-y;margin:0 -22px;padding:0 22px 16px}
+#rateBg .modal-actions{position:static;flex:0 0 auto;margin:0 -22px;padding:12px 22px calc(env(safe-area-inset-bottom) + 12px);background:var(--panel);border-top:1px solid var(--line,rgba(127,127,127,.18))}
+#qWhere summary{display:flex;align-items:center;gap:6px;padding:10px 0;font-size:13px;list-style:none}
+#qWhere summary::-webkit-details-marker{display:none}
+#qWhere .chev{margin-left:auto;font-size:20px;line-height:1;transition:transform .2s;color:var(--muted)}
+#qWhere[open] .chev{transform:rotate(90deg)}
