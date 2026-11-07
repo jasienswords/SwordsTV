@@ -19,12 +19,22 @@ const STORAGE="swordstv_v1_user_changes";
 let changes=JSON.parse(localStorage.getItem(STORAGE)||"{}"),currentTitle=null,currentView="home",searchTerm="",ratingFilter="All";
 const colors=[["#35566b","#172536"],["#76533e","#2a1b20"],["#4e6470","#1c2b3b"],["#796b48","#29251d"],["#5c496d","#211c32"],["#3d6b5e","#182b2a"],["#76505c","#2b1b2a"],["#4b5c82","#1a2039"]];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function allShows(){return DATA.catalog.map(x=>{let c=changes[x.title]||{},legacyStatus=x.status||"Unwatched";return {...x,...c,seriesComplete:c.seriesComplete??["Ended","Canceled"].includes((TMDB[x.title]||{}).status),libraryStatus:c.libraryStatus??(["Watching","Want to Watch"].includes(c.status)?c.status:["Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library"),watched:c.watched??(c.status==="Watched"||legacyStatus==="Watched"),status:c.libraryStatus??(["Watching","Want to Watch"].includes(c.status)?c.status:["Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library")}}).sort((a,b)=>a.title.localeCompare(b.title))}
+function allShows(){return DATA.catalog.map(x=>{let c=changes[x.title]||{},legacyStatus=x.status||"Unwatched";return {...x,...c,seriesComplete:c.seriesComplete??["Ended","Canceled"].includes((TMDB[x.title]||{}).status),libraryStatus:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library"),watched:c.watched??(c.status==="Watched"||legacyStatus==="Watched"),status:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library")}}).sort((a,b)=>a.title.localeCompare(b.title))}
 function getShow(t){return allShows().find(x=>x.title===t)}
 function art(title){let h=0;for(let c of title)h=(h*31+c.charCodeAt(0))>>>0;return colors[h%colors.length]}
 function poster(s,small=false){let [a,b]=art(s.title),t=tm(s.title),src=t&&img(t.poster,"w342");return `<div class="poster${src?" has-img":""}" style="--c1:${a};--c2:${b}">${src?`<img class="poster-img" src="${src}" alt="" loading="lazy" decoding="async" crossorigin="anonymous" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:""}${DISCOVERED[s.title]&&!RATINGS.includes(s.rating)?`<span class="tag r-next">New find</span>`:`<span class="tag r-${({Loved:"loved",Liked:"liked",Okay:"okay",Disliked:"disliked"})[s.rating]||"none"}">${esc(shownRating(s))}</span>`}<div class="poster-title">${esc(s.title)}</div></div>`}
 function captionOf(s){const l=listLabel(s);if(RATINGS.includes(s.rating)||l!=="Not on a list")return shownRating(s)+" · "+l;const t=tm(s.title)||{};return [(t.genres||[])[0],((t.networks||[])[0]||{}).name].filter(Boolean).join(" · ")||"Not rated"}
-function card(s,extra){return `<article class="show" data-title="${esc(s.title)}">${poster(s)}<div class="show-meta"><strong>${esc(s.title)}</strong><span>${esc(captionOf(s))}</span>${extra?`<small class="next-ep">${esc(extra)}</small>`:""}</div></article>`}
+const REC_ACTIONS=`<div class="rec-actions"><button data-act="next" aria-label="Add to Up Next">＋ Up Next</button><button data-act="later" aria-label="Remind me later">Later</button><button data-act="no" aria-label="Not interested">✕</button></div>`;
+function card(s,extra,rec){return `<article class="show" data-title="${esc(s.title)}">${poster(s)}<div class="show-meta"><strong>${esc(s.title)}</strong><span>${esc(captionOf(s))}</span>${extra?`<small class="next-ep">${esc(extra)}</small>`:""}</div>${rec?REC_ACTIONS:""}</article>`}
+function recRail(list){return `<div class="grid rail">${list.map(s=>card(s,null,true)).join("")}</div>`}
+// Up Next / Remind me later / Not interested — the next match fills the gap automatically.
+const SNOOZE_DAYS=30;
+function recAction(title,act){
+ const c=changes[title]||{},prev={libraryStatus:c.libraryStatus??"Not in My Library",status:c.status??"Not in My Library",snoozeUntil:c.snoozeUntil||0,dismissed:!!c.dismissed};
+ const msg={next:"Added to Up Next",later:`Hidden for ${SNOOZE_DAYS} days`,no:"Won't suggest it again"}[act];
+ const obj=act==="next"?{libraryStatus:"Up Next",status:"Up Next"}:act==="later"?{snoozeUntil:Date.now()+SNOOZE_DAYS*864e5}:{dismissed:true};
+ saveChange(title,obj,{msg,undo:()=>saveChange(title,prev,{msg:"Undone"})});
+}
 const RATINGS=["Loved","Liked","Okay","Disliked"];
 function shownRating(s){return RATINGS.includes(s.rating)?s.rating:"Not rated"}
 function shortMeta(r){if(!r)return [];const g=String(r.genre||"").split("/")[0].trim(),cr=String(r.rating||"").match(/\b(TV-(?:Y7|Y|G|PG|14|MA)|PG-13|PG|G|R)\b/);return [g,cr&&cr[1]].filter(Boolean)}
@@ -42,7 +52,7 @@ const COMPLETED_RULE_FROM=Date.UTC(2026,10,7,6,0,0);
 function isOngoing(s){const t=tm(s.title);return !!t&&!!t.status&&!["Ended","Canceled"].includes(t.status)}
 function isCompleted(s){if(s.completed===true)return true;if(s.completed===false)return false;if(!isOngoing(s))return s.watched===true||s.seriesComplete===true;return s.watched===true&&!((s._t||0)>COMPLETED_RULE_FROM)}
 function inLibrary(s){return RATINGS.includes(s.rating)&&isCompleted(s)&&s.libraryStatus!=="Watching"}
-function listLabel(s){return s.libraryStatus==="Watching"?"Watching":s.libraryStatus==="Want to Watch"?"Want to Watch":inLibrary(s)?"In My Library":"Not on a list"}
+function listLabel(s){return s.libraryStatus==="Up Next"?"Up Next":s.libraryStatus==="Watching"?"Watching":s.libraryStatus==="Want to Watch"?"Want to Watch":inLibrary(s)?"In My Library":"Not on a list"}
 function nextEpisodeText(s){const n=(tm(s.title)||{}).nextEpisode;if(!n||!n.date)return "";const d=new Date(n.date+"T12:00:00");return "S"+n.season+" E"+n.episode+" · "+d.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})}
 function rail(list,extra){return `<div class="grid rail">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
 function gridOf(list,extra){return `<div class="grid">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
@@ -56,30 +66,30 @@ function renderHome(){
   const {s:f,m}=ranked[0];seen.add(f.title);
   const [c1,c2]=art(f.title),ft=tm(f.title)||{},bd=img(ft.backdrop,"w1280");
   const meta=[ft.genres&&ft.genres[0],COUNTRY_NAMES[(ft.country||[])[0]],(ft.networks||[])[0]&&ft.networks[0].name].filter(Boolean);
-  html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Top match for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top match</span>${meta.map(x=>`<span class="dot">·</span><span>${esc(x)}</span>`).join("")}</div><p>${esc(whyText(m)||ft.overview||"")}</p></section>`;
+  html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Top match for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top match</span>${meta.map(x=>`<span class="dot">·</span><span>${esc(x)}</span>`).join("")}</div><p>${esc(whyText(m)||ft.overview||"")}</p>${REC_ACTIONS}</section>`;
  }else html=`<section class="hero"><div class="hero-content"><div class="eyebrow">Picked for the Swords family</div><h2>You've seen everything here.</h2><p>New matches will appear as more shows are added.</p></div></section>`;
  const finds=take(ranked.filter(x=>DISCOVERED[x.s.title]),12);
- if(finds.length)html+=heading("New finds for you")+rail(finds);
+ if(finds.length)html+=heading("New finds for you")+recRail(finds);
  const top=take(ranked,12);
- if(top.length)html+=heading("Top matches for you")+rail(top);
+ if(top.length)html+=heading("Top matches for you")+recRail(top);
  // "Because you loved…" rows rotate daily through loved shows that have enough similar picks.
  const day=Math.floor(Date.now()/864e5),loved=profile.lovedTitles,rows=[];
  for(let i=0;i<loved.length&&rows.length<2;i++){const src=loved[(i+day)%loved.length];const items=ranked.filter(x=>x.m.because.includes(src)&&!seen.has(x.s.title));if(items.length>=3)rows.push([src,take(items,10)])}
- rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`)+rail(items));
+ rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`)+recRail(items));
  // Your two highest-rated genres.
  Object.values(profile.traits).filter(x=>x.type==="genre"&&x.n>=minShown("genre")&&x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,2).forEach(g=>{
   const items=take(ranked.filter(x=>(tm(x.s.title).genres||[]).includes(g.label)),10);
-  if(items.length>=3)html+=heading(`More ${esc(g.label)}`)+rail(items)});
+  if(items.length>=3)html+=heading(`More ${esc(g.label)}`)+recRail(items)});
  const active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
  const onYours=take(ranked.filter(x=>((tm(x.s.title).providers||{}).stream||[]).some(p=>active.has(serviceFor(p.name)))),10);
- if(onYours.length)html+=heading("On your streaming services")+rail(onYours);
+ if(onYours.length)html+=heading("On your streaming services")+recRail(onYours);
  const free=take(ranked.filter(x=>{const p=tm(x.s.title).providers||{};return (p.free||[]).length||(p.ads||[]).length}),10);
- if(free.length)html+=heading("Free to watch")+rail(free);
+ if(free.length)html+=heading("Free to watch")+recRail(free);
  const watching=all.filter(s=>s.libraryStatus==="Watching");
  if(watching.length)html+=heading("Continue watching")+rail(watching);
  const today=new Date().toISOString().slice(0,10);
  // Episodes of shows you love, like or are watching: just aired, scheduled, and announced seasons.
- const followed=s=>["Loved","Liked"].includes(s.rating)||["Watching","Want to Watch"].includes(s.libraryStatus);
+ const followed=s=>["Loved","Liked"].includes(s.rating)||["Up Next","Watching","Want to Watch"].includes(s.libraryStatus);
  const daysAgo=d=>Math.floor((Date.parse(today+"T12:00:00Z")-Date.parse(d+"T12:00:00Z"))/864e5);
  const fmtDate=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});
  const justAired=all.filter(s=>{const l=(tm(s.title)||{}).lastEpisode;return followed(s)&&l&&l.date&&daysAgo(l.date)>=0&&daysAgo(l.date)<=7})
@@ -105,12 +115,14 @@ function renderLibrary(){
 
 // ── Watchlist: what you're watching now, and what's next ──
 function renderWatchlist(){
- const all=allShows(),watching=all.filter(s=>s.libraryStatus==="Watching"),want=all.filter(s=>s.libraryStatus==="Want to Watch");
- return `${heading("Watchlist",`${watching.length} watching · ${want.length} want to watch`)}`
+ const all=allShows(),next=all.filter(s=>s.libraryStatus==="Up Next"),watching=all.filter(s=>s.libraryStatus==="Watching"),want=all.filter(s=>s.libraryStatus==="Want to Watch");
+ return `${heading("Watchlist",`${next.length} up next · ${watching.length} watching · ${want.length} want to watch`)}`
+  +`<h4 class="group-head">Up Next <span>${next.length}</span></h4>`+(next.length?gridOf(next):`<div class="empty">Tap “＋ Up Next” on any recommendation to line it up here.</div>`)
   +`<h4 class="group-head">Watching <span>${watching.length}</span></h4>`+(watching.length?gridOf(watching,nextEpisodeText):`<div class="empty">Nothing in progress. Open a show and tap “Add as Watching”.</div>`)
   +`<h4 class="group-head">Want to Watch <span>${want.length}</span></h4>`+(want.length?gridOf(want):`<div class="empty">Nothing saved yet. Tap “Want to Watch” on any show.</div>`)
   +`<div class="note">When you rate a show you've finished, it moves to My Library.</div>`;
 }
+
 
 // ── Taste Profile: learned from your ratings ──
 function traitBar(x,max){const w=Math.max(6,Math.round(Math.abs(x.affinity)/max*100));return `<div class="trait"><div class="trait-label">${esc(x.label)}<small>${x.n} rated</small></div><div class="trait-bar"><span class="${x.affinity>0?"pos":"neg"}" style="width:${w}%"></span></div></div>`}
@@ -126,6 +138,7 @@ function renderProfile(){
   +(p.imdbLoved!=null&&p.imdbDisliked!=null?`<div class="facts"><div class="fact"><small>Shows you love · average IMDb</small><strong>${p.imdbLoved.toFixed(1)}</strong></div><div class="fact"><small>Shows you dislike · average IMDb</small><strong>${p.imdbDisliked.toFixed(1)}</strong></div></div>`:"")
   +`<div class="card"><h3 class="card-title">Your content limits</h3><p class="muted">Shows whose TMDB keywords match these are pushed down in For You:</p><div class="service-row">${CONTENT_LIMITS.map(l=>`<span class="pill">${esc(l.label)}</span>`).join("")}</div>${rule("Tone thresholds")?`<p class="muted" style="margin-top:12px">${esc(rule("Tone thresholds"))}</p>`:""}</div>`
   +`<details class="card"><summary><strong>Notes from your early rating rounds</strong></summary>${DATA.tasteProfile.map(x=>`<div class="fact" style="margin:8px 0"><small>${esc(x.dimension)}</small><strong>${esc(x.profile)}</strong></div>`).join("")}</details>`
+  +(()=>{const hidden=allShows().filter(s=>s.dismissed||(s.snoozeUntil||0)>Date.now());return hidden.length?`<details class="card"><summary><strong>Hidden from For You (${hidden.length})</strong></summary>${hidden.map(s=>`<div class="hidden-row"><span>${esc(s.title)}<small>${s.dismissed?"Not interested":"Later · until "+new Date(s.snoozeUntil).toLocaleDateString("en-US",{month:"short",day:"numeric"})}</small></span><button class="btn" data-unhide="${esc(s.title)}">Show again</button></div>`).join("")}</details>`:""})()
   +renderStreamingInsights()
   +`<div class="note">To install on iPhone: open the hosted SwordsTV link in Safari, tap Share, then Add to Home Screen.</div>`;
 }
@@ -227,23 +240,25 @@ function renderDetail(){
  }
  document.getElementById("main").innerHTML=`<button class="back" id="backBtn">‹ Back</button><section class="show-detail">
 <div class="detail-hero${bd?" has-bd":""}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="detail-poster">${poster(s)}</div><div class="detail-heading">${meta.length?`<div class="meta-line">${meta.map(esc).join('<span class="dot">·</span>')}</div>`:""}<h2>${esc(s.title)}</h2><div class="service-row"><span class="pill gold">${esc(shownRating(s))}</span>${listLabel(s)!=="Not on a list"?`<span class="pill">${esc(listLabel(s))}</span>`:""}<span class="pill">${s.watched?"Watched":"Not watched"}</span></div></div></div>
-<div class="detail-actions"><button class="btn primary" id="rateThis">✦ Rate It</button><button class="btn" id="addWatching">＋ Add as Watching</button><button class="btn" id="addWant">＋ Want to Watch</button>${!inLibrary(s)&&(isOngoing(s)||["Watching","Want to Watch"].includes(s.libraryStatus))?`<button class="btn done" id="markCompleted">✓ Completed${isOngoing(s)?" (all seasons so far)":""}</button>`:""}</div>
-${(()=>{if(s.rating in RATING_WEIGHT||s.watched)return "";const w=whyText(matchShow(s.title,buildProfile(allShows())));return w?`<div class="why-card"><strong>Why it's for you</strong>${esc(w)}</div>`:""})()}<div class="detail-content">
+<div class="detail-actions"><button class="btn primary" id="rateThis">✦ Rate It</button><button class="btn" id="addWatching">＋ Add as Watching</button><button class="btn" id="addWant">＋ Want to Watch</button>${!inLibrary(s)&&(isOngoing(s)||["Up Next","Watching","Want to Watch"].includes(s.libraryStatus))?`<button class="btn done" id="markCompleted">✓ Completed${isOngoing(s)?" (all seasons so far)":""}</button>`:""}</div>
+${(()=>{if(s.rating in RATING_WEIGHT||s.watched)return "";const w=whyText(matchShow(s.title,buildProfile(allShows())));return `<div class="why-card">${w?`<strong>Why it's for you</strong>${esc(w)}`:""}${REC_ACTIONS}</div>`})()}<div class="detail-content">
 <div class="card"><h3 class="card-title">Where to Watch</h3>${renderWhere(r,t)}</div>
 <div class="card"><h3 class="card-title">Ratings &amp; Reviews</h3>${renderRatingPanel(r||scoreResearch(s.title),t)}</div>
 <div class="card"><h3 class="card-title">About this Show</h3>${about?`<p class="about-text">${esc(about)}</p>`:""}${facts}</div>
 ${note}</div></section>`;
  document.getElementById("backBtn").onclick=()=>{currentView=previousView;render();window.scrollTo(0,previousScroll)};
- syncWelcome();
+ syncWelcome();bindRecActions();
  document.getElementById("rateThis").onclick=()=>openRate(s.title);
  document.getElementById("addWatching").onclick=()=>saveChange(s.title,{libraryStatus:"Watching",status:"Watching"});
  document.getElementById("addWant").onclick=()=>saveChange(s.title,{libraryStatus:"Want to Watch",status:"Want to Watch"});
  const mc=document.getElementById("markCompleted");if(mc)mc.onclick=()=>{saveChange(s.title,{completed:true,watched:true,libraryStatus:"Not in My Library",status:"Not in My Library"});if(!RATINGS.includes(getShow(s.title).rating))openRate(s.title);else toast("Moved to My Library")};
 }
-function render(){document.getElementById("main").innerHTML=currentView==="search"?renderSearch():currentView==="home"?renderHome():currentView==="library"?renderLibrary():currentView==="watchlist"?renderWatchlist():renderProfile();document.querySelectorAll(".show").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));document.querySelectorAll("[data-title]:not(.show)").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));if(currentView==="library"){let q=document.getElementById("search");q.oninput=e=>{searchTerm=e.target.value;let pos=q.selectionStart;render();let n=document.getElementById("search");n.focus();n.setSelectionRange(pos,pos)};let f=document.getElementById("ratingFilter");f.value=ratingFilter;f.onchange=e=>{ratingFilter=e.target.value;render()}}let sb=document.getElementById("saveSubs");if(sb)sb.onclick=saveSubscriptions;syncWelcome();;if(currentView==="search")bindSearch();document.getElementById("searchBtn").classList.toggle("active",currentView==="search")}
-function saveChange(title,obj){adoptShow(title);const before=getShow(title);if(before&&obj.completed===undefined){if(obj.libraryStatus==="Watching"&&isOngoing(before))obj={...obj,completed:false};else if(isCompleted(before)&&obj.watched!==false)obj={...obj,completed:true}}changes[title]={...(changes[title]||{}),...obj,_t:Date.now()};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();toast(SYNC.user?"Saved for the family":"Saved to this device");if(currentView==="detail")renderDetail();else render()}
+function bindRecActions(){document.querySelectorAll(".rec-actions button").forEach(b=>b.onclick=e=>{e.stopPropagation();const host=b.closest("[data-title]");recAction(host?host.dataset.title:currentTitle,b.dataset.act)})}
+function render(){document.getElementById("main").innerHTML=currentView==="search"?renderSearch():currentView==="home"?renderHome():currentView==="library"?renderLibrary():currentView==="watchlist"?renderWatchlist():renderProfile();document.querySelectorAll(".show").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));document.querySelectorAll("[data-title]:not(.show)").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));if(currentView==="library"){let q=document.getElementById("search");q.oninput=e=>{searchTerm=e.target.value;let pos=q.selectionStart;render();let n=document.getElementById("search");n.focus();n.setSelectionRange(pos,pos)};let f=document.getElementById("ratingFilter");f.value=ratingFilter;f.onchange=e=>{ratingFilter=e.target.value;render()}}let sb=document.getElementById("saveSubs");if(sb)sb.onclick=saveSubscriptions;syncWelcome();;if(currentView==="search")bindSearch();document.getElementById("searchBtn").classList.toggle("active",currentView==="search");bindRecActions();document.querySelectorAll("[data-unhide]").forEach(b=>b.onclick=()=>saveChange(b.dataset.unhide,{dismissed:false,snoozeUntil:0},{msg:"It can be suggested again"}))}
+function saveChange(title,obj,opts){adoptShow(title);const before=getShow(title);if(before&&obj.completed===undefined){if(obj.libraryStatus==="Watching"&&isOngoing(before))obj={...obj,completed:false};else if(isCompleted(before)&&obj.watched!==false)obj={...obj,completed:true}}changes[title]={...(changes[title]||{}),...obj,_t:Date.now()};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();toast((opts&&opts.msg)||(SYNC.user?"Saved for the family":"Saved to this device"),opts&&opts.undo);if(currentView==="detail")renderDetail();else render()}
 function openRate(title){currentTitle=title;let s=getShow(title);document.getElementById("modalTitle").textContent="Rate "+title;document.getElementById("status").value=s.libraryStatus||"Not in My Library";const w=document.getElementById("watched"),run=isOngoing(s);w.innerHTML=run?'<option value="false">Not yet</option><option value="watching">Still watching (more to come)</option><option value="completed">Completed all seasons so far</option>':'<option value="false">Not yet / still watching</option><option value="true">Yes, watched</option>';w.value=run?(isCompleted(s)&&s.libraryStatus!=="Watching"?"completed":s.libraryStatus==="Watching"||s.watched?"watching":"false"):String(!!s.watched);document.getElementById("watchedLabel").textContent=run?"This series is still running. Where are you with it?":"Have you watched this show?";document.getElementById("rating").value=shownRating(s);document.getElementById("seasons").value=s.seasonsWatched||"";document.querySelectorAll('input[name="watchedOn"]').forEach(c=>c.checked=(s.watchedOn||[]).includes(c.value));document.getElementById("rateBg").style.display="flex"}
-function toast(msg){let t=document.getElementById("toast");t.textContent=msg;t.style.display="block";setTimeout(()=>t.style.display="none",2200)}
+let toastTimer=null;
+function toast(msg,undo){let t=document.getElementById("toast");t.textContent=msg;if(undo){const b=document.createElement("button");b.className="toast-undo";b.textContent="Undo";b.onclick=()=>{t.style.display="none";undo()};t.appendChild(b)}t.style.display="flex";clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display="none",undo?5000:2200)}
 document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();let old=getShow(currentTitle);const wv=document.getElementById("watched").value,st=document.getElementById("status").value,ls=wv==="watching"?"Watching":wv==="completed"&&st==="Watching"?"Not in My Library":st;saveChange(currentTitle,{libraryStatus:ls,status:ls,watched:wv==="true"||wv==="completed",...(wv==="completed"?{completed:true}:wv==="watching"||(wv==="false"&&isOngoing(old))?{completed:false}:{}),rating:document.getElementById("rating").value,seasonsWatched:document.getElementById("seasons").value,watchedOn:[...document.querySelectorAll('input[name="watchedOn"]:checked')].map(c=>c.value)});document.getElementById("rateBg").style.display="none";if(currentView==="detail")renderDetail()};
 document.getElementById("cancelRate").onclick=()=>document.getElementById("rateBg").style.display="none";
 document.getElementById("nav").onclick=e=>{let b=e.target.closest("button[data-view]");if(!b)return;currentView=b.dataset.view;document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x===b));render();window.scrollTo(0,0)};
