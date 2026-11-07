@@ -289,7 +289,9 @@ details.card summary{cursor:pointer}
 .search-btn.active{background:var(--gold);border-color:var(--gold);color:#1c1e23}
 .add-by-name{margin:16px 0 8px}
 input[type=search]{-webkit-appearance:none;appearance:none}
-.detail-actions .btn.done{grid-column:1/-1;border-color:var(--green);color:var(--green);font-weight:800}
+.done-ask{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--panel);border:1px dashed var(--line);border-radius:12px;padding:10px 12px}
+.done-ask span{font-weight:700;font-size:14px}
+.done-ask .btn{min-height:40px;padding:8px 14px}
 
 /* Up Next / Later / Not interested */
 .rec-actions{display:flex;gap:4px;margin-top:2px}
