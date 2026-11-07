@@ -560,3 +560,4 @@ body.gated{overflow:hidden}
 .hero.nudge .hero-content{flex:1 1 200px}
 .hero.nudge h2{font-size:18px;margin:0 0 4px}
 @media (orientation:landscape) and (max-height:520px){.rate-card{flex-direction:row;justify-content:center}.rate-card img,.rate-noimg{width:110px}.rate-buttons{grid-template-columns:repeat(4,1fr)}}
+.btn.danger-btn{background:transparent;border-color:#d9534f;color:#d9534f}
