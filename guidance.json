@@ -2,11 +2,1999 @@
  "shows": {
   "Loki": {
    "notes": "Disney+ Marvel series (TV-14): Loki is taken by the Time Variance Authority and drawn into time-travel and multiverse adventures. Heads up: heavy sci-fi/fantasy and superhero action violence.",
-   "reviewed": "2026-11-07"
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "supernatural"
+    ],
+    "usRating": "TV-14"
+   }
   },
   "WandaVision": {
    "notes": "Disney+ Marvel miniseries (TV-14) that plays as a run of classic-sitcom homages hiding a mystery. Heads up: heavy supernatural/fantasy, themes of grief and loss, and superhero action.",
-   "reviewed": "2026-11-07"
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "grief",
+     "supernatural"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "The Gardeners' World": {
+   "status": "ok",
+   "notes": "Long-running BBC gardening programme; gentle and practical, TV-G. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Long Way Up": {
+   "status": "ok",
+   "notes": "Ewan McGregor and Charley Boorman ride electric motorcycles through South and Central America; warm buddy travelogue. Heads up: TV-14, occasional language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Formula 1: Drive to Survive": {
+   "status": "ok",
+   "notes": "Rated TV-MA; behind-the-scenes F1 series known for frequent strong language and heated confrontations, beyond the family's moderate language limit.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "The Inbetweeners": {
+   "status": "ok",
+   "notes": "Teen comedy whose TMDB keywords include crude humor and sexual humor; outside the family's limits on sexual content and tone.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Rick Stein's Cornwall": {
+   "status": "ok",
+   "notes": "Rick Stein explores Cornwall's food, people and history; gentle food-and-travel series. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Long Way Down": {
+   "status": "ok",
+   "notes": "Ewan McGregor and Charley Boorman ride from Scotland to South Africa; warm buddy travelogue. Heads up: occasional language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Planet Earth II": {
+   "status": "ok",
+   "notes": "David Attenborough nature series, TV-G. Heads up: some predator–prey hunting scenes, typical of nature documentaries.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "The Great British Garden Revival": {
+   "status": "ok",
+   "notes": "BBC gardening series on reviving British garden traditions; gentle and practical. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Americas": {
+   "status": "ok",
+   "notes": "Nature and history showcase of the Americas narrated by Tom Hanks; TV-PG. Heads up: some animal predation.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Unforgotten": {
+   "status": "ok",
+   "notes": "Rated TV-MA; cold-case murder investigations that are emotionally heavy and intense, against the family's preference to avoid bleak or punishing dramas.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Long Way Round": {
+   "status": "ok",
+   "notes": "The original Long Way motorcycle journey around the world; warm buddy travelogue. Heads up: rated TV-MA, so expect some strong language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Stanley Tucci: Searching for Italy": {
+   "status": "ok",
+   "notes": "Stanley Tucci travels Italy exploring regional cooking; warm food-and-travel series. Heads up: TV-14, occasional language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Grand Designs Australia": {
+   "status": "ok",
+   "notes": "Self-build home projects across Australia; calm and constructive. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Staged": {
+   "status": "ok",
+   "notes": "David Tennant and Michael Sheen rehearse a play over video calls during lockdown; witty, warm character comedy. Heads up: TV-14, some language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "No Activity (Australian series)": {
+   "status": "ok",
+   "notes": "No U.S. rating and too little information to confirm this cop spoof fits the family's language and tone limits.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Repair Shop: Fixing Britain": {
+   "status": "ok",
+   "notes": "Jay Blades explores the stories behind items restored on The Repair Shop; heartfelt and gentle. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Story of China": {
+   "status": "ok",
+   "notes": "Michael Wood's history of China over four thousand years; TV-PG. Heads up: some discussion of historical wars.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "The Great British Railway Journeys: Australia": {
+   "status": "ok",
+   "notes": "Michael Portillo's railway journeys across Australia with his historical handbook; TV-PG. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Rick Stein's India": {
+   "status": "ok",
+   "notes": "Rick Stein travels India exploring its cuisines; gentle food-and-travel series. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Mum": {
+   "status": "ok",
+   "notes": "Gentle, warm comedy about a widowed mother's year of new beginnings; TV-PG. Heads up: begins after a death in the family.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "The World According to Jeff Goldblum": {
+   "status": "ok",
+   "notes": "Jeff Goldblum explores the surprising stories behind everyday things like sneakers and ice cream; TV-PG. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Foyle's War": {
+   "status": "ok",
+   "notes": "Wartime detective drama set on England's south coast; measured and character-led. Heads up: murder investigations and WWII themes.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "war"
+    ],
+    "usRating": null
+   }
+  },
+  "Platonic": {
+   "status": "ok",
+   "notes": "Rated TV-MA; adult comedy with strong language and drug humour, beyond the family's moderate limits.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "This Country": {
+   "status": "ok",
+   "notes": "Gentle mockumentary about two cousins in a Cotswolds village; warm and character-led. Heads up: some strong language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Feel Good": {
+   "status": "ok",
+   "notes": "Comedy-drama about a comedian in recovery and an all-consuming relationship. Heads up: sexual content and addiction themes; TV-MA.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "The Job Lot": {
+   "status": "ok",
+   "notes": "Workplace sitcom set in a West Midlands job centre; light, character-led comedy. No major concerns noted.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Motherland": {
+   "status": "ok",
+   "notes": "Rated TV-MA; sharp, sweary comedy of competitive parenting with a cynical edge, outside the family's language and tone limits.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Slow Horses": {
+   "status": "ok",
+   "notes": "Rated TV-MA spy thriller with violence and strong language, beyond the family's mild-violence and moderate-language limits.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Rick Stein's Secret France": {
+   "status": "ok",
+   "notes": "Rick Stein searches rural France for its best food; gentle food-and-travel series. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Friday Night Dinner": {
+   "status": "ok",
+   "notes": "Family sitcom about two brothers' Friday dinners with their parents; warm and silly. Heads up: TV-14, some crude and slapstick humour.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "The Great British Food Revival": {
+   "status": "ok",
+   "notes": "BBC chefs champion traditional British produce; gentle and informative. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Chef Show": {
+   "status": "ok",
+   "notes": "Jon Favreau and Roy Choi cook with chefs and friends; relaxed food series. Heads up: rated TV-MA, so expect some casual strong language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Married to Real Estate": {
+   "status": "ok",
+   "notes": "HGTV renovation and real-estate series with a married couple; TV-G. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "The Food That Built America": {
+   "status": "ok",
+   "notes": "History of the families and inventions behind famous American foods; TV-PG. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "George Clarke's Amazing Spaces": {
+   "status": "ok",
+   "notes": "Architect George Clarke explores small, creative homes and builds; gentle and inspiring. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "James May: Our Man in Italy": {
+   "status": "ok",
+   "notes": "James May's warm, funny travelogue through Italy; TV-14. Heads up: occasional mild language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "mild",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "McDonald & Dodds": {
+   "status": "ok",
+   "notes": "Light-hearted odd-couple detective series set in Bath. Heads up: murder-mystery plots, handled without graphic detail.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Movies That Made Us": {
+   "status": "ok",
+   "notes": "Behind-the-scenes stories of popular blockbusters; entertaining. Heads up: rated TV-MA, so expect some strong language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "The Cabin Chronicles": {
+   "status": "ok",
+   "notes": "Explores the architecture and design of beautiful cabins; calm and inspiring. No content concerns.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Toys That Made Us": {
+   "status": "ok",
+   "notes": "The stories behind famous toy franchises; nostalgic and entertaining. Heads up: TV-14, occasional language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "A Discovery of Witches": {
+   "status": "ok",
+   "notes": "Strong supernatural and witchcraft themes, violence, sexual content and mature tone.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [
+     "supernatural"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "A Gentleman in Moscow": {
+   "status": "ok",
+   "notes": "Political oppression, violence and mature language; measured, character-driven pacing.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "A Million Little Things": {
+   "status": "ok",
+   "notes": "Grief, suicide, depression, illness, relationship conflict and emotionally heavy storylines.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "grief",
+     "suicide",
+     "depression",
+     "illness",
+     "heavy themes"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "A Place in the Sun": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Agatha Raisin": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations, crime scenes and occasional innuendo; tone is often comic but death is central to the mysteries.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "mild",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Alma's Not Normal": {
+   "status": "ok",
+   "notes": "Strong language, adult themes, family dysfunction and frank sexual references.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Alone": {
+   "status": "ok",
+   "notes": "Heads up: hunger, isolation, injuries, animal encounters and emotional distress; occasional medical emergencies.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Amazing Hotels: Life Beyond the Lobby": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "An Idiot Abroad": {
+   "status": "ok",
+   "notes": "TV-MA; adult language and crude humor are likely. Not a family-first recommendation given your content preferences.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Annika": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations and references to violence; some cases are grim, but the tone often has dry humor.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Anthony Bourdain: Parts Unknown": {
+   "status": "ok",
+   "notes": "Heads up: some episodes visit conflict-affected regions and explore war, poverty, political tension and difficult social realities. Occasional strong language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [
+     "war"
+    ],
+    "usRating": "TV-PG"
+   }
+  },
+  "Back": {
+   "status": "ok",
+   "notes": "Cynical humor, strong language and adult themes; deliberately awkward and dark in places.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Bad Sisters": {
+   "status": "ok",
+   "notes": "Dark humor, murder, domestic abuse, strong language, sexual references and disturbing situations.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "abuse",
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Bargain Block": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Belgravia": {
+   "status": "ok",
+   "notes": "Heads up: class conflict, infidelity, family secrets and mature relationship themes; limited violence.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "mild",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Belgravia: The Next Chapter": {
+   "status": "ok",
+   "notes": "Heads up: romantic and sexual relationship themes, social conflict and family secrets; not a light comedy.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Better Call Saul": {
+   "status": "ok",
+   "notes": "Violence, criminal activity, strong language, moral decline and a slow-burn dramatic pace.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Better Things": {
+   "status": "ok",
+   "notes": "Strong language, sexual references and frank adult situations; grounded family struggles can be emotionally raw.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Beyond Paradise": {
+   "status": "ok",
+   "notes": "Heads up: murder mysteries and occasional references to crime; generally gentler than many police procedurals.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Big Boys": {
+   "status": "ok",
+   "notes": "Strong language, sexual references, drinking and frank LGBTQ+ themes; mature comedy.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": null
+   }
+  },
+  "Big Dreams Small Spaces": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Big Little Lies": {
+   "status": "ok",
+   "notes": "Domestic violence, sexual assault themes, strong language, nudity and mature relationship content; emotionally dark.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "strong",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Black Books": {
+   "status": "ok",
+   "notes": "Adult language, drinking and cynical humor; relatively low-stakes but deliberately eccentric comedy.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [
+     "addiction",
+     "heavy themes"
+    ],
+    "usRating": "TV-PG"
+   }
+  },
+  "Bless This Mess": {
+   "status": "ok",
+   "notes": "Heads up: mild language and occasional adult jokes; generally light.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "mild",
+    "language": "mild",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Blown Away": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Blue Lights": {
+   "status": "ok",
+   "notes": "Crime, violence, threatening situations, strong language and intense subject matter. Not a light family drama.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Borgen": {
+   "status": "ok",
+   "notes": "Heads up: political conflict, adult relationships, some language and mature themes; not primarily violent.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "mild",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Bosch": {
+   "status": "ok",
+   "notes": "Murder, violence, crime-scene material and strong language; serious and sometimes bleak tone.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Bosch: Legacy": {
+   "status": "ok",
+   "notes": "Murder, violence, crime-scene material and strong language; continues the mature tone of Bosch.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Breeders": {
+   "status": "ok",
+   "notes": "Strong language, sexual references, angry outbursts and frank parenting stress; intentionally irreverent.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Broadchurch": {
+   "status": "ok",
+   "notes": "Child murder, grief, trauma, violence and intense emotional distress are central to the story. Strong mismatch for your preferences.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "strong",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "grief",
+     "trauma"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Building Off the Grid": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Burn Notice": {
+   "status": "ok",
+   "notes": "Heads up: action violence, gunfights, explosions and criminal threats; generally lighter in tone than many crime dramas.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Call the Midwife": {
+   "status": "ok",
+   "notes": "Heads up: childbirth, medical complications, infant and maternal deaths, poverty, illness and emotionally intense stories; rating may reflect mature themes.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "illness",
+     "heavy themes"
+    ],
+    "usRating": "TV-PG"
+   }
+  },
+  "Castle": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations, occasional violence, mild sexual content and language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Christina in the Country": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Christina on the Coast": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Corporate": {
+   "status": "ok",
+   "notes": "Dark and cynical humor, strong language, sexual references, disturbing workplace situations and bleak themes.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Dalgliesh": {
+   "status": "ok",
+   "notes": "Murder, occasional violence and somber subject matter; measured, atmospheric pacing.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": null
+   }
+  },
+  "Damages": {
+   "status": "ok",
+   "notes": "Strong language, violence, sexual content, disturbing themes and a consistently dark tone.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Dark Tourist": {
+   "status": "ok",
+   "notes": "Disturbing locations and subject matter, death, violence, tragedy and unsettling imagery.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Death and Other Details": {
+   "status": "ok",
+   "notes": "Murder, peril, violence and some sexual references; serialized plotting.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Death in Paradise": {
+   "status": "ok",
+   "notes": "Heads up: murder is central to every episode; crime-scene and death themes. TV-PG does not mean violence-free.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Designated Survivor": {
+   "status": "ok",
+   "notes": "Terrorism, violence, political threats and sustained suspense.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "terrorism"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Designing the Hebrides": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Detroiters": {
+   "status": "ok",
+   "notes": "Crude and awkward humor, sexual jokes and some language.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Deutschland 83": {
+   "status": "ok",
+   "notes": "Sexual content, violence, strong language, espionage danger and political tension.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Dream Home Makeover": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Endeavour": {
+   "status": "ok",
+   "notes": "Murder, some violence and mature themes; atmospheric and sometimes somber, with deliberate pacing.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Escape to the Chateau": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Escape to the Chateau: DIY": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Escape to the Country": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Father Brown": {
+   "status": "ok",
+   "notes": "Heads up: murder themes and occasional peril, but generally gentle and low on graphic violence.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Fisk": {
+   "status": "ok",
+   "notes": "Heads up: mild language, adult relationship references and dry, understated humor.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "mild",
+    "language": "mild",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Grand Designs": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Great British Home Restoration": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Great British Railway Journeys": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Monty Don's Italian Gardens": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Queens of Mystery": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations and crime themes are central. PBS describes darkly comic cases. Violence intensity and sexual-content details need episode-level review before recommending.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Restoration Australia": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Restoration Home": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Great British Sewing Bee": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "NR"
+   }
+  },
+  "The Hotel Inspector": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "The Nate and Jeremiah Home Project": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "The Repair Shop": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "The Repair Shop (UK)": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Your Home Made Perfect": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Better Off Ted": {
+   "notes": "Satirical workplace humor and ethically questionable corporate experiments are central themes. Detailed language/sexual-content episode guide not yet verified.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Great British Garden Revival": {
+   "notes": "Gentle factual gardening format; no episode-level content guide reviewed.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Gardeners' World": {
+   "notes": "Gentle, educational format; relaxed pacing and gardening demonstrations rather than dramatic competition.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": null
+   }
+  },
+  "Building Roots": {
+   "notes": "TV-G listing; renovation and construction scenes. Episode-level content guide not reviewed.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Detectorists": {
+   "notes": "TV-14 listing; gentle, slow-paced humor and occasional adult language. Not a fast-paced sitcom.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Antiques Roadshow": {
+   "notes": "Gentle factual format; no significant content concerns indicated by TV-G listing.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Down to Earth with Zac Efron": {
+   "notes": "Some health and environmental topics; no episode-level content guide reviewed.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "The Reluctant Traveler": {
+   "notes": "Gentle travel format; some mild language and social situations. Detailed episode-level guide not reviewed.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "mild",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Home Town": {
+   "notes": "Renovation challenges and emotional family stories; TV-G listing. Episode-level content guide not reviewed.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "The World's Most Extraordinary Homes": {
+   "notes": "Gentle factual architecture and travel format; no significant content concerns indicated by TV-G rating.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "11.22.63": {
+   "notes": "Murder, violence, disturbing historical events, adult language and mature themes. Not a light family watch.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Abbott Elementary": {
+   "notes": "Workplace and school humor, occasional adult language and relationship themes; generally a warm ensemble comedy.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Black Mirror": {
+   "notes": "Frequently dark, disturbing and bleak, with violence, sexual content and psychological horror varying by episode.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Blue Bloods": {
+   "notes": "Murder investigations, crime-scene material, violence and occasional strong language; family dinner scenes and moral debates are recurring elements.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Boardwalk Empire": {
+   "notes": "Graphic violence, strong language, sexual content, nudity, alcohol and drug use. Very poor fit for your content preferences.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "strong",
+    "sex": "strong",
+    "language": "strong",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "All Creatures Great and Small (original)": {
+   "notes": "Animal illness, veterinary procedures and occasional sad animal stories; generally gentle and warm.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "illness"
+    ],
+    "usRating": "TV-PG"
+   }
+  },
+  "Californication": {
+   "notes": "Frequent sexual content, nudity, strong language, alcohol and drug use. Strong mismatch for your preferences.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "strong",
+    "language": "strong",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "All Creatures Great and Small (modern)": {
+   "notes": "Animal illness, veterinary procedures and occasional sad animal outcomes; some emotional storylines. Generally warm in tone.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "illness"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Battlestar Galactica": {
+   "notes": "Frequent violence, war, death, peril and bleak moral dilemmas; serious and sometimes dark tone.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "war",
+     "heavy themes"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Brothers & Sisters": {
+   "notes": "Family conflict, grief, infidelity, adult relationships and emotional storylines; drama-forward rather than comedy.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "mild",
+    "language": "none",
+    "themes": [
+     "grief"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Bargain Mansions": {
+   "notes": "Renovation and construction scenes; no significant content concerns indicated by TV-G listing.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "12 Monkeys": {
+   "notes": "Frequent violence, peril, disturbing plague imagery and bleak post-apocalyptic themes; supernatural/fantasy-adjacent science fiction.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "supernatural",
+     "heavy themes"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "30 Rock": {
+   "notes": "Fast, joke-dense comedy with frequent sexual references, adult language and some crude humor.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "A Man on the Inside": {
+   "notes": "Some adult language and mild relationship humor; generally warm comic-mystery tone.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "A Series of Unfortunate Events": {
+   "notes": "Persistent peril, child endangerment, dark humor and gothic atmosphere; stylized rather than graphic.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "strong",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-PG"
+   }
+  },
+  "Andor": {
+   "notes": "War violence, executions, torture, oppression and tense political themes; serious, often grim tone.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "strong",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "war"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Acapulco": {
+   "notes": "Romance, innuendo, some adult language and occasional sexual humor.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "A.P. Bio": {
+   "notes": "Cynical humor, adult language, sexual references and mean-spirited comic situations.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Arrested Development": {
+   "notes": "Rapid-fire innuendo, adult language, sexual references and intentionally dysfunctional characters.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Atlanta": {
+   "notes": "Frequent strong language, sexual content, violence, unsettling surreal episodes and bleak or uncomfortable themes.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Breaking Bad": {
+   "notes": "Extreme violence, drug use, murder, sexual content, disturbing scenes and sustained bleakness.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [
+     "addiction",
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "A Very English Scandal": {
+   "notes": "Mature themes, sexuality, homophobia, political scandal and a murder plot; not a light comedy.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Chernobyl": {
+   "notes": "Extremely disturbing injury imagery, radiation sickness, death, suffering and intense dread.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Chuck": {
+   "notes": "Frequent action violence and peril, occasional sexual humor and language; generally playful rather than grim.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Bodyguard": {
+   "notes": "Intense violence, terrorism, bomb threats, gunfire, strong language and sustained tension.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [
+     "terrorism"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "American Housewife": {
+   "notes": "Some suggestive jokes, mild language and family/social satire.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "mild",
+    "themes": [],
+    "usRating": "TV-PG"
+   }
+  },
+  "Billions": {
+   "notes": "Frequent strong language, sexual content, drug use, manipulation and morally cynical behavior.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "addiction",
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
+  },
+  "Blue Planet II": {
+   "notes": "Predation, animal injury and natural survival sequences; some scenes may be intense.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "mild",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-G"
+   }
+  },
+  "Catastrophe": {
+   "notes": "Strong language, explicit sexual humor, adult relationship themes and some crude comedy.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "strong",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Colin from Accounts": {
+   "notes": "Raunchy humor, strong language, sexual references and adult situations; definitely not family viewing.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Cobra Kai": {
+   "notes": "Frequent martial-arts fights, bullying, teen relationship drama and some strong language; action violence is stylized rather than graphic.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "strong",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Black-ish": {
+   "notes": "Some sexual references, language and social/political topics; generally a mainstream network sitcom.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Chicago P.D.": {
+   "notes": "Frequent violence, shootings, crime-scene imagery, strong language and intense themes.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Community": {
+   "notes": "Sexual jokes, occasional language and irreverent humor; generally not graphic.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Conan O'Brien Must Go": {
+   "notes": "Strong language, adult jokes and irreverent humor; some crude moments.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "mild",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Cougar Town": {
+   "notes": "Frequent sexual references, drinking and adult relationship humor.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "none",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Crazy Ex-Girlfriend": {
+   "notes": "Musical numbers throughout, sexual humor, mental-health themes and occasional strong language.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Derry Girls": {
+   "notes": "Strong language, sexual references, irreverent humor and occasional references to political violence.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Chef's Table": {
+   "notes": "Some mature language and occasional intense kitchen or food imagery; generally focused on food and biography.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [],
+    "usRating": "TV-MA"
+   }
+  },
+  "Downton Abbey": {
+   "notes": "Some mature relationship themes, grief, illness, war-related storylines and occasional language; generally restrained.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "moderate",
+    "themes": [
+     "grief",
+     "war",
+     "illness"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Elementary": {
+   "notes": "Murder investigations, crime-scene details, occasional violence and references to addiction.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [
+     "addiction"
+    ],
+    "usRating": "TV-14"
+   }
+  },
+  "Elsbeth": {
+   "notes": "Murder cases, occasional violence and mild adult themes; generally lighter in tone than many crime dramas.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "moderate",
+    "sex": "none",
+    "language": "none",
+    "themes": [],
+    "usRating": "TV-14"
+   }
+  },
+  "Episodes": {
+   "notes": "Strong language, sexual content, adult jokes and cynical show-business humor.",
+   "reviewed": "November 5, 2026",
+   "levels": {
+    "violence": "none",
+    "sex": "moderate",
+    "language": "strong",
+    "themes": [
+     "heavy themes"
+    ],
+    "usRating": "TV-MA"
+   }
   }
  }
 }

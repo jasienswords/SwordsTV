@@ -16,11 +16,11 @@ const MIN_SHOWN_BY_TYPE = {network: 5}; // channels are noisier, so need more
 const COUNTRY_NAMES = {GB: 'British', US: 'American', CA: 'Canadian', AU: 'Australian', IE: 'Irish', NZ: 'New Zealand',
   DE: 'German', FR: 'French', ES: 'Spanish', DK: 'Danish', IT: 'Italian', BE: 'Belgian', KR: 'Korean', SE: 'Swedish', NO: 'Norwegian'};
 
-// The family's content limits, matched against TMDB keywords.
+// Themes pushed down in For You when TMDB keywords mention them. (Violence, sexual content and
+// language aren't penalised here: they're shown as tags and handled by the strong-content rule.)
 const CONTENT_LIMITS = [
   {label: 'Gore or disturbing violence', re: /\b(gore|gory|graphic violence|torture|serial killer|cannibal|body horror|splatter|massacre)\b/},
   {label: 'Bleak or hopeless', re: /\b(dystopia|dystopian|post-apocalyptic|apocalypse|nihilism|suicide|genocide)\b/},
-  {label: 'Heavy sexual content', re: /\b(erotic|eroticism|nudity|prostitut\w*|pornograph\w*|sex work\w*)\b/},
   {label: 'Heavy supernatural or fantasy', re: /\b(supernatural|vampire|zombie|werewolf|demon|witchcraft|dark fantasy|occult)\b/}
 ];
 
