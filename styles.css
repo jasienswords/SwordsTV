@@ -309,3 +309,13 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .spotlight .spot-about{color:rgba(255,255,255,.92);font-size:14px;margin:10px 0 0}
 .spotlight .spot-why{color:rgba(255,255,255,.85);font-size:13px;margin:10px 0 0;padding:10px 12px;border-radius:10px;background:rgba(0,0,0,.35);border-left:3px solid var(--gold)}
 .spotlight .spot-why strong{display:block;font-size:10px;letter-spacing:1.4px;text-transform:uppercase;color:#f6e3b4;margin-bottom:3px}
+
+/* Icon buttons on poster cards */
+.rec-actions.icons{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-top:4px}
+.rec-actions.icons button{display:grid;place-items:center;height:34px;padding:0;flex:none;border-radius:10px;color:var(--muted)}
+.rec-actions.icons button svg{width:18px;height:18px;fill:currentColor}
+.rec-actions.icons button[data-act="next"]{border-color:var(--gold);color:var(--gold2)}
+.rec-actions.icons button[data-act="no"]{flex:none}
+.rec-actions.icons button:active{transform:scale(.94)}
+.grid.rail>.show{display:flex;flex-direction:column}
+.grid.rail>.show>.rec-actions{margin-top:auto}
