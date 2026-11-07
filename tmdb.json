@@ -4181,7 +4181,57 @@
    "match": "name",
    "castCheck": 4
   },
-  "Brothers": null,
+  "Brothers": {
+   "id": 250203,
+   "name": "Brothers",
+   "year": "2026",
+   "endYear": "2026",
+   "status": "Returning Series",
+   "seasons": 1,
+   "episodes": 8,
+   "overview": "Hollywood actors Matthew McConaughey and Woody Harrelson have been best friends for years, but a shocking family secret suggests their connection might be closer.",
+   "genres": [
+    "Comedy"
+   ],
+   "networks": [
+    {
+     "name": "Apple TV",
+     "logo": "/bngHRFi794mnMq34gfVcm9nDxN1.png"
+    }
+   ],
+   "poster": "/jD7ZQpDEZzAVReJzkOtmuFoIl2m.jpg",
+   "backdrop": "/aLE7R8QZPpTiWZS48PS22i2OWbl.jpg",
+   "cast": [
+    "Matthew McConaughey",
+    "Woody Harrelson",
+    "Natalie Martinez",
+    "Brittany Ishibashi",
+    "Nolan Almeida",
+    "Ella Grace Helton",
+    "Noah Carganilla",
+    "Highdee Kuan"
+   ],
+   "rating": "TV-MA",
+   "imdb": "tt6773088",
+   "providers": {
+    "link": "https://www.themoviedb.org/tv/250203-brothers/watch?locale=US",
+    "stream": [
+     {
+      "name": "Apple TV",
+      "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+     },
+     {
+      "name": "Apple TV Amazon Channel",
+      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+     }
+    ],
+    "free": [],
+    "ads": [],
+    "buy": [],
+    "rent": []
+   },
+   "match": "manual"
+  },
   "Brothers & Sisters": {
    "id": 341,
    "name": "Brothers and Sisters",
@@ -6024,7 +6074,67 @@
    "match": "name",
    "castCheck": 4
   },
-  "Dark Matter": null,
+  "Dark Matter": {
+   "id": 196322,
+   "name": "Dark Matter",
+   "year": "2024",
+   "endYear": "2026",
+   "status": "Returning Series",
+   "seasons": 2,
+   "episodes": 19,
+   "overview": "Jason Dessen is abducted into an alternate version of his life. To get back to his real family, he embarks on a harrowing journey to save them from the most terrifying foe imaginable: himself.",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Drama"
+   ],
+   "networks": [
+    {
+     "name": "Apple TV",
+     "logo": "/bngHRFi794mnMq34gfVcm9nDxN1.png"
+    }
+   ],
+   "poster": "/2DPmTlv8F0V1TQBPmlsGOVOhtWk.jpg",
+   "backdrop": "/wFEAy4xRes1eeclsu7Z73Vzz7ET.jpg",
+   "cast": [
+    "Joel Edgerton",
+    "Jennifer Connelly",
+    "Alice Braga",
+    "Jimmi Simpson",
+    "Dayo Okeniyi",
+    "Oakes Fegley",
+    "Amanda Brugel",
+    "William Smillie"
+   ],
+   "rating": "TV-MA",
+   "imdb": "tt19231492",
+   "providers": {
+    "link": "https://www.themoviedb.org/tv/196322-dark-matter/watch?locale=US",
+    "stream": [
+     {
+      "name": "Apple TV",
+      "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+     },
+     {
+      "name": "Apple TV Amazon Channel",
+      "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+     }
+    ],
+    "free": [
+     {
+      "name": "Amazon Prime Video",
+      "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+     },
+     {
+      "name": "Apple TV",
+      "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+     }
+    ],
+    "ads": [],
+    "buy": [],
+    "rent": []
+   },
+   "match": "manual"
+  },
   "Dark Tourist": {
    "id": 81002,
    "name": "Dark Tourist",
@@ -36617,7 +36727,83 @@
    },
    "match": "name"
   },
-  "The Staircase": null,
+  "The Staircase": {
+   "id": 122196,
+   "name": "The Staircase",
+   "year": "2022",
+   "endYear": "2022",
+   "status": "Ended",
+   "seasons": 1,
+   "episodes": 8,
+   "overview": "An exploration of the life of Michael Peterson, his sprawling North Carolina family, and the suspicious death of his wife, Kathleen Peterson.",
+   "genres": [
+    "Drama",
+    "Crime"
+   ],
+   "networks": [
+    {
+     "name": "HBO Max",
+     "logo": "/nmU0UMDJB3dRRQSTUqawzF2Od1a.png"
+    }
+   ],
+   "poster": "/jiAcdCyf1UbWYBImcNtVeLW0pRj.jpg",
+   "backdrop": "/rtDGYw9xUh4bdrIdjzUuvVHS7kb.jpg",
+   "cast": [
+    "Colin Firth",
+    "Toni Collette",
+    "Michael Stuhlbarg",
+    "Dane DeHaan",
+    "Olivia DeJonge",
+    "Patrick Schwarzenegger",
+    "Sophie Turner",
+    "Odessa Young"
+   ],
+   "rating": "TV-MA",
+   "imdb": "tt11324406",
+   "providers": {
+    "link": "https://www.themoviedb.org/tv/122196-the-staircase/watch?locale=US",
+    "stream": [
+     {
+      "name": "Netflix",
+      "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+     },
+     {
+      "name": "HBO Max Amazon Channel",
+      "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+     },
+     {
+      "name": "Netflix Standard with Ads",
+      "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+     },
+     {
+      "name": "HBO Max",
+      "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+     }
+    ],
+    "free": [],
+    "ads": [],
+    "buy": [
+     {
+      "name": "Amazon Video",
+      "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+     },
+     {
+      "name": "Apple TV Store",
+      "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+     },
+     {
+      "name": "Google Play Movies",
+      "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+     },
+     {
+      "name": "Fandango At Home",
+      "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+     }
+    ],
+    "rent": []
+   },
+   "match": "manual"
+  },
   "The Story of China": {
    "id": 73004,
    "name": "The Story of China",
