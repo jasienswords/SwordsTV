@@ -19,16 +19,17 @@ const STORAGE="swordstv_v1_user_changes";
 let changes=JSON.parse(localStorage.getItem(STORAGE)||"{}"),currentTitle=null,currentView="home",searchTerm="",ratingFilter="All";
 const colors=[["#35566b","#172536"],["#76533e","#2a1b20"],["#4e6470","#1c2b3b"],["#796b48","#29251d"],["#5c496d","#211c32"],["#3d6b5e","#182b2a"],["#76505c","#2b1b2a"],["#4b5c82","#1a2039"]];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function allShows(){return DATA.catalog.map(x=>{let c=changes[x.title]||{},legacyStatus=x.status||"Unwatched";return {...x,...c,seriesComplete:c.seriesComplete??["Ended","Canceled"].includes((TMDB[x.title]||{}).status),libraryStatus:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library"),watched:c.watched??(c.status==="Watched"||legacyStatus==="Watched"),status:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library")}}).sort((a,b)=>a.title.localeCompare(b.title))}
+function allShowsRaw(){return DATA.catalog.map(x=>{let c=changes[x.title]||{},legacyStatus=x.status||"Unwatched";return {...x,...c,seriesComplete:c.seriesComplete??["Ended","Canceled"].includes((TMDB[x.title]||{}).status),libraryStatus:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library"),watched:c.watched??(c.status==="Watched"||legacyStatus==="Watched"),status:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library")}}).sort((a,b)=>a.title.localeCompare(b.title))}
+function allShows(){return allShowsRaw().map(s=>s.libraryStatus==="Up Next"?{...s,libraryStatus:"Want to Watch",status:"Want to Watch",rank:s.rank??-1}:s)}
 function getShow(t){return allShows().find(x=>x.title===t)}
 function art(title){let h=0;for(let c of title)h=(h*31+c.charCodeAt(0))>>>0;return colors[h%colors.length]}
 function poster(s,small=false){let [a,b]=art(s.title),t=tm(s.title),src=t&&img(t.poster,"w342");return `<div class="poster${src?" has-img":""}" style="--c1:${a};--c2:${b}">${src?`<img class="poster-img" src="${src}" alt="" loading="lazy" decoding="async" crossorigin="anonymous" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:""}${DISCOVERED[s.title]&&!RATINGS.includes(s.rating)?`<span class="tag r-next">New find</span>`:`<span class="tag r-${({Loved:"loved",Liked:"liked",Okay:"okay",Disliked:"disliked"})[s.rating]||"none"}">${esc(shownRating(s))}</span>`}<div class="poster-title">${esc(s.title)}</div></div>`}
 function captionOf(s){const l=listLabel(s);if(RATINGS.includes(s.rating)||l!=="Not on a list")return shownRating(s)+" · "+l;const t=tm(s.title)||{};return [(t.genres||[])[0],((t.networks||[])[0]||{}).name].filter(Boolean).join(" · ")||"Not rated"}
-const REC_ACTIONS=`<div class="rec-actions"><button data-act="next" aria-label="Add to Up Next">＋ Up Next</button><button data-act="later" aria-label="Remind me later">Later</button><button data-act="no" aria-label="Not interested">✕</button></div>`;
+const REC_ACTIONS=`<div class="rec-actions"><button data-act="next" aria-label="Add to Want to Watch">＋ Want to Watch</button><button data-act="later" aria-label="Remind me later">Later</button><button data-act="no" aria-label="Not interested">✕</button></div>`;
 // Compact icon version for poster cards (thumbs up = Up Next, alarm clock = Later, thumbs down = Not interested).
 const ICON=d=>`<svg viewBox="0 0 24 24" aria-hidden="true"><path d="${d}"/></svg>`;
 const REC_ICONS=`<div class="rec-actions icons">`
- +`<button data-act="next" aria-label="Add to Up Next" title="Add to Up Next">${ICON("M2 21h4V9H2v12zm20-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L13.17 1 6.59 7.59C6.22 7.95 6 8.45 6 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z")}</button>`
+ +`<button data-act="next" aria-label="Add to Want to Watch" title="Add to Want to Watch">${ICON("M2 21h4V9H2v12zm20-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L13.17 1 6.59 7.59C6.22 7.95 6 8.45 6 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2z")}</button>`
  +`<button data-act="later" aria-label="Remind me later" title="Remind me later">${ICON("M22 5.72l-4.6-3.86-1.29 1.53 4.6 3.86L22 5.72zM7.88 3.39L6.6 1.86 2 5.71l1.29 1.53 4.59-3.85zM12.5 8H11v6l4.75 2.85.75-1.23-4-2.37V8zM12 4c-4.97 0-9 4.03-9 9s4.02 9 9 9c4.97 0 9-4.03 9-9s-4.03-9-9-9zm0 16c-3.87 0-7-3.13-7-7s3.13-7 7-7 7 3.13 7 7-3.13 7-7 7z")}</button>`
  +`<button data-act="no" aria-label="Not interested" title="Not interested">${ICON("M15 3H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 23l6.59-6.59c.36-.36.58-.86.58-1.41V5c0-1.1-.9-2-2-2zm4 0v12h4V3h-4z")}</button></div>`;
 function card(s,extra,rec){return `<article class="show" data-title="${esc(s.title)}">${poster(s)}<div class="show-meta"><strong>${esc(s.title)}</strong><span>${esc(captionOf(s))}</span>${extra?`<small class="next-ep">${esc(extra)}</small>`:""}</div>${rec?REC_ICONS:""}</article>`}
@@ -37,8 +38,8 @@ function recRail(list){return `<div class="grid rail">${list.map(s=>card(s,null,
 const SNOOZE_DAYS=30;
 function recAction(title,act){
  const c=changes[title]||{},prev={libraryStatus:c.libraryStatus??"Not in My Library",status:c.status??"Not in My Library",snoozeUntil:c.snoozeUntil||0,dismissed:!!c.dismissed};
- const msg={next:"Added to Up Next",later:`Hidden for ${SNOOZE_DAYS} days`,no:"Won't suggest it again"}[act];
- const obj=act==="next"?{libraryStatus:"Up Next",status:"Up Next"}:act==="later"?{snoozeUntil:Date.now()+SNOOZE_DAYS*864e5}:{dismissed:true};
+ const msg={next:"Added to Want to Watch",later:`Hidden for ${SNOOZE_DAYS} days`,no:"Won't suggest it again"}[act];
+ const obj=act==="next"?{libraryStatus:"Want to Watch",status:"Want to Watch",rank:nextRank()}:act==="later"?{snoozeUntil:Date.now()+SNOOZE_DAYS*864e5}:{dismissed:true};
  saveChange(title,obj,{msg,undo:()=>saveChange(title,prev,{msg:"Undone"})});
 }
 const RATINGS=["Loved","Liked","Okay","Disliked"];
@@ -135,14 +136,44 @@ function renderLibrary(){
 }
 
 // ── Watchlist: what you're watching now, and what's next ──
+// ── My Queue ──
+// Up Next: shows you're watching that are releasing episodes weekly right now (automatic).
+// Watching: the rest of what you're watching. Want to Watch: not started yet, in your own drag-to-reorder order.
+const DAYS=["Sundays","Mondays","Tuesdays","Wednesdays","Thursdays","Fridays","Saturdays"];
+const dayOf=d=>new Date(d+"T12:00:00").getDay();
+function isReleasing(s){const t=tm(s.title);if(!t||["Ended","Canceled"].includes(t.status))return false;const today=new Date().toISOString().slice(0,10);
+ const ago=d=>Math.floor((Date.parse(today+"T12:00:00Z")-Date.parse(d+"T12:00:00Z"))/864e5);
+ return !!((t.nextEpisode&&t.nextEpisode.date&&ago(t.nextEpisode.date)>=-14&&ago(t.nextEpisode.date)<=0)||(t.lastEpisode&&t.lastEpisode.date&&ago(t.lastEpisode.date)>=0&&ago(t.lastEpisode.date)<=8))}
+function releaseService(s){if(s.releaseService)return s.releaseService;const t=tm(s.title)||{},p=t.providers||{},active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
+ const mine=(p.stream||[]).map(x=>serviceFor(x.name)).find(n=>n&&active.has(n));return mine||(((p.stream||[])[0]||{}).name)||(((t.networks||[])[0]||{}).name)||""}
+function releaseDay(s){if(s.releaseDay!=null&&s.releaseDay!=="")return +s.releaseDay;const t=tm(s.title)||{},d=(t.nextEpisode&&t.nextEpisode.date)||(t.lastEpisode&&t.lastEpisode.date);return d?dayOf(d):null}
+function releaseText(s){const d=releaseDay(s),svc=releaseService(s);return [d!=null?"New episodes "+DAYS[d]:"New episodes weekly",svc].filter(Boolean).join(" · ")}
+function daysUntil(day){if(day==null)return 99;const now=new Date().getDay();return (day-now+7)%7}
+function wantList(all){return all.filter(s=>s.libraryStatus==="Want to Watch").sort((a,b)=>(a.rank??1e9)-(b.rank??1e9)||(a._t||0)-(b._t||0)||a.title.localeCompare(b.title))}
 function renderWatchlist(){
- const all=allShows(),next=all.filter(s=>s.libraryStatus==="Up Next"),watching=all.filter(s=>s.libraryStatus==="Watching"),want=all.filter(s=>s.libraryStatus==="Want to Watch");
- return `${heading("My Queue",`${next.length} up next · ${watching.length} watching · ${want.length} want to watch`)}`
-  +`<h4 class="group-head">Up Next <span>${next.length}</span></h4>`+(next.length?gridOf(next):`<div class="empty">Tap “＋ Up Next” on any recommendation to line it up here.</div>`)
-  +`<h4 class="group-head">Watching <span>${watching.length}</span></h4>`+(watching.length?gridOf(watching,nextEpisodeText):`<div class="empty">Nothing in progress. Open a show and tap “Add as Watching”.</div>`)
-  +`<h4 class="group-head">Want to Watch <span>${want.length}</span></h4>`+(want.length?gridOf(want):`<div class="empty">Nothing saved yet. Tap “Want to Watch” on any show.</div>`)
+ const all=allShows(),watching=all.filter(s=>s.libraryStatus==="Watching"),upNext=watching.filter(isReleasing).sort((a,b)=>daysUntil(releaseDay(a))-daysUntil(releaseDay(b))),
+  rest=watching.filter(s=>!isReleasing(s)),want=wantList(all);
+ return `${heading("My Queue",`${upNext.length} up next · ${rest.length} watching · ${want.length} want to watch`)}`
+  +`<h4 class="group-head">Up Next <span>${upNext.length}</span></h4>`+(upNext.length?gridOf(upNext,releaseText):`<div class="empty">Shows you're watching that release new episodes each week appear here automatically.</div>`)
+  +`<h4 class="group-head">Watching <span>${rest.length}</span></h4>`+(rest.length?gridOf(rest,nextEpisodeText):`<div class="empty">Nothing else in progress. Open a show and choose “Watching”.</div>`)
+  +`<h4 class="group-head">Want to Watch <span>${want.length}</span></h4>`
+  +(want.length?`<p class="muted" style="margin:-4px 0 10px">Drag ≡ to set your priority order.</p><ol class="want-list" id="wantList">${want.map((s,i)=>{const t=tm(s.title)||{},src=img(t.poster,"w154");
+    return `<li class="want-row" data-title="${esc(s.title)}"><span class="want-rank">${i+1}</span>${src?`<img src="${src}" alt="" loading="lazy" crossorigin="anonymous">`:`<span class="want-thumb"></span>`}<span class="want-name"><strong>${esc(s.title)}</strong><small>${esc(captionOf(s))}</small></span><button class="drag" aria-label="Drag to reorder ${esc(s.title)}" data-no-open>≡</button></li>`}).join("")}</ol>`
+   :`<div class="empty">Nothing saved yet. Tap 👍 on a recommendation, or choose “Want to Watch” on any show.</div>`)
   +`<div class="note">When you rate a show you've finished, it moves to My Library.</div>`;
 }
+// Drag ≡ to reorder Want to Watch (touch and mouse); the order is synced for the family.
+function bindWantDrag(){const list=document.getElementById("wantList");if(!list)return;
+ list.querySelectorAll(".want-row").forEach(row=>row.onclick=e=>{if(!e.target.closest("[data-no-open]"))openDetail(row.dataset.title)});
+ list.querySelectorAll(".drag").forEach(h=>h.onpointerdown=e=>{e.preventDefault();const row=h.closest(".want-row"),rows=[...list.children],startY=e.clientY,h0=row.getBoundingClientRect().height+8;
+  row.classList.add("dragging");h.setPointerCapture(e.pointerId);let to=rows.indexOf(row);const from=to;
+  h.onpointermove=ev=>{const dy=ev.clientY-startY;row.style.transform=`translateY(${dy}px)`;to=Math.max(0,Math.min(rows.length-1,from+Math.round(dy/h0)));
+   rows.forEach((r,i)=>{if(r===row)return;r.style.transform=i>from&&i<=to?`translateY(${-h0}px)`:i<from&&i>=to?`translateY(${h0}px)`:""})};
+  h.onpointerup=h.onpointercancel=()=>{h.onpointermove=h.onpointerup=h.onpointercancel=null;rows.forEach(r=>r.style.transform="");row.classList.remove("dragging");
+   if(to!==from){const order=rows.map(r=>r.dataset.title);order.splice(to,0,order.splice(from,1)[0]);setWantOrder(order)}}})}
+function nextRank(){return wantList(allShows()).reduce((m,s)=>Math.max(m,s.rank??-1),-1)+1}
+function setWantOrder(order){const now=Date.now();order.forEach((t,i)=>{changes[t]={...(changes[t]||{}),libraryStatus:"Want to Watch",status:"Want to Watch",rank:i,_t:now}});
+ localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();toast("Priority order saved");render()}
 
 
 // ── Taste Profile: learned from your ratings ──
@@ -261,7 +292,7 @@ function renderDetail(){
  }
  document.getElementById("main").innerHTML=`<button class="back" id="backBtn">‹ Back</button><section class="show-detail">
 <div class="detail-hero${bd?" has-bd":""}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="detail-poster">${poster(s)}</div><div class="detail-heading">${meta.length?`<div class="meta-line">${meta.map(esc).join('<span class="dot">·</span>')}</div>`:""}<h2>${esc(s.title)}</h2><div class="service-row"><span class="pill gold">${esc(shownRating(s))}</span>${listLabel(s)!=="Not on a list"?`<span class="pill">${esc(listLabel(s))}</span>`:""}<span class="pill">${s.watched?"Watched":"Not watched"}</span></div></div></div>
-${contentTags(s)}<div class="detail-actions"><button class="btn primary" id="rateThis">✦ Rate It</button><div class="list-pick"><span>My Queue</span><div class="seg">${["Up Next","Watching","Want to Watch"].map(v=>`<button type="button" class="${s.libraryStatus===v?"on":""}" data-list="${v}" aria-pressed="${s.libraryStatus===v}">${s.libraryStatus===v?"✓ ":""}${v}</button>`).join("")}</div></div>${s.libraryStatus==="Watching"?`<div class="done-ask"><span>${isOngoing(s)?"Caught up on all the seasons so far?":"Finished watching it?"}</span><button class="btn" id="markCompleted">${isOngoing(s)?"Yes, I’m caught up":"Yes, mark as watched"}</button></div>`:""}</div>
+${contentTags(s)}<div class="detail-actions"><button class="btn primary" id="rateThis">✦ Rate It</button><div class="list-pick"><span>My Queue</span><div class="seg">${["Watching","Want to Watch"].map(v=>`<button type="button" class="${s.libraryStatus===v?"on":""}" data-list="${v}" aria-pressed="${s.libraryStatus===v}">${s.libraryStatus===v?"✓ ":""}${v}</button>`).join("")}</div></div>${s.libraryStatus==="Watching"&&isReleasing(s)?`<div class="release-edit"><span>In <strong>Up Next</strong>: new episodes</span><select id="relDay"><option value="">Day…</option>${DAYS.map((d,i)=>`<option value="${i}" ${releaseDay(s)===i?"selected":""}>${d}</option>`).join("")}</select><span>on</span><select id="relSvc">${[...new Set([releaseService(s),...getSubscriptions().map(x=>x.name),...((tm(s.title)||{}).networks||[]).map(n=>n.name)].filter(Boolean))].map(n=>`<option ${n===releaseService(s)?"selected":""}>${esc(n)}</option>`).join("")}</select></div>`:""}${s.libraryStatus==="Watching"?`<div class="done-ask"><span>${isOngoing(s)?"Caught up on all the seasons so far?":"Finished watching it?"}</span><button class="btn" id="markCompleted">${isOngoing(s)?"Yes, I’m caught up":"Yes, mark as watched"}</button></div>`:""}</div>
 ${(()=>{if(s.rating in RATING_WEIGHT||s.watched)return "";const w=whyText(matchShow(s.title,buildProfile(allShows())));const snz=(s.snoozeUntil||0)>Date.now();return `<div class="why-card">${w?`<strong>Why it's for you</strong>${esc(w)}`:""}<div class="pick-actions"><button type="button" data-hide="later" class="${snz?"on":""}" aria-pressed="${snz}">${snz?"✓ Later (until "+new Date(s.snoozeUntil).toLocaleDateString("en-US",{month:"short",day:"numeric"})+")":"Later"}</button><button type="button" data-hide="no" class="${s.dismissed?"on":""}" aria-pressed="${!!s.dismissed}">${s.dismissed?"✓ Not interested":"Not interested"}</button></div></div>`})()}<div class="detail-content">
 <div class="card"><h3 class="card-title">Where to Watch</h3>${renderWhere(r,t)}</div>
 <div class="card"><h3 class="card-title">Ratings &amp; Reviews</h3>${renderRatingPanel(r||scoreResearch(s.title),t)}</div>
@@ -270,13 +301,14 @@ ${note}</div></section>`;
  document.getElementById("backBtn").onclick=()=>{currentView=previousView;render();window.scrollTo(0,previousScroll)};
  syncWelcome();bindRecActions();
  document.getElementById("rateThis").onclick=()=>openRate(s.title);
- document.querySelectorAll("[data-list]").forEach(b=>b.onclick=()=>{const v=b.dataset.list,on=getShow(s.title).libraryStatus===v,ls=on?"Not in My Library":v;saveChange(s.title,{libraryStatus:ls,status:ls,...(on?{}:{dismissed:false,snoozeUntil:0})},{msg:on?"Removed from My Queue":"Added to "+v})});
+ const rd=document.getElementById("relDay"),rs=document.getElementById("relSvc");if(rd)rd.onchange=()=>saveChange(s.title,{releaseDay:rd.value},{msg:"Release day saved"});if(rs)rs.onchange=()=>saveChange(s.title,{releaseService:rs.value},{msg:"Service saved"});
+ document.querySelectorAll("[data-list]").forEach(b=>b.onclick=()=>{const v=b.dataset.list,on=getShow(s.title).libraryStatus===v,ls=on?"Not in My Library":v;saveChange(s.title,{libraryStatus:ls,status:ls,...(on?{}:{dismissed:false,snoozeUntil:0}),...(ls==="Want to Watch"?{rank:nextRank()}:{})},{msg:on?"Removed from My Queue":"Added to "+v})});
  document.querySelectorAll("[data-hide]").forEach(b=>b.onclick=()=>{const cur=getShow(s.title);if(b.dataset.hide==="later"){const on=(cur.snoozeUntil||0)>Date.now();saveChange(s.title,{snoozeUntil:on?0:Date.now()+SNOOZE_DAYS*864e5,...(on?{}:{dismissed:false})},{msg:on?"It can be suggested again":`Hidden for ${SNOOZE_DAYS} days`})}else{const on=!!cur.dismissed;saveChange(s.title,{dismissed:!on,...(on?{}:{snoozeUntil:0,libraryStatus:"Not in My Library",status:"Not in My Library"})},{msg:on?"It can be suggested again":"Won't suggest it again"})}});
  
  const mc=document.getElementById("markCompleted");if(mc)mc.onclick=()=>{saveChange(s.title,{completed:true,watched:true,libraryStatus:"Not in My Library",status:"Not in My Library"});if(!RATINGS.includes(getShow(s.title).rating))openRate(s.title);else toast("Moved to My Library")};
 }
 function bindRecActions(){document.querySelectorAll(".rec-actions button").forEach(b=>b.onclick=e=>{e.stopPropagation();const host=b.closest("[data-title]");recAction(host?host.dataset.title:currentTitle,b.dataset.act)})}
-function render(){document.getElementById("main").innerHTML=currentView==="search"?renderSearch():currentView==="home"?renderHome():currentView==="library"?renderLibrary():currentView==="watchlist"?renderWatchlist():renderProfile();document.querySelectorAll(".show").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));document.querySelectorAll("[data-title]:not(.show)").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));if(currentView==="library"){let q=document.getElementById("search");q.oninput=e=>{searchTerm=e.target.value;let pos=q.selectionStart;render();let n=document.getElementById("search");n.focus();n.setSelectionRange(pos,pos)};let f=document.getElementById("ratingFilter");f.value=ratingFilter;f.onchange=e=>{ratingFilter=e.target.value;render()}}let sb=document.getElementById("saveSubs");if(sb)sb.onclick=saveSubscriptions;syncWelcome();;if(currentView==="search")bindSearch();document.getElementById("searchBtn").classList.toggle("active",currentView==="search");bindRecActions();document.querySelectorAll("[data-unhide]").forEach(b=>b.onclick=()=>saveChange(b.dataset.unhide,{dismissed:false,snoozeUntil:0},{msg:"It can be suggested again"}))}
+function render(){document.getElementById("main").innerHTML=currentView==="search"?renderSearch():currentView==="home"?renderHome():currentView==="library"?renderLibrary():currentView==="watchlist"?renderWatchlist():renderProfile();document.querySelectorAll(".show").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));document.querySelectorAll("[data-title]:not(.show)").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));if(currentView==="library"){let q=document.getElementById("search");q.oninput=e=>{searchTerm=e.target.value;let pos=q.selectionStart;render();let n=document.getElementById("search");n.focus();n.setSelectionRange(pos,pos)};let f=document.getElementById("ratingFilter");f.value=ratingFilter;f.onchange=e=>{ratingFilter=e.target.value;render()}}let sb=document.getElementById("saveSubs");if(sb)sb.onclick=saveSubscriptions;syncWelcome();;if(currentView==="search")bindSearch();document.getElementById("searchBtn").classList.toggle("active",currentView==="search");bindRecActions();document.querySelectorAll("[data-unhide]").forEach(b=>b.onclick=()=>saveChange(b.dataset.unhide,{dismissed:false,snoozeUntil:0},{msg:"It can be suggested again"}));bindWantDrag()}
 function saveChange(title,obj,opts){adoptShow(title);const before=getShow(title);if(before&&obj.completed===undefined){if(obj.libraryStatus==="Watching"&&isOngoing(before))obj={...obj,completed:false};else if(isCompleted(before)&&obj.watched!==false)obj={...obj,completed:true}}changes[title]={...(changes[title]||{}),...obj,_t:Date.now()};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();toast((opts&&opts.msg)||(SYNC.user?"Saved for the family":"Saved to this device"),opts&&opts.undo);if(currentView==="detail")renderDetail();else render()}
 // Rate dialog: three plain questions. Watched it / Watching now / Not yet; then either
 // How was it? (Loved…Disliked, No rating) or Want to watch it? (Up Next, Want to Watch, Maybe later, Not interested).
@@ -289,7 +321,7 @@ function openRate(title){currentTitle=title;const s=getShow(title),run=isOngoing
  document.getElementById("qWatchLabel").textContent=run?"Have you watched it? (still running)":"Have you watched it?";
  pick("watch",s.libraryStatus==="Watching"?"watching":(s.watched||inLibrary(s))?"watched":"not");
  pick("rating",RATINGS.includes(s.rating)?s.rating:"Not rated");
- pick("plan",s.libraryStatus==="Up Next"?"next":s.libraryStatus==="Want to Watch"?"want":s.dismissed?"no":"none");
+ pick("plan",s.libraryStatus==="Want to Watch"?"want":s.dismissed?"no":"none");
  document.getElementById("seasons").value=s.seasonsWatched||"";
  document.querySelectorAll('input[name="watchedOn"]').forEach(c=>c.checked=(s.watchedOn||[]).includes(c.value));
  document.getElementById("rateBg").style.display="flex"}
@@ -297,11 +329,11 @@ document.querySelectorAll("#rateForm .chips button").forEach(b=>b.onclick=()=>pi
 let toastTimer=null;
 function toast(msg,undo){let t=document.getElementById("toast");t.textContent=msg;if(undo){const b=document.createElement("button");b.className="toast-undo";b.textContent="Undo";b.onclick=()=>{t.style.display="none";undo()};t.appendChild(b)}t.style.display="flex";clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display="none",undo?5000:2200)}
 document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE.watch;let obj;
- if(w==="not"){const ls={next:"Up Next",want:"Want to Watch"}[RATE.plan]||"Not in My Library";
-  obj={watched:false,completed:false,rating:"Not rated",libraryStatus:ls,status:ls,dismissed:RATE.plan==="no",snoozeUntil:0,seasonsWatched:"",watchedOn:[]}}
+ if(w==="not"){const ls=RATE.plan==="want"?"Want to Watch":"Not in My Library";
+  obj={watched:false,completed:false,rating:"Not rated",libraryStatus:ls,status:ls,dismissed:RATE.plan==="no",snoozeUntil:0,seasonsWatched:"",watchedOn:[],...(ls==="Want to Watch"&&getShow(currentTitle).libraryStatus!=="Want to Watch"?{rank:nextRank()}:{})}}
  else{const ls=w==="watching"?"Watching":"Not in My Library";
   obj={watched:w==="watched",completed:w==="watched",rating:RATE.rating,libraryStatus:ls,status:ls,dismissed:false,snoozeUntil:0,seasonsWatched:document.getElementById("seasons").value,watchedOn:[...document.querySelectorAll('input[name="watchedOn"]:checked')].map(c=>c.value)}}
- const msg=w==="not"?({next:"Added to Up Next",want:"Added to Want to Watch",no:"Won't suggest it again",none:"Marked not watched"})[RATE.plan]:w==="watching"?"In My Queue as Watching":RATINGS.includes(RATE.rating)?"Saved to My Library":"Marked watched";
+ const msg=w==="not"?({want:"Added to Want to Watch",no:"Won't suggest it again",none:"Marked not watched"})[RATE.plan]:w==="watching"?"In My Queue as Watching":RATINGS.includes(RATE.rating)?"Saved to My Library":"Marked watched";
  saveChange(currentTitle,obj,{msg});document.getElementById("rateBg").style.display="none";if(currentView==="detail")renderDetail()};
 document.getElementById("cancelRate").onclick=()=>document.getElementById("rateBg").style.display="none";
 document.getElementById("nav").onclick=e=>{let b=e.target.closest("button[data-view]");if(!b)return;currentView=b.dataset.view;document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x===b));render();window.scrollTo(0,0)};
