@@ -44,7 +44,7 @@ function isCompleted(s){if(s.completed===true)return true;if(s.completed===false
 function inLibrary(s){return RATINGS.includes(s.rating)&&isCompleted(s)&&s.libraryStatus!=="Watching"}
 function listLabel(s){return s.libraryStatus==="Watching"?"Watching":s.libraryStatus==="Want to Watch"?"Want to Watch":inLibrary(s)?"In My Library":"Not on a list"}
 function nextEpisodeText(s){const n=(tm(s.title)||{}).nextEpisode;if(!n||!n.date)return "";const d=new Date(n.date+"T12:00:00");return "S"+n.season+" E"+n.episode+" · "+d.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})}
-function rail(list){return `<div class="grid rail">${list.map(s=>card(s)).join("")}</div>`}
+function rail(list,extra){return `<div class="grid rail">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
 function gridOf(list,extra){return `<div class="grid">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
 
 // ── For You: ranked by the Taste Profile ──
@@ -78,9 +78,19 @@ function renderHome(){
  const watching=all.filter(s=>s.libraryStatus==="Watching");
  if(watching.length)html+=heading("Continue watching")+rail(watching);
  const today=new Date().toISOString().slice(0,10);
- const upcoming=all.filter(s=>{const n=(tm(s.title)||{}).nextEpisode;return n&&n.date>=today&&(["Loved","Liked"].includes(s.rating)||["Watching","Want to Watch"].includes(s.libraryStatus))})
+ // Episodes of shows you love, like or are watching: just aired, scheduled, and announced seasons.
+ const followed=s=>["Loved","Liked"].includes(s.rating)||["Watching","Want to Watch"].includes(s.libraryStatus);
+ const daysAgo=d=>Math.floor((Date.parse(today+"T12:00:00Z")-Date.parse(d+"T12:00:00Z"))/864e5);
+ const fmtDate=d=>new Date(d+"T12:00:00").toLocaleDateString("en-US",{month:"short",day:"numeric"});
+ const justAired=all.filter(s=>{const l=(tm(s.title)||{}).lastEpisode;return followed(s)&&l&&l.date&&daysAgo(l.date)>=0&&daysAgo(l.date)<=7})
+  .sort((a,b)=>tm(b.title).lastEpisode.date.localeCompare(tm(a.title).lastEpisode.date));
+ if(justAired.length)html+=heading("New this week")+rail(justAired,s=>{const l=tm(s.title).lastEpisode;return "S"+l.season+" E"+l.episode+" · aired "+(daysAgo(l.date)===0?"today":fmtDate(l.date))});
+ const upcoming=all.filter(s=>{const n=(tm(s.title)||{}).nextEpisode;return followed(s)&&n&&n.date>=today})
   .sort((a,b)=>tm(a.title).nextEpisode.date.localeCompare(tm(b.title).nextEpisode.date));
  if(upcoming.length)html+=heading("New & Upcoming")+gridOf(upcoming,nextEpisodeText);
+ const announced=all.filter(s=>{const t=tm(s.title)||{};return followed(s)&&t.announcedSeason&&!(t.nextEpisode&&t.nextEpisode.date>=today)})
+  .sort((a,b)=>a.title.localeCompare(b.title));
+ if(announced.length)html+=heading("Season announced")+rail(announced,s=>"Season "+tm(s.title).announcedSeason+" announced · date TBA");
  return html;
 }
 
