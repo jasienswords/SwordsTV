@@ -14,6 +14,7 @@ import vm from 'node:vm';
 import {fileURLToPath} from 'node:url';
 import {api, details} from './lib/tmdb.mjs';
 import {loadImdb, siteScores, imdbEntry} from './lib/scores.mjs';
+import {loadProfiles, showsFor} from './lib/profiles.mjs';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const file = f => path.join(ROOT, f);
@@ -30,34 +31,39 @@ const today = new Date().toISOString().slice(0, 10);
 const data = read('data.json'), research = read('shows.json', {}), tmdbFile = read('tmdb.json');
 const scoresFile = read('scores.json', {shows: {}});
 const disc = read('discoveries.json', {updated: null, shows: {}, rejected: {}});
-const ratings = read('ratings.json', {changes: {}}).changes || {};
+const people = loadProfiles(ROOT);
 
 // ── Same show model as the app ──
 const TMDB = {...tmdbFile.shows}, SCORES = {...scoresFile.shows};
 for (const [t, d] of Object.entries(disc.shows)) { TMDB[t] = d.tmdb; SCORES[t] = d.scores; }
 const catalog = [...data.catalog, ...Object.keys(disc.shows).filter(t => disc.shows[t].guidance?.status === 'ok').map(title => ({title, rating: '', status: 'Unwatched'}))];
-const listed = s => ['Up Next', 'Watching', 'Want to Watch'].includes(s);
-const shows = catalog.map(x => {
-  const c = ratings[x.title] || {};
-  const libraryStatus = c.libraryStatus ?? (listed(c.status) ? c.status : listed(x.status) ? x.status : 'Not in My Library');
-  return {...x, ...c, libraryStatus, watched: c.watched ?? (c.status === 'Watched' || x.status === 'Watched')};
-});
 const ctx = {TMDB, RESEARCH: research, SCORES, console};
 vm.createContext(ctx);
 vm.runInContext(fs.readFileSync(file('taste.js'), 'utf8') + '\n;this.engine={buildProfile,rankedCandidates,matchShow,whyText,contentFlags,diversify,MAX_GENRE_SHARE};', ctx);
 const {buildProfile, rankedCandidates, matchShow, whyText, contentFlags, diversify, MAX_GENRE_SHARE} = ctx.engine;
-const profile = buildProfile(shows);
-const ranked = rankedCandidates(shows, profile);
-const bar = ranked.length ? ranked[Math.min(24, ranked.length - 1)].m.score : 0;
-console.log(`Profile from ${profile.total} ratings; a new find must score at least ${bar.toFixed(2)} (your 25th-best current match).`);
+// One taste profile per person. A find is kept when it fits at least one of them as well as
+// that person's 25th-best current match; its reason comes from the person it fits best.
+const engines = people.map(p => {
+  const shows = showsFor(catalog, p), profile = buildProfile(shows), ranked = rankedCandidates(shows, profile);
+  return {p, shows, profile, bar: ranked.length ? ranked[Math.min(24, ranked.length - 1)].m.score : 0};
+}).filter(e => e.profile.total >= 10);
+for (const e of engines) console.log(`Profile ${e.p.household}/${e.p.profile}: ${e.profile.total} ratings; new finds must score at least ${e.bar.toFixed(2)}.`);
+if (!engines.length) { console.log('No profile has 10 ratings yet; nothing to search for.'); process.exit(0); }
+const bestFit = title => {
+  let best = null;
+  for (const e of engines) { const m = matchShow(title, e.profile); if (!best || m.score - e.bar > best.margin) best = {e, m, margin: m.score - e.bar}; }
+  return best;
+};
+const rated = t => people.some(p => { const c = (p.changes || {})[t]; return c && (c.rating || c.libraryStatus); });
 
 // ── Candidate pool ──
 const knownIds = new Set([...Object.values(TMDB).filter(Boolean).map(t => t.id), ...Object.keys(disc.rejected).map(Number)]);
 const pool = new Map(); // id -> source
 const add = (id, src) => { if (!knownIds.has(id) && !pool.has(id)) pool.set(id, src); };
-for (const t of [...profile.lovedTitles, ...profile.likedTitles]) (TMDB[t]?.similar || []).forEach(id => add(id, 'similar to ' + t));
+const lovedOrLiked = [...new Set(engines.flatMap(e => [...e.profile.lovedTitles, ...e.profile.likedTitles]))];
+for (const t of lovedOrLiked) (TMDB[t]?.similar || []).forEach(id => add(id, 'similar to ' + t));
 const genreIds = Object.fromEntries(((await api('/genre/tv/list')).genres || []).map(g => [g.name, g.id]));
-const topGenres = Object.values(profile.traits).filter(x => x.type === 'genre' && x.n >= 3 && x.affinity > 0.05).sort((a, b) => b.affinity - a.affinity).slice(0, 3);
+const topGenres = [...new Map(engines.flatMap(e => Object.values(e.profile.traits).filter(x => x.type === 'genre' && x.n >= 3 && x.affinity > 0.05).sort((a, b) => b.affinity - a.affinity).slice(0, 3)).map(g => [g.label, g])).values()];
 for (const g of topGenres) for (const page of [1, 2]) {
   const r = await api('/discover/tv', {with_genres: genreIds[g.label], with_original_language: 'en', 'vote_count.gte': 100, sort_by: 'popularity.desc', page});
   (r.results || []).forEach(x => add(x.id, 'popular in ' + g.label));
@@ -65,7 +71,7 @@ for (const g of topGenres) for (const page of [1, 2]) {
 ((await api('/trending/tv/week')).results || []).forEach(x => add(x.id, 'trending this week'));
 // Other shows created by the people behind the shows you loved or liked.
 const creators = new Map();
-for (const t of [...profile.lovedTitles, ...profile.likedTitles]) for (const c of TMDB[t]?.creators || []) if (!creators.has(c.id)) creators.set(c.id, t);
+for (const t of lovedOrLiked) for (const c of TMDB[t]?.creators || []) if (!creators.has(c.id)) creators.set(c.id, t);
 for (const [pid, t] of creators) {
   try { ((await api(`/person/${pid}/tv_credits`)).crew || []).filter(x => x.job === 'Creator').forEach(x => add(x.id, 'same creator as ' + t)); } catch {}
 }
@@ -83,17 +89,17 @@ for (const [id, source] of pool) {
   const im = imdbEntry(imdb, rec.imdb);
   if (!im || im.rating == null || im.votes < MIN_IMDB_VOTES) continue;
   TMDB[title] = rec; SCORES[title] = {imdb: im};
-  const sameCreator = matchShow(title, profile).because.some(b => b.creator && b.rating === 'Loved');
+  const sameCreator = engines.some(e => matchShow(title, e.profile).because.some(b => b.creator && b.rating === 'Loved'));
   if (im.rating < (sameCreator ? MIN_IMDB_SAME_CREATOR : MIN_IMDB)) { delete TMDB[title]; continue; }
   if (contentFlags(title).length) { delete TMDB[title]; continue; }
-  const m = matchShow(title, profile);
+  const best = bestFit(title);
   delete TMDB[title];
-  if (m.score >= bar) found.push({title, rec, im, m, source});
+  if (best.margin >= 0) found.push({title, rec, im, m: best.m, e: best.e, margin: best.margin, source});
 }
-found.sort((a, b) => b.m.score - a.m.score);
+found.sort((a, b) => b.margin - a.margin);
 
 // ── Keep the best few; refresh existing finds ──
-const live = Object.entries(disc.shows).filter(([t, d]) => d.guidance?.status !== 'rejected' && !(ratings[t] && (ratings[t].rating || ratings[t].libraryStatus)));
+const live = Object.entries(disc.shows).filter(([t, d]) => d.guidance?.status !== 'rejected' && !rated(t));
 const room = Math.max(0, MAX_PENDING_OR_SHOWN - live.length);
 const added = [];
 // Keep the finds varied: tonight's picks are mixed by genre, and no genre may hold more
@@ -116,7 +122,7 @@ for (const f of picks) {
   const site = await siteScores(f.title, f.rec);
   TMDB[f.title] = f.rec; SCORES[f.title] = {imdb: f.im, ...site};
   disc.shows[f.title] = {tmdb: f.rec, scores: {imdb: f.im, ...site}, addedOn: today, source: f.source,
-    matchScore: +f.m.score.toFixed(2), why: whyText(matchShow(f.title, profile)), guidance: {status: 'pending'}};
+    matchScore: +f.m.score.toFixed(2), why: whyText(matchShow(f.title, f.e.profile)), guidance: {status: 'pending'}};
   added.push(f.title);
 }
 for (const [t, d] of Object.entries(disc.shows)) {

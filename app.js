@@ -15,11 +15,12 @@ function scoreSources(title,t){const x=SCORES[title]||{},links=[];
  if(x.rt&&x.rt.url)links.push(`<a href="${esc(x.rt.url)}" target="_blank" rel="noopener">Rotten Tomatoes</a>`);
  if(x.metascore&&x.metascore.url)links.push(`<a href="${esc(x.metascore.url)}" target="_blank" rel="noopener">Metacritic</a>`);
  return links.length?" Review scores from "+links.join(" · ")+(SCORES_CHECKED?" (checked "+esc(SCORES_CHECKED)+")":"")+".":"";}
-const STORAGE="swordstv_v1_user_changes";
+// Each profile keeps its ratings under its own key (see sync.js).
+let STORAGE=SYNC.initialStorage||"swordstv_v1_user_changes";
 let changes=JSON.parse(localStorage.getItem(STORAGE)||"{}"),currentTitle=null,currentView="home",searchTerm="",ratingFilter="All";
 const colors=[["#35566b","#172536"],["#76533e","#2a1b20"],["#4e6470","#1c2b3b"],["#796b48","#29251d"],["#5c496d","#211c32"],["#3d6b5e","#182b2a"],["#76505c","#2b1b2a"],["#4b5c82","#1a2039"]];
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function allShowsRaw(){return DATA.catalog.map(x=>{let c=changes[x.title]||{},legacyStatus=x.status||"Unwatched";return {...x,...c,seriesComplete:c.seriesComplete??["Ended","Canceled"].includes((TMDB[x.title]||{}).status),libraryStatus:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library"),watched:c.watched??(c.status==="Watched"||legacyStatus==="Watched"),status:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library")}}).sort((a,b)=>a.title.localeCompare(b.title))}
+function allShowsRaw(){return DATA.catalog.map(x=>{if(!LEGACY_CATALOG&&(x.rating||x.status))x={...x,rating:"",status:"Unwatched"};let c=changes[x.title]||{},legacyStatus=x.status||"Unwatched";return {...x,...c,seriesComplete:c.seriesComplete??["Ended","Canceled"].includes((TMDB[x.title]||{}).status),libraryStatus:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library"),watched:c.watched??(c.status==="Watched"||legacyStatus==="Watched"),status:c.libraryStatus??(["Up Next","Watching","Want to Watch"].includes(c.status)?c.status:["Up Next","Watching","Want to Watch"].includes(legacyStatus)?legacyStatus:"Not in My Library")}}).sort((a,b)=>a.title.localeCompare(b.title))}
 function allShows(){return allShowsRaw().map(s=>s.libraryStatus==="Up Next"?{...s,libraryStatus:"Want to Watch",status:"Want to Watch",rank:s.rank??-1}:s)}
 function getShow(t){return allShows().find(x=>x.title===t)}
 function art(title){let h=0;for(let c of title)h=(h*31+c.charCodeAt(0))>>>0;return colors[h%colors.length]}
@@ -353,6 +354,7 @@ document.getElementById("cancelRate").onclick=()=>hideSheet();
 document.getElementById("aboutBtn").onclick=()=>showSheet("aboutBg");
 document.getElementById("aboutClose").onclick=()=>hideSheet();
 document.getElementById("aboutBg").addEventListener("click",e=>{if(e.target.id==="aboutBg")hideSheet()});
+document.getElementById("accountBg").addEventListener("click",e=>{if(e.target.id==="accountBg"){hideSheet();SYNC.gate=null}});
 document.addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.classList.contains("sheet-open"))hideSheet()});
 document.getElementById("nav").onclick=e=>{let b=e.target.closest("button[data-view]");if(!b)return;currentView=b.dataset.view;document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x===b));render();window.scrollTo(0,0)};
 document.getElementById("browseBtn").onclick=()=>{currentView="library";document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.view==="library"));render();window.scrollTo(0,0)};

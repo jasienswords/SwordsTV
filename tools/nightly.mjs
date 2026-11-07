@@ -3,7 +3,7 @@
 //
 //   TMDB_TOKEN=<token> node tools/nightly.mjs
 //
-//   1. Saves the family's latest ratings from Firebase to ratings.json (also a nightly backup).
+//   1. Saves every household's anonymous ratings from Firebase to ratings.json.
 //   2. Refreshes TMDB data for every show: streaming availability, new episodes, status.
 //   3. Refreshes IMDb ratings in scores.json from IMDb's daily dataset.
 //   4. Searches for new shows that fit the Taste Profile (discoveries.json, "pending" review).
@@ -33,18 +33,39 @@ function decode(v) {
   return null;
 }
 
-step(1, 'Fetching family ratings from Firebase…');
+step(1, 'Fetching every household\'s ratings from Firebase…');
+// Households publish an anonymous copy of their ratings (signals/{household}: no names or
+// emails). Until any household exists, fall back to the first version's family document.
 const cfg = JSON.parse(fs.readFileSync(file('firebase-config.json'), 'utf8'));
-const r = await fetch(`https://firestore.googleapis.com/v1/projects/${cfg.projectId}/databases/(default)/documents/${cfg.familyDoc}`);
-if (r.ok) {
-  const doc = decode({mapValue: {fields: (await r.json()).fields || {}}});
-  const changes = doc.changes || {};
-  fs.writeFileSync(file('ratings.json'), JSON.stringify({savedAt: new Date().toISOString(), changes, added: doc.added || {}, subscriptions: doc.subscriptions || {}}, null, 1) + '\n');
-  console.log(`Saved ${Object.keys(changes).length} family rating entries and ${Object.keys(doc.added || {}).length} family-added shows.`);
-} else if (r.status === 404) {
-  console.log('No family ratings yet (nobody has signed in). Using the catalog ratings only.');
+const base = `https://firestore.googleapis.com/v1/projects/${cfg.projectId}/databases/(default)/documents`;
+const signals = [];
+for (let token = ''; ;) {
+  const r = await fetch(`${base}/signals?pageSize=300${token ? '&pageToken=' + token : ''}`);
+  if (!r.ok) { console.log(`Could not list households (HTTP ${r.status}).`); break; }
+  const j = await r.json();
+  for (const d of j.documents || []) signals.push({household: d.name.split('/').pop(), ...decode({mapValue: {fields: d.fields || {}}})});
+  if (!(token = j.nextPageToken)) break;
+}
+const newer = (a, b) => ((a && a._t) || 0) >= ((b && b._t) || 0) ? a : b;
+if (signals.length) {
+  const profiles = [], added = {};
+  for (const h of signals) {
+    for (const [pid, p] of Object.entries(h.profiles || {})) profiles.push({household: h.household, profile: pid, legacyCatalog: !!p.legacyCatalog, changes: p.changes || {}});
+    for (const [t, a] of Object.entries(h.added || {})) added[t] = added[t] ? newer(added[t], a) : a;
+  }
+  const legacy = profiles.find(p => p.legacyCatalog);
+  fs.writeFileSync(file('ratings.json'), JSON.stringify({savedAt: new Date().toISOString(), profiles, added, changes: legacy ? legacy.changes : {}}, null, 1) + '\n');
+  console.log(`Saved ratings for ${profiles.length} profiles in ${signals.length} households, and ${Object.keys(added).length} added shows.`);
 } else {
-  console.log(`Could not read family ratings (HTTP ${r.status}); keeping the last saved copy.`);
+  const r = await fetch(`${base}/${cfg.familyDoc}`);
+  if (r.ok) {
+    const doc = decode({mapValue: {fields: (await r.json()).fields || {}}});
+    const changes = doc.changes || {};
+    fs.writeFileSync(file('ratings.json'), JSON.stringify({savedAt: new Date().toISOString(), changes, added: doc.added || {}, subscriptions: doc.subscriptions || {}}, null, 1) + '\n');
+    console.log(`Saved ${Object.keys(changes).length} family rating entries and ${Object.keys(doc.added || {}).length} family-added shows.`);
+  } else {
+    console.log(`No household ratings readable (HTTP ${r.status}); keeping the last saved copy.`);
+  }
 }
 
 step(2, 'Refreshing TMDB data for every show…');
