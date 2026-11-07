@@ -319,3 +319,18 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .rec-actions.icons button:active{transform:scale(.94)}
 .grid.rail>.show{display:flex;flex-direction:column}
 .grid.rail>.show>.rec-actions{margin-top:auto}
+
+/* Rate dialog: tap choices */
+.rq{margin:14px 0 0}
+.rq>label,.rq summary{display:block;color:var(--muted);font-size:12px;font-weight:700;margin:0 0 7px}
+.rq summary{cursor:pointer;margin:0}
+.rq summary span{font-weight:500}
+.rq[hidden]{display:none}
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips button{flex:1 1 auto;min-height:44px;padding:9px 12px;border-radius:12px;border:1.5px solid var(--line);background:var(--panel2);color:var(--text);font-weight:700;font-size:14px}
+.chips button.on{border-color:var(--gold);background:var(--gold);color:#1c1e23}
+.chips[data-group="rating"] button[data-v="Loved"].on{background:var(--badge);border-color:var(--badge);color:#fff}
+.chips[data-group="rating"] button[data-v="Liked"].on{background:#e57a2a;border-color:#e57a2a;color:#fff}
+.chips[data-group="plan"] button[data-v="no"].on{background:var(--chrome2);border-color:var(--chrome2);color:#fff}
+.rq-hint{color:var(--muted);font-size:12px;margin:8px 0 0}
+#qWhere .platform-checks{margin-top:10px}
