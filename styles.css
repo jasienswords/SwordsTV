@@ -460,9 +460,9 @@ body.sheet-open{position:fixed;left:0;right:0;overflow:hidden}
 }
 
 /* ── About Queuey ── */
-.info-btn{align-self:center;flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:1.5px solid rgba(246,199,90,.75);background:transparent;color:#f6c75a;font:700 13px/1 Georgia,"Times New Roman",serif;font-style:italic;display:grid;place-items:center;padding:0;margin-left:2px;cursor:pointer;position:relative}
-.info-btn::after{content:"";position:absolute;inset:-11px}
-.info-btn:hover,.info-btn:focus-visible{background:rgba(246,199,90,.15)}
+.about-link{-webkit-appearance:none;appearance:none;display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:4px 0;border:0;background:none;color:var(--muted);font:600 13px/1.2 inherit;font-family:inherit;cursor:pointer}
+.about-link:hover,.about-link:focus-visible{color:inherit;text-decoration:underline}
+.about-i{display:inline-grid;place-items:center;width:16px;height:16px;border-radius:50%;border:1.5px solid currentColor;font:italic 700 10px/1 Georgia,"Times New Roman",serif}
 .about-modal{text-align:center}
 .about-mascot{width:76px;height:76px;margin:0 auto 4px;display:block;transform:rotate(-8deg)}
 .about-lead{font-size:17px;line-height:1.45;font-weight:600;margin:6px 0 14px}
@@ -471,3 +471,7 @@ body.sheet-open{position:fixed;left:0;right:0;overflow:hidden}
 .about-list b{color:var(--ink,inherit)}
 .about-modal .modal-actions{justify-content:center}
 .about-modal .modal-actions .btn{min-width:140px}
+.about-link{white-space:nowrap}
+.hero.welcome .hero-content{flex:1 1 auto;min-width:0}
+@media (max-width:650px){.about-link{font-size:12px;margin-top:3px}.hero.welcome .btn{padding:9px 10px;font-size:10.5px}}
+@media (max-width:440px){.hero.welcome .btn .long{display:none}.hero.welcome h2{white-space:nowrap}}
