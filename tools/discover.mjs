@@ -35,7 +35,7 @@ const ratings = read('ratings.json', {changes: {}}).changes || {};
 const TMDB = {...tmdbFile.shows}, SCORES = {...scoresFile.shows};
 for (const [t, d] of Object.entries(disc.shows)) { TMDB[t] = d.tmdb; SCORES[t] = d.scores; }
 const catalog = [...data.catalog, ...Object.keys(disc.shows).filter(t => disc.shows[t].guidance?.status === 'ok').map(title => ({title, rating: '', status: 'Unwatched'}))];
-const listed = s => ['Watching', 'Want to Watch'].includes(s);
+const listed = s => ['Up Next', 'Watching', 'Want to Watch'].includes(s);
 const shows = catalog.map(x => {
   const c = ratings[x.title] || {};
   const libraryStatus = c.libraryStatus ?? (listed(c.status) ? c.status : listed(x.status) ? x.status : 'Not in My Library');

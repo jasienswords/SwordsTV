@@ -115,7 +115,8 @@ const minShown = type => MIN_SHOWN_BY_TYPE[type] || MIN_SHOWN;
 // "Special Episodes") count as one show, and are skipped if any of them
 // has already been rated, watched or listed.
 function rankedCandidates(shows, profile) {
-  const isCandidate = s => !(s.rating in RATING_WEIGHT) && !s.watched && s.libraryStatus === 'Not in My Library';
+  // Not rated, not watched, not on a list, not marked "Not interested", and not snoozed ("Later").
+  const isCandidate = s => !(s.rating in RATING_WEIGHT) && !s.watched && s.libraryStatus === 'Not in My Library' && !s.dismissed && !((s.snoozeUntil || 0) > Date.now());
   const taken = new Set(shows.filter(s => TMDB[s.title] && !isCandidate(s)).map(s => TMDB[s.title].id));
   const seen = new Set();
   return shows.filter(s => isCandidate(s) && TMDB[s.title])
