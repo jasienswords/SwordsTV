@@ -64,9 +64,12 @@ function rail(list,extra){return `<div class="grid rail">${list.map(s=>card(s,ex
 function gridOf(list,extra){return `<div class="grid">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
 
 // ── For You: ranked by the Taste Profile ──
+// Only shows with an explicit "cleared" content verdict are recommended: an approved nightly find,
+// a family-added show, or a cleared review in guidance.json. Blocked shows are never recommended.
+function cleared(t){const g=GUIDANCE[t];if(g&&g.status==="blocked")return false;return !!(DISCOVERED[t]||ADDED[t]||(g&&g.status==="ok"))}
 function firstSentence(t){const m=String(t).match(/^.{20,220}?[.!?](?=\s|$)/);return m?m[0]:String(t).slice(0,200)+(String(t).length>200?"…":"")}
 function renderHome(){
- const all=allShows().filter(s=>!PREVIEW.has(s.title)),profile=buildProfile(all),ranked=rankedCandidates(all,profile),seen=new Set();
+ const all=allShows().filter(s=>!PREVIEW.has(s.title)),profile=buildProfile(all),ranked=rankedCandidates(all,profile).filter(x=>cleared(x.s.title)),seen=new Set();
  const take=(list,n)=>{const out=list.filter(x=>!seen.has(x.s.title)).slice(0,n);out.forEach(x=>seen.add(x.s.title));return out.map(x=>x.s)};
  let html;
  if(ranked.length){
@@ -85,7 +88,7 @@ function renderHome(){
  rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`)+recRail(items));
  // Your two highest-rated genres.
  Object.values(profile.traits).filter(x=>x.type==="genre"&&x.n>=minShown("genre")&&x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,2).forEach(g=>{
-  const items=take(ranked.filter(x=>(tm(x.s.title).genres||[]).includes(g.label)),10);
+  const items=take(ranked.filter(x=>(tm(x.s.title).genres||[])[0]===g.label),10);
   if(items.length>=3)html+=heading(`More ${esc(g.label)}`)+recRail(items)});
  const active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
  const onYours=take(ranked.filter(x=>((tm(x.s.title).providers||{}).stream||[]).some(p=>active.has(serviceFor(p.name)))),10);
@@ -163,7 +166,7 @@ function saveSubscriptions(){let obj={};SUBSCRIPTION_DEFAULTS.forEach(x=>{let n=
 function renderStreamingInsights(){
  const watched={},loved={};
  allShows().filter(s=>s.watched===true).forEach(s=>(s.watchedOn||[]).forEach(p=>{watched[p]=(watched[p]||0)+1;if(s.rating==="Loved")loved[p]=(loved[p]||0)+1}));
- const rec={};rankedCandidates(allShows().filter(s=>!PREVIEW.has(s.title)),buildProfile(allShows())).slice(0,60).forEach(({s})=>{const p=(tm(s.title)||{}).providers||{};new Set([...(p.stream||[]),...(p.free||[]),...(p.ads||[])].map(x=>serviceFor(x.name)||x.name)).forEach(n=>{rec[n]=(rec[n]||0)+1})});
+ const rec={};rankedCandidates(allShows().filter(s=>!PREVIEW.has(s.title)),buildProfile(allShows())).filter(x=>cleared(x.s.title)).slice(0,60).forEach(({s})=>{const p=(tm(s.title)||{}).providers||{};new Set([...(p.stream||[]),...(p.free||[]),...(p.ads||[])].map(x=>serviceFor(x.name)||x.name)).forEach(n=>{rec[n]=(rec[n]||0)+1})});
  const names=[...new Set([...Object.keys(watched),...Object.keys(rec)])].sort((a,b)=>((watched[b]||0)+(rec[b]||0))-((watched[a]||0)+(rec[a]||0))||a.localeCompare(b));
  const rows=names.map(n=>'<tr><td>'+esc(n)+'</td><td style="text-align:right">'+(watched[n]||0)+'</td><td style="text-align:right">'+(loved[n]||0)+'</td><td style="text-align:right">'+(rec[n]||0)+'</td></tr>').join('');
  const totalRecorded=Object.values(watched).reduce((a,b)=>a+b,0),totalRec=Object.values(rec).reduce((a,b)=>a+b,0);
@@ -236,11 +239,11 @@ function renderDetail(){
  const about=(r&&r.synopsis)||(t&&t.overview)||"";
  let facts,note;
  if(r){
-  facts=factList([["Streaming services listed",r.availability],["Seasons",r.seasons],["Series status",statusText(t)],["Cast / presenters",r.cast],["Genre",r.genre],["Content guidance",r.rating+". "+r.cautions],["Why SwordsTV surfaced it",r.why],["Last checked",r.checked]]);
+  facts=factList([["Streaming services listed",r.availability],["Seasons",r.seasons],["Series status",statusText(t)],["Cast / presenters",r.cast],["Genre",r.genre],["Content guidance",r.rating+". "+r.cautions],["SwordsTV verdict",GUIDANCE[s.title]?(GUIDANCE[s.title].status==="blocked"?"Not recommended for the family (content-checked "+GUIDANCE[s.title].reviewed+")":"Cleared for recommendation (content-checked "+GUIDANCE[s.title].reviewed+")"):""],["Why SwordsTV surfaced it",r.why],["Last checked",r.checked]]);
   note=`<div class="note">Research sources: ${r.sources.map(x=>`<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")}${t?' · Images and series details from <a href="https://www.themoviedb.org/tv/'+t.id+'" target="_blank" rel="noopener">TMDB</a>':""}. Streaming rights and catalogs can change; confirm on the service before watching.</div>`;
  }else if(t){
-  facts=factList([["Seasons",t.seasons?t.seasons+" seasons · "+t.episodes+" episodes":""],["Series status",statusText(t)],["Cast / presenters",t.cast.join(", ")||"Not listed"],["Genre",t.genres.join(", ")],["Network",t.networks.map(n=>n.name).join(", ")],["U.S. content rating",t.rating||"Not listed"],["TMDB audience score",t.tmdbScore&&!SCORES[s.title]?t.tmdbScore+"/10":""],["Content guidance",DISCOVERED[s.title]?DISCOVERED[s.title].guidance.notes:GUIDANCE[s.title]?GUIDANCE[s.title].notes:ADDED[s.title]||PREVIEW.has(s.title)?"Checked with tonight's update":"Not yet verified; not cleared for recommendation"]]);
-  note=`<div class="note">Details and images from <a href="https://www.themoviedb.org/tv/${t.id}" target="_blank" rel="noopener">TMDB</a>.${scoreSources(s.title,t)} ${PREVIEW.has(s.title)?" Rate it or add it to My Queue to add it to your shows. IMDb, Rotten Tomatoes and Metacritic scores and content notes are added with the nightly update.":ADDED[s.title]&&!SCORES[s.title]?` Added by your family on ${esc(ADDED[s.title].addedOn)}. IMDb, Rotten Tomatoes and Metacritic scores and content notes arrive with tonight's update.`:DISCOVERED[s.title]?` Found by the nightly search on ${esc(DISCOVERED[s.title].addedOn)} and checked against your content limits on ${esc(DISCOVERED[s.title].guidance.reviewed||DISCOVERED[s.title].addedOn)}.`:" Content guidance for this show hasn't been researched yet, so it isn't cleared for recommendation."}</div>`;
+  facts=factList([["Seasons",t.seasons?t.seasons+" seasons · "+t.episodes+" episodes":""],["Series status",statusText(t)],["Cast / presenters",t.cast.join(", ")||"Not listed"],["Genre",t.genres.join(", ")],["Network",t.networks.map(n=>n.name).join(", ")],["U.S. content rating",t.rating||"Not listed"],["TMDB audience score",t.tmdbScore&&!SCORES[s.title]?t.tmdbScore+"/10":""],["Content guidance",DISCOVERED[s.title]?DISCOVERED[s.title].guidance.notes:GUIDANCE[s.title]?(GUIDANCE[s.title].status==="blocked"?"Not recommended for the family: ":"")+GUIDANCE[s.title].notes:ADDED[s.title]||PREVIEW.has(s.title)?"Checked with tonight's update":"Not yet verified; not cleared for recommendation"]]);
+  note=`<div class="note">Details and images from <a href="https://www.themoviedb.org/tv/${t.id}" target="_blank" rel="noopener">TMDB</a>.${scoreSources(s.title,t)} ${PREVIEW.has(s.title)?" Rate it or add it to My Queue to add it to your shows. IMDb, Rotten Tomatoes and Metacritic scores and content notes are added with the nightly update.":ADDED[s.title]&&!SCORES[s.title]?` Added by your family on ${esc(ADDED[s.title].addedOn)}. IMDb, Rotten Tomatoes and Metacritic scores and content notes arrive with tonight's update.`:DISCOVERED[s.title]?` Found by the nightly search on ${esc(DISCOVERED[s.title].addedOn)} and checked against your content limits on ${esc(DISCOVERED[s.title].guidance.reviewed||DISCOVERED[s.title].addedOn)}.`:(GUIDANCE[s.title]&&GUIDANCE[s.title].status==="ok"?` Content checked against your limits on ${esc(GUIDANCE[s.title].reviewed)}.`:GUIDANCE[s.title]&&GUIDANCE[s.title].status==="blocked"?" Content-checked and not recommended for the family, so it won't appear on For You.":" Not content-reviewed yet, so it isn't recommended on For You until the nightly review clears it.")}</div>`;
  }else{
   facts=factList([["Where to stream","Not yet verified"],["Seasons","Not yet verified"],["Cast / presenters","Not yet verified"],["Genre / synopsis","Research pending"],["Content guidance","Not yet verified; not cleared for recommendation"]]);
   note=ADDED[s.title]?`<div class="note">Added by name on ${esc(ADDED[s.title].addedOn)}. Poster, details and scores arrive with tonight's update.</div>`:`<div class="note">This title has not yet been researched. Your subscription list is not a confirmation that this show is available on those services.</div>`;

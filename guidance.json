@@ -7,6 +7,541 @@
   "WandaVision": {
    "notes": "Disney+ Marvel miniseries (TV-14) that plays as a run of classic-sitcom homages hiding a mystery. Heads up: heavy supernatural/fantasy, themes of grief and loss, and superhero action.",
    "reviewed": "2026-11-07"
+  },
+  "The Gardeners' World": {
+   "status": "ok",
+   "notes": "Long-running BBC gardening programme; gentle and practical, TV-G. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Long Way Up": {
+   "status": "ok",
+   "notes": "Ewan McGregor and Charley Boorman ride electric motorcycles through South and Central America; warm buddy travelogue. Heads up: TV-14, occasional language.",
+   "reviewed": "2026-11-07"
+  },
+  "Formula 1: Drive to Survive": {
+   "status": "blocked",
+   "notes": "Rated TV-MA; behind-the-scenes F1 series known for frequent strong language and heated confrontations, beyond the family's moderate language limit.",
+   "reviewed": "2026-11-07"
+  },
+  "The Inbetweeners": {
+   "status": "blocked",
+   "notes": "Teen comedy whose TMDB keywords include crude humor and sexual humor; outside the family's limits on sexual content and tone.",
+   "reviewed": "2026-11-07"
+  },
+  "Rick Stein's Cornwall": {
+   "status": "ok",
+   "notes": "Rick Stein explores Cornwall's food, people and history; gentle food-and-travel series. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Long Way Down": {
+   "status": "ok",
+   "notes": "Ewan McGregor and Charley Boorman ride from Scotland to South Africa; warm buddy travelogue. Heads up: occasional language.",
+   "reviewed": "2026-11-07"
+  },
+  "Planet Earth II": {
+   "status": "ok",
+   "notes": "David Attenborough nature series, TV-G. Heads up: some predator–prey hunting scenes, typical of nature documentaries.",
+   "reviewed": "2026-11-07"
+  },
+  "The Great British Garden Revival": {
+   "status": "ok",
+   "notes": "BBC gardening series on reviving British garden traditions; gentle and practical. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "The Americas": {
+   "status": "ok",
+   "notes": "Nature and history showcase of the Americas narrated by Tom Hanks; TV-PG. Heads up: some animal predation.",
+   "reviewed": "2026-11-07"
+  },
+  "Unforgotten": {
+   "status": "blocked",
+   "notes": "Rated TV-MA; cold-case murder investigations that are emotionally heavy and intense, against the family's preference to avoid bleak or punishing dramas.",
+   "reviewed": "2026-11-07"
+  },
+  "Long Way Round": {
+   "status": "ok",
+   "notes": "The original Long Way motorcycle journey around the world; warm buddy travelogue. Heads up: rated TV-MA, so expect some strong language.",
+   "reviewed": "2026-11-07"
+  },
+  "Stanley Tucci: Searching for Italy": {
+   "status": "ok",
+   "notes": "Stanley Tucci travels Italy exploring regional cooking; warm food-and-travel series. Heads up: TV-14, occasional language.",
+   "reviewed": "2026-11-07"
+  },
+  "Grand Designs Australia": {
+   "status": "ok",
+   "notes": "Self-build home projects across Australia; calm and constructive. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Staged": {
+   "status": "ok",
+   "notes": "David Tennant and Michael Sheen rehearse a play over video calls during lockdown; witty, warm character comedy. Heads up: TV-14, some language.",
+   "reviewed": "2026-11-07"
+  },
+  "No Activity (Australian series)": {
+   "status": "blocked",
+   "notes": "No U.S. rating and too little information to confirm this cop spoof fits the family's language and tone limits.",
+   "reviewed": "2026-11-07"
+  },
+  "The Repair Shop: Fixing Britain": {
+   "status": "ok",
+   "notes": "Jay Blades explores the stories behind items restored on The Repair Shop; heartfelt and gentle. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "The Story of China": {
+   "status": "ok",
+   "notes": "Michael Wood's history of China over four thousand years; TV-PG. Heads up: some discussion of historical wars.",
+   "reviewed": "2026-11-07"
+  },
+  "The Great British Railway Journeys: Australia": {
+   "status": "ok",
+   "notes": "Michael Portillo's railway journeys across Australia with his historical handbook; TV-PG. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Rick Stein's India": {
+   "status": "ok",
+   "notes": "Rick Stein travels India exploring its cuisines; gentle food-and-travel series. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Mum": {
+   "status": "ok",
+   "notes": "Gentle, warm comedy about a widowed mother's year of new beginnings; TV-PG. Heads up: begins after a death in the family.",
+   "reviewed": "2026-11-07"
+  },
+  "The World According to Jeff Goldblum": {
+   "status": "ok",
+   "notes": "Jeff Goldblum explores the surprising stories behind everyday things like sneakers and ice cream; TV-PG. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Foyle's War": {
+   "status": "ok",
+   "notes": "Wartime detective drama set on England's south coast; measured and character-led. Heads up: murder investigations and WWII themes.",
+   "reviewed": "2026-11-07"
+  },
+  "Platonic": {
+   "status": "blocked",
+   "notes": "Rated TV-MA; adult comedy with strong language and drug humour, beyond the family's moderate limits.",
+   "reviewed": "2026-11-07"
+  },
+  "This Country": {
+   "status": "ok",
+   "notes": "Gentle mockumentary about two cousins in a Cotswolds village; warm and character-led. Heads up: some strong language.",
+   "reviewed": "2026-11-07"
+  },
+  "Feel Good": {
+   "status": "blocked",
+   "notes": "Rated TV-MA; drama about addiction and an all-consuming relationship, with sexual content: outside the family's limits on sexual content and tone.",
+   "reviewed": "2026-11-07"
+  },
+  "The Job Lot": {
+   "status": "ok",
+   "notes": "Workplace sitcom set in a West Midlands job centre; light, character-led comedy. No major concerns noted.",
+   "reviewed": "2026-11-07"
+  },
+  "Motherland": {
+   "status": "blocked",
+   "notes": "Rated TV-MA; sharp, sweary comedy of competitive parenting with a cynical edge, outside the family's language and tone limits.",
+   "reviewed": "2026-11-07"
+  },
+  "Slow Horses": {
+   "status": "blocked",
+   "notes": "Rated TV-MA spy thriller with violence and strong language, beyond the family's mild-violence and moderate-language limits.",
+   "reviewed": "2026-11-07"
+  },
+  "Rick Stein's Secret France": {
+   "status": "ok",
+   "notes": "Rick Stein searches rural France for its best food; gentle food-and-travel series. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "Friday Night Dinner": {
+   "status": "ok",
+   "notes": "Family sitcom about two brothers' Friday dinners with their parents; warm and silly. Heads up: TV-14, some crude and slapstick humour.",
+   "reviewed": "2026-11-07"
+  },
+  "The Great British Food Revival": {
+   "status": "ok",
+   "notes": "BBC chefs champion traditional British produce; gentle and informative. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "The Chef Show": {
+   "status": "ok",
+   "notes": "Jon Favreau and Roy Choi cook with chefs and friends; relaxed food series. Heads up: rated TV-MA, so expect some casual strong language.",
+   "reviewed": "2026-11-07"
+  },
+  "Married to Real Estate": {
+   "status": "ok",
+   "notes": "HGTV renovation and real-estate series with a married couple; TV-G. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "The Food That Built America": {
+   "status": "ok",
+   "notes": "History of the families and inventions behind famous American foods; TV-PG. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "George Clarke's Amazing Spaces": {
+   "status": "ok",
+   "notes": "Architect George Clarke explores small, creative homes and builds; gentle and inspiring. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "James May: Our Man in Italy": {
+   "status": "ok",
+   "notes": "James May's warm, funny travelogue through Italy; TV-14. Heads up: occasional mild language.",
+   "reviewed": "2026-11-07"
+  },
+  "McDonald & Dodds": {
+   "status": "ok",
+   "notes": "Light-hearted odd-couple detective series set in Bath. Heads up: murder-mystery plots, handled without graphic detail.",
+   "reviewed": "2026-11-07"
+  },
+  "The Movies That Made Us": {
+   "status": "ok",
+   "notes": "Behind-the-scenes stories of popular blockbusters; entertaining. Heads up: rated TV-MA, so expect some strong language.",
+   "reviewed": "2026-11-07"
+  },
+  "The Cabin Chronicles": {
+   "status": "ok",
+   "notes": "Explores the architecture and design of beautiful cabins; calm and inspiring. No content concerns.",
+   "reviewed": "2026-11-07"
+  },
+  "The Toys That Made Us": {
+   "status": "ok",
+   "notes": "The stories behind famous toy franchises; nostalgic and entertaining. Heads up: TV-14, occasional language.",
+   "reviewed": "2026-11-07"
+  },
+  "A Discovery of Witches": {
+   "status": "blocked",
+   "notes": "Strong supernatural and witchcraft themes, violence, sexual content and mature tone.",
+   "reviewed": "2026-11-07"
+  },
+  "A Gentleman in Moscow": {
+   "status": "blocked",
+   "notes": "Political oppression, violence and mature language; measured, character-driven pacing.",
+   "reviewed": "2026-11-07"
+  },
+  "A Million Little Things": {
+   "status": "blocked",
+   "notes": "Grief, suicide, depression, illness, relationship conflict and emotionally heavy storylines.",
+   "reviewed": "2026-11-07"
+  },
+  "A Place in the Sun": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Agatha Raisin": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations, crime scenes and occasional innuendo; tone is often comic but death is central to the mysteries.",
+   "reviewed": "2026-11-07"
+  },
+  "Alma's Not Normal": {
+   "status": "blocked",
+   "notes": "Strong language, adult themes, family dysfunction and frank sexual references.",
+   "reviewed": "2026-11-07"
+  },
+  "Alone": {
+   "status": "ok",
+   "notes": "Heads up: hunger, isolation, injuries, animal encounters and emotional distress; occasional medical emergencies.",
+   "reviewed": "2026-11-07"
+  },
+  "Amazing Hotels: Life Beyond the Lobby": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "An Idiot Abroad": {
+   "status": "blocked",
+   "notes": "TV-MA; adult language and crude humor are likely. Not a family-first recommendation given your content preferences.",
+   "reviewed": "2026-11-07"
+  },
+  "Annika": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations and references to violence; some cases are grim, but the tone often has dry humor.",
+   "reviewed": "2026-11-07"
+  },
+  "Anthony Bourdain: Parts Unknown": {
+   "status": "ok",
+   "notes": "Heads up: some episodes visit conflict-affected regions and explore war, poverty, political tension and difficult social realities. Occasional strong language.",
+   "reviewed": "2026-11-07"
+  },
+  "Back": {
+   "status": "blocked",
+   "notes": "Cynical humor, strong language and adult themes; deliberately awkward and dark in places.",
+   "reviewed": "2026-11-07"
+  },
+  "Bad Sisters": {
+   "status": "blocked",
+   "notes": "Dark humor, murder, domestic abuse, strong language, sexual references and disturbing situations.",
+   "reviewed": "2026-11-07"
+  },
+  "Bargain Block": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Belgravia": {
+   "status": "ok",
+   "notes": "Heads up: class conflict, infidelity, family secrets and mature relationship themes; limited violence.",
+   "reviewed": "2026-11-07"
+  },
+  "Belgravia: The Next Chapter": {
+   "status": "ok",
+   "notes": "Heads up: romantic and sexual relationship themes, social conflict and family secrets; not a light comedy.",
+   "reviewed": "2026-11-07"
+  },
+  "Better Call Saul": {
+   "status": "blocked",
+   "notes": "Violence, criminal activity, strong language, moral decline and a slow-burn dramatic pace.",
+   "reviewed": "2026-11-07"
+  },
+  "Better Things": {
+   "status": "blocked",
+   "notes": "Strong language, sexual references and frank adult situations; grounded family struggles can be emotionally raw.",
+   "reviewed": "2026-11-07"
+  },
+  "Beyond Paradise": {
+   "status": "ok",
+   "notes": "Heads up: murder mysteries and occasional references to crime; generally gentler than many police procedurals.",
+   "reviewed": "2026-11-07"
+  },
+  "Big Boys": {
+   "status": "blocked",
+   "notes": "Strong language, sexual references, drinking and frank LGBTQ+ themes; mature comedy.",
+   "reviewed": "2026-11-07"
+  },
+  "Big Dreams Small Spaces": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Big Little Lies": {
+   "status": "blocked",
+   "notes": "Domestic violence, sexual assault themes, strong language, nudity and mature relationship content; emotionally dark.",
+   "reviewed": "2026-11-07"
+  },
+  "Black Books": {
+   "status": "blocked",
+   "notes": "Adult language, drinking and cynical humor; relatively low-stakes but deliberately eccentric comedy.",
+   "reviewed": "2026-11-07"
+  },
+  "Bless This Mess": {
+   "status": "ok",
+   "notes": "Heads up: mild language and occasional adult jokes; generally light.",
+   "reviewed": "2026-11-07"
+  },
+  "Blown Away": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Blue Lights": {
+   "status": "blocked",
+   "notes": "Crime, violence, threatening situations, strong language and intense subject matter. Not a light family drama.",
+   "reviewed": "2026-11-07"
+  },
+  "Borgen": {
+   "status": "ok",
+   "notes": "Heads up: political conflict, adult relationships, some language and mature themes; not primarily violent.",
+   "reviewed": "2026-11-07"
+  },
+  "Bosch": {
+   "status": "blocked",
+   "notes": "Murder, violence, crime-scene material and strong language; serious and sometimes bleak tone.",
+   "reviewed": "2026-11-07"
+  },
+  "Bosch: Legacy": {
+   "status": "blocked",
+   "notes": "Murder, violence, crime-scene material and strong language; continues the mature tone of Bosch.",
+   "reviewed": "2026-11-07"
+  },
+  "Breeders": {
+   "status": "blocked",
+   "notes": "Strong language, sexual references, angry outbursts and frank parenting stress; intentionally irreverent.",
+   "reviewed": "2026-11-07"
+  },
+  "Broadchurch": {
+   "status": "blocked",
+   "notes": "Child murder, grief, trauma, violence and intense emotional distress are central to the story. Strong mismatch for your preferences.",
+   "reviewed": "2026-11-07"
+  },
+  "Building Off the Grid": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Burn Notice": {
+   "status": "ok",
+   "notes": "Heads up: action violence, gunfights, explosions and criminal threats; generally lighter in tone than many crime dramas.",
+   "reviewed": "2026-11-07"
+  },
+  "Call the Midwife": {
+   "status": "ok",
+   "notes": "Heads up: childbirth, medical complications, infant and maternal deaths, poverty, illness and emotionally intense stories; rating may reflect mature themes.",
+   "reviewed": "2026-11-07"
+  },
+  "Castle": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations, occasional violence, mild sexual content and language.",
+   "reviewed": "2026-11-07"
+  },
+  "Christina in the Country": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Christina on the Coast": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Corporate": {
+   "status": "blocked",
+   "notes": "Dark and cynical humor, strong language, sexual references, disturbing workplace situations and bleak themes.",
+   "reviewed": "2026-11-07"
+  },
+  "Dalgliesh": {
+   "status": "blocked",
+   "notes": "Murder, occasional violence and somber subject matter; measured, atmospheric pacing.",
+   "reviewed": "2026-11-07"
+  },
+  "Damages": {
+   "status": "blocked",
+   "notes": "Strong language, violence, sexual content, disturbing themes and a consistently dark tone.",
+   "reviewed": "2026-11-07"
+  },
+  "Dark Tourist": {
+   "status": "blocked",
+   "notes": "Disturbing locations and subject matter, death, violence, tragedy and unsettling imagery.",
+   "reviewed": "2026-11-07"
+  },
+  "Death and Other Details": {
+   "status": "blocked",
+   "notes": "Murder, peril, violence and some sexual references; serialized plotting.",
+   "reviewed": "2026-11-07"
+  },
+  "Death in Paradise": {
+   "status": "ok",
+   "notes": "Heads up: murder is central to every episode; crime-scene and death themes. TV-PG does not mean violence-free.",
+   "reviewed": "2026-11-07"
+  },
+  "Designated Survivor": {
+   "status": "blocked",
+   "notes": "Terrorism, violence, political threats and sustained suspense.",
+   "reviewed": "2026-11-07"
+  },
+  "Designing the Hebrides": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Detroiters": {
+   "status": "blocked",
+   "notes": "Crude and awkward humor, sexual jokes and some language.",
+   "reviewed": "2026-11-07"
+  },
+  "Deutschland 83": {
+   "status": "blocked",
+   "notes": "Sexual content, violence, strong language, espionage danger and political tension.",
+   "reviewed": "2026-11-07"
+  },
+  "Dream Home Makeover": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Endeavour": {
+   "status": "blocked",
+   "notes": "Murder, some violence and mature themes; atmospheric and sometimes somber, with deliberate pacing.",
+   "reviewed": "2026-11-07"
+  },
+  "Escape to the Chateau": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Escape to the Chateau: DIY": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Escape to the Country": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Father Brown": {
+   "status": "ok",
+   "notes": "Heads up: murder themes and occasional peril, but generally gentle and low on graphic violence.",
+   "reviewed": "2026-11-07"
+  },
+  "Fisk": {
+   "status": "ok",
+   "notes": "Heads up: mild language, adult relationship references and dry, understated humor.",
+   "reviewed": "2026-11-07"
+  },
+  "Grand Designs": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Great British Home Restoration": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Great British Railway Journeys": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Monty Don's Italian Gardens": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Queens of Mystery": {
+   "status": "ok",
+   "notes": "Heads up: murder investigations and crime themes are central. PBS describes darkly comic cases. Violence intensity and sexual-content details need episode-level review before recommending.",
+   "reviewed": "2026-11-07"
+  },
+  "Restoration Australia": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Restoration Home": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "The Great British Sewing Bee": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "The Hotel Inspector": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "The Nate and Jeremiah Home Project": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "The Repair Shop": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "The Repair Shop (UK)": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
+  },
+  "Your Home Made Perfect": {
+   "status": "ok",
+   "notes": "No significant content concerns noted in its researched profile.",
+   "reviewed": "2026-11-07"
   }
  }
 }

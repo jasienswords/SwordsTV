@@ -6,6 +6,10 @@
 //   node tools/review.mjs reject <tmdbId> "<reason>" reject: remove it and never suggest it again
 //   node tools/review.mjs added                       family-added shows still needing content notes
 //   node tools/review.mjs note "<title>" "<notes>"     content notes for a family-added show (never rejected)
+//   node tools/review.mjs backlog [N]                 the N best-matching catalog shows not yet content-reviewed
+//   node tools/review.mjs clear "<title>" "<notes>"     reviewed: OK to recommend (notes shown on the show page)
+//   node tools/review.mjs block "<title>" "<reason>"    reviewed: never recommend (still searchable)
+// For You only recommends shows that have been content-reviewed.
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -48,6 +52,36 @@ if (cmd === 'list') {
     fs.writeFileSync(GF, JSON.stringify(guidance, null, 1) + '\n');
     console.log(`Noted: ${id}`);
   }
+} else if (cmd === 'backlog' || ((cmd === 'clear' || cmd === 'block') && id && note)) {
+  const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  const rd = f => JSON.parse(fs.readFileSync(path.join(ROOT, f), 'utf8'));
+  const GF = path.join(ROOT, 'guidance.json');
+  const guidance = fs.existsSync(GF) ? rd('guidance.json') : {shows: {}};
+  if (cmd === 'backlog') {
+    const vm = await import('node:vm');
+    const research = rd('shows.json'), tmdb = rd('tmdb.json').shows, scores = rd('scores.json').shows;
+    const ratings = fs.existsSync(path.join(ROOT, 'ratings.json')) ? rd('ratings.json').changes || {} : {};
+    const listed = x => ['Up Next', 'Watching', 'Want to Watch'].includes(x);
+    const shows = rd('data.json').catalog.map(x => { const c = ratings[x.title] || {}; return {...x, ...c,
+      libraryStatus: c.libraryStatus ?? (listed(c.status) ? c.status : listed(x.status) ? x.status : 'Not in My Library'),
+      watched: c.watched ?? (c.status === 'Watched' || x.status === 'Watched')}; });
+    const ctx = {TMDB: tmdb, RESEARCH: research, SCORES: scores, console};
+    vm.createContext(ctx);
+    vm.runInContext(fs.readFileSync(path.join(ROOT, 'taste.js'), 'utf8') + '\n;this.e={buildProfile,rankedCandidates};', ctx);
+    const reviewed = t => research[t] || guidance.shows[t];
+    const todo = ctx.e.rankedCandidates(shows, ctx.e.buildProfile(shows)).filter(x => !reviewed(x.s.title)).slice(0, +id || 25);
+    if (!todo.length) console.log('Every recommendable show has been reviewed.');
+    for (const {s: show} of todo) {
+      const x = tmdb[show.title];
+      console.log(`\n${show.title} (${x.year}${x.endYear && x.endYear !== x.year ? '–' + x.endYear : ''}) · ${x.genres.join(', ')} · ${x.networks.map(n => n.name).join(', ')} · US rating ${x.rating || 'n/a'}`);
+      console.log(`  Overview: ${x.overview}`);
+      console.log(`  Keywords: ${x.keywords.join(', ') || 'none'}`);
+    }
+  } else {
+    guidance.shows[id] = {status: cmd === 'clear' ? 'ok' : 'blocked', notes: note, reviewed: new Date().toISOString().slice(0, 10)};
+    fs.writeFileSync(GF, JSON.stringify(guidance, null, 1) + '\n');
+    console.log(`${cmd === 'clear' ? 'Cleared' : 'Blocked'}: ${id}`);
+  }
 } else if ((cmd === 'ok' || cmd === 'reject') && id && note) {
   const hit = find();
   if (!hit) { console.error(`No discovered show with TMDB id ${id}.`); process.exit(1); }
@@ -62,6 +96,6 @@ if (cmd === 'list') {
   }
   save();
 } else {
-  console.error('Usage: review.mjs list | ok <tmdbId> "<notes>" | reject <tmdbId> "<reason>" | added | note "<title>" "<notes>"');
+  console.error('Usage: review.mjs list | ok <tmdbId> "<notes>" | reject <tmdbId> "<reason>" | added | note "<title>" "<notes>" | backlog [N] | clear "<title>" "<notes>" | block "<title>" "<reason>"');
   process.exit(1);
 }
