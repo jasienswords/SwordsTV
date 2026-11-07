@@ -401,3 +401,11 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .wordmark span:nth-child(5){transform:rotate(-4deg) translateY(2px);color:#f6c75a}
 .wordmark span:nth-child(6){transform:rotate(6deg) translateY(-1px);color:#f3b545}
 .wordmark-inline{font-family:"Fredoka",-apple-system,sans-serif;font-weight:700;color:#e09a2b;letter-spacing:.3px}
+
+/* iPhone: no auto-zoom on form fields (Safari zooms in on text under 16px and stays zoomed) */
+input,select,textarea,.field,.release-edit select{font-size:16px}
+/* Rate sheet: fits the visible screen, scrolls inside itself, page behind is locked */
+body.sheet-open{position:fixed;left:0;right:0;overflow:hidden}
+.modal{max-height:88vh;max-height:88dvh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
+@media(max-width:650px){.modal{max-height:92vh;max-height:calc(100dvh - 24px);padding-bottom:calc(env(safe-area-inset-bottom) + 22px)}}
+.modal-actions{position:sticky;bottom:-22px;background:var(--panel);padding:10px 0 4px;margin-bottom:-4px}
