@@ -1,7 +1,18 @@
-let DATA=null,RESEARCH={},TMDB={};
+let DATA=null,RESEARCH={},TMDB={},SCORES={};
 const IMG="https://image.tmdb.org/t/p/";
 const img=(p,size)=>p?IMG+size+p:"";
 const tm=t=>TMDB[t]||null;
+let SCORES_CHECKED="";
+// Scores for shows without a hand-researched profile, in the same shape the ratings panel reads.
+function scoreResearch(title){const x=SCORES[title];if(!x)return {};const rt=x.rt||{};
+ return {imdb:x.imdb&&x.imdb.rating!=null?x.imdb.rating+"/10 ("+Number(x.imdb.votes).toLocaleString("en-US")+" ratings)":"",
+  rt:[rt.critics!=null?rt.critics+"% critic":"",rt.audience!=null?rt.audience+"% audience":""].filter(Boolean).join(" / "),
+  metascore:x.metascore};}
+function scoreSources(title,t){const x=SCORES[title]||{},links=[];
+ if(t&&t.imdb&&x.imdb&&x.imdb.rating!=null)links.push(`<a href="https://www.imdb.com/title/${esc(t.imdb)}/" target="_blank" rel="noopener">IMDb</a>`);
+ if(x.rt&&x.rt.url)links.push(`<a href="${esc(x.rt.url)}" target="_blank" rel="noopener">Rotten Tomatoes</a>`);
+ if(x.metascore&&x.metascore.url)links.push(`<a href="${esc(x.metascore.url)}" target="_blank" rel="noopener">Metacritic</a>`);
+ return links.length?" Review scores from "+links.join(" · ")+(SCORES_CHECKED?" (checked "+esc(SCORES_CHECKED)+")":"")+".":"";}
 const STORAGE="swordstv_v1_user_changes";
 let changes=JSON.parse(localStorage.getItem(STORAGE)||"{}"),currentTitle=null,currentView="home",searchTerm="",ratingFilter="All";
 const colors=[["#35566b","#172536"],["#76533e","#2a1b20"],["#4e6470","#1c2b3b"],["#796b48","#29251d"],["#5c496d","#211c32"],["#3d6b5e","#182b2a"],["#76505c","#2b1b2a"],["#4b5c82","#1a2039"]];
@@ -156,7 +167,7 @@ function renderDetail(){
   note=`<div class="note">Research sources: ${r.sources.map(x=>`<a href="${esc(x[1])}" target="_blank" rel="noopener">${esc(x[0])}</a>`).join(" · ")}${t?' · Images and series details from <a href="https://www.themoviedb.org/tv/'+t.id+'" target="_blank" rel="noopener">TMDB</a>':""}. Streaming rights and catalogs can change; confirm on the service before watching.</div>`;
  }else if(t){
   facts=factList([["Seasons",t.seasons?t.seasons+" seasons · "+t.episodes+" episodes":""],["Series status",statusText(t)],["Cast / presenters",t.cast.join(", ")||"Not listed"],["Genre",t.genres.join(", ")],["Network",t.networks.map(n=>n.name).join(", ")],["U.S. content rating",t.rating||"Not listed"],["Content guidance","Not yet verified; not cleared for recommendation"]]);
-  note=`<div class="note">Details and images from <a href="https://www.themoviedb.org/tv/${t.id}" target="_blank" rel="noopener">TMDB</a>. Content guidance and review scores for this show haven't been researched yet, so it isn't cleared for recommendation.</div>`;
+  note=`<div class="note">Details and images from <a href="https://www.themoviedb.org/tv/${t.id}" target="_blank" rel="noopener">TMDB</a>.${scoreSources(s.title,t)} Content guidance for this show hasn't been researched yet, so it isn't cleared for recommendation.</div>`;
  }else{
   facts=factList([["Where to stream","Not yet verified"],["Seasons","Not yet verified"],["Cast / presenters","Not yet verified"],["Genre / synopsis","Research pending"],["Content guidance","Not yet verified; not cleared for recommendation"]]);
   note=`<div class="note">This title has not yet been researched. Your subscription list is not a confirmation that this show is available on those services.</div>`;
@@ -166,7 +177,7 @@ function renderDetail(){
 <div class="detail-actions"><button class="btn primary" id="rateThis">✦ Rate It</button><button class="btn" id="addWatching">＋ Add as Watching</button><button class="btn" id="addWant">＋ Want to Watch</button></div>
 <div class="detail-content">
 <div class="card"><h3 class="card-title">Where to Watch</h3>${renderWhere(r,t)}</div>
-<div class="card"><h3 class="card-title">Ratings &amp; Reviews</h3>${renderRatingPanel(r||{},t)}</div>
+<div class="card"><h3 class="card-title">Ratings &amp; Reviews</h3>${renderRatingPanel(r||scoreResearch(s.title),t)}</div>
 <div class="card"><h3 class="card-title">About this Show</h3>${about?`<p class="about-text">${esc(about)}</p>`:""}${facts}</div>
 ${note}</div></section>`;
  document.getElementById("backBtn").onclick=()=>{currentView=previousView;render();window.scrollTo(0,previousScroll)};
@@ -188,5 +199,5 @@ document.getElementById("importBtn").onclick=()=>document.getElementById("import
 document.getElementById("importFile").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(d.changes){changes={...changes,...d.changes};localStorage.setItem(STORAGE,JSON.stringify(changes));if(d.subscriptions)localStorage.setItem(SUBS_KEY,JSON.stringify(d.subscriptions));toast("Backup imported");render()}else toast("That file is not a SwordsTV backup")}catch{toast("Could not read backup file")}};
 function showLoadError(){document.getElementById("main").innerHTML='<div class="empty">SwordsTV couldn\'t load its show data. Check your connection and reload the page.</div>'}
 function loadJSON(url){return fetch(url,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(url+" "+r.status);return r.json()})}
-Promise.all([loadJSON("data.json"),loadJSON("shows.json").catch(()=>({})),loadJSON("tmdb.json").catch(()=>({}))]).then(([d,r,t])=>{DATA=d;RESEARCH=r;TMDB=t.shows||{};render()}).catch(showLoadError);
+Promise.all([loadJSON("data.json"),loadJSON("shows.json").catch(()=>({})),loadJSON("tmdb.json").catch(()=>({})),loadJSON("scores.json").catch(()=>({}))]).then(([d,r,t,sc])=>{DATA=d;RESEARCH=r;TMDB=t.shows||{};SCORES=sc.shows||{};SCORES_CHECKED=sc.checked||"";render()}).catch(showLoadError);
 if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
