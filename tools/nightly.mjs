@@ -70,6 +70,7 @@ if (signals.length) {
 
 step(2, 'Refreshing TMDB data for every show…');
 run('tools/tmdb-import.mjs');
+try { run('tools/providers.mjs'); } catch { console.log('Could not refresh the streaming service list; keeping the last one.'); }
 
 step(3, 'Refreshing IMDb ratings…');
 const imdb = await loadImdb();

@@ -59,9 +59,11 @@ function currentProfile() {
   return {ageGroup: p.ageGroup || 'adult', comfort: {...DEFAULT_COMFORT, ...(p.comfort || {})}, prefs: p.prefs || {}, setupDone: !!p.setupDone || !!p.legacyCatalog, name: p.name || '', legacyCatalog: !!p.legacyCatalog};
 }
 // What the taste engine reads: the setup answers plus how the profile feels about dark themes.
-function currentPrefs() { const p = currentProfile(); return {...p.prefs, dark: p.ageGroup === 'adult' ? p.comfort.dark : 'avoid'}; }
+function currentPrefs() { const p = currentProfile(); return {...p.prefs, focus: (SYNC.profiles[SYNC.pid] || {}).focus || null, dark: p.ageGroup === 'adult' ? p.comfort.dark : 'avoid'}; }
 async function updateProfile(pid, fields) {
-  await SYNC.db.doc(`households/${SYNC.hid}/profiles/${pid}`).set({...fields, updatedAt: Date.now()}, {merge: true});
+  // mergeFields replaces each named setting whole (a plain merge would keep old keys inside it).
+  const data = {...fields, updatedAt: Date.now()};
+  await SYNC.db.doc(`households/${SYNC.hid}/profiles/${pid}`).set(data, {mergeFields: Object.keys(data)});
   SYNC.profiles[pid] = {...(SYNC.profiles[pid] || {}), ...fields};
 }
 
@@ -199,15 +201,21 @@ function signalOf(ch) {
 // Send this profile's ratings, and the household's services and added shows.
 function syncPush() {
   if (!SYNC.ready || !SYNC.user || !SYNC.hid || !SYNC.pid) return;
-  clearTimeout(SYNC.pushing);
-  SYNC.pushing = setTimeout(() => {
+  // Capture this profile's state now, so switching profiles before the save goes out can't
+  // send it under the wrong profile or drop it. Saves are batched per profile.
+  const hid = SYNC.hid, pid = SYNC.pid, ch = changes, legacy = LEGACY_CATALOG, cp = currentProfile(), prefs = currentPrefs();
+  SYNC.pushTimers = SYNC.pushTimers || {};
+  clearTimeout(SYNC.pushTimers[pid]);
+  SYNC.pushTimers[pid] = setTimeout(() => {
+    delete SYNC.pushTimers[pid];
     let subs = {};
     try { subs = JSON.parse(localStorage.getItem(SUBS_KEY) || '{}'); } catch {}
-    const db = SYNC.db, now = Date.now(), b = db.batch(), hid = SYNC.hid, pid = SYNC.pid;
-    b.set(db.doc(`households/${hid}/profiles/${pid}`), {changes, updatedAt: now, updatedBy: SYNC.user.email || ''}, {merge: true});
-    b.set(db.doc('households/' + hid), {added: ADDED, subscriptions: subs, updatedAt: now}, {merge: true});
-    const cp = currentProfile();
-    b.set(db.doc('signals/' + hid), {profiles: {[pid]: {legacyCatalog: LEGACY_CATALOG, ageGroup: cp.ageGroup, prefs: currentPrefs(), comfort: cp.comfort, changes: signalOf(changes)}}, added: ADDED, updatedAt: now}, {merge: true});
+    const db = SYNC.db, now = Date.now(), b = db.batch();
+    b.set(db.doc(`households/${hid}/profiles/${pid}`), {changes: ch, updatedAt: now, updatedBy: SYNC.user.email || ''}, {mergeFields: ['changes', 'updatedAt', 'updatedBy']});
+    b.set(db.doc('households/' + hid), {added: ADDED, subscriptions: subs, updatedAt: now}, {mergeFields: ['added', 'subscriptions', 'updatedAt']});
+    // mergeFields replaces this profile's entry whole, so cleared settings don't linger.
+    b.set(db.doc('signals/' + hid), {profiles: {[pid]: {legacyCatalog: legacy, ageGroup: cp.ageGroup, prefs, comfort: cp.comfort, changes: signalOf(ch)}}, added: ADDED, updatedAt: now},
+      {mergeFields: ['profiles.' + pid, 'added', 'updatedAt']});
     b.commit().then(() => syncStatus('Synced', true))
       .catch(e => { syncStatus('Sync paused', true); console.warn('Sync failed', e); });
   }, 400);

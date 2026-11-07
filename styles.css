@@ -580,3 +580,27 @@ body.gated{overflow:hidden}
 .shake{animation:shake .35s}
 .together-grid .next-ep{color:#2f9e6a}
 .lock-row .btn{white-space:nowrap;flex:0 0 auto}
+
+/* ── Profile: service picker, rate more, mood ── */
+.svc-picker{margin-top:10px}
+.svc-chosen{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0 12px}
+.svc-pill{display:inline-flex;align-items:center;gap:6px}
+.svc-pill img{width:18px;height:18px;border-radius:4px}
+.svc-pill button{-webkit-appearance:none;border:0;background:none;color:inherit;font-size:16px;line-height:1;padding:0 2px;cursor:pointer}
+.svc-search{width:100%;margin-bottom:8px;font-size:16px}
+.svc-group{border-top:1px solid var(--line,rgba(127,127,127,.2));padding:8px 0}
+.svc-group summary{cursor:pointer;font-weight:800;font-size:14px;padding:4px 0}
+.svc-group summary span{color:var(--muted);font-weight:600}
+.svc-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(96px,1fr));gap:8px;margin-top:8px}
+.svc{-webkit-appearance:none;appearance:none;display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 6px;border:1px solid var(--line,rgba(127,127,127,.25));border-radius:14px;background:transparent;color:inherit;font:600 12px/1.2 inherit;font-family:inherit;text-align:center;cursor:pointer;position:relative}
+.svc img,.svc-noimg{width:44px;height:44px;border-radius:10px;object-fit:cover;background:#2b2d33;display:grid;place-items:center;color:#fff;font-weight:800}
+.svc.on{border-color:var(--gold,#f6c75a);background:rgba(246,199,90,.14)}
+.svc.on:after{content:"✓";position:absolute;top:4px;right:6px;font-size:13px;font-weight:800;color:#b8860b}
+.ratemore-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-top:14px}
+.ratemore-row .muted{font-size:13px;flex:1 1 180px}
+.rm-label{font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:12px 0 6px}
+.rm-about{font-size:13.5px;color:var(--muted);text-align:center;margin:-4px 0 4px}
+.rate-buttons.three{grid-template-columns:1.4fr 1fr .7fr}
+.rm-want{background:var(--gold,#f6c75a);border-color:var(--gold,#f6c75a);color:#1c1e23}
+.focus-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:10px}
+.focus-chips button{font-size:13px;padding:7px 11px}
