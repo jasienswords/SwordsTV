@@ -3,8 +3,8 @@
   "short_name": "SwordsTV",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#0b0e14",
-  "theme_color": "#10131b",
+  "background_color": "#eceef2",
+  "theme_color": "#2b2d33",
   "description": "Your family TV guide",
   "icons": [
     {
