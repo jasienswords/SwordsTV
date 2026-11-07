@@ -72,16 +72,17 @@ if (cmd === 'list') {
   if (cmd === 'backlog') {
     const vm = await import('node:vm');
     const research = rd('shows.json'), tmdb = rd('tmdb.json').shows, scores = rd('scores.json').shows;
-    const ratings = fs.existsSync(path.join(ROOT, 'ratings.json')) ? rd('ratings.json').changes || {} : {};
-    const listed = x => ['Up Next', 'Watching', 'Want to Watch'].includes(x);
-    const shows = rd('data.json').catalog.map(x => { const c = ratings[x.title] || {}; return {...x, ...c,
-      libraryStatus: c.libraryStatus ?? (listed(c.status) ? c.status : listed(x.status) ? x.status : 'Not in My Library'),
-      watched: c.watched ?? (c.status === 'Watched' || x.status === 'Watched')}; });
+    const {loadProfiles, showsFor} = await import('./lib/profiles.mjs');
+    const catalog = rd('data.json').catalog;
     const ctx = {TMDB: tmdb, RESEARCH: research, SCORES: scores, console};
     vm.createContext(ctx);
     vm.runInContext(fs.readFileSync(path.join(ROOT, 'taste.js'), 'utf8') + '\n;this.e={buildProfile,rankedCandidates};', ctx);
     const reviewed = t => research[t] || guidance.shows[t];
-    const todo = ctx.e.rankedCandidates(shows, ctx.e.buildProfile(shows)).filter(x => !reviewed(x.s.title)).slice(0, +id || 25);
+    // Every profile's best unreviewed matches, taken in turn so each person's picks get checked.
+    const lists = loadProfiles(ROOT).map(p => { const shows = showsFor(catalog, p); return ctx.e.rankedCandidates(shows, ctx.e.buildProfile(shows)).filter(x => !reviewed(x.s.title)); });
+    const todo = [], seen = new Set();
+    for (let i = 0; todo.length < (+id || 25) && lists.some(l => i < l.length); i++)
+      for (const l of lists) if (l[i] && !seen.has(l[i].s.title) && todo.length < (+id || 25)) { seen.add(l[i].s.title); todo.push(l[i]); }
     if (!todo.length) console.log('Every recommendable show has been reviewed.');
     for (const {s: show} of todo) {
       const x = tmdb[show.title];
