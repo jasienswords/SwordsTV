@@ -325,9 +325,14 @@ function openRate(title){currentTitle=title;const s=getShow(title),run=isOngoing
  pick("plan",s.libraryStatus==="Want to Watch"?"want":s.dismissed?"no":"none");
  document.getElementById("seasons").value=s.seasonsWatched||"";
  document.querySelectorAll('input[name="watchedOn"]').forEach(c=>c.checked=(s.watchedOn||[]).includes(c.value));
- document.getElementById("rateBg").style.display="flex"}
+ showSheet()}
 document.querySelectorAll("#rateForm .chips button").forEach(b=>b.onclick=()=>pick(b.closest(".chips").dataset.group,b.dataset.v));
 let toastTimer=null;
+// The rate sheet: lock the page behind it so a finger scrolls the sheet, not the page (iPhone Safari).
+let sheetScrollY=0;
+function showSheet(){sheetScrollY=window.scrollY;document.body.style.top=-sheetScrollY+"px";document.body.classList.add("sheet-open");const bg=document.getElementById("rateBg");bg.style.display="flex";bg.querySelector(".modal").scrollTop=0}
+function hideSheet(){document.getElementById("rateBg").style.display="none";document.body.classList.remove("sheet-open");document.body.style.top="";window.scrollTo(0,sheetScrollY)}
+document.getElementById("rateBg").addEventListener("click",e=>{if(e.target.id==="rateBg")hideSheet()});
 function toast(msg,undo){let t=document.getElementById("toast");t.textContent=msg;if(undo){const b=document.createElement("button");b.className="toast-undo";b.textContent="Undo";b.onclick=()=>{t.style.display="none";undo()};t.appendChild(b)}t.style.display="flex";clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display="none",undo?5000:2200)}
 document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE.watch;let obj;
  if(w==="not"){const ls=RATE.plan==="want"?"Want to Watch":"Not in My Library";
@@ -335,8 +340,8 @@ document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE
  else{const ls=w==="watching"?"Watching":"Not in My Library";
   obj={watched:w==="watched",completed:w==="watched",rating:RATE.rating,libraryStatus:ls,status:ls,dismissed:false,snoozeUntil:0,seasonsWatched:document.getElementById("seasons").value,watchedOn:[...document.querySelectorAll('input[name="watchedOn"]:checked')].map(c=>c.value)}}
  const msg=w==="not"?({want:"Added to Want to Watch",no:"Won't suggest it again",none:"Marked not watched"})[RATE.plan]:w==="watching"?"In My Queue as Watching":RATINGS.includes(RATE.rating)?"Saved to My Library":"Marked watched";
- saveChange(currentTitle,obj,{msg});document.getElementById("rateBg").style.display="none";if(currentView==="detail")renderDetail()};
-document.getElementById("cancelRate").onclick=()=>document.getElementById("rateBg").style.display="none";
+ saveChange(currentTitle,obj,{msg});hideSheet();if(currentView==="detail")renderDetail()};
+document.getElementById("cancelRate").onclick=()=>hideSheet();
 document.getElementById("nav").onclick=e=>{let b=e.target.closest("button[data-view]");if(!b)return;currentView=b.dataset.view;document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x===b));render();window.scrollTo(0,0)};
 document.getElementById("browseBtn").onclick=()=>{currentView="library";document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.view==="library"));render();window.scrollTo(0,0)};
 document.getElementById("exportBtn").onclick=()=>{let backup={project:DATA.project,changes,roundHistory:DATA.roundHistory,subscriptions:JSON.parse(localStorage.getItem(SUBS_KEY)||"{}")};let blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Queuey-backup.json";a.click();URL.revokeObjectURL(a.href)};
