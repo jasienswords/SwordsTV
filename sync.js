@@ -389,7 +389,8 @@ function showGate(kind, opts = {}) {
       <div class="comfort-block"${age === 'adult' ? '' : ' hidden'}><label>Comfort levels</label>${comfortRows(c)}</div>
       <p class="gate-hint" id="ageNote">${AGE_NOTES[age]}</p>
       <p class="gate-error" id="gateError" hidden></p><button class="btn primary" type="submit">Save</button></form>
-      <div class="gate-links"><button class="link-btn" id="gRedo">Redo taste setup</button>${opts.pid !== SYNC.pid ? '<button class="link-btn danger" id="gDelete">Delete profile</button>' : ''}<button class="link-btn" id="gCancel">Cancel</button></div>`;
+      ${Object.keys(SYNC.profiles).length > 1 ? `<button class="btn wide danger-btn" id="gDelete">Delete ${esc(p.name)}’s profile</button>` : ''}
+      <div class="gate-links"><button class="link-btn" id="gRedo">Redo taste setup</button><button class="link-btn" id="gCancel">Cancel</button></div>`;
   } else if (kind === 'message') {
     html = `${mascot}<h2>${esc(opts.title)}</h2><p class="gate-lead">${esc(opts.text)}</p>${opts.button ? `<button class="btn primary" id="gMsgBtn">${esc(opts.button)}</button>` : ''}`;
   }
@@ -430,7 +431,11 @@ function showGate(kind, opts = {}) {
   const ep = document.getElementById('gEditProfile');
   if (ep) ep.onsubmit = busy(ep, () => saveProfileEdit(opts.pid));
   on('gRedo', async () => { await updateProfile(opts.pid, {setupDone: false}); if (opts.pid === SYNC.pid) startSetup(); else { selectProfile(opts.pid); } });
-  on('gDelete', async () => { if (!confirm(`Delete ${SYNC.profiles[opts.pid].name}'s profile and ratings? This can't be undone.`)) return; await SYNC.db.doc(`households/${SYNC.hid}/profiles/${opts.pid}`).delete(); hideGate(); toast('Profile deleted'); });
+  on('gDelete', async () => {
+    const name = SYNC.profiles[opts.pid].name;
+    if (!confirm(`Delete ${name}’s profile, ratings and lists? This can’t be undone.`)) return;
+    try { await deleteProfile(opts.pid); toast(`${name}’s profile was deleted`); } catch (x) { gateError(x); }
+  });
   on('gCancel', () => hideGate());
 }
 // Profiles arrive through the live listener; switch once the new one shows up.
@@ -450,7 +455,7 @@ function renderAccount() {
     <div class="acct-section"><div class="acct-label">Profiles</div>
       <div class="profile-row">${ps.map(p => `<button class="profile-pick small${p.id === SYNC.pid ? ' on' : ''}" data-switch="${esc(p.id)}">${avatar(p)}<span>${esc(p.name)}</span></button>`).join('')}
       ${adultHere ? '<button class="profile-pick small add" id="aAdd"><span class="avatar add">+</span><span>Add</span></button>' : ''}</div>
-      ${adultHere ? `<div class="edit-row">${ps.map(p => `<button class="link-btn" data-edit="${esc(p.id)}">Edit ${esc(p.name)}</button>`).join('')}</div>` : ''}</div>
+      ${adultHere ? `<div class="edit-row">${ps.map(p => `<button class="link-btn" data-edit="${esc(p.id)}">Edit or delete ${esc(p.name)}</button>`).join('')}</div>` : ''}</div>
     <div class="acct-section"><div class="acct-label">People who can sign in</div>
       <ul class="acct-list">${members.map(m => `<li>${esc(m.email)}</li>`).join('')}${invited.map(e => `<li class="pending">${esc(e)} <em>invited</em> <button class="link-btn" data-uninvite="${esc(e)}">Cancel</button></li>`).join('')}</ul>
       <form id="aInvite" class="invite-form"><input class="field" id="aInviteEmail" type="email" autocomplete="off" autocapitalize="off" placeholder="Invite by email"><button class="btn" type="submit">Invite</button></form>
@@ -503,4 +508,18 @@ async function saveProfileEdit(pid) {
   hideGate();
   if (pid === SYNC.pid) { syncStatus('Synced', true); syncPush(); render(); }
   toast('Profile saved');
+}
+
+// Removes a profile everywhere: its ratings, its anonymous copy for the nightly job, and this
+// device's saved copy. The household's last profile can't be deleted.
+async function deleteProfile(pid) {
+  if (Object.keys(SYNC.profiles).length <= 1) throw new Error('A household needs at least one profile.');
+  const db = SYNC.db, b = db.batch();
+  b.delete(db.doc(`households/${SYNC.hid}/profiles/${pid}`));
+  b.set(db.doc('signals/' + SYNC.hid), {profiles: {[pid]: fs().FieldValue.delete()}, updatedAt: Date.now()}, {merge: true});
+  await b.commit();
+  localStorage.removeItem('queuey_changes_' + pid);
+  delete SYNC.profiles[pid];
+  if (pid === SYNC.pid) { SYNC.pid = null; saveSession(); showGate('profiles'); }
+  else hideGate();
 }
