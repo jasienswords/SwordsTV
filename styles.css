@@ -289,3 +289,4 @@ details.card summary{cursor:pointer}
 .search-btn.active{background:var(--gold);border-color:var(--gold);color:#1c1e23}
 .add-by-name{margin:16px 0 8px}
 input[type=search]{-webkit-appearance:none;appearance:none}
+.detail-actions .btn.done{grid-column:1/-1;border-color:var(--green);color:var(--green);font-weight:800}
