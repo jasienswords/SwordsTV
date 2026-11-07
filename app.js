@@ -331,8 +331,9 @@ document.querySelectorAll("#rateForm .chips button").forEach(b=>b.onclick=()=>pi
 let toastTimer=null;
 // The rate sheet: lock the page behind it so a finger scrolls the sheet, not the page (iPhone Safari).
 let sheetScrollY=0;
-function showSheet(){sheetScrollY=window.scrollY;document.body.style.top=-sheetScrollY+"px";document.body.classList.add("sheet-open");const bg=document.getElementById("rateBg");bg.style.display="flex";bg.querySelector(".modal").scrollTop=0}
-function hideSheet(){document.getElementById("rateBg").style.display="none";document.body.classList.remove("sheet-open");document.body.style.top="";window.scrollTo(0,sheetScrollY)}
+let openSheetId="rateBg";
+function showSheet(id="rateBg"){openSheetId=id;sheetScrollY=window.scrollY;document.body.style.top=-sheetScrollY+"px";document.body.classList.add("sheet-open");const bg=document.getElementById(id);bg.style.display="flex";bg.querySelector(".modal").scrollTop=0}
+function hideSheet(){document.getElementById(openSheetId).style.display="none";document.body.classList.remove("sheet-open");document.body.style.top="";window.scrollTo(0,sheetScrollY)}
 document.getElementById("rateBg").addEventListener("click",e=>{if(e.target.id==="rateBg")hideSheet()});
 function toast(msg,undo){let t=document.getElementById("toast");t.textContent=msg;if(undo){const b=document.createElement("button");b.className="toast-undo";b.textContent="Undo";b.onclick=()=>{t.style.display="none";undo()};t.appendChild(b)}t.style.display="flex";clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.style.display="none",undo?5000:2200)}
 document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE.watch;let obj;
@@ -343,6 +344,10 @@ document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE
  const msg=w==="not"?({want:"Added to Want to Watch",no:"Won't suggest it again",none:"Marked not watched"})[RATE.plan]:w==="watching"?"In My Queue as Watching":RATINGS.includes(RATE.rating)?"Saved to My Library":"Marked watched";
  saveChange(currentTitle,obj,{msg});hideSheet();if(currentView==="detail")renderDetail()};
 document.getElementById("cancelRate").onclick=()=>hideSheet();
+document.getElementById("aboutBtn").onclick=()=>showSheet("aboutBg");
+document.getElementById("aboutClose").onclick=()=>hideSheet();
+document.getElementById("aboutBg").addEventListener("click",e=>{if(e.target.id==="aboutBg")hideSheet()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&document.body.classList.contains("sheet-open"))hideSheet()});
 document.getElementById("nav").onclick=e=>{let b=e.target.closest("button[data-view]");if(!b)return;currentView=b.dataset.view;document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x===b));render();window.scrollTo(0,0)};
 document.getElementById("browseBtn").onclick=()=>{currentView="library";document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.view==="library"));render();window.scrollTo(0,0)};
 const doExport=()=>{let backup={project:DATA.project,changes,roundHistory:DATA.roundHistory,subscriptions:JSON.parse(localStorage.getItem(SUBS_KEY)||"{}")};let blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Queuey-backup.json";a.click();URL.revokeObjectURL(a.href)};
