@@ -34,6 +34,7 @@ export async function details(found, profileCast) {
     providers: {link: us.link || null, stream: prov(us.flatrate), free: prov(us.free), ads: prov(us.ads), buy: prov(us.buy), rent: prov(us.rent)},
     country: d.origin_country || [], language: d.original_language || null,
     keywords: (d.keywords?.results || []).map(k => k.name),
+    creators: (d.created_by || []).map(c => ({id: c.id, name: c.name})),
     similar: (d.recommendations?.results || []).slice(0, 20).map(r => r.id),
     nextEpisode: d.next_episode_to_air ? {date: d.next_episode_to_air.air_date, season: d.next_episode_to_air.season_number, episode: d.next_episode_to_air.episode_number} : null,
     lastEpisode: d.last_episode_to_air ? {date: d.last_episode_to_air.air_date, season: d.last_episode_to_air.season_number, episode: d.last_episode_to_air.episode_number} : null,
