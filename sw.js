@@ -11,6 +11,7 @@ const ASSETS = [
   './data.json',
   './shows.json',
   './tmdb.json',
+  './scores.json',
   './manifest.webmanifest',
   './icon-192.png',
   './icon-512.png',
