@@ -12,6 +12,8 @@ const TRAIT_WEIGHT = {genre: 1, country: 0.8, network: 0.5, length: 0.35, era: 0
 const SMOOTHING = 6;      // ratings needed before a trait's average is trusted
 // Extra credit for traits you often LOVE, not just ones that rarely disappoint.
 const LOVE_LIFT = 3;
+// Credit for sharing a creator with a show you Loved or Liked.
+const CREATOR_WEIGHT = {Loved: 0.8, Liked: 0.3};
 // No genre takes more than this share of a recommendation row or of the nightly finds.
 const MAX_GENRE_SHARE = 1 / 3;
 const MIN_SHOWN = 3;      // a trait needs this many rated shows to appear on the profile
@@ -114,6 +116,20 @@ function similarSources(title, profile) {
       if (genre && shared.length) out.push({title: src, weight, rating, shared: shared.slice(0, 3)});
     }
   }
+  // Same creator as a show you loved or liked, in a genre you share: a strong sign (e.g. The Paper,
+  // from the creator of The Office). This counts even when TMDB doesn't link the two shows.
+  const mine = new Map((t.creators || []).map(c => [c.id, c.name]));
+  if (mine.size) for (const [list, weight, rating] of [[profile.lovedTitles, CREATOR_WEIGHT.Loved, 'Loved'], [profile.likedTitles, CREATOR_WEIGHT.Liked, 'Liked']]) {
+    for (const src of list) {
+      const st = TMDB[src];
+      if (!st || src === title || st.id === t.id) continue;
+      const c = (st.creators || []).find(c => mine.has(c.id));
+      if (!c || !(t.genres || []).some(g => (st.genres || []).includes(g))) continue;
+      const i = out.findIndex(x => x.title === src);
+      if (i >= 0) out.splice(i, 1);
+      out.push({title: src, weight, rating, creator: c.name, shared: []});
+    }
+  }
   return out.sort((x, y) => y.weight - x.weight || y.shared.length - x.shared.length);
 }
 
@@ -192,7 +208,8 @@ const counted = (loved, liked) => [loved ? `loved ${loved}` : '', liked ? `liked
 function whyText(m) {
   const out = [];
   const b = m.because[0];
-  if (b) out.push(`Shares themes with ${b.title}, which you ${b.rating.toLowerCase()}: ${b.shared.slice(0, 3).join(', ')}.`);
+  if (b && b.creator) out.push(`From ${b.creator}, who created ${b.title}, which you ${b.rating.toLowerCase()}.`);
+  else if (b) out.push(`Shares themes with ${b.title}, which you ${b.rating.toLowerCase()}: ${b.shared.slice(0, 3).join(', ')}.`);
   for (const r of m.reasons) out.push(`You've ${counted(r.loved, r.liked)} of the ${r.rated} ${traitName(r)} you've rated.`);
   const sc = (typeof SCORES !== 'undefined' && SCORES[m.title]) || {};
   const rtm = String((RESEARCH[m.title] || {}).rt || '').match(/(\d{1,3})%\s*(?:critic|tomatometer)/i);

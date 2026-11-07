@@ -23,6 +23,7 @@ if (!process.env.TMDB_TOKEN) { console.error('Set TMDB_TOKEN.'); process.exit(1)
 const MAX_NEW_PER_NIGHT = 10;      // new finds added per run
 const MAX_PENDING_OR_SHOWN = 60;   // unrated discoveries kept in the app at once
 const MIN_IMDB = 7.0, MIN_IMDB_VOTES = 500;
+const MIN_IMDB_SAME_CREATOR = 6.5; // a new show from the creator of a show you loved gets more leeway
 const SKIP_GENRES = new Set(['Kids', 'News', 'Talk', 'Soap']);
 const today = new Date().toISOString().slice(0, 10);
 
@@ -62,6 +63,12 @@ for (const g of topGenres) for (const page of [1, 2]) {
   (r.results || []).forEach(x => add(x.id, 'popular in ' + g.label));
 }
 ((await api('/trending/tv/week')).results || []).forEach(x => add(x.id, 'trending this week'));
+// Other shows created by the people behind the shows you loved or liked.
+const creators = new Map();
+for (const t of [...profile.lovedTitles, ...profile.likedTitles]) for (const c of TMDB[t]?.creators || []) if (!creators.has(c.id)) creators.set(c.id, t);
+for (const [pid, t] of creators) {
+  try { ((await api(`/person/${pid}/tv_credits`)).crew || []).filter(x => x.job === 'Creator').forEach(x => add(x.id, 'same creator as ' + t)); } catch {}
+}
 console.log(`Checking ${pool.size} candidate shows from TMDB…`);
 
 // ── Score candidates ──
@@ -74,8 +81,10 @@ for (const [id, source] of pool) {
   if (rec.language !== 'en' || rec.genres.some(g => SKIP_GENRES.has(g)) || !rec.poster) continue;
   const title = catalogTitles.has(rec.name) ? `${rec.name} (${rec.year})` : rec.name;
   const im = imdbEntry(imdb, rec.imdb);
-  if (!im || im.rating == null || im.rating < MIN_IMDB || im.votes < MIN_IMDB_VOTES) continue;
+  if (!im || im.rating == null || im.votes < MIN_IMDB_VOTES) continue;
   TMDB[title] = rec; SCORES[title] = {imdb: im};
+  const sameCreator = matchShow(title, profile).because.some(b => b.creator && b.rating === 'Loved');
+  if (im.rating < (sameCreator ? MIN_IMDB_SAME_CREATOR : MIN_IMDB)) { delete TMDB[title]; continue; }
   if (contentFlags(title).length) { delete TMDB[title]; continue; }
   const m = matchShow(title, profile);
   delete TMDB[title];
@@ -93,12 +102,16 @@ const primary = r => (r.genres || ['?'])[0];
 const liveByGenre = {};
 for (const [, d] of live) liveByGenre[primary(d.tmdb)] = (liveByGenre[primary(d.tmdb)] || 0) + 1;
 const genreRoom = g => (liveByGenre[g] || 0) < Math.ceil(MAX_PENDING_OR_SHOWN * MAX_GENRE_SHARE);
-const picks = diversify(found.filter(f => genreRoom(primary(f.rec))), f => primary(f.rec));
+// Priority lane: recent shows from the creator of a show you loved (e.g. The Paper, from the
+// creator of The Office) go first, outside the genre limits; up to 3 a night.
+const recentYear = new Date().getFullYear() - 2;
+const priority = found.filter(f => +f.rec.year >= recentYear && f.m.because.some(b => b.creator && b.rating === 'Loved')).slice(0, 3);
+const picks = [...priority, ...diversify(found.filter(f => !priority.includes(f) && genreRoom(primary(f.rec))), f => primary(f.rec))];
 const tonight = {};
 for (const f of picks) {
   if (added.length >= Math.min(MAX_NEW_PER_NIGHT, room)) break;
   const g = primary(f.rec);
-  if ((tonight[g] || 0) >= Math.ceil(MAX_NEW_PER_NIGHT * MAX_GENRE_SHARE)) continue;
+  if (!priority.includes(f) && (tonight[g] || 0) >= Math.ceil(MAX_NEW_PER_NIGHT * MAX_GENRE_SHARE)) continue;
   tonight[g] = (tonight[g] || 0) + 1;
   const site = await siteScores(f.title, f.rec);
   TMDB[f.title] = f.rec; SCORES[f.title] = {imdb: f.im, ...site};

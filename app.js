@@ -98,7 +98,7 @@ function renderHome(){
  if(top.length)html+=heading("Top matches for you")+recRail(top);
  // "Because you loved…" rows rotate daily through loved shows that have enough similar picks.
  const day=Math.floor(Date.now()/864e5),loved=profile.lovedTitles,rows=[];
- for(let i=0;i<loved.length&&rows.length<2;i++){const src=loved[(i+day)%loved.length];const items=ranked.filter(x=>x.m.because.includes(src)&&!seen.has(x.s.title));if(items.length>=3)rows.push([src,take(items,10)])}
+ for(let i=0;i<loved.length&&rows.length<2;i++){const src=loved[(i+day)%loved.length];const items=ranked.filter(x=>x.m.because.some(b=>b.title===src)&&!seen.has(x.s.title));if(items.length>=3)rows.push([src,take(items,10)])}
  rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`)+recRail(items));
  // Your two highest-rated genres.
  Object.values(profile.traits).filter(x=>x.type==="genre"&&x.n>=minShown("genre")&&x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,2).forEach(g=>{
