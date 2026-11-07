@@ -20,10 +20,12 @@ function mergeChanges(local, remote) {
   return out;
 }
 
+const SYNC_SHORT = {'Sign in to sync': 'Sign in', 'Not a family account': 'Not allowed', 'Sync paused': 'Paused'};
 function syncStatus(text, signedIn) {
   const b = document.getElementById('syncBtn');
   if (!b) return;
-  b.textContent = text;
+  b.textContent = SYNC_SHORT[text] || text;
+  b.title = text === 'Synced' ? 'Family sync is on' : text;
   b.classList.toggle('signed-in', !!signedIn);
 }
 
