@@ -1,11 +1,11 @@
 {
-  "name": "SwordsTV",
-  "short_name": "SwordsTV",
+  "name": "Queuey",
+  "short_name": "Queuey",
   "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#eceef2",
   "theme_color": "#2b2d33",
-  "description": "Your family TV guide",
+  "description": "Your TV agent: learns your taste and finds what to watch next",
   "icons": [
     {
       "src": "icon-192.png",

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Queuey">
+  <title>Queuey</title>
+  <defs>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f6c75a"/>
+      <stop offset="1" stop-color="#e09a2b"/>
+    </linearGradient>
+    <radialGradient id="screen" cx="0.38" cy="0.32" r="0.9">
+      <stop offset="0" stop-color="#fffdf6"/>
+      <stop offset="1" stop-color="#f3e6c8"/>
+    </radialGradient>
+    <radialGradient id="lens" cx="0.35" cy="0.3" r="0.8">
+      <stop offset="0" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset="1" stop-color="#d9ecf7" stop-opacity=".9"/>
+    </radialGradient>
+  </defs>
+  <!-- antennae -->
+  <path d="M232 132 L190 64 M280 132 L326 58" stroke="#2b2d33" stroke-width="14" stroke-linecap="round" fill="none"/>
+  <circle cx="190" cy="60" r="16" fill="#ef6a5b"/>
+  <circle cx="328" cy="54" r="16" fill="#4f9fe0"/>
+  <!-- little feet -->
+  <rect x="150" y="392" width="56" height="34" rx="14" fill="#2b2d33"/>
+  <rect x="290" y="392" width="56" height="34" rx="14" fill="#2b2d33"/>
+  <!-- TV body -->
+  <rect x="76" y="124" width="352" height="284" rx="64" fill="url(#body)" stroke="#2b2d33" stroke-width="14"/>
+  <!-- screen / face -->
+  <rect x="112" y="160" width="248" height="200" rx="44" fill="url(#screen)" stroke="#2b2d33" stroke-width="10"/>
+  <!-- control knobs -->
+  <circle cx="394" cy="196" r="12" fill="#2b2d33"/>
+  <circle cx="394" cy="236" r="12" fill="#2b2d33"/>
+  <!-- left eye: curious, with a raised brow -->
+  <path d="M152 214 Q176 196 202 210" stroke="#2b2d33" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <ellipse cx="178" cy="252" rx="20" ry="24" fill="#2b2d33"/>
+  <circle cx="186" cy="242" r="7" fill="#fff"/>
+  <!-- cheeks + friendly smile -->
+  <circle cx="150" cy="300" r="13" fill="#f7a99f" opacity=".75"/>
+  <path d="M172 312 Q204 336 236 312" stroke="#2b2d33" stroke-width="10" stroke-linecap="round" fill="none"/>
+  <!-- the Q: a magnifying glass over the right eye; its handle is the Q's tail -->
+  <path d="M340 340 L410 418" stroke="#2b2d33" stroke-width="30" stroke-linecap="round"/>
+  <path d="M340 340 L410 418" stroke="#4c4f57" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="290" cy="266" r="76" fill="url(#lens)" stroke="#2b2d33" stroke-width="20"/>
+  <!-- magnified right eye, looking up curiously -->
+  <path d="M248 210 Q282 186 318 204" stroke="#2b2d33" stroke-width="12" stroke-linecap="round" fill="none"/>
+  <ellipse cx="290" cy="262" rx="32" ry="38" fill="#2b2d33"/>
+  <circle cx="302" cy="246" r="11" fill="#fff"/>
+  <circle cx="281" cy="280" r="4" fill="#fff" opacity=".7"/>
+  <!-- lens glint -->
+  <path d="M244 236 Q252 210 276 202" stroke="#fff" stroke-width="9" stroke-linecap="round" fill="none" opacity=".85"/>
+</svg>

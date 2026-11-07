@@ -379,3 +379,13 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .drag{flex:0 0 auto;width:44px;height:44px;border:0;background:transparent;color:var(--muted);font-size:24px;cursor:grab;touch-action:none}
 .release-edit{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:6px;background:var(--panel);border-radius:12px;padding:10px 12px;font-size:14px}
 .release-edit select{border:1.5px solid var(--line);border-radius:10px;padding:7px 8px;background:var(--panel2);color:var(--text);font:inherit;font-weight:700}
+
+/* Queuey: logo, welcome and the agent's one-line notes */
+.mark-img{width:40px;height:40px;filter:drop-shadow(0 2px 3px rgba(0,0,0,.35))}
+.brand h1{letter-spacing:-.4px}
+.welcome-mascot{width:64px;height:64px;flex:0 0 auto;filter:drop-shadow(0 3px 6px rgba(0,0,0,.18))}
+.hero.welcome{align-items:center}
+.agent{display:flex;align-items:center;gap:10px;margin:2px 0 6px}
+.agent img{width:44px;height:44px;flex:0 0 auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.18))}
+.agent p{margin:0;background:var(--panel);border-radius:14px 14px 14px 4px;padding:9px 12px;font-size:14px;line-height:1.4;box-shadow:var(--shadow)}
+@media(max-width:650px){.welcome-mascot{width:48px;height:48px}}

@@ -1,10 +1,11 @@
-// SwordsTV service worker — network-first.
+// Queuey service worker — network-first.
 // Always tries the network so updates appear right away; falls back to the
 // cache when offline. No manual version bump is needed for normal updates.
 const CACHE = 'swordstv-cache';
 const ASSETS = [
   './',
   './index.html',
+  './queuey.svg',
   './styles.css',
   './taste.js',
   './sync.js',
