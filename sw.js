@@ -6,6 +6,7 @@ const ASSETS = [
   './',
   './index.html',
   './queuey.svg',
+  './fonts/fredoka-700.woff2',
   './styles.css',
   './taste.js',
   './sync.js',

@@ -389,3 +389,15 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .agent img{width:44px;height:44px;flex:0 0 auto;filter:drop-shadow(0 2px 4px rgba(0,0,0,.18))}
 .agent p{margin:0;background:var(--panel);border-radius:14px 14px 14px 4px;padding:9px 12px;font-size:14px;line-height:1.4;box-shadow:var(--shadow)}
 @media(max-width:650px){.welcome-mascot{width:48px;height:48px}}
+
+/* Wordmark: rounded, bouncy lettering (Fredoka, SIL Open Font License; see fonts/Fredoka-OFL.txt) */
+@font-face{font-family:"Fredoka";src:url(fonts/fredoka-700.woff2) format("woff2");font-weight:700;font-display:swap}
+.brand h1.wordmark{display:flex;font-family:"Fredoka",-apple-system,"Arial Rounded MT Bold",sans-serif;font-weight:700;font-size:34px;letter-spacing:.5px;line-height:1;color:#f6c75a;margin:0}
+.wordmark span{display:inline-block;-webkit-text-stroke:1.5px #1c1e23;paint-order:stroke fill;text-shadow:0 3px 0 #1c1e23,0 4px 8px rgba(0,0,0,.35)}
+.wordmark span:nth-child(1){transform:rotate(-6deg) translateY(1px);color:#f6c75a}
+.wordmark span:nth-child(2){transform:rotate(4deg) translateY(-2px);color:#f3b545}
+.wordmark span:nth-child(3){transform:rotate(-3deg) translateY(1px);color:#f6c75a}
+.wordmark span:nth-child(4){transform:rotate(5deg) translateY(-1px);color:#f3b545}
+.wordmark span:nth-child(5){transform:rotate(-4deg) translateY(2px);color:#f6c75a}
+.wordmark span:nth-child(6){transform:rotate(6deg) translateY(-1px);color:#f3b545}
+.wordmark-inline{font-family:"Fredoka",-apple-system,sans-serif;font-weight:700;color:#e09a2b;letter-spacing:.3px}
