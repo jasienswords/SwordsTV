@@ -458,3 +458,16 @@ body.sheet-open{position:fixed;left:0;right:0;overflow:hidden}
  .modal-bg{align-items:center;padding:8px}
  .modal{max-height:calc(100dvh - 16px);border-radius:18px}
 }
+
+/* ── About Queuey ── */
+.info-btn{align-self:center;flex:0 0 auto;width:22px;height:22px;border-radius:50%;border:1.5px solid rgba(246,199,90,.75);background:transparent;color:#f6c75a;font:700 13px/1 Georgia,"Times New Roman",serif;font-style:italic;display:grid;place-items:center;padding:0;margin-left:2px;cursor:pointer;position:relative}
+.info-btn::after{content:"";position:absolute;inset:-11px}
+.info-btn:hover,.info-btn:focus-visible{background:rgba(246,199,90,.15)}
+.about-modal{text-align:center}
+.about-mascot{width:76px;height:76px;margin:0 auto 4px;display:block;transform:rotate(-8deg)}
+.about-lead{font-size:17px;line-height:1.45;font-weight:600;margin:6px 0 14px}
+.about-list{text-align:left;margin:0;padding-left:20px;color:var(--muted);font-size:14px;line-height:1.5}
+.about-list li{margin:4px 0}
+.about-list b{color:var(--ink,inherit)}
+.about-modal .modal-actions{justify-content:center}
+.about-modal .modal-actions .btn{min-width:140px}
