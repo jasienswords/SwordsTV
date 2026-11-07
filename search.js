@@ -44,6 +44,9 @@ function tmdbRecord(d) {
     keywords: ((d.keywords && d.keywords.results) || []).map(k => k.name),
     similar: ((d.recommendations && d.recommendations.results) || []).slice(0, 20).map(r => r.id),
     nextEpisode: d.next_episode_to_air ? {date: d.next_episode_to_air.air_date, season: d.next_episode_to_air.season_number, episode: d.next_episode_to_air.episode_number} : null,
+    lastEpisode: d.last_episode_to_air ? {date: d.last_episode_to_air.air_date, season: d.last_episode_to_air.season_number, episode: d.last_episode_to_air.episode_number} : null,
+    // A season TMDB lists beyond the latest aired one but with no air date yet: announced, not scheduled.
+    announcedSeason: ((d.seasons || []).filter(x => x.season_number > ((d.last_episode_to_air && d.last_episode_to_air.season_number) || 0) && !x.air_date).map(x => x.season_number).sort((a, b) => a - b)[0]) || null,
     tmdbScore: d.vote_count >= 20 ? Math.round(d.vote_average * 10) / 10 : null,
     match: 'added'
   };
