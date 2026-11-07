@@ -336,3 +336,8 @@ input[type=search]{-webkit-appearance:none;appearance:none}
 .chips[data-group="plan"] button[data-v="no"].on{background:var(--chrome2);border-color:var(--chrome2);color:#fff}
 .rq-hint{color:var(--muted);font-size:12px;margin:8px 0 0}
 #qWhere .platform-checks{margin-top:10px}
+.insights .insight{padding:12px 0;border-top:1px solid var(--line)}
+.insights .insight:first-of-type{border-top:0;padding-top:4px}
+.insights .insight strong{display:block;font-size:15px;font-weight:800;margin-bottom:4px}
+.insights .insight p{margin:0 0 8px;font-size:14px;line-height:1.5}
+.insights .insight .pill{cursor:pointer}

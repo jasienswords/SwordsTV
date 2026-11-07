@@ -168,3 +168,72 @@ function whyText(m) {
   if (m.flags.length) out.push('Heads up: ' + m.flags.join(', ').toLowerCase() + '.');
   return out.join(' ');
 }
+
+// ── Insights on the Taste Profile ──
+// Plain-language observations computed from the family's ratings and TMDB data.
+// Each one appears only when enough ratings support it.
+function buildInsights(shows) {
+  const rated = shows.filter(s => s.rating in RATING_WEIGHT && TMDB[s.title]);
+  if (rated.length < 15) return [];
+  const isPos = s => s.rating === 'Loved' || s.rating === 'Liked';
+  const pct = (a, b) => Math.round(100 * a / b);
+  const basePos = rated.filter(isPos).length / rated.length;
+  const best = list => list.slice().sort((a, b) => RATING_WEIGHT[b.rating] - RATING_WEIGHT[a.rating] || (imdbOf(b.title) || 0) - (imdbOf(a.title) || 0));
+  const group = keyFn => { const g = {}; for (const s of rated) for (const k of [].concat(keyFn(s) || [])) (g[k] = g[k] || []).push(s); return g; };
+  const plural = g => PLURAL[g] || g.toLowerCase() + ' shows';
+  const out = [];
+
+  // 1. Sweet spot: best-rated genre + country combination.
+  const combos = Object.entries(group(s => { const t = TMDB[s.title], c = (t.country || [])[0]; return c ? (t.genres || []).map(g => g + '|' + c) : []; }))
+    .map(([k, l]) => ({k, l, pos: l.filter(isPos).length})).filter(x => x.l.length >= 6 && x.pos >= 4)
+    .sort((a, b) => b.pos / b.l.length - a.pos / a.l.length || b.l.length - a.l.length);
+  if (combos.length && combos[0].pos / combos[0].l.length > basePos + 0.1) {
+    const {k, l, pos} = combos[0], [g, c] = k.split('|');
+    out.push({title: 'Your sweet spot', text: `${COUNTRY_NAMES[c] || c} ${plural(g)}: you loved or liked ${pos} of the ${l.length} you've rated (${pct(pos, l.length)}%), compared with ${pct(basePos * rated.length, rated.length)}% across everything you've rated.`,
+      examples: best(l.filter(isPos)).slice(0, 4).map(s => s.title)});
+  }
+
+  // 2 & 3. Themes (TMDB topic keywords) that win you over, or turn you off.
+  const themes = Object.entries(group(s => [...topics(TMDB[s.title])])).map(([k, l]) => ({k, l, pos: l.filter(isPos).length, neg: l.filter(s => s.rating === 'Disliked').length}));
+  const winners = themes.filter(x => x.l.length >= 5 && x.pos >= 4 && x.pos / x.l.length >= basePos + 0.2).sort((a, b) => b.pos / b.l.length - a.pos / a.l.length || b.pos - a.pos).slice(0, 5);
+  if (winners.length >= 2) {
+    const shows = [...new Set(winners.flatMap(x => x.l))], pos = shows.filter(isPos).length;
+    out.push({title: 'Themes that win you over', text: `These subjects tend to land: ${winners.map(x => `${x.k} (${x.pos} of ${x.l.length} loved or liked)`).join(', ')}.`,
+      examples: best(shows.filter(isPos)).slice(0, 4).map(s => s.title)});
+  }
+  const losers = themes.filter(x => x.l.length >= 5 && x.neg >= 3 && x.neg / x.l.length >= 0.5).sort((a, b) => b.neg / b.l.length - a.neg / a.l.length || b.neg - a.neg).slice(0, 5);
+  if (losers.length >= 2) {
+    const shows = [...new Set(losers.flatMap(x => x.l))], neg = shows.filter(s => s.rating === 'Disliked').length;
+    out.push({title: 'Themes that turn you off', text: `These subjects rarely work for you: ${losers.map(x => `${x.k} (${x.neg} of ${x.l.length} disliked)`).join(', ')}.`,
+      examples: shows.filter(s => s.rating === 'Disliked').slice(0, 4).map(s => s.title)});
+  }
+
+  // 4. Tone: mature vs family-friendly ratings.
+  const tone = l => ({n: l.length, pos: l.filter(isPos).length});
+  const ma = tone(rated.filter(s => TMDB[s.title].rating === 'TV-MA')), fam = tone(rated.filter(s => ['TV-G', 'TV-PG', 'TV-Y7'].includes(TMDB[s.title].rating)));
+  if (ma.n >= 5 && fam.n >= 5 && Math.abs(ma.pos / ma.n - fam.pos / fam.n) >= 0.15) {
+    const lower = ma.pos / ma.n < fam.pos / fam.n;
+    out.push({title: 'Tone', text: `You loved or liked ${pct(ma.pos, ma.n)}% of the ${ma.n} TV-MA shows you've rated, versus ${pct(fam.pos, fam.n)}% of the ${fam.n} TV-G and TV-PG shows. ${lower ? 'Lighter, family-friendly shows suit you better.' : 'Mature shows tend to suit you better.'}`});
+  }
+
+  // 5. You vs the critics.
+  const gems = best(rated.filter(s => isPos(s) && imdbOf(s.title) != null && imdbOf(s.title) < 7.2)).slice(0, 3);
+  const misses = rated.filter(s => s.rating === 'Disliked' && (imdbOf(s.title) || 0) >= 8.3).sort((a, b) => imdbOf(b.title) - imdbOf(a.title)).slice(0, 3);
+  if (gems.length || misses.length) {
+    const parts = [];
+    if (gems.length) parts.push(`You enjoyed ${gems.map(s => `${s.title} (IMDb ${imdbOf(s.title)})`).join(', ')} despite middling reviews.`);
+    if (misses.length) parts.push(`Critics' favourites ${misses.map(s => `${s.title} (IMDb ${imdbOf(s.title)})`).join(', ')} weren't for you.`);
+    out.push({title: 'You vs the critics', text: parts.join(' ') + ' Your taste, not the scores, drives your recommendations.'});
+  }
+
+  // 6. Commitment and era.
+  const byLen = group(s => { const n = TMDB[s.title].seasons; return n ? (n === 1 ? 'single-season and limited series' : n <= 4 ? 'shows with 2–4 seasons' : 'long-running shows (5+ seasons)') : []; });
+  const lens = Object.entries(byLen).map(([k, l]) => ({k, n: l.length, r: l.filter(isPos).length / l.length})).filter(x => x.n >= 8).sort((a, b) => b.r - a.r);
+  const byEra = group(s => TMDB[s.title].year ? Math.floor(+TMDB[s.title].year / 10) * 10 + 's' : []);
+  const eras = Object.entries(byEra).map(([k, l]) => ({k, n: l.length, r: l.filter(isPos).length / l.length})).filter(x => x.n >= 8).sort((a, b) => b.r - a.r);
+  const bits = [];
+  if (lens.length >= 2 && lens[0].r - lens[lens.length - 1].r >= 0.15) bits.push(`${lens[0].k[0].toUpperCase() + lens[0].k.slice(1)} land best (${pct(lens[0].r * lens[0].n, lens[0].n)}% loved or liked), ${lens[lens.length - 1].k} least (${pct(lens[lens.length - 1].r * lens[lens.length - 1].n, lens[lens.length - 1].n)}%).`);
+  if (eras.length >= 2 && eras[0].r - eras[eras.length - 1].r >= 0.15) bits.push(`Shows from the ${eras[0].k} suit you best (${pct(eras[0].r * eras[0].n, eras[0].n)}%); the ${eras[eras.length - 1].k} the least (${pct(eras[eras.length - 1].r * eras[eras.length - 1].n, eras[eras.length - 1].n)}%).`);
+  if (bits.length) out.push({title: 'Length and era', text: bits.join(' ')});
+  return out;
+}
