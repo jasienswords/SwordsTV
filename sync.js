@@ -28,6 +28,7 @@ function syncStatus(text, signedIn) {
 }
 
 function applyRemote(data) {
+  const addedChanged = mergeAdded(data.added);
   const remote = data.changes || {};
   const merged = mergeChanges(changes, remote);
   const localNewer = Object.keys(merged).some(t => merged[t] !== remote[t]);
@@ -35,8 +36,9 @@ function applyRemote(data) {
   changes = merged;
   localStorage.setItem(STORAGE, JSON.stringify(changes));
   if (data.subscriptions) localStorage.setItem(SUBS_KEY, JSON.stringify(data.subscriptions));
-  if (changed && DATA) { if (currentView === 'detail') renderDetail(); else render(); }
-  if (localNewer && SYNC.user) syncPush();
+  if ((changed || addedChanged) && DATA) { if (currentView === 'detail') renderDetail(); else render(); }
+  const addedNewer = Object.keys(ADDED).some(t => !(data.added || {})[t] || (ADDED[t]._t || 0) > ((data.added || {})[t]._t || 0));
+  if ((localNewer || addedNewer) && SYNC.user) syncPush();
 }
 
 // Send this phone's ratings (and subscriptions) to the family document.
@@ -46,7 +48,7 @@ function syncPush() {
   SYNC.pushing = setTimeout(() => {
     let subs = {};
     try { subs = JSON.parse(localStorage.getItem(SUBS_KEY) || '{}'); } catch {}
-    SYNC.ref.set({changes, subscriptions: subs, updatedAt: Date.now(), updatedBy: SYNC.user.email}, {merge: true})
+    SYNC.ref.set({changes, added: ADDED, subscriptions: subs, updatedAt: Date.now(), updatedBy: SYNC.user.email}, {merge: true})
       .then(() => syncStatus('Synced', true))
       .catch(e => { syncStatus(e.code === 'permission-denied' ? 'Not a family account' : 'Sync paused', true); console.warn('Sync failed', e); });
   }, 400);

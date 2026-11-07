@@ -4,6 +4,8 @@
 //   node tools/review.mjs list                       pending finds, with what to check
 //   node tools/review.mjs ok <tmdbId> "<notes>"      approve: show it in the app
 //   node tools/review.mjs reject <tmdbId> "<reason>" reject: remove it and never suggest it again
+//   node tools/review.mjs added                       family-added shows still needing content notes
+//   node tools/review.mjs note "<title>" "<notes>"     content notes for a family-added show (never rejected)
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
@@ -25,6 +27,27 @@ if (cmd === 'list') {
     console.log(`  Overview: ${x.overview}`);
     console.log(`  Keywords: ${x.keywords.join(', ') || 'none'}`);
   }
+} else if (cmd === 'added' || (cmd === 'note' && id && note)) {
+  const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
+  const GF = path.join(ROOT, 'guidance.json');
+  const guidance = fs.existsSync(GF) ? JSON.parse(fs.readFileSync(GF, 'utf8')) : {shows: {}};
+  const ratings = fs.existsSync(path.join(ROOT, 'ratings.json')) ? JSON.parse(fs.readFileSync(path.join(ROOT, 'ratings.json'), 'utf8')) : {};
+  const tmdb = JSON.parse(fs.readFileSync(path.join(ROOT, 'tmdb.json'), 'utf8')).shows;
+  if (cmd === 'added') {
+    const todo = Object.keys(ratings.added || {}).filter(t => !guidance.shows[t]);
+    if (!todo.length) console.log('No family-added shows need content notes.');
+    for (const t of todo) {
+      const x = tmdb[t];
+      if (!x) { console.log(`\n${t}: not found on TMDB yet (added by name); skip until it is.`); continue; }
+      console.log(`\n${t} (${x.year}) · ${x.genres.join(', ')} · ${x.networks.map(n => n.name).join(', ')} · US rating ${x.rating || 'n/a'}`);
+      console.log(`  Overview: ${x.overview}`);
+      console.log(`  Keywords: ${x.keywords.join(', ') || 'none'}`);
+    }
+  } else {
+    guidance.shows[id] = {notes: note, reviewed: new Date().toISOString().slice(0, 10)};
+    fs.writeFileSync(GF, JSON.stringify(guidance, null, 1) + '\n');
+    console.log(`Noted: ${id}`);
+  }
 } else if ((cmd === 'ok' || cmd === 'reject') && id && note) {
   const hit = find();
   if (!hit) { console.error(`No discovered show with TMDB id ${id}.`); process.exit(1); }
@@ -39,6 +62,6 @@ if (cmd === 'list') {
   }
   save();
 } else {
-  console.error('Usage: review.mjs list | ok <tmdbId> "<notes>" | reject <tmdbId> "<reason>"');
+  console.error('Usage: review.mjs list | ok <tmdbId> "<notes>" | reject <tmdbId> "<reason>" | added | note "<title>" "<notes>"');
   process.exit(1);
 }

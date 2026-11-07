@@ -12,7 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import {execFileSync} from 'node:child_process';
 import {fileURLToPath} from 'node:url';
-import {loadImdb, imdbEntry} from './lib/scores.mjs';
+import {loadImdb, imdbEntry, siteScores} from './lib/scores.mjs';
 
 const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 const file = f => path.join(ROOT, f);
@@ -39,8 +39,8 @@ const r = await fetch(`https://firestore.googleapis.com/v1/projects/${cfg.projec
 if (r.ok) {
   const doc = decode({mapValue: {fields: (await r.json()).fields || {}}});
   const changes = doc.changes || {};
-  fs.writeFileSync(file('ratings.json'), JSON.stringify({savedAt: new Date().toISOString(), changes, subscriptions: doc.subscriptions || {}}, null, 1) + '\n');
-  console.log(`Saved ${Object.keys(changes).length} family rating entries.`);
+  fs.writeFileSync(file('ratings.json'), JSON.stringify({savedAt: new Date().toISOString(), changes, added: doc.added || {}, subscriptions: doc.subscriptions || {}}, null, 1) + '\n');
+  console.log(`Saved ${Object.keys(changes).length} family rating entries and ${Object.keys(doc.added || {}).length} family-added shows.`);
 } else if (r.status === 404) {
   console.log('No family ratings yet (nobody has signed in). Using the catalog ratings only.');
 } else {
@@ -59,8 +59,16 @@ for (const [t, s] of Object.entries(scores.shows)) {
   const e = imdbEntry(imdb, tmdb[t]?.imdb);
   if (e && e.rating != null && (!s.imdb || s.imdb.rating !== e.rating || s.imdb.votes !== e.votes)) { s.imdb = e; updated++; }
 }
+// Shows with no scores yet (e.g. ones the family added): look up all three.
+const research = JSON.parse(fs.readFileSync(file('shows.json'), 'utf8'));
+let filled = 0;
+for (const [t, rec] of Object.entries(tmdb)) {
+  if (!rec || research[t] || scores.shows[t]) continue;
+  scores.shows[t] = {imdb: imdbEntry(imdb, rec.imdb), ...(await siteScores(t, rec))};
+  filled++;
+}
 fs.writeFileSync(file('scores.json'), JSON.stringify(scores, null, 1) + '\n');
-console.log(`Updated ${updated} IMDb ratings.`);
+console.log(`Updated ${updated} IMDb ratings; added scores for ${filled} new shows.`);
 
 step(4, 'Searching for new shows that fit the Taste Profile…');
 run('tools/discover.mjs');
