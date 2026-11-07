@@ -1,0 +1,996 @@
+{
+ "updated": "2026-11-07",
+ "shows": {
+  "Top Gear": {
+   "tmdb": {
+    "id": 4498,
+    "name": "Top Gear",
+    "year": "1978",
+    "endYear": "2009",
+    "status": "Ended",
+    "seasons": 45,
+    "episodes": 530,
+    "overview": "Motoring programme featuring reviews of and reports about cars of all types.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "BBC Two",
+      "logo": "/7HVPn1p2w1nC5oRKBehXVHpss7e.png"
+     }
+    ],
+    "poster": "/7P7vi7RIn5qthQAZrOBIu8zA3pg.jpg",
+    "backdrop": "/eOnQIuFYGbtZGilWPpG96eYuotZ.jpg",
+    "cast": [
+     "William Woollard",
+     "Jeremy Clarkson",
+     "Chris Goffey",
+     "Tiff Needell",
+     "Sue Baker",
+     "Frank Page",
+     "Quentin Willson",
+     "Tony Mason"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt0163503",
+    "providers": {
+     "link": null,
+     "stream": [],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [],
+    "similar": [
+     105288,
+     126954,
+     4199,
+     157202,
+     262594,
+     204554,
+     38122,
+     114695,
+     229516,
+     3956,
+     1181,
+     65339,
+     296549,
+     66185,
+     239748,
+     9552,
+     86951,
+     118924,
+     15069,
+     90832
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt0163503",
+     "rating": 8.4,
+     "votes": 25379
+    },
+    "metascore": {
+     "score": null,
+     "status": "No Metascore yet (too few critic reviews)",
+     "url": "https://www.metacritic.com/tv/top-gear/"
+    },
+    "rt": null
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Conan O'Brien Must Go",
+   "matchScore": 2.56,
+   "why": "Similar to Conan O'Brien Must Go and Travel Man; you rate Documentary, British highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Classic BBC car magazine show (pre-2002 era): reviews and road tests, family-friendly, TV-PG. No content concerns.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Natural World": {
+   "tmdb": {
+    "id": 21145,
+    "name": "Natural World",
+    "year": "1983",
+    "endYear": "2020",
+    "status": "Ended",
+    "seasons": 39,
+    "episodes": 543,
+    "overview": "Natural World is a nature documentary television series broadcast annually on BBC Two and regarded by the BBC as its flagship natural history brand. It is currently the longest-running series in its genre on British television, with more than 400 episodes broadcast since its inception in 1983.\n\nNatural World is produced by the BBC Natural History Unit in Bristol, but individual programmes can be in-house productions, collaborative productions with other broadcasters or films made and distributed by independent production companies and purchased by the BBC. Natural World programmes are often broadcast as PBS Nature episodes in the USA. Since 2008, most Natural World programmes have been shot and broadcast in high definition.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "BBC Two",
+      "logo": "/7HVPn1p2w1nC5oRKBehXVHpss7e.png"
+     }
+    ],
+    "poster": "/lM2O6k77POzauRNR6iAcOFZKwqY.jpg",
+    "backdrop": "/jqfueFlkLu6YsIDpwu4QqBPPutW.jpg",
+    "cast": [
+     "David Attenborough",
+     "Barry Paine",
+     "Juliet Stevenson",
+     "Andrew Sachs",
+     "John Hannah",
+     "John Shrapnel",
+     "Ian Holm",
+     "Tim Pigott-Smith"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt0318912",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/21145-natural-world/watch?locale=US",
+     "stream": [
+      {
+       "name": "Britbox Apple TV channel",
+       "logo": "/r5LXOt96llVEmgwAQeheJuxUaMR.png"
+      },
+      {
+       "name": "BBC Select Apple Tv channel",
+       "logo": "/wrSjTgv3jPOTCCYYYGS7XFzS5DH.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "wildlife",
+     "animals",
+     "nature",
+     "environment",
+     "nature documentary"
+    ],
+    "similar": [
+     14951,
+     110818,
+     1044,
+     83880,
+     90790,
+     16946,
+     1904,
+     68595,
+     157202,
+     9555,
+     9554,
+     15117,
+     97861,
+     208230,
+     82953,
+     116156,
+     127700,
+     108303,
+     34381,
+     213612
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt0318912",
+     "rating": 8.6,
+     "votes": 851
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": null,
+     "audience": null,
+     "reviews": 0,
+     "url": "https://www.rottentomatoes.com/tv/natural_world"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Travel Man",
+   "matchScore": 2.07,
+   "why": "Similar to Travel Man and Rick Steves' Europe; you rate Documentary, British highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "BBC flagship nature documentary; calm, educational, TV-PG. Some predator/prey scenes, nothing graphic.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Ed Sheeran: The Sum of It All": {
+   "tmdb": {
+    "id": 222674,
+    "name": "Ed Sheeran: The Sum of It All",
+    "year": "2023",
+    "endYear": "2023",
+    "status": "Ended",
+    "seasons": 1,
+    "episodes": 4,
+    "overview": "For the first time ever, global superstar, Ed Sheeran opens the doors to a definitive and searingly honest view into his private life as he explores the universal themes that inspire his music. This series follows Ed after he learns of life changing news and reveals his hardships and triumphs during the most challenging period of his life. Featuring exclusive footage behind his iconic hits, never-before-seen personal archive with his friends and family, and epic stadium performances giving insight into Ed’s world.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "Disney+",
+      "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+     }
+    ],
+    "poster": "/cFkNarRn5RujHPwwLe1U8AmCUEf.jpg",
+    "backdrop": "/9aBrOSfThT8cCyuqQssTEoZI2ky.jpg",
+    "cast": [
+     "Ed Sheeran",
+     "Cherry Seaborn"
+    ],
+    "rating": "TV-14",
+    "imdb": "tt27192366",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/222674-ed-sheeran-the-sum-of-it-all/watch?locale=US",
+     "stream": [
+      {
+       "name": "Disney Plus",
+       "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "music documentary",
+     "behind the music"
+    ],
+    "similar": [
+     101978,
+     4498,
+     204554,
+     4199,
+     15069,
+     157202,
+     87148,
+     105288,
+     118924,
+     126954,
+     38122,
+     296549,
+     114695,
+     86951,
+     65339,
+     248287,
+     289485,
+     90832,
+     229516,
+     3739
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt27192366",
+     "rating": 8.2,
+     "votes": 2382
+    },
+    "metascore": {
+     "score": 80,
+     "reviews": 5,
+     "url": "https://www.metacritic.com/tv/ed-sheeran-the-sum-of-it-all/"
+    },
+    "rt": {
+     "critics": 100,
+     "audience": 89,
+     "reviews": 5,
+     "url": "https://www.rottentomatoes.com/tv/ed_sheeran_the_sum_of_it_all"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Conan O'Brien Must Go",
+   "matchScore": 2.06,
+   "why": "Similar to Conan O'Brien Must Go and Down to Earth with Zac Efron; you rate Documentary, 2020s shows, British highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Warm, candid music documentary (TV-14). Heads up: deals openly with grief and a spouse's illness, but the tone is hopeful, not bleak.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Disney Gallery / Star Wars: The Mandalorian": {
+   "tmdb": {
+    "id": 101978,
+    "name": "Disney Gallery / Star Wars: The Mandalorian",
+    "year": "2020",
+    "endYear": "2023",
+    "status": "Ended",
+    "seasons": 3,
+    "episodes": 11,
+    "overview": "Executive producer Jon Favreau invites the cast and crew of The Mandalorian to share an unprecedented look at the making of the series. Each chapter explores a different facet of the first live-action Star Wars television show through interviews, never-before-seen footage, and roundtable conversations hosted by Favreau himself.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "Disney+",
+      "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+     }
+    ],
+    "poster": "/qwc5RFNadL7YYtMfly58AjYUA50.jpg",
+    "backdrop": "/giCbzgKlcMDV9TKNL8aJHq2IosD.jpg",
+    "cast": [
+     "Jon Favreau",
+     "Dave Filoni",
+     "Bryce Dallas Howard",
+     "Deborah Chow",
+     "Rick Famuyiwa",
+     "Taika Waititi",
+     "Carl Weathers",
+     "Gina Carano"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt12162902",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/101978-disney-gallery-star-wars-the-mandalorian/watch?locale=US",
+     "stream": [
+      {
+       "name": "Disney Plus",
+       "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "US"
+    ],
+    "language": "en",
+    "keywords": [
+     "behind the scenes",
+     "making of"
+    ],
+    "similar": [
+     118924,
+     90832,
+     289485,
+     296549,
+     105288,
+     114053,
+     204554,
+     38122,
+     223249,
+     114695,
+     222674,
+     4199,
+     15069,
+     229516,
+     157202,
+     65339,
+     10184,
+     3739,
+     1181,
+     64313
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt12162902",
+     "rating": 8.3,
+     "votes": 3663
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": null,
+     "audience": 81,
+     "reviews": 0,
+     "url": "https://www.rottentomatoes.com/tv/disney_gallery_star_wars_the_mandalorian"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Conan O'Brien Must Go",
+   "matchScore": 2.05,
+   "why": "Similar to Conan O'Brien Must Go and Down to Earth with Zac Efron; you rate Documentary, 2020s shows, 2–4 seasons highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Behind-the-scenes series on making The Mandalorian; interviews and roundtables, TV-PG. No content concerns.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Green Wing": {
+   "tmdb": {
+    "id": 1456,
+    "name": "Green Wing",
+    "year": "2004",
+    "endYear": "2007",
+    "status": "Ended",
+    "seasons": 2,
+    "episodes": 18,
+    "overview": "Follow new surgical registrar Dr Caroline Todd through her first day at work and beyond, starting out as she means to go on - dishevelled and under-deodorised! Along the way she meets an assortment of bizarre and demented characters. Be prepared for one of the most surreal journeys you're ever likely to take as you dive into the anarchic world of Green Wing Hospital!",
+    "genres": [
+     "Comedy"
+    ],
+    "networks": [
+     {
+      "name": "Channel 4",
+      "logo": "/7Ai64ZDaVbGDtm7f0QSZAKohjk4.png"
+     }
+    ],
+    "poster": "/eMGFMe8m3y58R4N45oLySzdyTpv.jpg",
+    "backdrop": "/z5LaefJhBfcmx1yBu8AS9JnhB22.jpg",
+    "cast": [
+     "Sally Bretton",
+     "Oliver Chris",
+     "Olivia Colman",
+     "Michelle Gomez",
+     "Tamsin Greig",
+     "Pippa Haywood",
+     "Mark Heap",
+     "Katie Lyons"
+    ],
+    "rating": null,
+    "imdb": "tt0423661",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/1456-green-wing/watch?locale=US",
+     "stream": [
+      {
+       "name": "fuboTV",
+       "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+      }
+     ],
+     "free": [
+      {
+       "name": "Fawesome",
+       "logo": "/dNF4vWhF3TduWvOyfVxEyTqSNRl.png"
+      }
+     ],
+     "ads": [
+      {
+       "name": "The Roku Channel",
+       "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+      },
+      {
+       "name": "Amazon Prime Video Free with Ads",
+       "logo": "/fuVBtr57kxnYzOILZ38xqSmBeyR.png"
+      },
+      {
+       "name": "Tubi TV",
+       "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+      },
+      {
+       "name": "Amazon MX Player",
+       "logo": "/46U3TOB3PhVDjA7qaFOuYSaGMiq.png"
+      }
+     ],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "hospital",
+     "sitcom",
+     "workplace comedy",
+     "absurd"
+    ],
+    "similar": [
+     4556,
+     295778,
+     971,
+     110,
+     44857,
+     62649,
+     4277,
+     205,
+     60766,
+     2316,
+     5258,
+     2996,
+     62479,
+     3253,
+     1964,
+     72313,
+     3968,
+     192,
+     905,
+     7777
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt0423661",
+     "rating": 8.3,
+     "votes": 13760
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": 86,
+     "audience": 95,
+     "reviews": 18,
+     "url": "https://www.rottentomatoes.com/tv/green_wing"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Scrubs",
+   "matchScore": 1.96,
+   "why": "Similar to Scrubs and The Office (US); you rate Comedy, British, Channel 4 highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Surreal, character-led hospital comedy in the vein of Scrubs. Heads up: frequent sexual innuendo and some crude moments; within the family's moderate tolerance.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Super/Natural": {
+   "tmdb": {
+    "id": 157202,
+    "name": "Super/Natural",
+    "year": "2022",
+    "endYear": "2022",
+    "status": "Ended",
+    "seasons": 1,
+    "episodes": 6,
+    "overview": "Utilizing the latest scientific innovations and leading-edge filmmaking technology, this documentary reveals the secret powers and super-senses of the world’s most extraordinary animals, and invites viewers to see and hear beyond normal human perception to experience the natural world as a specific species does — from seeing flowers in bee-vision to eavesdropping on a conversation between elephant seals to soaring the length of a football field with glow-in-the-dark squirrels.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "Disney+",
+      "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+     }
+    ],
+    "poster": "/m50q06XxSU8mjErAt3QMJnMkwqI.jpg",
+    "backdrop": "/jMJ05hymgeOsKvINHiLUZBOzcx2.jpg",
+    "cast": [
+     "Benedict Cumberbatch"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt15039908",
+    "providers": {
+     "link": null,
+     "stream": [],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "nature documentary"
+    ],
+    "similar": [
+     115194,
+     19744,
+     64313,
+     74911,
+     9552,
+     4498,
+     4199,
+     246212,
+     204554,
+     61894,
+     96323,
+     105288,
+     113085,
+     215344,
+     65339,
+     296549,
+     101978,
+     259271,
+     38122,
+     66185
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt15039908",
+     "rating": 8.5,
+     "votes": 603
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": null,
+     "audience": null,
+     "reviews": 0,
+     "url": "https://www.rottentomatoes.com/tv/super_natural"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Down to Earth with Zac Efron",
+   "matchScore": 1.93,
+   "why": "Similar to Down to Earth with Zac Efron and The Reluctant Traveler; you rate Documentary, 2020s shows, British highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Upbeat nature documentary about animals' senses and abilities; TV-PG. No content concerns.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Mysteries at the Museum": {
+   "tmdb": {
+    "id": 38122,
+    "name": "Mysteries at the Museum",
+    "year": "2010",
+    "endYear": "2019",
+    "status": "Ended",
+    "seasons": 23,
+    "episodes": 310,
+    "overview": "Don Wildman unearths relics from the world's greatest institutions to reveal secrets from the past. He examines each artifact to illuminate history's most incredible triumphs, sensational crimes and bizarre encounters.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "Travel Channel",
+      "logo": "/8SwN81R7P5vD5mhtOE0taw5mji4.png"
+     }
+    ],
+    "poster": "/iJsBQRZoEehX8biph7XkkFjtoM2.jpg",
+    "backdrop": "/1dUQ99RH1uiKIUfLKtJ5uGnOxFu.jpg",
+    "cast": [
+     "Don Wildman",
+     "Anna Cain Bianco",
+     "Michelle Lulic",
+     "Merritt Chase",
+     "Frankie Petrosino",
+     "Alan B. Carr",
+     "Tony Spera",
+     "Mark William"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt2076566",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/38122-mysteries-at-the-museum/watch?locale=US",
+     "stream": [
+      {
+       "name": "Disney Plus",
+       "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+      },
+      {
+       "name": "Hulu",
+       "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+      },
+      {
+       "name": "HBO Max Amazon Channel",
+       "logo": "/64fLWeSyZ1KQZhIdvTdy4QHeWty.png"
+      },
+      {
+       "name": "Philo",
+       "logo": "/mfbhzQwmQKjm7bLZPF5CTeu3Ilc.png"
+      },
+      {
+       "name": "Discovery+ Amazon Channel",
+       "logo": "/52htht83nlt2aAobIug88TeiWvO.png"
+      },
+      {
+       "name": "YouTube TV",
+       "logo": "/48bVXEIyCLSL9pZUQ7gB9ToyWto.png"
+      },
+      {
+       "name": "Travel Channel",
+       "logo": "/69WrGxjeCzLqdEgFLJWht6zBlB5.png"
+      },
+      {
+       "name": "HBO Max",
+       "logo": "/skypuy7SXuugIQeYg0IglmzoKaS.png"
+      },
+      {
+       "name": "Discovery +",
+       "logo": "/tHseJEgZaUdVlLtBpOGmKPfzbQ8.png"
+      }
+     ],
+     "free": [
+      {
+       "name": "Spectrum On Demand",
+       "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+      }
+     ],
+     "ads": [
+      {
+       "name": "The Roku Channel",
+       "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+      },
+      {
+       "name": "Travel Channel",
+       "logo": "/69WrGxjeCzLqdEgFLJWht6zBlB5.png"
+      },
+      {
+       "name": "Plex",
+       "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
+      },
+      {
+       "name": "Xumo Play",
+       "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
+      },
+      {
+       "name": "Tubi TV",
+       "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+      }
+     ],
+     "buy": [
+      {
+       "name": "Amazon Video",
+       "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+      },
+      {
+       "name": "Google Play Movies",
+       "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+      },
+      {
+       "name": "Fandango At Home",
+       "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+      }
+     ],
+     "rent": []
+    },
+    "country": [
+     "US"
+    ],
+    "language": "en",
+    "keywords": [
+     "museum"
+    ],
+    "similar": [
+     15069,
+     1181,
+     105288,
+     2042,
+     43221,
+     4498,
+     66185,
+     3956,
+     204554,
+     101978,
+     55600,
+     65339,
+     118924,
+     114695,
+     212869,
+     113085,
+     229516,
+     90832,
+     248287,
+     4199
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt2076566",
+     "rating": 8.1,
+     "votes": 1615
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": null,
+     "audience": null,
+     "reviews": 0,
+     "url": "https://www.rottentomatoes.com/tv/mysteries_at_the_museum"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Conan O'Brien Must Go",
+   "matchScore": 1.91,
+   "why": "Similar to Conan O'Brien Must Go and Travel Man; you rate Documentary highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Light history/curiosities series hosted by Don Wildman; some segments recount historic crimes, told without graphic detail. TV-PG.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Monty Python's Flying Circus": {
+   "tmdb": {
+    "id": 849,
+    "name": "Monty Python's Flying Circus",
+    "year": "1969",
+    "endYear": "1974",
+    "status": "Ended",
+    "seasons": 4,
+    "episodes": 45,
+    "overview": "A British sketch comedy series with the shows being composed of surreality, risqué or innuendo-laden humour, sight gags and observational sketches without punchlines.",
+    "genres": [
+     "Comedy"
+    ],
+    "networks": [
+     {
+      "name": "BBC One",
+      "logo": "/uJjcCg3O4DMEjM0xtno9OWFciRP.png"
+     }
+    ],
+    "poster": "/hZtMtL8Pqv9FAMljN9911U4qBhI.jpg",
+    "backdrop": "/9GybuKLYceOhgV09BQ60MKTT5nN.jpg",
+    "cast": [
+     "Graham Chapman",
+     "Michael Palin",
+     "Terry Jones",
+     "Eric Idle",
+     "Terry Gilliam",
+     "John Cleese",
+     "Carol Cleveland",
+     "Lyn Ashley"
+    ],
+    "rating": "TV-14",
+    "imdb": "tt0063929",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/849-monty-python-s-flying-circus/watch?locale=US",
+     "stream": [
+      {
+       "name": "Amazon Prime Video",
+       "logo": "/gMZdpavHmxFNnLpMHwVxfqeux2g.png"
+      },
+      {
+       "name": "fuboTV",
+       "logo": "/3wF8xISfVlcrc8X3jaa3uMUFGAr.png"
+      },
+      {
+       "name": "Peacock Premium",
+       "logo": "/a1UIdq5BrkcAxnxcUhFsNbXnxeu.png"
+      },
+      {
+       "name": "Amazon Prime Video with Ads",
+       "logo": "/tpwTT1FpWqLLhxUfAuDavIXDDfI.png"
+      },
+      {
+       "name": "Peacock Premium Plus",
+       "logo": "/yrEwyMzEKdqAoGhaWUARtIxByol.png"
+      },
+      {
+       "name": "Shout! Factory Amazon Channel",
+       "logo": "/ydhPmamP2uIMipgq8qIEfmcw2hT.png"
+      }
+     ],
+     "free": [
+      {
+       "name": "The CW",
+       "logo": "/6fcYLKQIjGnrswtH7WxjjoSiyy3.png"
+      }
+     ],
+     "ads": [
+      {
+       "name": "The Roku Channel",
+       "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+      },
+      {
+       "name": "Pluto TV",
+       "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+      },
+      {
+       "name": "Shout! Factory TV",
+       "logo": "/ezTLm8lPMse9QRKTYInPOBD2jUM.png"
+      },
+      {
+       "name": "Plex",
+       "logo": "/blAEhvx3XX8sV0fFVFk88FFjubs.png"
+      },
+      {
+       "name": "Tubi TV",
+       "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+      }
+     ],
+     "buy": [
+      {
+       "name": "Amazon Video",
+       "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+      },
+      {
+       "name": "Apple TV Store",
+       "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+      },
+      {
+       "name": "Google Play Movies",
+       "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+      }
+     ],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "surreal",
+     "satire",
+     "sketch comedy"
+    ],
+    "similar": [
+     88728,
+     33922,
+     4415,
+     1229,
+     90877,
+     10420,
+     11163,
+     4483,
+     5396,
+     713,
+     610,
+     3002,
+     56590,
+     1459,
+     64113,
+     1551,
+     112211,
+     7985,
+     63,
+     67352
+    ],
+    "nextEpisode": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt0063929",
+     "rating": 8.8,
+     "votes": 88065
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": 100,
+     "audience": 85,
+     "reviews": 12,
+     "url": "https://www.rottentomatoes.com/tv/monty_python_s_flying_circus"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Lovesick",
+   "matchScore": 1.9,
+   "why": "Similar to Lovesick and Jury Duty; you rate Comedy, British, 2–4 seasons highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Classic surreal British sketch comedy (TV-14). Heads up: dated innuendo and occasional brief nudity, played for absurdity rather than shock.",
+    "reviewed": "2026-11-07"
+   }
+  }
+ },
+ "rejected": {
+  "713": {
+   "title": "Chappelle's Show",
+   "reason": "Edgy TV-MA sketch comedy with strong language and provocative content: exceeds the moderate language and tone thresholds.",
+   "on": "2026-11-07"
+  },
+  "815": {
+   "title": "Peep Show",
+   "reason": "Cringe comedy built on cynical, often mean-spirited inner monologues with frequent crude sexual humour (TV-MA): outside the family's tone limits.",
+   "on": "2026-11-07"
+  }
+ }
+}
