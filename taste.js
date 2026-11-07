@@ -9,7 +9,11 @@ const NOT_INTERESTED = {weight: -2, share: 0.5};
 
 // How much each kind of trait counts toward a show's match score.
 const TRAIT_WEIGHT = {genre: 1, country: 0.8, network: 0.5, length: 0.35, era: 0.3, rating: 0.4};
-const SMOOTHING = 3;      // ratings needed before a trait's average is trusted
+const SMOOTHING = 6;      // ratings needed before a trait's average is trusted
+// Extra credit for traits you often LOVE, not just ones that rarely disappoint.
+const LOVE_LIFT = 3;
+// No genre takes more than this share of a recommendation row or of the nightly finds.
+const MAX_GENRE_SHARE = 1 / 3;
 const MIN_SHOWN = 3;      // a trait needs this many rated shows to appear on the profile
 const MIN_SHOWN_BY_TYPE = {network: 5}; // channels are noisier, so need more
 
@@ -77,7 +81,9 @@ function buildProfile(shows) {
   }
   // Affinity: how much better (or worse) shows with this trait are rated than the family's
   // average rating, shrunk toward zero until there are enough ratings to trust it.
-  for (const x of Object.values(traits)) x.affinity = (x.sum - x.n * mean) / (x.n + SMOOTHING);
+  // Plus a lift for traits whose shows you Love more often than you Love shows overall.
+  const loveRate = withData.length ? withData.filter(s => s.rating === 'Loved').length / withData.length : 0;
+  for (const x of Object.values(traits)) x.affinity = (x.sum - x.n * mean) / (x.n + SMOOTHING) + LOVE_LIFT * (x.loved - x.rated * loveRate) / (x.rated + SMOOTHING);
   const counts = {Loved: 0, Liked: 0, Okay: 0, Disliked: 0};
   rated.forEach(s => counts[s.rating]++);
   const avgImdb = r => { const v = rated.filter(s => s.rating === r).map(s => imdbOf(s.title)).filter(x => x != null); return v.length ? v.reduce((a, b) => a + b, 0) / v.length : null; };
@@ -120,7 +126,8 @@ function matchShow(title, profile) {
   const because = similarSources(title, profile);
   score += Math.min(1.2, because.reduce((n, b) => n + b.weight, 0));
   const imdb = imdbOf(title);
-  if (imdb != null) score += Math.max(-0.8, Math.min(0.8, (imdb - 7.2) * 0.4));
+  // IMDb is judged against the show's own genre: documentaries are rated higher across the board.
+  if (imdb != null) score += Math.max(-0.8, Math.min(0.8, (imdb - imdbPivot(title)) * 0.4));
   const flags = contentFlags(title);
   score -= 0.7 * flags.length;
   const reasons = traits.filter(tr => ['genre', 'country', 'network'].includes(tr.type)).map(tr => profile.traits[tr.key]).filter(Boolean)
@@ -136,6 +143,33 @@ const minShown = type => MIN_SHOWN_BY_TYPE[type] || MIN_SHOWN;
 // Catalog entries that point to the same TMDB show (e.g. a show and its
 // "Special Episodes") count as one show, and are skipped if any of them
 // has already been rated, watched or listed.
+// Typical IMDb rating per primary genre, from every show Queuey knows about.
+let IMDB_BASE = null;
+function imdbPivot(title) {
+  if (!IMDB_BASE) {
+    const by = {}, all = [];
+    for (const [t, x] of Object.entries(TMDB)) { const i = imdbOf(t), g = x && (x.genres || [])[0]; if (i != null && g) { (by[g] = by[g] || []).push(i); all.push(i); } }
+    const avg = a => a.reduce((n, v) => n + v, 0) / a.length, overall = all.length ? avg(all) : 7.7;
+    IMDB_BASE = {overall, genre: Object.fromEntries(Object.entries(by).filter(([, a]) => a.length >= 10).map(([g, a]) => [g, avg(a)]))};
+  }
+  const g = ((TMDB[title] || {}).genres || [])[0];
+  return 7.2 + ((g && IMDB_BASE.genre[g]) != null ? IMDB_BASE.genre[g] - IMDB_BASE.overall : 0);
+}
+
+// Keeps a row varied: walks the list in score order, holding back a show while its
+// genre already has more than its share of the row so far.
+function diversify(list, genreOf, share = MAX_GENRE_SHARE) {
+  const left = [...list], out = [], count = {};
+  while (left.length) {
+    const cap = Math.max(1, Math.ceil((out.length + 1) * share));
+    let i = left.findIndex(x => (count[genreOf(x)] || 0) < cap);
+    if (i < 0) i = 0;
+    const [x] = left.splice(i, 1), g = genreOf(x);
+    count[g] = (count[g] || 0) + 1; out.push(x);
+  }
+  return out;
+}
+
 function rankedCandidates(shows, profile) {
   // Not rated, not watched, not on a list, not marked "Not interested", and not snoozed ("Later").
   const isCandidate = s => !(s.rating in RATING_WEIGHT) && !s.watched && s.libraryStatus === 'Not in My Library' && !s.dismissed && !((s.snoozeUntil || 0) > Date.now());

@@ -43,8 +43,8 @@ const shows = catalog.map(x => {
 });
 const ctx = {TMDB, RESEARCH: research, SCORES, console};
 vm.createContext(ctx);
-vm.runInContext(fs.readFileSync(file('taste.js'), 'utf8') + '\n;this.engine={buildProfile,rankedCandidates,matchShow,whyText,contentFlags};', ctx);
-const {buildProfile, rankedCandidates, matchShow, whyText, contentFlags} = ctx.engine;
+vm.runInContext(fs.readFileSync(file('taste.js'), 'utf8') + '\n;this.engine={buildProfile,rankedCandidates,matchShow,whyText,contentFlags,diversify,MAX_GENRE_SHARE};', ctx);
+const {buildProfile, rankedCandidates, matchShow, whyText, contentFlags, diversify, MAX_GENRE_SHARE} = ctx.engine;
 const profile = buildProfile(shows);
 const ranked = rankedCandidates(shows, profile);
 const bar = ranked.length ? ranked[Math.min(24, ranked.length - 1)].m.score : 0;
@@ -87,7 +87,19 @@ found.sort((a, b) => b.m.score - a.m.score);
 const live = Object.entries(disc.shows).filter(([t, d]) => d.guidance?.status !== 'rejected' && !(ratings[t] && (ratings[t].rating || ratings[t].libraryStatus)));
 const room = Math.max(0, MAX_PENDING_OR_SHOWN - live.length);
 const added = [];
-for (const f of found.slice(0, Math.min(MAX_NEW_PER_NIGHT, room))) {
+// Keep the finds varied: tonight's picks are mixed by genre, and no genre may hold more
+// than its share of all the finds on show.
+const primary = r => (r.genres || ['?'])[0];
+const liveByGenre = {};
+for (const [, d] of live) liveByGenre[primary(d.tmdb)] = (liveByGenre[primary(d.tmdb)] || 0) + 1;
+const genreRoom = g => (liveByGenre[g] || 0) < Math.ceil(MAX_PENDING_OR_SHOWN * MAX_GENRE_SHARE);
+const picks = diversify(found.filter(f => genreRoom(primary(f.rec))), f => primary(f.rec));
+const tonight = {};
+for (const f of picks) {
+  if (added.length >= Math.min(MAX_NEW_PER_NIGHT, room)) break;
+  const g = primary(f.rec);
+  if ((tonight[g] || 0) >= Math.ceil(MAX_NEW_PER_NIGHT * MAX_GENRE_SHARE)) continue;
+  tonight[g] = (tonight[g] || 0) + 1;
   const site = await siteScores(f.title, f.rec);
   TMDB[f.title] = f.rec; SCORES[f.title] = {imdb: f.im, ...site};
   disc.shows[f.title] = {tmdb: f.rec, scores: {imdb: f.im, ...site}, addedOn: today, source: f.source,
