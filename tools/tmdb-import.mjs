@@ -73,7 +73,10 @@ async function findShow(title) {
   return {id: exact[0].id, match: close ? 'ambiguous' : 'name'};
 }
 
-const titles = [...new Set(catalog.map(x => x.title))];
+// Shows the family added in the app (saved to ratings.json by the nightly job).
+const added = fs.existsSync(path.join(ROOT, 'ratings.json')) ? (JSON.parse(fs.readFileSync(path.join(ROOT, 'ratings.json'), 'utf8')).added || {}) : {};
+for (const [t, a] of Object.entries(added)) if (a.id && !(t in overrides)) overrides[t] = a.id;
+const titles = [...new Set([...catalog.map(x => x.title), ...Object.keys(added)])];
 const out = {}, problems = [];
 let done = 0;
 async function worker(queue) {

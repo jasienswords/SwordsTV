@@ -281,3 +281,11 @@ details.card summary{cursor:pointer}
 @media(max-width:650px){.rating-split .fact strong{font-size:19px}}
 .subbar .sync-btn.signed-in{border-color:var(--green);color:#bff0d2}
 @media(max-width:650px){.subbar small{display:none}.subbar{justify-content:flex-end}}
+
+/* Search */
+.top{position:sticky}
+.search-btn{position:absolute;right:12px;bottom:10px;width:40px;height:40px;border-radius:50%;border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.06);display:grid;place-items:center;color:#fff}
+.search-btn svg{width:20px;height:20px;fill:currentColor}
+.search-btn.active{background:var(--gold);border-color:var(--gold);color:#1c1e23}
+.add-by-name{margin:16px 0 8px}
+input[type=search]{-webkit-appearance:none;appearance:none}
