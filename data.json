@@ -1,0 +1,7806 @@
+{
+ "catalog": [
+  {
+   "round": 5,
+   "title": "11.22.63",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "12 Monkeys",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "30 Rock",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "A Discovery of Witches",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "A Gentleman in Moscow",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "A Man on the Inside",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "A Million Little Things",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "A Place in the Sun",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "A Series of Unfortunate Events",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "A Very English Scandal",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "A.P. Bio",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Abbott Elementary",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Acapulco",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Agatha Raisin",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "All Creatures Great and Small (modern)",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites; distinct from original"
+  },
+  {
+   "round": 3,
+   "title": "All Creatures Great and Small (original)",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": "Round 3; distinct from modern version"
+  },
+  {
+   "round": 5,
+   "title": "Alma's Not Normal",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Alone",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Amazing Hotels: Life Beyond the Lobby",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "American Housewife",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "An Idiot Abroad",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Andor",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 4,
+   "title": "Annika",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Anthony Bourdain: Parts Unknown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Antiques Roadshow",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Arrested Development",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Atlanta",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Back",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Bad Sisters",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Bargain Block",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Bargain Mansions",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Battlestar Galactica",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Belgravia",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Belgravia: The Next Chapter",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Better Call Saul",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Better Off Ted",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Better Things",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Beyond Paradise",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Big Boys",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Big Dreams Small Spaces",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Big Little Lies",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Billions",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Black Books",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Black Mirror",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Black Ops",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Black-ish",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Bless This Mess",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Blown Away",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Blue Bloods",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Blue Lights",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Blue Planet II",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Boardwalk Empire",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Bodyguard",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Borgen",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Bosch",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Bosch: Legacy",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Breaking Bad",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Breeders",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Broadchurch",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Brothers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Brothers & Sisters",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Building Off the Grid",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Building Roots",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Burn Notice",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Californication",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Call the Midwife",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Castle",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Catastrophe",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Chef's Table",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Chernobyl",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Chicago P.D.",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Christina in the Country",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Christina on the Coast",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Chuck",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Cobra Kai",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Colin from Accounts",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Round 2"
+  },
+  {
+   "round": 1,
+   "title": "Community",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Conan O'Brien Must Go",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 5,
+   "title": "Corporate",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Cougar Town",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Counterpart",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Crazy Ex-Girlfriend",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Dalgliesh",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Damages",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Dark Matter",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Dark Tourist",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Death and Other Details",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Death in Paradise",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Defiance",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Derry Girls",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Designated Survivor",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Designing the Hebrides",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Detectorists",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Detroiters",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Deutschland 83",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Difficult People",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Don't Trust the B---- in Apartment 23",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Down to Earth with Zac Efron",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": "",
+   "title": "Downton Abbey",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 3,
+   "title": "Dream Home Makeover",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Elementary",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Elsbeth",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Endeavour",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Enlightened",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Episodes",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "ER (later seasons)",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Escape to the Chateau",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Escape to the Chateau: DIY",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Escape to the Country",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Eureka",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Expedition Unknown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Extras",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Falling Skies",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Fargo",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Farmhouse Fixer",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Farmhouse Fixer: Camp Revamp",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Father Brown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Feel Good",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Fellow Travelers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Firefly",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Fisk",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Fixer to Fabulous",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Fixer to Fabulous: Italiano",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Fixer Upper",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Fleabag",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "For All Mankind",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Forged in Fire",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Formula 1: Drive to Survive",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Foundation",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Foyle's War",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Free Solo",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Fresh Off the Boat",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Friday Night Dinner",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Friday Night Lights",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Fringe",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Game of Thrones",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Gavin & Stacey",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "George Clarke's Amazing Spaces",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Ghosts (Australia)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Ghosts (UK)",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Round 3"
+  },
+  {
+   "round": 1,
+   "title": "Ghosts (US)",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Gilmore Girls",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 2,
+   "title": "Goliath",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Gordon Ramsay: Uncharted",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Grace and Frankie",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Grand Designs",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Grand Designs Australia",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Grantchester",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Great British Home Restoration",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": "Supplemental discovery title added during streaming research; not part of original six rounds."
+  },
+  {
+   "round": 5,
+   "title": "Great British Railway Journeys",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Great News",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Hacks",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Halt and Catch Fire",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Happy Endings",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Happy Valley",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Harry Wild",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Hawaii Five-0",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Help! I Wrecked My House",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Here We Go",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "High Potential",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "His Dark Materials",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Home Economics",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Home Town",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Prior explicit update"
+  },
+  {
+   "round": 1,
+   "title": "Home Town Takeover",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Home Town: Ben's Workshop",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Hotel Portofino",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "House",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "House of Lies",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "How I Met Your Mother",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Indian Summers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Inspector George Gently",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Instant Dream Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Instant Hotel",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Interior Design Masters",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "James May: Our Man in Italy",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "James May: Our Man in Japan",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Jamestown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Jury Duty",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Justified",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Karen Pirie",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Killjoys",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Kim's Convenience",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Last Man Standing",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Law & Order: SVU",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Lessons in Chemistry",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Life in Pieces",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Locke & Key",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Long Way Down",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Long Way Round",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Long Way Up",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Longmire",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Loot",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Lost",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Lost in Space (2018)",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Love It or List It",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Lovesick",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Ludwig",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Luther",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Mad Men",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Madam Secretary",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Magpie Murders",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Maine Cabin Masters",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Maine Cabin Masters: Building Italy",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Major Crimes",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Making It",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Man Down",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Man Like Mobeen",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Man with a Plan",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Mare of Easttown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Married to Real Estate",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Mary & George",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "MasterChef",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "MasterChef: The Professionals",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "McDonald & Dodds",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Merlin",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Merlin (BBC)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Midsomer Murders",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Mindhunter",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Miranda",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Miss Fisher's Murder Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Miss Scarlet",
+   "rating": "Not rated — watched",
+   "status": "Needs confirmation",
+   "note": "Previously noted watched; rating not captured"
+  },
+  {
+   "round": 1,
+   "title": "Modern Family",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Monty Don's Italian Gardens",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Moonflower Murders",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Motherland",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Mozart in the Jungle",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 2,
+   "title": "Mr Selfridge",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Mrs Wilson",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Ms Fisher's Modern Murder Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Mum",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Murder in Provence",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Murderville",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "My Life Is Murder",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Mythic Quest",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Nailed It!",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "NCIS: Los Angeles",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "New Amsterdam",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "New Girl",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "No Activity (Australian series)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "No Demo Reno",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Nobody Wants This",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 5,
+   "title": "Not Dead Yet",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Once Upon a Time",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "One Day (2024)",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "One Day at a Time (2017)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Only Murders in the Building",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 2,
+   "title": "Orphan Black",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Our Planet",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Outer Banks",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Outlander",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Palm Royale",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Parenthood",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Parks and Recreation",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 1,
+   "title": "Person of Interest",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Planet Earth II",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Platonic",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Playing House",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Plebs",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Poker Face",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Poldark",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Professor T (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Property Brothers",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Property Brothers: Buying and Selling",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Property Brothers: Forever Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Psych",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Queens of Mystery",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Queer Eye",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Race Across the World",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Raising Dion",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Raising Hope",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Reacher",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Rehab Addict",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Renovation Island",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Renovation Resort",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Reservation Dogs",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Resident Alien",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Restoration Australia",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Restoration Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Restored",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Restored by the Fords",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Revolution",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Rick Stein's Cornwall",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Rick Stein's India",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Rick Stein's Secret France",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Rick Stein's Spain",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Rick Steves' Europe",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Rizzoli & Isles",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Robin Hood",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Rock the Block",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Royal Pains",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Rules of Engagement",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Rutherford Falls",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "S.W.A.T.",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Schitt's Creek",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": "",
+   "title": "Scrubs",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 1,
+   "title": "Severance",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Shakespeare & Hathaway",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Shark Tank",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Sherlock",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Shrill",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Shrinking",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 1,
+   "title": "Shōgun",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Signora Volpe",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Silicon Valley",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Silo",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Single Parents",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Slow Horses",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "So Help Me Todd",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Somebody Feed Phil",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Speechless",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Sprung",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Staged",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Stanley Tucci: Searching for Italy",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Star Trek: Discovery",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Star Trek: Picard",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Star Trek: Strange New Worlds",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Stargate Atlantis",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Stargate Universe",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Starstruck",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Stath Lets Flats",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Stay Here",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Stranger Things",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 5,
+   "title": "Such Brave Girls",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Suits",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Round 2"
+  },
+  {
+   "round": 1,
+   "title": "Superstore",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Survivor",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Sweet Tooth",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Taste the Nation",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Ted Lasso",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 3,
+   "title": "Terra Nova",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The 100",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Act",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Affair",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Afterparty",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Amazing Race",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Amazing Race Canada",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Americans",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Americas",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Artful Dodger",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Bay",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Bidding Room",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Big Bang Theory",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Big Build",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Big Family Cooking Showdown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Big Flower Fight",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Billion Dollar Code",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Blacklist",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Bletchley Circle",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Borgias",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Boys",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Brokenwood Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Buccaneers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Bureau",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Cabin Chronicles",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Calling",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Capture",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Carmichael Show",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Challenge",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Change",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Chef Show",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Chelsea Detective",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Cleaner (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Cleaner (US)",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Closer",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Cockfields",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Collection",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Completely Made-Up Adventures of Dick Turpin",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Cook of Castamar",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Cook Up with Adam Liaw",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Cormoran Strike Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Crazy Ones",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Crimson Field",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Crown",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Crowned Clown",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Deceived",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Detour",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Deuce",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Diplomat",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Doctor Blake Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Dropout",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Drowning",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Dry",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Duchess",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Durrells in Corfu",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 6,
+   "title": "The Empress",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The English",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The English Game",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Essex Serpent",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Established Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Established Home: Special Projects",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Expanse",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The F Word",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Fall",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Flatshare",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Flipping El Moussas",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Food That Built America",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Food That Made History",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Forsyte Saga (2007)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Fosters",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Gardeners' World",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Gardeners' World: Winter Specials",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Gilded Age",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Girl Before",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Gold",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Goldbergs",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Good Doctor",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Good Fight",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Good Place",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Good Wife",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Grand Tour",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Great",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Great American Baking Show",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Great British Bake Off: An Extra Slice",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "The Great British Baking Show",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 3,
+   "title": "The Great British Food Revival",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Great British Garden Revival",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Great British Home Restoration",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Great British Menu",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Great British Railway Journeys: Australia",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Great British Sewing Bee",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Great House Giveaway",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Great House Revival",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Great Interior Design Challenge",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Great Interior Design Challenge: Celebrity Special",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Great Pottery Throw Down",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Grinder",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Guest Book",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Hairy Bikers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Halcyon",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Handmaid's Tale",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Honourable Woman",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Hotel Inspector",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Hotel Inspector Returns",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Hour",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The House of Eliott",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Inbetweeners",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Indian Doctor",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Irrational",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The IT Crowd",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Jetty",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Job Lot",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Kennedys (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Kids in the Hall (2022)",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Knick",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Kominsky Method",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Larkins",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Last Czars",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Last Dance",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Last Dance: Behind the Scenes",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Last Detective",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Last Kingdom",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Last Ship",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Last Tycoon",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Law According to Lidia Poët",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Lazarus Project",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The League",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Librarians",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Lincoln Lawyer",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Little Drummer Girl",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Living and the Dead",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Long Call",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Long Shadow",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Looming Tower",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Luminaries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Madame Blanc Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Magicians",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Mallorca Files",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Mandalorian",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Marlow Murder Club",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Marvelous Mrs. Maisel",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 1,
+   "title": "The Mentalist",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Mick",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Middle",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Mill",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Mindy Project",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Missing",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Morning Show",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Movies That Made Us",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Musketeers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Nate and Jeremiah Home Project",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Neighborhood",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The New Look",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Newsreader",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Newsroom",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Night Agent",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Night Manager",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Night Of",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Offer",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Office (UK)",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "The Office (US)",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Original favorites"
+  },
+  {
+   "round": 3,
+   "title": "The Orville",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Other One",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Other Two",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Outlaws",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Paradise",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Pembrokeshire Murders",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Peripheral",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Playlist",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Pursuit of Love",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Queen's Gambit",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Reluctant Traveler",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Reluctant Traveler: Special Episodes",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Renovators",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Repair Shop",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Repair Shop (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Repair Shop: Fixing Britain",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Residence",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Resident",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Responder",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Restoration Couple",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Restoration Man",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "The Rise and Fall of Reggie Dinkins",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 5,
+   "title": "The Romanoffs",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Rookie",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Salvage Hunters",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Secret of Crickley Hall",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Serpent",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Serpent Queen",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Sinner",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Sixth Commandment",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Spanish Princess",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Split",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Spy",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Staircase",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Story of China",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Story of Egypt",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The Studio",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Suspect",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Syndicate",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Tattooist of Auschwitz",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Thief, His Wife and the Canoe",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Time in Between",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Tourist",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Tower",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Toys That Made Us",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Traitors (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Tudors",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Umbrella Academy",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The Undoing",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Unicorn",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The Upshaws",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The Village",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Walk-In",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The West Wing",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The White Lotus",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The White Princess",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "The White Queen",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Wine Show",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Wonder Years (2021)",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The World According to Jeff Goldblum",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The World Cook",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "The World's Most Amazing Vacation Rentals",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "The World's Most Extraordinary Homes",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "The World's Most Extraordinary Homes: Revisited",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "The Yorkshire Auction House",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "The Young Offenders",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "This Country",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Three Pines",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Timeless",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Toast of London",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Tom Clancy's Jack Ryan",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Tom Jones (2023)",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Top Chef",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Travel Man",
+   "rating": "Loved",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Travelers",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Trial & Error",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Trying",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "Previously recorded"
+  },
+  {
+   "round": 1,
+   "title": "Undercover Boss",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Unforgotten",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Unsellable Houses",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Upload",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Veep",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Vera",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Victoria",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "Vienna Blood",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Vigil",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Warehouse 13",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Welcome to Wrexham",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "Westworld",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "What We Do in the Shadows",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 1,
+   "title": "White Collar",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Whitstable Pearl",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": "",
+   "title": "Widow's Bay",
+   "rating": "Liked",
+   "status": "Watched",
+   "note": "User-added update after Round 6"
+  },
+  {
+   "round": 6,
+   "title": "Will Trent",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 6,
+   "title": "World on Fire",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "Wrecked",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 5,
+   "title": "You're the Worst",
+   "rating": "Disliked",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 3,
+   "title": "Young Sheldon",
+   "rating": "Okay",
+   "status": "Watched",
+   "note": ""
+  },
+  {
+   "round": 2,
+   "title": "Younger",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  },
+  {
+   "round": 4,
+   "title": "Your Home Made Perfect",
+   "rating": "Haven't watched",
+   "status": "Unwatched",
+   "note": ""
+  }
+ ],
+ "roundHistory": [
+  {
+   "round": 1,
+   "title": "30 Rock",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Abbott Elementary",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Alone",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Arrested Development",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Atlanta",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Bargain Mansions",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Better Call Saul",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Better Things",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Big Little Lies",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Black Mirror",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Blue Planet II",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Bodyguard",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Breaking Bad",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Broadchurch",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Burn Notice",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Castle",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Chernobyl",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Community",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Derry Girls",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Elementary",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Endeavour",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Fargo",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Farmhouse Fixer",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Fixer Upper",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Fleabag",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Formula 1: Drive to Survive",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Game of Thrones",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Ghosts (US)",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Grantchester",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Hacks",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Happy Valley",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Home Town Takeover",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "How I Met Your Mother",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Instant Hotel",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Justified",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Life in Pieces",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Lost",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Love It or List It",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Mad Men",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Maine Cabin Masters",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Mare of Easttown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Mindhunter",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Modern Family",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Mythic Quest",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "New Girl",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Our Planet",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Outlander",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Person of Interest",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Planet Earth II",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Poldark",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Property Brothers",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Psych",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Queer Eye",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Raising Hope",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Reacher",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Rehab Addict",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Reservation Dogs",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Restored",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Rock the Block",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Severance",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Shark Tank",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Sherlock",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Shōgun",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Silicon Valley",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Slow Horses",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Somebody Feed Phil",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Superstore",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Americans",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Big Bang Theory",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Blacklist",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Boys",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Crown",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Expanse",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Gilded Age",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Good Fight",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Good Place",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Good Wife",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Great Pottery Throw Down",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Handmaid's Tale",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Last Kingdom",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Mandalorian",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Mentalist",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Middle",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Night Agent",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Night Manager",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Queen's Gambit",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "The Repair Shop",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The Studio",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The White Lotus",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "The World's Most Extraordinary Homes",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Tom Clancy's Jack Ryan",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Top Chef",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Undercover Boss",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Veep",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Vera",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Victoria",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "Welcome to Wrexham",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 1,
+   "title": "Westworld",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "What We Do in the Shadows",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 1,
+   "title": "White Collar",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "A Discovery of Witches",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "A.P. Bio",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Acapulco",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Anthony Bourdain: Parts Unknown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Bad Sisters",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Battlestar Galactica",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Billions",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Blown Away",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Blue Bloods",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Boardwalk Empire",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Bosch",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Bosch: Legacy",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Breeders",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Building Roots",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Call the Midwife",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Catastrophe",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Chef's Table",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Chicago P.D.",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Colin from Accounts",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Cougar Town",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Crazy Ex-Girlfriend",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Escape to the Country",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Eureka",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Firefly",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Fixer to Fabulous",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Forged in Fire",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Foundation",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Free Solo",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Friday Night Lights",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Fringe",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Goliath",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Grace and Frankie",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Grand Designs",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Happy Endings",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Hawaii Five-0",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Home Town",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Kim's Convenience",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Law & Order: SVU",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Longmire",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Loot",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Lovesick",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Luther",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Maine Cabin Masters: Building Italy",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Major Crimes",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Making It",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "MasterChef",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "MasterChef: The Professionals",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Mr Selfridge",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "NCIS: Los Angeles",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Nailed It!",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Orphan Black",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Palm Royale",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Parks and Recreation",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Platonic",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Restoration Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Rizzoli & Isles",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Rules of Engagement",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "S.W.A.T.",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Shrinking",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Suits",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Survivor",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The 100",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Amazing Race",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Borgias",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Challenge",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Chelsea Detective",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Closer",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Established Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Fall",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Great",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Great American Baking Show",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Great British Menu",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Great British Sewing Bee",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Kominsky Method",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Last Dance",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The League",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Lincoln Lawyer",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Marvelous Mrs. Maisel",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Mindy Project",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Missing",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Morning Show",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Newsroom",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Paradise",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Peripheral",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Rookie",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Serpent Queen",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Sinner",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Spanish Princess",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Tourist",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The Tudors",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The Undoing",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The West Wing",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "The White Princess",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "The White Queen",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Travel Man",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Trying",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Unforgotten",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Upload",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 2,
+   "title": "Warehouse 13",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 2,
+   "title": "Younger",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "12 Monkeys",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "A Place in the Sun",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "A Series of Unfortunate Events",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "All Creatures Great and Small (original)",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "American Housewife",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Antiques Roadshow",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Belgravia",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Beyond Paradise",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Black Books",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Chuck",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Cobra Kai",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Dark Matter",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Death in Paradise",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Defiance",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Dream Home Makeover",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Escape to the Chateau",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Escape to the Chateau: DIY",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Falling Skies",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Father Brown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Foyle's War",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Fresh Off the Boat",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Friday Night Dinner",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Gavin & Stacey",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Ghosts (UK)",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Gordon Ramsay: Uncharted",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "His Dark Materials",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Indian Summers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Instant Dream Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Interior Design Masters",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Jamestown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Killjoys",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Last Man Standing",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Life in Pieces",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Locke & Key",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Man Like Mobeen",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Man with a Plan",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Merlin",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Merlin (BBC)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Miranda",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Miss Fisher's Murder Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "My Life Is Murder",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Once Upon a Time",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Outer Banks",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Race Across the World",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Raising Dion",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Revolution",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Robin Hood",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Shakespeare & Hathaway",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Single Parents",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Somebody Feed Phil",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Speechless",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Stanley Tucci: Searching for Italy",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Stargate Atlantis",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Stargate Universe",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Starstruck",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Stath Lets Flats",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Stay Here",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Sweet Tooth",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "Terra Nova",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Amazing Race Canada",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Big Family Cooking Showdown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Big Flower Fight",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Bletchley Circle",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Brokenwood Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Crimson Field",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Doctor Blake Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Durrells in Corfu",
+   "rating": "Loved",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The English Game",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The F Word",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Goldbergs",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Great British Bake Off: An Extra Slice",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Great British Food Revival",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Great Interior Design Challenge",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Hotel Inspector",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Hour",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The IT Crowd",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Inbetweeners",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Larkins",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Last Ship",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Librarians",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Madame Blanc Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Magicians",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Mallorca Files",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Mick",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Musketeers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Neighborhood",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Orville",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Other Two",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Reluctant Traveler",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Repair Shop: Fixing Britain",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Traitors (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Umbrella Academy",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 3,
+   "title": "The Unicorn",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The Village",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "The World's Most Amazing Vacation Rentals",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Timeless",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Travelers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 3,
+   "title": "Young Sheldon",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "A Million Little Things",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Agatha Raisin",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Annika",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Better Off Ted",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Big Dreams Small Spaces",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Black-ish",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Bless This Mess",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Borgen",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Brothers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Brothers & Sisters",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Californication",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Designing the Hebrides",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Deutschland 83",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Difficult People",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "ER (later seasons)",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Enlightened",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Episodes",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Extras",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Friday Night Lights",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "George Clarke's Amazing Spaces",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Great News",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Halt and Catch Fire",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "House",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "House of Lies",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Jury Duty",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Karen Pirie",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Long Way Down",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Long Way Round",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Long Way Up",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Monty Don's Italian Gardens",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "New Amsterdam",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Parenthood",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Playing House",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Race Across the World",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Rick Steves' Europe",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Royal Pains",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Rutherford Falls",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Sprung",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Affair",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Artful Dodger",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The Bay",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Bidding Room",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Bureau",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Capture",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Carmichael Show",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Chelsea Detective",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Cleaner (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Collection",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Crazy Ones",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Crowned Clown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Detour",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Deuce",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Food That Built America",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Forsyte Saga (2007)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Fosters",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The Gardeners' World",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Gold",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Good Doctor",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Great British Garden Revival",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Great British Home Restoration",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Great House Revival",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Great Interior Design Challenge",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Guest Book",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Halcyon",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Hotel Inspector Returns",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The House of Eliott",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Indian Doctor",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Jetty",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Kids in the Hall (2022)",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The Knick",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Last Detective",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Living and the Dead",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Long Call",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Long Shadow",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Madame Blanc Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Marlow Murder Club",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The Mill",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Musketeers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The New Look",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Newsreader",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Office (UK)",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The Reluctant Traveler",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The Repair Shop (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Resident",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Responder",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Restoration Man",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Salvage Hunters",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Secret of Crickley Hall",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Spanish Princess",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Split",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Suspect",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Syndicate",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Tower",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Wine Show",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Wonder Years (2021)",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "The World Cook",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "The Yorkshire Auction House",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Trial & Error",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 4,
+   "title": "Vigil",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 4,
+   "title": "Your Home Made Perfect",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "11.22.63",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "A Very English Scandal",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Alma's Not Normal",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Amazing Hotels: Life Beyond the Lobby",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Bargain Block",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Big Boys",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Blue Lights",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Corporate",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Counterpart",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Dalgliesh",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Damages",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Designated Survivor",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Detectorists",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Detroiters",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Don't Trust the B---- in Apartment 23",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "For All Mankind",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Friday Night Dinner",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Gordon Ramsay: Uncharted",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Great British Railway Journeys",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Harry Wild",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Help! I Wrecked My House",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Here We Go",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Lost in Space (2018)",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Ludwig",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Madam Secretary",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Married to Real Estate",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "McDonald & Dodds",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Motherland",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Murder in Provence",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "No Demo Reno",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Not Dead Yet",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Professor T (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Queens of Mystery",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Race Across the World",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Renovation Island",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Renovation Resort",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Resident Alien",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Restored by the Fords",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Rick Stein's Cornwall",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Rick Stein's Secret France",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Shrill",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Silo",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Somebody Feed Phil",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Staged",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Stanley Tucci: Searching for Italy",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Star Trek: Discovery",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Star Trek: Picard",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Star Trek: Strange New Worlds",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "Such Brave Girls",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Taste the Nation",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Act",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Bay",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Billion Dollar Code",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Chef Show",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Cockfields",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Deceived",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Diplomat",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Dropout",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Drowning",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Dry",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The English",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Flipping El Moussas",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Girl Before",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Grinder",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Honourable Woman",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Inbetweeners",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Jetty",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Last Czars",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Last Tycoon",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Lazarus Project",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Little Drummer Girl",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Long Call",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Long Shadow",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Looming Tower",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Morning Show",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Newsroom",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Night Of",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Offer",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Other One",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Other Two",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Outlaws",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Pembrokeshire Murders",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Playlist",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Romanoffs",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Serpent",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Sixth Commandment",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Spy",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Staircase",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Suspect",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Thief, His Wife and the Canoe",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Tower",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Unicorn",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 5,
+   "title": "The Walk-In",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "The Young Offenders",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "This Country",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Unsellable Houses",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Whitstable Pearl",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "Wrecked",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 5,
+   "title": "You're the Worst",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "A Gentleman in Moscow",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "A Man on the Inside",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "An Idiot Abroad",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Back",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Belgravia: The Next Chapter",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Black Ops",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Building Off the Grid",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Christina in the Country",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Christina on the Coast",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Dark Tourist",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Death and Other Details",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Elsbeth",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "Expedition Unknown",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Farmhouse Fixer: Camp Revamp",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Feel Good",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Fellow Travelers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Fisk",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Fixer to Fabulous: Italiano",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "Ghosts (Australia)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Grand Designs Australia",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "High Potential",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Home Economics",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Home Town: Ben's Workshop",
+   "rating": "Liked",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "Hotel Portofino",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Inspector George Gently",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "James May: Our Man in Italy",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "James May: Our Man in Japan",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Lessons in Chemistry",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Magpie Murders",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "Man Down",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Mary & George",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Midsomer Murders",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Moonflower Murders",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "Mrs Wilson",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Ms Fisher's Modern Murder Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Mum",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Murderville",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "No Activity (Australian series)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "One Day (2024)",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "One Day at a Time (2017)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Plebs",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Poker Face",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Property Brothers: Buying and Selling",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Property Brothers: Forever Home",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Restoration Australia",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Rick Stein's India",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Rick Stein's Spain",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Signora Volpe",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "So Help Me Todd",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Afterparty",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Americas",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Big Build",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Buccaneers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Cabin Chronicles",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Calling",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Change",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Cleaner (US)",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "The Completely Made-Up Adventures of Dick Turpin",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "The Cook Up with Adam Liaw",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Cook of Castamar",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Cormoran Strike Mysteries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Duchess",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Empress",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Essex Serpent",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Established Home: Special Projects",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Flatshare",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Food That Made History",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Gardeners' World: Winter Specials",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Grand Tour",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Great British Railway Journeys: Australia",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Great House Giveaway",
+   "rating": "Disliked",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "The Great Interior Design Challenge: Celebrity Special",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Hairy Bikers",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Irrational",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Job Lot",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Kennedys (UK)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Last Dance: Behind the Scenes",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Law According to Lidia Poët",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Luminaries",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Movies That Made Us",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Nate and Jeremiah Home Project",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Pursuit of Love",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Reluctant Traveler: Special Episodes",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Renovators",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Residence",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Restoration Couple",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Story of China",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Story of Egypt",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Tattooist of Auschwitz",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Time in Between",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Toys That Made Us",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The Upshaws",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The World According to Jeff Goldblum",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "The World's Most Extraordinary Homes: Revisited",
+   "rating": "Okay",
+   "status": "Watched"
+  },
+  {
+   "round": 6,
+   "title": "Three Pines",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Toast of London",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Tom Jones (2023)",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Vienna Blood",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "Will Trent",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": 6,
+   "title": "World on Fire",
+   "rating": "Haven't watched",
+   "status": "Unwatched"
+  },
+  {
+   "round": "Post-Round 6 addition",
+   "title": "Widow's Bay",
+   "rating": "Liked",
+   "status": "Watched"
+  }
+ ],
+ "tasteProfile": [
+  {
+   "dimension": "Strong positive signals",
+   "profile": "Warm, funny, character-led series; memorable ensembles; clever writing; optimism, redemption and satisfying arcs."
+  },
+  {
+   "dimension": "Comedy",
+   "profile": "Strongest evidence for Ted Lasso, The Office (US), Scrubs, Schitt's Creek, The Good Place, New Girl, Lovesick and Colin from Accounts."
+  },
+  {
+   "dimension": "British / international",
+   "profile": "Repeated positive ratings for The Office (UK), Episodes, The Artful Dodger, Ghosts (UK), The Durrells and several travel titles."
+  },
+  {
+   "dimension": "Travel / personality",
+   "profile": "Conan O'Brien Must Go and Travel Man Loved; Reluctant Traveler and Rick Steves' Europe Liked."
+  },
+  {
+   "dimension": "Renovation",
+   "profile": "Home Town and Fixer to Fabulous Loved; Home Town: Ben's Workshop and Fixer to Fabulous: Italiano Liked. Location and host chemistry matter."
+  },
+  {
+   "dimension": "Drama caution",
+   "profile": "Avoid defaulting to bleak, cynical, relentlessly intense, or emotionally punishing dramas. Parenthood is Okay in the latest explicit rating."
+  },
+  {
+   "dimension": "Content boundaries",
+   "profile": "Too dark/depressing/hopeless, excessive gore/violence, disturbing scenes, excessive sexual content/nudity, slow pacing, and too much supernatural/fantasy are dealbreakers."
+  },
+  {
+   "dimension": "Tone thresholds",
+   "profile": "Romance/sexual content: moderate tolerance; language: moderate; violence: mild preferred."
+  },
+  {
+   "dimension": "Sci-fi / fantasy",
+   "profile": "Not a blanket rejection: The Mandalorian, Andor, Stranger Things, The Queen's Gambit show openness to selected immersive/adventure storytelling. Recent sci-fi dislikes require caution."
+  },
+  {
+   "dimension": "Hall of Fame rules",
+   "profile": "Only series that have ended, ran at least 3 seasons, and whose final season was at least 2 years ago. Apply eligibility independently from personal rating."
+  },
+  {
+   "dimension": "Data caution",
+   "profile": "Some ratings came from prior summaries and duplicate titles appeared across rounds. Verify conflicts and exact series editions before treating the catalog as final."
+  }
+ ],
+ "readMe": [
+  {
+   "item": "Round coverage",
+   "detail": "Rounds 1, 2 and 4 reconstructed at 100 entries each; Round 3 has 98 recoverable exact entries; Round 5 has 99 recoverable exact entries; Round 6 has 100 after removing a duplicate reconstruction row."
+  },
+  {
+   "item": "Recovered round-history rows",
+   "detail": "597 exact title-rating entries currently represented."
+  },
+  {
+   "item": "Known source gaps",
+   "detail": "Two exact Round 3 titles and one exact Round 5 title were not preserved in the compact conversation summary used for reconstruction. They are not invented or replaced with guesses."
+  },
+  {
+   "item": "Duplicate handling",
+   "detail": "Master Catalog consolidates exact normalized title matches; Round History retains per-round entries."
+  },
+  {
+   "item": "Rating precedence",
+   "detail": "Latest round rating is used when a title recurs. Explicit prior corrections and previously stated favorites are applied where captured."
+  },
+  {
+   "item": "Hall of Fame",
+   "detail": "Eligibility not assigned in this workbook; must be checked against current series end date and season count."
+  },
+  {
+   "item": "Next cleanup step",
+   "detail": "Resolve the three missing source entries and verify any conflicting title/version ratings before treating this as a final canonical catalog."
+  }
+ ],
+ "project": {
+  "name": "SwordsTV",
+  "version": "0.1.0",
+  "generated": "2026-11-05",
+  "note": "Catalog is a working reconstruction. Original round history is read-only; ongoing changes are stored separately."
+ }
+}
