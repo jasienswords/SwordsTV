@@ -1,4 +1,4 @@
-// SwordsTV family sync (Firebase).
+// Queuey family sync (Firebase).
 // One shared Firestore document holds every family rating and the subscription
 // list. Anyone can read it, so every phone shows the family's ratings; only the
 // family's Google accounts can change it (enforced by the Firestore rules).

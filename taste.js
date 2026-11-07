@@ -1,4 +1,4 @@
-// SwordsTV taste engine.
+// Queuey taste engine.
 // Learns the family's taste from their ratings and ranks unwatched shows by it.
 // Everything here is recalculated from the current ratings on every render, so
 // the Taste Profile and For You change as soon as a show is rated.

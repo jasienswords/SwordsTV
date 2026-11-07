@@ -1,4 +1,4 @@
-// SwordsTV search & add.
+// Queuey search & add.
 // Searches the family catalog instantly and, when a public TMDB key is set in
 // app-config.json, all of TMDB live (posters, details and where to watch right
 // away). Opening a TMDB result previews it like any other show; rating it or
@@ -118,7 +118,7 @@ function renderSearch() {
   const q = searchQuery.trim(), inCat = catalogMatches(q);
   const catIds = new Set(Object.values(TMDB).filter(Boolean).map(t => t.id));
   const unlinked = new Set(Object.keys(ADDED).filter(t => !ADDED[t].id).map(t => t.toLowerCase()));
-  let html = `${heading('Search', liveSearch() ? 'Your shows, plus every TV series on TMDB.' : 'Search your shows, or add one by name.')}
+  let html = `${agent('Tell me what you’re looking for. I’ll check your shows and every series on TMDB.')}${heading('Search', liveSearch() ? 'Your shows, plus every TV series on TMDB.' : 'Search your shows, or add one by name.')}
    <div class="filters"><input id="searchAll" class="field search" type="search" autocomplete="off" placeholder="Show title…" value="${esc(searchQuery)}"></div>`;
   if (!q) return html + `<div class="empty">Type a show's name. Found it? Rate it if you've seen it, or add it to My Queue.</div>`;
   html += `<h4 class="group-head">In your shows <span>${inCat.length}</span></h4>` + (inCat.length ? gridOf(inCat) : `<p class="muted">Not in your shows yet.</p>`);
@@ -126,7 +126,7 @@ function renderSearch() {
     const more = (searchResults || []).filter(r => !catIds.has(r.id));
     const toLink = more.filter(r => unlinked.has(String(r.name).toLowerCase()));
     html += `<h4 class="group-head">More on TMDB${searchResults ? ` <span>${more.length}</span>` : ''}</h4>`;
-    html += searchResults === null ? `<p class="muted">Searching…</p>` : searchResults === 'error'
+    html += searchResults === null ? `<p class="muted">Queuey is looking…</p>` : searchResults === 'error'
       ? `<p class="muted">${navigator.onLine ? 'TMDB search isn’t responding right now.' : 'You’re offline.'} You can still add “${esc(q)}” by name below.</p>`
       : more.length ? `<div class="grid">${more.map(resultCard).join('')}</div>` : `<p class="muted">No other TV series match.</p>`;
     if (toLink.length) html += `<p class="muted">You added “${esc(toLink[0].name)}” by name earlier. Tap the matching show above to link it; your rating stays.</p>`;
