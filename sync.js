@@ -373,7 +373,7 @@ function showGate(kind, opts = {}) {
   } else if (kind === 'profiles') {
     const ps = Object.values(SYNC.profiles).sort((a, b) => (a.createdAt || 0) - (b.createdAt || 0));
     html = `${mascot}<h2>Who’s watching?</h2>
-      <div class="profile-grid">${ps.map(p => `<button class="profile-pick" data-pid="${esc(p.id)}">${avatar(p, true)}<span>${esc(p.name)}</span></button>`).join('')}
+      <div class="profile-grid">${ps.map(p => `<button class="profile-pick" data-pid="${esc(p.id)}">${avatar(p, true)}<span>${p.pinHash ? '🔒 ' : ''}${esc(p.name)}</span></button>`).join('')}
       ${ps.length < 8 ? '<button class="profile-pick add" id="gAddProfile"><span class="avatar big add">+</span><span>Add profile</span></button>' : ''}</div>`;
   } else if (kind === 'newprofile') {
     html = `${mascot}<h2>Add a profile</h2><p class="gate-lead">Each person gets their own ratings, For You picks and Taste Profile.</p>
@@ -386,11 +386,20 @@ function showGate(kind, opts = {}) {
     html = `${avatar(p, true)}<h2>${esc(p.name)}</h2>
       <form id="gEditProfile" class="gate-form"><label for="gPName">Name</label><input class="field" id="gPName" required maxlength="24" value="${esc(p.name)}">
       <label>Age group</label>${ageChips(age)}
-      <div class="comfort-block"${age === 'adult' ? '' : ' hidden'}><label>Comfort levels</label>${comfortRows(c)}</div>
+      <div class="comfort-block"${age === 'adult' ? '' : ' hidden'}><label>Comfort levels</label>${comfortRows(c)}
+        <label for="gPin">Profile PIN</label><input class="field pin-field" id="gPin" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" placeholder="${p.pinHash ? 'PIN is set · type a new one to change it' : '4 digits (optional)'}">
+        ${p.pinHash ? '<label class="check-row"><input type="checkbox" id="gPinOff"> Remove the PIN</label>' : ''}
+        <p class="gate-hint">With a PIN, switching into this profile asks for it, so kids can’t open it.</p></div>
       <p class="gate-hint" id="ageNote">${AGE_NOTES[age]}</p>
       <p class="gate-error" id="gateError" hidden></p><button class="btn primary" type="submit">Save</button></form>
       ${Object.keys(SYNC.profiles).length > 1 ? `<button class="btn wide danger-btn" id="gDelete">Delete ${esc(p.name)}’s profile</button>` : ''}
       <div class="gate-links"><button class="link-btn" id="gRedo">Redo taste setup</button><button class="link-btn" id="gCancel">Cancel</button></div>`;
+  } else if (kind === 'pin') {
+    const p = SYNC.profiles[opts.pid] || {};
+    html = `${avatar(p, true)}<h2>${esc(p.name)}</h2><p class="gate-lead">Enter ${esc(p.name)}’s PIN.</p>
+      <form id="gPinForm" class="gate-form"><input class="field pin-field big" id="gPinIn" type="password" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" aria-label="PIN" required>
+      <p class="gate-error" id="gateError" hidden></p><button class="btn primary" type="submit">Open profile</button></form>
+      <div class="gate-links"><button class="link-btn" id="gPinForgot">Forgot PIN?</button><button class="link-btn" id="gPinCancel">Cancel</button></div>`;
   } else if (kind === 'message') {
     html = `${mascot}<h2>${esc(opts.title)}</h2><p class="gate-lead">${esc(opts.text)}</p>${opts.button ? `<button class="btn primary" id="gMsgBtn">${esc(opts.button)}</button>` : ''}`;
   }
@@ -416,7 +425,8 @@ function showGate(kind, opts = {}) {
   on('gResend', async () => { try { await u.sendEmailVerification(); gateError({message: 'Sent. Check your inbox (and spam folder).'}); } catch (x) { gateError(x); } });
   on('gVerified', async () => { await u.reload(); if (firebase.auth().currentUser.emailVerified) { await u.getIdToken(true); onUser(firebase.auth().currentUser); } else gateError({message: 'Not confirmed yet. Tap the link in the email first.'}); });
   on('gAddProfile', () => showGate('newprofile'));
-  g.querySelectorAll('[data-pid]').forEach(b => b.onclick = () => selectProfile(b.dataset.pid));
+  g.querySelectorAll('[data-pid]').forEach(b => b.onclick = () => openProfile(b.dataset.pid));
+  bindPinGate(g, opts);
   const ef = document.getElementById('gEmailForm');
   if (ef) ef.onsubmit = busy(ef, async () => {
     const email = document.getElementById('gEmail').value.trim(), pass = document.getElementById('gPass').value;
@@ -456,19 +466,30 @@ function renderAccount() {
       <div class="profile-row">${ps.map(p => `<button class="profile-pick small${p.id === SYNC.pid ? ' on' : ''}" data-switch="${esc(p.id)}">${avatar(p)}<span>${esc(p.name)}</span></button>`).join('')}
       ${adultHere ? '<button class="profile-pick small add" id="aAdd"><span class="avatar add">+</span><span>Add</span></button>' : ''}</div>
       ${adultHere ? `<div class="edit-row">${ps.map(p => `<button class="link-btn" data-edit="${esc(p.id)}">Edit or delete ${esc(p.name)}</button>`).join('')}</div>` : ''}</div>
-    <div class="acct-section"><div class="acct-label">People who can sign in</div>
+    ${adultHere ? `<div class="acct-section" id="aLockSection" hidden><div class="acct-label">This device</div>
+      <div class="lock-row"><span>${lockInfo() ? 'Face ID lock is <strong>on</strong>. Queuey asks for Face ID when it opens.' : 'Ask for Face ID or Touch ID when Queuey opens on this device.'}</span><button class="btn" id="aLock">${lockInfo() ? 'Turn off' : 'Turn on'}</button></div></div>` : ''}
+    ${adultHere ? `<div class="acct-section"><div class="acct-label">People who can sign in</div>
       <ul class="acct-list">${members.map(m => `<li>${esc(m.email)}</li>`).join('')}${invited.map(e => `<li class="pending">${esc(e)} <em>invited</em> <button class="link-btn" data-uninvite="${esc(e)}">Cancel</button></li>`).join('')}</ul>
       <form id="aInvite" class="invite-form"><input class="field" id="aInviteEmail" type="email" autocomplete="off" autocapitalize="off" placeholder="Invite by email"><button class="btn" type="submit">Invite</button></form>
       <p class="acct-hint">They join this household the first time they sign in to Queuey with that email.</p></div>
-    <div class="acct-foot"><span>Signed in as ${esc((SYNC.user || {}).email || '')}</span><button class="btn" id="aSignOut">Sign out</button></div>
+    <div class="acct-foot"><span>Signed in as ${esc((SYNC.user || {}).email || '')}</span><button class="btn" id="aSignOut">Sign out</button></div>` : ''}
     <div class="modal-actions"><button class="btn primary" id="aDone">Done</button></div>`;
-  body.querySelectorAll('[data-switch]').forEach(b => b.onclick = () => { hideSheet(); SYNC.gate = null; if (b.dataset.switch !== SYNC.pid) { selectProfile(b.dataset.switch); toast('Switched to ' + SYNC.profiles[b.dataset.switch].name); } });
+  body.querySelectorAll('[data-switch]').forEach(b => b.onclick = () => { hideSheet(); SYNC.gate = null; if (b.dataset.switch !== SYNC.pid) openProfile(b.dataset.switch, true); });
   body.querySelectorAll('[data-uninvite]').forEach(b => b.onclick = () => cancelInvite(b.dataset.uninvite).catch(e => toast('Couldn’t cancel: ' + e.message)));
   const add = document.getElementById('aAdd'); if (add) add.onclick = () => { hideSheet(); SYNC.gate = null; showGate('newprofile'); };
   body.querySelectorAll('[data-edit]').forEach(b => b.onclick = () => { hideSheet(); SYNC.gate = null; showGate('editprofile', {pid: b.dataset.edit}); });
   document.getElementById('aDone').onclick = () => { hideSheet(); SYNC.gate = null; };
-  document.getElementById('aSignOut').onclick = () => { if (confirm('Sign out of Queuey on this device?')) { hideSheet(); SYNC.gate = null; localStorage.removeItem(SESSION_KEY); SYNC.pid = null; firebase.auth().signOut(); } };
-  document.getElementById('aInvite').onsubmit = async e => {
+  const lockBtn = document.getElementById('aLock');
+  if (lockBtn) {
+    lockAvailable().then(ok => { const s = document.getElementById('aLockSection'); if (s) s.hidden = !ok; });
+    lockBtn.onclick = async () => {
+      try { if (lockInfo()) { disableLock(); toast('Face ID lock turned off'); } else { await enableLock(); toast('Face ID lock is on for this device'); } renderAccount(); }
+      catch (e) { toast('Face ID wasn’t set up' + (e && e.name === 'NotAllowedError' ? ' (cancelled)' : '')); }
+    };
+  }
+  const so = document.getElementById('aSignOut'); if (so) so.onclick = () => { if (confirm('Sign out of Queuey on this device?')) { hideSheet(); SYNC.gate = null; localStorage.removeItem(SESSION_KEY); SYNC.pid = null; firebase.auth().signOut(); } };
+  const invForm = document.getElementById('aInvite');
+  if (invForm) invForm.onsubmit = async e => {
     e.preventDefault();
     const v = document.getElementById('aInviteEmail').value;
     try { if (await inviteEmail(v)) toast('Invited ' + lower(v)); } catch (x) { toast('Couldn’t invite: ' + (x.message || x.code)); }
@@ -504,6 +525,10 @@ function bindChoiceChips(root) {
 async function saveProfileEdit(pid) {
   const age = pickedAge(), fields = {name: document.getElementById('gPName').value.trim(), ageGroup: age};
   if (age === 'adult') fields.comfort = Object.fromEntries(COMFORT_ROWS.map(([k]) => [k, picked(document, 'comfort-' + k) || DEFAULT_COMFORT[k]]));
+  const pin = (document.getElementById('gPin') || {}).value || '', off = document.getElementById('gPinOff');
+  if (pin && !/^\d{4}$/.test(pin)) throw new Error('The PIN must be exactly 4 digits.');
+  if (age === 'adult' && pin) fields.pinHash = await pinHash(pid, pin);
+  if ((off && off.checked) || age !== 'adult') fields.pinHash = null;
   await updateProfile(pid, fields);
   hideGate();
   if (pid === SYNC.pid) { syncStatus('Synced', true); syncPush(); render(); }
@@ -522,4 +547,50 @@ async function deleteProfile(pid) {
   delete SYNC.profiles[pid];
   if (pid === SYNC.pid) { SYNC.pid = null; saveSession(); showGate('profiles'); }
   else hideGate();
+}
+
+// ── Profile PINs ──
+// A 4-digit PIN keeps kids out of a grown-up's profile, like a streaming service's profile lock.
+// Only a salted hash is stored. Forgot it? Confirming the account sign-in removes it.
+async function pinHash(pid, pin) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(`queuey:${SYNC.hid}:${pid}:${pin}`));
+  return [...new Uint8Array(buf)].map(b => b.toString(16).padStart(2, '0')).join('');
+}
+// Switch to a profile, asking for its PIN first when it has one.
+function openProfile(pid, announce) {
+  const p = SYNC.profiles[pid];
+  if (!p) return;
+  if (pid !== SYNC.pid && p.pinHash) { showGate('pin', {pid, announce}); return; }
+  selectProfile(pid);
+  if (announce) toast('Switched to ' + p.name);
+}
+function bindPinGate(g, opts) {
+  const form = document.getElementById('gPinForm');
+  if (!form) return;
+  const input = document.getElementById('gPinIn'), p = SYNC.profiles[opts.pid];
+  setTimeout(() => input.focus(), 50);
+  const tryPin = async () => {
+    if (await pinHash(opts.pid, input.value) === p.pinHash) { selectProfile(opts.pid); if (opts.announce) toast('Switched to ' + p.name); }
+    else { input.value = ''; gateError({message: 'That PIN isn’t right.'}); input.classList.remove('shake'); void input.offsetWidth; input.classList.add('shake'); }
+  };
+  input.oninput = () => { input.value = input.value.replace(/\D/g, '').slice(0, 4); if (input.value.length === 4) tryPin(); };
+  form.onsubmit = e => { e.preventDefault(); tryPin(); };
+  document.getElementById('gPinCancel').onclick = () => { if (SYNC.pid && SYNC.profiles[SYNC.pid]) hideGate(); else showGate('profiles'); };
+  document.getElementById('gPinForgot').onclick = async () => {
+    if (!confirm(`To remove ${p.name}’s PIN, confirm the household’s sign-in (${SYNC.user.email}).`)) return;
+    try {
+      await reauthenticate();
+      await updateProfile(opts.pid, {pinHash: null});
+      selectProfile(opts.pid);
+      toast('PIN removed. Set a new one under Edit.');
+    } catch (x) { gateError(x.code ? x : {message: 'Couldn’t confirm the sign-in.'}); }
+  };
+}
+// Ask the account holder to prove it's them: Google sign-in again, or their password.
+async function reauthenticate() {
+  const u = firebase.auth().currentUser;
+  if (u.providerData.some(x => x.providerId === 'google.com')) return u.reauthenticateWithPopup(new firebase.auth.GoogleAuthProvider());
+  const pw = prompt(`Password for ${u.email}`);
+  if (!pw) throw new Error('cancelled');
+  return u.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(u.email, pw));
 }
