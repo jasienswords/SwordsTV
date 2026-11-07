@@ -4,6 +4,8 @@
 // the Taste Profile and For You change as soon as a show is rated.
 
 const RATING_WEIGHT = {Loved: 2, Liked: 1, Okay: 0, Disliked: -2};
+// "Not interested" on a recommendation counts as a mild dislike: half the weight of a Disliked rating.
+const NOT_INTERESTED = {weight: -2, share: 0.5};
 
 // How much each kind of trait counts toward a show's match score.
 const TRAIT_WEIGHT = {genre: 1, country: 0.8, network: 0.5, length: 0.35, era: 0.3, rating: 0.4};
@@ -62,8 +64,15 @@ function buildProfile(shows) {
   for (const s of withData) {
     const w = RATING_WEIGHT[s.rating];
     for (const tr of traitsOf(s.title)) {
-      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0});
-      x.n++; x.sum += w; if (s.rating === 'Loved') x.loved++;
+      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0, rated: 0, passed: 0});
+      x.n++; x.rated++; x.sum += w; if (s.rating === 'Loved') x.loved++;
+    }
+  }
+  // Shows passed on with "Not interested" (never rated) add a half-weight dislike to their traits.
+  for (const s of shows.filter(s => s.dismissed && !(s.rating in RATING_WEIGHT) && TMDB[s.title])) {
+    for (const tr of traitsOf(s.title)) {
+      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0, rated: 0, passed: 0});
+      x.n += NOT_INTERESTED.share; x.sum += NOT_INTERESTED.weight * NOT_INTERESTED.share; x.passed++;
     }
   }
   // Affinity: how much better (or worse) shows with this trait are rated than the family's

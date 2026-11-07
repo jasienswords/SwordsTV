@@ -125,7 +125,7 @@ function renderWatchlist(){
 
 
 // ── Taste Profile: learned from your ratings ──
-function traitBar(x,max){const w=Math.max(6,Math.round(Math.abs(x.affinity)/max*100));return `<div class="trait"><div class="trait-label">${esc(x.label)}<small>${x.n} rated</small></div><div class="trait-bar"><span class="${x.affinity>0?"pos":"neg"}" style="width:${w}%"></span></div></div>`}
+function traitBar(x,max){const w=Math.max(6,Math.round(Math.abs(x.affinity)/max*100));return `<div class="trait"><div class="trait-label">${esc(x.label)}<small>${x.rated} rated${x.passed?` · ${x.passed} passed on`:""}</small></div><div class="trait-bar"><span class="${x.affinity>0?"pos":"neg"}" style="width:${w}%"></span></div></div>`}
 function renderProfile(){
  const p=buildProfile(allShows()),tr=Object.values(p.traits).filter(x=>x.n>=minShown(x.type));
  const loves=tr.filter(x=>x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,10),avoids=tr.filter(x=>x.affinity<-0.05).sort((a,b)=>a.affinity-b.affinity).slice(0,8);
