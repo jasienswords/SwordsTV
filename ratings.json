@@ -1,0 +1,187 @@
+{
+ "savedAt": "2026-11-07T06:46:25.789Z",
+ "changes": {
+  "The Rise and Fall of Reggie Dinkins": {
+   "libraryStatus": "Watching",
+   "_t": 1794032559627,
+   "status": "Watching"
+  },
+  "WandaVision": {
+   "rating": "Liked",
+   "libraryStatus": "Not in My Library",
+   "watched": true,
+   "_t": 1794030689840,
+   "status": "Not in My Library",
+   "seasonsWatched": "",
+   "watchedOn": [
+    "Disney+"
+   ]
+  },
+  "Nobody Wants This": {
+   "status": "Watching",
+   "libraryStatus": "Watching",
+   "_t": 1794032481660
+  },
+  "Scrubs": {
+   "_t": 1794033690937,
+   "status": "Not in My Library",
+   "completed": true,
+   "watched": true,
+   "libraryStatus": "Not in My Library"
+  },
+  "Trying": {
+   "libraryStatus": "Watching",
+   "status": "Watching",
+   "_t": 1794032705237
+  },
+  "The Great British Bake Off: An Extra Slice": {
+   "seasonsWatched": "",
+   "rating": "Not rated",
+   "status": "Not in My Library",
+   "_t": 1794032687745,
+   "libraryStatus": "Not in My Library",
+   "watched": false,
+   "watchedOn": []
+  },
+  "Episodes": {
+   "libraryStatus": "Not in My Library",
+   "rating": "Okay",
+   "_t": 1794032608264,
+   "watchedOn": [],
+   "watched": true,
+   "status": "Not in My Library",
+   "seasonsWatched": ""
+  },
+  "Enlightened": {
+   "watched": false,
+   "status": "Not in My Library",
+   "seasonsWatched": "",
+   "rating": "Not rated",
+   "watchedOn": [],
+   "libraryStatus": "Not in My Library",
+   "_t": 1794032588399
+  },
+  "Fresh Off the Boat": {
+   "libraryStatus": "Not in My Library",
+   "status": "Not in My Library",
+   "rating": "Not rated",
+   "watched": false,
+   "watchedOn": [],
+   "_t": 1794032629352,
+   "seasonsWatched": ""
+  },
+  "Loki": {
+   "seasonsWatched": "",
+   "libraryStatus": "Not in My Library",
+   "watched": true,
+   "rating": "Liked",
+   "status": "Not in My Library",
+   "_t": 1794030779608,
+   "watchedOn": [
+    "Disney+"
+   ]
+  },
+  "Renovation Island": {
+   "watched": true,
+   "status": "Not in My Library",
+   "seasonsWatched": "",
+   "rating": "Okay",
+   "watchedOn": [],
+   "libraryStatus": "Not in My Library"
+  },
+  "The Great British Baking Show": {
+   "status": "Watching",
+   "libraryStatus": "Watching",
+   "_t": 1794032507747
+  },
+  "Last Man Standing": {
+   "libraryStatus": "Not in My Library",
+   "seasonsWatched": "",
+   "rating": "Okay",
+   "watched": true,
+   "watchedOn": [],
+   "status": "Not in My Library",
+   "_t": 1794032653561
+  }
+ },
+ "added": {
+  "WandaVision": {
+   "_t": 1794030689840,
+   "year": "2021",
+   "id": 85271,
+   "addedOn": "2026-11-07"
+  },
+  "Loki": {
+   "id": null,
+   "_t": 1794029801551,
+   "query": "Loki",
+   "addedOn": "2026-11-07"
+  }
+ },
+ "subscriptions": {
+  "Paramount+": {
+   "monthlyCost": "",
+   "active": true
+  },
+  "Peacock": {
+   "monthlyCost": "",
+   "active": true
+  },
+  "BritBox": {
+   "active": false,
+   "monthlyCost": ""
+  },
+  "Plex": {
+   "active": false,
+   "monthlyCost": ""
+  },
+  "Disney+": {
+   "active": true,
+   "monthlyCost": ""
+  },
+  "Hulu": {
+   "active": true,
+   "monthlyCost": ""
+  },
+  "Tubi": {
+   "monthlyCost": "",
+   "active": false
+  },
+  "YouTube TV": {
+   "active": true,
+   "monthlyCost": ""
+  },
+  "Max": {
+   "active": true,
+   "monthlyCost": ""
+  },
+  "BBC Select": {
+   "active": false,
+   "monthlyCost": ""
+  },
+  "The Roku Channel": {
+   "active": false,
+   "monthlyCost": ""
+  },
+  "Netflix": {
+   "active": true,
+   "monthlyCost": ""
+  },
+  "PBS / PBS Passport": {
+   "monthlyCost": "",
+   "active": true
+  },
+  "Prime Video": {
+   "monthlyCost": "",
+   "active": true
+  },
+  "Acorn TV": {
+   "active": false,
+   "monthlyCost": ""
+  },
+  "Apple TV+": {
+   "active": true,
+   "monthlyCost": ""
+  }
+ }
+}

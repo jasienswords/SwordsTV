@@ -70,6 +70,12 @@
      90832
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2009-08-02",
+     "season": 13,
+     "episode": 7
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
@@ -179,13 +185,19 @@
      213612
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2020-03-20",
+     "season": 39,
+     "episode": 9
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
     "imdb": {
      "id": "tt0318912",
      "rating": 8.6,
-     "votes": 851
+     "votes": 852
     },
     "metascore": {
      "score": null,
@@ -279,6 +291,12 @@
      3739
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2023-05-03",
+     "season": 1,
+     "episode": 4
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
@@ -386,6 +404,12 @@
      64313
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2023-06-28",
+     "season": 3,
+     "episode": 1
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
@@ -516,6 +540,12 @@
      7777
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2007-01-04",
+     "season": 2,
+     "episode": 9
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
@@ -609,6 +639,12 @@
      66185
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2022-09-21",
+     "season": 1,
+     "episode": 6
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
@@ -785,13 +821,19 @@
      4199
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2019-04-17",
+     "season": 23,
+     "episode": 13
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
     "imdb": {
      "id": "tt2076566",
      "rating": 8.1,
-     "votes": 1615
+     "votes": 1616
     },
     "metascore": {
      "score": null,
@@ -951,13 +993,19 @@
      67352
     ],
     "nextEpisode": null,
+    "lastEpisode": {
+     "date": "1974-12-05",
+     "season": 4,
+     "episode": 6
+    },
+    "announcedSeason": null,
     "match": "discovered"
    },
    "scores": {
     "imdb": {
      "id": "tt0063929",
      "rating": 8.8,
-     "votes": 88065
+     "votes": 88067
     },
     "metascore": {
      "score": null,
@@ -979,6 +1027,769 @@
     "notes": "Classic surreal British sketch comedy (TV-14). Heads up: dated innuendo and occasional brief nudity, played for absurdity rather than shock.",
     "reviewed": "2026-11-07"
    }
+  },
+  "Long Way Home": {
+   "tmdb": {
+    "id": 262594,
+    "name": "Long Way Home",
+    "year": "2025",
+    "endYear": "2025",
+    "status": "Ended",
+    "seasons": 1,
+    "episodes": 10,
+    "overview": "Best friends Ewan McGregor and Charley Boorman gear up for their fourth Long Way series—this time going from Ewan's home in Scotland to Charley's in England. They'll take the scenic route, of course, through 17 European countries on cranky old bikes.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "Apple TV",
+      "logo": "/bngHRFi794mnMq34gfVcm9nDxN1.png"
+     }
+    ],
+    "poster": "/1RwUnfSIChKVfsrS69ZMN51RhRA.jpg",
+    "backdrop": "/4h1hvQ5ejTBtsceNP4KfZ4sBmoC.jpg",
+    "cast": [
+     "Ewan McGregor",
+     "Charley Boorman"
+    ],
+    "rating": "TV-14",
+    "imdb": "tt33096033",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/262594-long-way-home/watch?locale=US",
+     "stream": [
+      {
+       "name": "Apple TV",
+       "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+      },
+      {
+       "name": "Apple TV Amazon Channel",
+       "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "road trip",
+     "miniseries",
+     "motorcycle"
+    ],
+    "similar": [
+     4498,
+     105288,
+     229516,
+     114695,
+     32236,
+     31750,
+     65339,
+     4199,
+     126954,
+     259271,
+     115996,
+     38122,
+     1181,
+     7937,
+     239748,
+     15069,
+     204554,
+     118924,
+     220499,
+     246212
+    ],
+    "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2025-07-04",
+     "season": 1,
+     "episode": 10
+    },
+    "announcedSeason": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt33096033",
+     "rating": 8,
+     "votes": 2324
+    },
+    "metascore": {
+     "score": 59,
+     "reviews": 4,
+     "url": "https://www.metacritic.com/tv/long-way-home/"
+    },
+    "rt": {
+     "critics": 80,
+     "audience": 77,
+     "reviews": 5,
+     "url": "https://www.rottentomatoes.com/tv/long_way_home"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Conan O'Brien Must Go",
+   "matchScore": 1.88,
+   "why": "Similar to Conan O'Brien Must Go and Down to Earth with Zac Efron; you rate Documentary, Apple TV, 2020s shows highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Easygoing motorcycle travelogue: Ewan McGregor and Charley Boorman ride from Scotland to England through 17 European countries. Heads up: rated TV-14, so expect occasional language.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Baseball": {
+   "tmdb": {
+    "id": 19215,
+    "name": "Baseball",
+    "year": "1994",
+    "endYear": "1994",
+    "status": "Ended",
+    "seasons": 1,
+    "episodes": 9,
+    "overview": "The history of the sport of baseball in America, told through archival photos, film footage, and the words of those who contributed to the game in each era. Writers, historians, players, baseball personnel, and fans review key events and the significance of the game in America's history.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "PBS",
+      "logo": "/4Fn4eQmEmJZ9YWjiIhZ6cF1QHAi.png"
+     }
+    ],
+    "poster": "/qneEtyv9BKgfb7sVmtnvDqTmV4b.jpg",
+    "backdrop": "/wdFi5VudQdkhnII5SQim8J7rAFe.jpg",
+    "cast": [
+     "John Chancellor",
+     "Daniel Okrent",
+     "Buck O'Neil",
+     "Studs Terkel",
+     "Roger Angell",
+     "George Plimpton",
+     "Gerald Early",
+     "George Will"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt0108700",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/19215-baseball/watch?locale=US",
+     "stream": [
+      {
+       "name": "PBS Documentaries Amazon Channel",
+       "logo": "/fZiIXJI0fAN09zTXY1U0xFirdIu.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [
+      {
+       "name": "Amazon Video",
+       "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+      },
+      {
+       "name": "Apple TV Store",
+       "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+      },
+      {
+       "name": "Google Play Movies",
+       "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+      }
+     ],
+     "rent": []
+    },
+    "country": [
+     "US"
+    ],
+    "language": "en",
+    "keywords": [
+     "baseball"
+    ],
+    "similar": [
+     4994,
+     38122,
+     15069,
+     1181,
+     105288,
+     102693,
+     65339,
+     90832,
+     1966,
+     4498,
+     61285,
+     31677,
+     229516,
+     56305,
+     1749,
+     1292,
+     204554,
+     118924,
+     101978,
+     137735
+    ],
+    "nextEpisode": null,
+    "lastEpisode": {
+     "date": "1994-09-28",
+     "season": 1,
+     "episode": 9
+    },
+    "announcedSeason": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt0108700",
+     "rating": 9.2,
+     "votes": 5326
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": null,
+     "audience": null,
+     "reviews": 0,
+     "url": "https://www.rottentomatoes.com/tv/baseball"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Travel Man",
+   "matchScore": 1.86,
+   "why": "Similar to Travel Man and Down to Earth with Zac Efron; you rate Documentary highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Ken Burns's PBS history of American baseball told through archival photos, film and interviews; TV-PG. Heads up: long, measured archival-style episodes rather than a fast pace.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Doc Martin": {
+   "tmdb": {
+    "id": 2430,
+    "name": "Doc Martin",
+    "year": "2004",
+    "endYear": "2022",
+    "status": "Ended",
+    "seasons": 10,
+    "episodes": 77,
+    "overview": "Doc Martin is a British television comedy drama series starring Martin Clunes in the title role. It was created by Dominic Minghella after the character of Dr. Martin Bamford in the 2000 comedy film Saving Grace. The show is set in the fictional seaside village of Portwenn and filmed on location in the village of Port Isaac, Cornwall, England, with most interior scenes shot in a converted local barn. Five series aired between 2004 and 2011, together with a feature-length special that aired on Christmas Day 2006. Series 6 began airing on ITV on 2 September 2013.",
+    "genres": [
+     "Comedy",
+     "Drama"
+    ],
+    "networks": [
+     {
+      "name": "ITV1",
+      "logo": "/oz9pjTHnBUmlju8OkaTymhKbh6C.png"
+     }
+    ],
+    "poster": "/zmd4ZpdXWnjKVrenqvYyYstOkwK.jpg",
+    "backdrop": "/g0LCSXvweUAMW8jB3O2ECMwDAua.jpg",
+    "cast": [
+     "Martin Clunes",
+     "Caroline Catz",
+     "Joe Absolom",
+     "Ian McNeice",
+     "Selina Cadell",
+     "Stewart Wright",
+     "Katherine Parkinson",
+     "Stephanie Cole"
+    ],
+    "rating": "TV-14",
+    "imdb": "tt0408381",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/2430-doc-martin/watch?locale=US",
+     "stream": [
+      {
+       "name": "Acorn TV",
+       "logo": "/3aWmgZsNAqdOt8ClxIFT4pnmHrM.png"
+      },
+      {
+       "name": "AcornTV Amazon Channel",
+       "logo": "/7BBOk6Av1TFqWqEhxBYyTJucGuL.png"
+      },
+      {
+       "name": "Spectrum On Demand",
+       "logo": "/6qPtM96UZkt3Bu4ZFPsDeHFWUZ2.png"
+      },
+      {
+       "name": "Acorn TV Apple TV channel",
+       "logo": "/1MRjoHouZAWsBCdXjjkPWEDtyV0.png"
+      }
+     ],
+     "free": [
+      {
+       "name": "Hoopla",
+       "logo": "/gtjNBzAoGgUtYzt0UKXmwG34WWL.png"
+      },
+      {
+       "name": "Fawesome",
+       "logo": "/dNF4vWhF3TduWvOyfVxEyTqSNRl.png"
+      }
+     ],
+     "ads": [
+      {
+       "name": "The Roku Channel",
+       "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+      },
+      {
+       "name": "Pluto TV",
+       "logo": "/fN4czqaMQNLeF6sSSIjGbAWzvwK.png"
+      },
+      {
+       "name": "Xumo Play",
+       "logo": "/n6E9OeoQicCDd43PnLsMpVIVYFK.png"
+      },
+      {
+       "name": "Tubi TV",
+       "logo": "/9dEuvA8wg5TSeFBZlPxSVxFdimJ.png"
+      }
+     ],
+     "buy": [
+      {
+       "name": "Amazon Video",
+       "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+      },
+      {
+       "name": "Apple TV Store",
+       "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+      },
+      {
+       "name": "Google Play Movies",
+       "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+      },
+      {
+       "name": "Fandango At Home",
+       "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+      }
+     ],
+     "rent": []
+    },
+    "country": [
+     "GB",
+     "FR"
+    ],
+    "language": "en",
+    "keywords": [
+     "cornwall, england",
+     "doctor",
+     "small village",
+     "medical detective",
+     "former surgeon",
+     "familiar"
+    ],
+    "similar": [
+     67728,
+     1021,
+     4477,
+     3004,
+     94686,
+     4556,
+     74016,
+     1950,
+     13335,
+     85547,
+     61565,
+     2327,
+     3876,
+     42548,
+     1467,
+     2215,
+     1849,
+     99121,
+     9895,
+     1167
+    ],
+    "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2022-10-26",
+     "season": 10,
+     "episode": 8
+    },
+    "announcedSeason": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt0408381",
+     "rating": 8.4,
+     "votes": 23464
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": {
+     "critics": 82,
+     "audience": 95,
+     "reviews": 35,
+     "url": "https://www.rottentomatoes.com/tv/doc_martin"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to All Creatures Great and Small (modern)",
+   "matchScore": 1.85,
+   "why": "Similar to All Creatures Great and Small (modern) and Scrubs; you rate Comedy, British, 2000s shows highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Warm, character-led British comedy-drama about a blunt doctor in a Cornish seaside village. Heads up: TV-14, with some medical scenes (injuries, blood) and a prickly lead.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "James May's Cars of the People": {
+   "tmdb": {
+    "id": 61285,
+    "name": "James May's Cars of the People",
+    "year": "2014",
+    "endYear": "2016",
+    "status": "Ended",
+    "seasons": 2,
+    "episodes": 6,
+    "overview": "James May takes a look at the 'peoples car'. Covering every form of cars for the masses - from the Beetle to the Kei Car, May looks at the many forms of people's car, their origins and their effect on history. Each episode covers a particular theme; these being cars from dictatorships, microcars and the dream cars we aspire to.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "BBC Two",
+      "logo": "/7HVPn1p2w1nC5oRKBehXVHpss7e.png"
+     }
+    ],
+    "poster": "/jnpgKyje1iO85MDSD2Ao4dId51z.jpg",
+    "backdrop": "/aWeVKAGHPrOtUXeTpSQx40NPEEt.jpg",
+    "cast": [
+     "James May"
+    ],
+    "rating": null,
+    "imdb": "tt3772506",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/61285-james-may-s-cars-of-the-people/watch?locale=US",
+     "stream": [],
+     "free": [],
+     "ads": [
+      {
+       "name": "The Roku Channel",
+       "logo": "/b7uhrYJtAe7b1ieJGg705vTbwrX.png"
+      }
+     ],
+     "buy": [
+      {
+       "name": "Amazon Video",
+       "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+      },
+      {
+       "name": "Apple TV Store",
+       "logo": "/qdEGArH3lKfFnAtYXMkSYk5wxuG.png"
+      },
+      {
+       "name": "Google Play Movies",
+       "logo": "/aZRENwYILujqs0RVOZutTh0BVGV.png"
+      },
+      {
+       "name": "Fandango At Home",
+       "logo": "/wpOt6x0dRxTrIzuBosto4LGd7E9.png"
+      }
+     ],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "automobile"
+    ],
+    "similar": [
+     4498,
+     1181,
+     38122,
+     19215,
+     1749,
+     1966,
+     137735,
+     105288,
+     1292,
+     15069,
+     55600,
+     92807,
+     56304,
+     137646,
+     229516,
+     4199,
+     204554,
+     102693,
+     65339,
+     4994
+    ],
+    "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2016-02-07",
+     "season": 2,
+     "episode": 3
+    },
+    "announcedSeason": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt3772506",
+     "rating": 8.4,
+     "votes": 1174
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": null
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Rick Steves' Europe",
+   "matchScore": 1.82,
+   "why": "Similar to Down to Earth with Zac Efron and Rick Steves' Europe; you rate Documentary, British, 2–4 seasons highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Light BBC history of cars built for ordinary people, from the Beetle to Japanese kei cars, presented by James May. No content concerns found.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Earth at Night in Colour": {
+   "tmdb": {
+    "id": 110818,
+    "name": "Earth at Night in Colour",
+    "year": "2020",
+    "endYear": "2021",
+    "status": "Ended",
+    "seasons": 2,
+    "episodes": 12,
+    "overview": "Filmed across six continents, this docuseries uses cutting-edge camera technology to capture animals' nocturnal lives, revealing new behaviours filmed in full color like never before.",
+    "genres": [
+     "Documentary"
+    ],
+    "networks": [
+     {
+      "name": "Apple TV",
+      "logo": "/bngHRFi794mnMq34gfVcm9nDxN1.png"
+     }
+    ],
+    "poster": "/guk68CC6hiDKtHm8LUB9tnHXCHc.jpg",
+    "backdrop": "/wsAk4Str0iyRRlQ20MiCsUxxoQx.jpg",
+    "cast": [
+     "Tom Hiddleston"
+    ],
+    "rating": "TV-PG",
+    "imdb": "tt13008036",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/110818-earth-at-night-in-colour/watch?locale=US",
+     "stream": [
+      {
+       "name": "Apple TV",
+       "logo": "/9icYBfYFcwgCbky5VdGUIKJ4C5i.png"
+      },
+      {
+       "name": "Apple TV Amazon Channel",
+       "logo": "/rerVCu9auZrgxTTiZu1criqrQzg.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [],
+     "rent": []
+    },
+    "country": [
+     "GB"
+    ],
+    "language": "en",
+    "keywords": [
+     "nature documentary",
+     "nocturnal"
+    ],
+    "similar": [
+     21145,
+     157202,
+     14951,
+     90790,
+     1044,
+     127700,
+     108303,
+     16946,
+     116156,
+     68595,
+     83880,
+     97861,
+     34381,
+     1904,
+     95171,
+     9554,
+     82953,
+     9555,
+     208230,
+     137646
+    ],
+    "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2021-04-16",
+     "season": 2,
+     "episode": 6
+    },
+    "announcedSeason": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt13008036",
+     "rating": 8.2,
+     "votes": 1967
+    },
+    "metascore": {
+     "score": null,
+     "status": "Not listed on Metacritic"
+    },
+    "rt": null
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to Rick Steves' Europe",
+   "matchScore": 1.79,
+   "why": "Similar to Rick Steves' Europe and The Reluctant Traveler; you rate Documentary, Apple TV, 2020s shows highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Apple TV+ nature series filming animals' nocturnal behaviour in colour with low-light cameras; TV-PG. Some predator–prey moments typical of nature documentaries, nothing graphic noted.",
+    "reviewed": "2026-11-07"
+   }
+  },
+  "Anne with an E": {
+   "tmdb": {
+    "id": 70785,
+    "name": "Anne with an E",
+    "year": "2017",
+    "endYear": "2019",
+    "status": "Canceled",
+    "seasons": 3,
+    "episodes": 27,
+    "overview": "A coming-of-age story about an outsider who, against all odds and numerous challenges, fights for love and acceptance and for her place in the world. The series centers on a young orphaned girl in the late 1890s, who, after an abusive childhood spent in orphanages and the homes of strangers, is mistakenly sent to live with an elderly woman and her aging brother. Over time, 13-year-old Anne will transform their lives and eventually the small town in which they live with her unique spirit, fierce intellect and brilliant imagination.",
+    "genres": [
+     "Drama",
+     "Family"
+    ],
+    "networks": [
+     {
+      "name": "CBC Television",
+      "logo": "/zjgqkIvBURbwoHbHhmnzaTFyZgR.png"
+     }
+    ],
+    "poster": "/6P6tXhjT5tK3qOXzxF9OMLlG7iz.jpg",
+    "backdrop": "/ywQtHG17LZhAFZyZtBflhtFMtJ7.jpg",
+    "cast": [
+     "Amybeth McNulty",
+     "Geraldine James",
+     "R.H. Thomson",
+     "Dalila Bela",
+     "Lucas Jade Zumann",
+     "Corrine Koslo",
+     "Helen Johns",
+     "Aymeric Jett Montaz"
+    ],
+    "rating": "TV-G",
+    "imdb": "tt5421602",
+    "providers": {
+     "link": "https://www.themoviedb.org/tv/70785-anne-with-an-e/watch?locale=US",
+     "stream": [
+      {
+       "name": "Netflix",
+       "logo": "/rK1KljqmbvO9HQa1PBFLILWah72.png"
+      },
+      {
+       "name": "Netflix Standard with Ads",
+       "logo": "/eGUwOOIxcazwEBxqJpSN5sWEu6V.png"
+      }
+     ],
+     "free": [],
+     "ads": [],
+     "buy": [
+      {
+       "name": "Amazon Video",
+       "logo": "/jn6TLbtaTZntTRX9UYucHJvpQx1.png"
+      }
+     ],
+     "rent": []
+    },
+    "country": [
+     "CA"
+    ],
+    "language": "en",
+    "keywords": [
+     "based on novel or book",
+     "canada",
+     "friendship",
+     "unrequited love",
+     "coming of age",
+     "orphan",
+     "period drama",
+     "19th century",
+     "found family",
+     "period piece",
+     "heartfelt",
+     "teenager",
+     "cheerful"
+    ],
+    "similar": [
+     13892,
+     12786,
+     2327,
+     46880,
+     124834,
+     17836,
+     5021,
+     492,
+     1948,
+     65186,
+     65152,
+     21762,
+     309798,
+     76818,
+     33155,
+     2673,
+     4324,
+     20021,
+     95386,
+     95004
+    ],
+    "nextEpisode": null,
+    "lastEpisode": {
+     "date": "2019-11-24",
+     "season": 3,
+     "episode": 10
+    },
+    "announcedSeason": null,
+    "match": "discovered"
+   },
+   "scores": {
+    "imdb": {
+     "id": "tt5421602",
+     "rating": 8.6,
+     "votes": 84252
+    },
+    "metascore": {
+     "score": 79,
+     "reviews": 17,
+     "url": "https://www.metacritic.com/tv/anne-with-an-e/"
+    },
+    "rt": {
+     "critics": 63,
+     "audience": 91,
+     "reviews": 37,
+     "url": "https://www.rottentomatoes.com/tv/anne"
+    }
+   },
+   "addedOn": "2026-11-07",
+   "source": "similar to All Creatures Great and Small (modern)",
+   "matchScore": 1.74,
+   "why": "Similar to All Creatures Great and Small (modern) and The Durrells in Corfu; you rate Rated TV-G, 2–4 seasons highly.",
+   "guidance": {
+    "status": "ok",
+    "notes": "Heartfelt TV-G period drama about an imaginative orphan finding a family on Prince Edward Island. Heads up: deals with Anne's abusive past and bullying, mostly through memories, with an overall hopeful tone.",
+    "reviewed": "2026-11-07"
+   }
   }
  },
  "rejected": {
@@ -990,6 +1801,26 @@
   "815": {
    "title": "Peep Show",
    "reason": "Cringe comedy built on cynical, often mean-spirited inner monologues with frequent crude sexual humour (TV-MA): outside the family's tone limits.",
+   "on": "2026-11-07"
+  },
+  "1772": {
+   "title": "Kath & Kim",
+   "reason": "TV-MA Australian satire built on crude, mocking humour about its leads: outside the family's tone and language limits.",
+   "on": "2026-11-07"
+  },
+  "2742": {
+   "title": "Flight of the Conchords",
+   "reason": "TV-MA HBO comedy with adult language and sexual content: beyond the family's moderate limits.",
+   "on": "2026-11-07"
+  },
+  "58790": {
+   "title": "The Moaning of Life",
+   "reason": "TV-MA; framed around a 'miserable' host's mid-life crisis with a deliberately grumpy, cynical tone: outside the family's tone limits.",
+   "on": "2026-11-07"
+  },
+  "76345": {
+   "title": "On Cinema",
+   "reason": "TV-MA alt-comedy built on abrasive, cringe humour: outside the family's preferred warm tone.",
    "on": "2026-11-07"
   }
  }

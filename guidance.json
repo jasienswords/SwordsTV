@@ -1,3 +1,12 @@
 {
- "shows": {}
+ "shows": {
+  "Loki": {
+   "notes": "Disney+ Marvel series (TV-14): Loki is taken by the Time Variance Authority and drawn into time-travel and multiverse adventures. Heads up: heavy sci-fi/fantasy and superhero action violence.",
+   "reviewed": "2026-11-07"
+  },
+  "WandaVision": {
+   "notes": "Disney+ Marvel miniseries (TV-14) that plays as a run of classic-sitcom homages hiding a mystery. Heads up: heavy supernatural/fantasy, themes of grief and loss, and superhero action.",
+   "reviewed": "2026-11-07"
+  }
+ }
 }

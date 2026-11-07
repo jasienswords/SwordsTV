@@ -108,6 +108,12 @@
     1705
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-04-04",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -220,6 +226,12 @@
     3184
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-07-06",
+    "season": 4,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -332,6 +344,12 @@
     4439
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-01-31",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -488,6 +506,12 @@
     5656
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-02-18",
+    "season": 3,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -605,6 +629,12 @@
     120317
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-05-17",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -701,6 +731,12 @@
     1566
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-11-20",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -815,6 +851,12 @@
     2025
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-03",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -889,6 +931,12 @@
     62618
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-09-29",
+    "season": 13,
+    "episode": 70
+   },
+   "announcedSeason": null,
    "match": "manual",
    "castCheck": 0
   },
@@ -988,6 +1036,12 @@
     4627
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-01-01",
+    "season": 3,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -1077,6 +1131,12 @@
     71146
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-06-03",
+    "season": 1,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -1187,6 +1247,12 @@
     3002
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-09-02",
+    "season": 4,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -1305,6 +1371,12 @@
     "season": 6,
     "episode": 6
    },
+   "lastEpisode": {
+    "date": "2026-11-04",
+    "season": 6,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -1370,24 +1442,30 @@
     94686,
     124010,
     71887,
-    881,
     2016,
+    881,
     1849,
     9895,
-    68780,
     1205,
+    68780,
     3968,
     42548,
-    134375,
     95004,
-    2299,
     2382,
-    254071,
+    2299,
+    134375,
     2191,
-    4123,
-    3004
+    254071,
+    3004,
+    4123
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-09-16",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 3
   },
@@ -1490,8 +1568,8 @@
     88367,
     156240,
     18123,
-    61949,
     262262,
+    61949,
     3162,
     91348,
     3945,
@@ -1504,6 +1582,12 @@
     6024
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-02-21",
+    "season": 4,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -1622,6 +1706,12 @@
     1803
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-22",
+    "season": 7,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint",
    "castCheck": 5
   },
@@ -1724,6 +1814,12 @@
     1510
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "1990-11-17",
+    "season": 7,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "hint",
    "castCheck": 4
   },
@@ -1797,6 +1893,12 @@
     32843
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-11-11",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -1857,6 +1959,12 @@
     203744
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-26",
+    "season": 1,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 1
   },
@@ -1949,6 +2057,12 @@
     229516
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-21",
+    "season": 6,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -2051,6 +2165,12 @@
     31841
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-03-31",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -2132,6 +2252,12 @@
     115497
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-12-14",
+    "season": 3,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -2222,6 +2348,12 @@
     5487
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-13",
+    "season": 2,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -2336,6 +2468,12 @@
     45194
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-09-13",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -2455,6 +2593,12 @@
     102693
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-11-11",
+    "season": 12,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -2557,6 +2701,12 @@
     21145
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-26",
+    "season": 31,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 1
   },
@@ -2673,6 +2823,12 @@
     1693
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-03-15",
+    "season": 5,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -2774,6 +2930,12 @@
     102904
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-10",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -2879,6 +3041,12 @@
     186
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-02-25",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -2976,6 +3144,12 @@
     218344
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-24",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -3101,6 +3275,12 @@
     79679
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-09-10",
+    "season": 5,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -3227,6 +3407,12 @@
     45669
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-08-29",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -3358,6 +3544,12 @@
     406
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2009-03-20",
+    "season": 4,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 5
   },
@@ -3494,6 +3686,12 @@
     65186
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-04-19",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -3610,6 +3808,12 @@
     107365
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-03-10",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -3732,6 +3936,12 @@
     153657
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-08-15",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -3825,6 +4035,12 @@
     192
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-08-24",
+    "season": 2,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -3931,6 +4147,12 @@
     1906
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-04-25",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -4035,6 +4257,12 @@
     31585
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-01",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -4137,6 +4365,12 @@
     1995
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-02-23",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -4234,6 +4468,12 @@
     30810
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-02-24",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -4362,6 +4602,12 @@
     61463
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-07-21",
+    "season": 2,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -4490,6 +4736,12 @@
     71715
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-10-29",
+    "season": 7,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -4606,6 +4858,12 @@
     61916
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2004-04-15",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -4719,6 +4977,12 @@
     48866
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-10",
+    "season": 7,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 0
   },
@@ -4802,6 +5066,12 @@
     5258
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-12",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": 3,
    "match": "name"
   },
   "Black-ish": {
@@ -4914,6 +5184,12 @@
     63398
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-04-19",
+    "season": 8,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -5013,6 +5289,12 @@
     1422
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-04",
+    "season": 2,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 5
   },
@@ -5100,6 +5382,12 @@
     66902
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-03-08",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 3
   },
@@ -5247,6 +5535,12 @@
     2751
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-13",
+    "season": 14,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -5365,6 +5659,12 @@
     112693
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-11-03",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -5491,6 +5791,12 @@
     34381
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-12-10",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -5620,6 +5926,12 @@
     119845
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-10-26",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -5737,6 +6049,12 @@
     93166
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-09-23",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 3
   },
@@ -5829,6 +6147,12 @@
     100575
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-03-10",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -5934,6 +6258,12 @@
     1426
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-06-24",
+    "season": 7,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -6030,6 +6360,12 @@
     76582
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-17",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -6158,6 +6494,12 @@
     54650
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-09-29",
+    "season": 5,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -6254,6 +6596,12 @@
     307534
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-09-25",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -6416,6 +6764,12 @@
     74430
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-04-17",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -6500,6 +6854,12 @@
     39680
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-11-03",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Brothers & Sisters": {
@@ -6591,11 +6951,17 @@
     4266,
     67265,
     46880,
-    241549,
     13780,
+    241549,
     95057
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-05-08",
+    "season": 5,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 5
   },
@@ -6717,6 +7083,12 @@
     58777
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-06",
+    "season": 13,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 0
   },
@@ -6847,6 +7219,12 @@
     4498
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-11-05",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -6954,6 +7332,12 @@
     11174
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-09-12",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -7071,6 +7455,12 @@
     18053
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-06-29",
+    "season": 7,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -7196,6 +7586,12 @@
     6467
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-03-08",
+    "season": 15,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -7318,6 +7714,12 @@
     39483
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-05-16",
+    "season": 8,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 5
   },
@@ -7430,6 +7832,12 @@
     4483
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-02-12",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -7517,6 +7925,12 @@
     335536
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-11-27",
+    "season": 7,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 0
   },
@@ -7617,6 +8031,12 @@
     99747
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-06-03",
+    "season": 1,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -7754,6 +8174,12 @@
     "season": 14,
     "episode": 6
    },
+   "lastEpisode": {
+    "date": "2026-11-04",
+    "season": 14,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -7870,6 +8296,12 @@
     67392
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-20",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -8002,6 +8434,12 @@
     44100
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-13",
+    "season": 6,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -8103,6 +8541,12 @@
     62687
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-01-27",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -8212,6 +8656,12 @@
     3894
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-02-13",
+    "season": 6,
+    "episode": 15
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -8327,6 +8777,12 @@
     52268
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-07",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -8449,6 +8905,12 @@
     39357
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-06-02",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 6
   },
@@ -8558,6 +9020,12 @@
     113085
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-11",
+    "season": 3,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -8683,6 +9151,12 @@
     261363
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-08-26",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -8789,6 +9263,12 @@
     61762
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-03-31",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -8870,6 +9350,12 @@
     60611
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-02-17",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Crazy Ex-Girlfriend": {
@@ -8964,6 +9450,12 @@
     2595
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-04-05",
+    "season": 4,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -9082,6 +9574,12 @@
     220801
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-20",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 3
   },
@@ -9203,6 +9701,12 @@
     246461
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-09-12",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -9304,6 +9808,12 @@
     86382
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-29",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Dark Tourist": {
@@ -9381,6 +9891,12 @@
     95755
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-07-20",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -9463,6 +9979,12 @@
     239909
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-03-05",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -9584,6 +10106,12 @@
     1205
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-03-27",
+    "season": 15,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -9697,6 +10225,12 @@
     85949
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-08-28",
+    "season": 3,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Derry Girls": {
@@ -9787,6 +10321,12 @@
     62704
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-05-18",
+    "season": 3,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -9943,6 +10483,12 @@
     70485
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-06-07",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -10038,6 +10584,12 @@
     69763
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-10-21",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -10184,6 +10736,12 @@
     1100
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-12-13",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -10302,6 +10860,12 @@
     31841
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-08-16",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -10395,6 +10959,12 @@
     125116
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-09-25",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual",
    "castCheck": 3
   },
@@ -10488,6 +11058,12 @@
     1915
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-09-26",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Don't Trust the B---- in Apartment 23": {
@@ -10588,6 +11164,12 @@
     1809
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-01-15",
+    "season": 2,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Down to Earth with Zac Efron": {
@@ -10691,6 +11273,12 @@
     3739
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-11",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -10829,6 +11417,12 @@
     64099
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-11-08",
+    "season": 6,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -10917,6 +11511,12 @@
     29173
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-09",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -11031,6 +11631,12 @@
     39957
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-08-15",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -11164,6 +11770,12 @@
     "season": 4,
     "episode": 5
    },
+   "lastEpisode": {
+    "date": "2026-11-05",
+    "season": 4,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -11295,6 +11907,12 @@
     1415
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-03-12",
+    "season": 9,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -11399,6 +12017,12 @@
     79410
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-03-03",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Episodes": {
@@ -11515,6 +12139,12 @@
     380
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-10-08",
+    "season": 5,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -11623,6 +12253,12 @@
     1617
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2009-04-02",
+    "season": 15,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Escape to the Chateau": {
@@ -11701,6 +12337,12 @@
     227384
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-18",
+    "season": 9,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 2
   },
@@ -11784,6 +12426,12 @@
     283367
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-12-14",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 2
   },
@@ -11906,6 +12554,12 @@
     63726
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-20",
+    "season": 27,
+    "episode": 30
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 5
   },
@@ -12004,6 +12658,12 @@
     44586
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-07-16",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Expedition Unknown": {
@@ -12134,6 +12794,12 @@
     10710
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-08-12",
+    "season": 18,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Extras": {
@@ -12244,6 +12910,12 @@
     260458
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2006-10-19",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Falling Skies": {
@@ -12346,6 +13018,12 @@
     67198
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-08-30",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fargo": {
@@ -12458,6 +13136,12 @@
     10370
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-01-16",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Farmhouse Fixer": {
@@ -12586,6 +13270,12 @@
     4535
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-11",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Farmhouse Fixer: Camp Revamp": {
@@ -12708,6 +13398,12 @@
     44100
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-07-09",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Father Brown": {
@@ -12839,6 +13535,12 @@
     126660
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-03-27",
+    "season": 13,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 4
   },
@@ -12933,6 +13635,12 @@
     1424
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-06-04",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fellow Travelers": {
@@ -13058,6 +13766,12 @@
     156820
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-12-17",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Firefly": {
@@ -13168,6 +13882,12 @@
     1890
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2002-12-20",
+    "season": 1,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fisk": {
@@ -13268,6 +13988,12 @@
     135035
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-11-24",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -13391,6 +14117,12 @@
     62705
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-17",
+    "season": 7,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fixer to Fabulous: Italiano": {
@@ -13497,6 +14229,12 @@
     61789
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-04-16",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fixer Upper": {
@@ -13632,6 +14370,12 @@
     45669
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-04-03",
+    "season": 5,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fleabag": {
@@ -13761,6 +14505,12 @@
     900
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-04-08",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "For All Mankind": {
@@ -13874,6 +14624,12 @@
     71340
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-28",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Forged in Fire": {
@@ -14023,6 +14779,12 @@
     254514
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-16",
+    "season": 11,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Formula 1: Drive to Survive": {
@@ -14119,6 +14881,12 @@
     133358
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-27",
+    "season": 8,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Foundation": {
@@ -14210,6 +14978,12 @@
     63639
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-09-11",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Foyle's War": {
@@ -14322,6 +15096,12 @@
     1059
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-01-18",
+    "season": 9,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fresh Off the Boat": {
@@ -14431,6 +15211,12 @@
     2455
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-02-21",
+    "season": 6,
+    "episode": 15
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Friday Night Dinner": {
@@ -14555,6 +15341,12 @@
     2691
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-01",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Friday Night Lights": {
@@ -14683,6 +15475,12 @@
     74016
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-02-09",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Fringe": {
@@ -14791,6 +15589,12 @@
     46952
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-01-18",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Game of Thrones": {
@@ -14896,6 +15700,12 @@
     83125
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-19",
+    "season": 8,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Gavin & Stacey": {
@@ -15022,6 +15832,12 @@
     71887
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-01-01",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "George Clarke's Amazing Spaces": {
@@ -15091,6 +15907,12 @@
     237890
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-29",
+    "season": 13,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Ghosts (Australia)": {
@@ -15234,6 +16056,12 @@
     "season": 6,
     "episode": 3
    },
+   "lastEpisode": {
+    "date": "2026-10-29",
+    "season": 6,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "Ghosts (UK)": {
@@ -15353,6 +16181,12 @@
     4453
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-11-10",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "Ghosts (US)": {
@@ -15496,6 +16330,12 @@
     "season": 6,
     "episode": 3
    },
+   "lastEpisode": {
+    "date": "2026-10-29",
+    "season": 6,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "Gilmore Girls": {
@@ -15614,6 +16454,12 @@
     5269
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2007-05-15",
+    "season": 7,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Goliath": {
@@ -15706,6 +16552,12 @@
     10305
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-09-23",
+    "season": 4,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Gordon Ramsay: Uncharted": {
@@ -15808,6 +16660,12 @@
     246212
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-16",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Grace and Frankie": {
@@ -15898,6 +16756,12 @@
     158756
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-04-29",
+    "season": 7,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Grand Designs": {
@@ -16063,6 +16927,12 @@
     33739
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-21",
+    "season": 28,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -16137,6 +17007,12 @@
     296549
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-12-18",
+    "season": 12,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Grantchester": {
@@ -16270,6 +17146,12 @@
     121710
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-12",
+    "season": 10,
+    "episode": 8
+   },
+   "announcedSeason": 11,
    "match": "name"
   },
   "Great British Home Restoration": {
@@ -16338,6 +17220,12 @@
     65300
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-10-26",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -16418,6 +17306,12 @@
     45571
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-02",
+    "season": 16,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -16510,6 +17404,12 @@
     33922
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-01-25",
+    "season": 2,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Hacks": {
@@ -16622,6 +17522,12 @@
     2691
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-28",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Halt and Catch Fire": {
@@ -16766,6 +17672,12 @@
     224361
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-10-14",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Happy Endings": {
@@ -16876,6 +17788,12 @@
     500
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-05-03",
+    "season": 3,
+    "episode": 23
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Happy Valley": {
@@ -16990,23 +17908,29 @@
     98161,
     247518,
     46316,
+    46638,
     2428,
     258230,
-    46638,
     2734,
     2171,
     253391,
-    6322,
+    201408,
     60585,
+    6322,
     115004,
     218342,
     95272,
-    201408,
     66023,
-    46705,
-    1426
+    1426,
+    61741
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-02-05",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Harry Wild": {
@@ -17127,6 +18051,12 @@
     61565
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-07-27",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Hawaii Five-0": {
@@ -17234,27 +18164,33 @@
    ],
    "similar": [
     1412,
-    124271,
     87773,
+    124271,
     61889,
     76231,
     228026,
     114922,
     106158,
-    156902,
     58841,
     4046,
     292742,
+    156902,
     130578,
     62710,
     306603,
-    133813,
     60855,
+    133813,
     62285,
     273207,
-    66789
+    213306
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-04-03",
+    "season": 10,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Help! I Wrecked My House": {
@@ -17378,6 +18314,12 @@
     44100
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-11-26",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Here We Go": {
@@ -17473,6 +18415,12 @@
     95004
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-09-05",
+    "season": 3,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "High Potential": {
@@ -17588,6 +18536,12 @@
     "season": 3,
     "episode": 1
    },
+   "lastEpisode": {
+    "date": "2026-04-07",
+    "season": 2,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "His Dark Materials": {
@@ -17720,6 +18674,12 @@
     196322
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-02-05",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Home Economics": {
@@ -17830,6 +18790,12 @@
     2141
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-01-18",
+    "season": 3,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Home Town": {
@@ -17970,6 +18936,12 @@
     61581
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-03",
+    "season": 10,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "cast",
    "castCheck": 2
   },
@@ -18091,6 +19063,12 @@
     63726
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-13",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Home Town: Ben's Workshop": {
@@ -18182,6 +19160,12 @@
     61575
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-02",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Hotel Portofino": {
@@ -18292,6 +19276,12 @@
     228079
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-12-14",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "House": {
@@ -18417,6 +19407,12 @@
     129612
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-05-21",
+    "season": 8,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "House of Lies": {
@@ -18536,6 +19532,12 @@
     119181
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-06-12",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "How I Met Your Mother": {
@@ -18638,6 +19640,12 @@
     1825
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-03-31",
+    "season": 9,
+    "episode": 24
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Indian Summers": {
@@ -18765,6 +19773,12 @@
     72615
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-05-15",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Inspector George Gently": {
@@ -18875,6 +19889,12 @@
     4582
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-10-30",
+    "season": 8,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Instant Dream Home": {
@@ -18964,6 +19984,12 @@
     61120
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-08-10",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Instant Hotel": {
@@ -19025,6 +20051,12 @@
     45669
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-03-18",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Interior Design Masters": {
@@ -19142,6 +20174,12 @@
     67235
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-09",
+    "season": 7,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "James May: Our Man in Italy": {
@@ -19214,6 +20252,12 @@
     77591
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-01-05",
+    "season": 3,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "James May: Our Man in Japan": {
@@ -19286,6 +20330,12 @@
     77591
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-01-05",
+    "season": 3,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Jamestown": {
@@ -19391,6 +20441,12 @@
     44983
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-06-14",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Jury Duty": {
@@ -19487,6 +20543,12 @@
     1459
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-04-21",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Justified": {
@@ -19594,6 +20656,12 @@
     67384
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-04-14",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Karen Pirie": {
@@ -19683,6 +20751,12 @@
     74430
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-08-03",
+    "season": 2,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Killjoys": {
@@ -19786,6 +20860,12 @@
     106379
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-09-20",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Kim's Convenience": {
@@ -19879,6 +20959,12 @@
     62819
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-04-13",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Last Man Standing": {
@@ -19983,6 +21069,12 @@
     3968
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-20",
+    "season": 9,
+    "episode": 21
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Law & Order: SVU": {
@@ -20133,6 +21225,12 @@
     "season": 28,
     "episode": 6
    },
+   "lastEpisode": {
+    "date": "2026-11-05",
+    "season": 28,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Lessons in Chemistry": {
@@ -20225,6 +21323,12 @@
     87739
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-11-21",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Life in Pieces": {
@@ -20320,6 +21424,12 @@
     39354
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-06-27",
+    "season": 4,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Locke & Key": {
@@ -20407,6 +21517,12 @@
     82104
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-08-10",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Long Way Down": {
@@ -20487,6 +21603,12 @@
     229516
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2007-12-02",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Long Way Round": {
@@ -20564,6 +21686,12 @@
     157202
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2004-11-29",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Long Way Up": {
@@ -20628,21 +21756,27 @@
     38122,
     1966,
     1292,
+    248287,
     4994,
     65339,
-    248287,
-    4199,
     127700,
+    4199,
     32900,
-    105288,
     31677,
-    92807,
     1181,
+    105288,
     102693,
-    157202,
-    204554
+    92807,
+    21145,
+    19215
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-11-13",
+    "season": 1,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Longmire": {
@@ -20775,6 +21909,12 @@
     73467
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-11-17",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Loot": {
@@ -20861,6 +22001,12 @@
     1915
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-12-09",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Lost": {
@@ -20963,6 +22109,12 @@
     79696
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-05-23",
+    "season": 6,
+    "episode": 17
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Lost in Space (2018)": {
@@ -21070,6 +22222,12 @@
     121
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-12-01",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "Love It or List It": {
@@ -21212,6 +22370,12 @@
     62705
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-08",
+    "season": 21,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Lovesick": {
@@ -21313,6 +22477,12 @@
     61871
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-01-01",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Ludwig": {
@@ -21406,6 +22576,12 @@
     76582
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-24",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Luther": {
@@ -21580,6 +22756,12 @@
     40675
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-01-04",
+    "season": 5,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mad Men": {
@@ -21732,6 +22914,12 @@
     63535
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-05-17",
+    "season": 7,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Madam Secretary": {
@@ -21845,6 +23033,12 @@
     13905
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-12-08",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Magpie Murders": {
@@ -21947,6 +23141,12 @@
     157409
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-02-10",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Maine Cabin Masters": {
@@ -22076,6 +23276,12 @@
     35358
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-29",
+    "season": 13,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Maine Cabin Masters: Building Italy": {
@@ -22183,6 +23389,12 @@
     35058
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-07-22",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Major Crimes": {
@@ -22286,6 +23498,12 @@
     39276
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-01-09",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Making It": {
@@ -22379,6 +23597,12 @@
     62481
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-08-26",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Man Down": {
@@ -22465,6 +23689,12 @@
     2274
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-11-29",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Man Like Mobeen": {
@@ -22575,6 +23805,12 @@
     84007
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-15",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Man with a Plan": {
@@ -22695,6 +23931,12 @@
     634
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-06-11",
+    "season": 4,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mare of Easttown": {
@@ -22810,6 +24052,12 @@
     1486
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-30",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Married to Real Estate": {
@@ -22958,6 +24206,12 @@
     31306
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-28",
+    "season": 4,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mary & George": {
@@ -23073,6 +24327,12 @@
     72750
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-04-16",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "MasterChef": {
@@ -23173,6 +24433,12 @@
     62705
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-16",
+    "season": 16,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "MasterChef: The Professionals": {
@@ -23256,6 +24522,12 @@
     "season": 19,
     "episode": 4
    },
+   "lastEpisode": {
+    "date": "2026-11-05",
+    "season": 19,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "McDonald & Dodds": {
@@ -23359,6 +24631,12 @@
     91267
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-08-04",
+    "season": 4,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Merlin": {
@@ -23491,6 +24769,12 @@
     2723
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-12-24",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Merlin (BBC)": {
@@ -23623,6 +24907,12 @@
     2723
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-12-24",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Midsomer Murders": {
@@ -23788,6 +25078,12 @@
     157409
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-12-30",
+    "season": 24,
+    "episode": 2
+   },
+   "announcedSeason": 25,
    "match": "name"
   },
   "Mindhunter": {
@@ -23892,6 +25188,12 @@
     72750
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-08-16",
+    "season": 2,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Miranda": {
@@ -23972,6 +25274,12 @@
     61916
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-01-28",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Miss Fisher's Murder Mysteries": {
@@ -24113,6 +25421,12 @@
     85586
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-06-26",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Miss Scarlet": {
@@ -24239,6 +25553,12 @@
     201408
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-15",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": 7,
    "match": "name"
   },
   "Modern Family": {
@@ -24345,6 +25665,12 @@
     1964
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-04-08",
+    "season": 11,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Monty Don's Italian Gardens": {
@@ -24412,6 +25738,12 @@
     19215
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-05-06",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -24514,6 +25846,12 @@
     61565
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-14",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Motherland": {
@@ -24642,6 +25980,12 @@
     115
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-06-07",
+    "season": 3,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mozart in the Jungle": {
@@ -24744,6 +26088,12 @@
     226285
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-02-16",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mr Selfridge": {
@@ -24877,6 +26227,12 @@
     94245
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-03-11",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mrs Wilson": {
@@ -24982,6 +26338,12 @@
     43078
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-12-11",
+    "season": 1,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Ms Fisher's Modern Murder Mysteries": {
@@ -25101,6 +26463,12 @@
     16343
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-07-19",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mum": {
@@ -25207,6 +26575,12 @@
     6515
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-06-19",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Murder in Provence": {
@@ -25295,6 +26669,12 @@
     40675
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-03-01",
+    "season": 1,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Murderville": {
@@ -25380,6 +26760,12 @@
     111838
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-02-03",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "My Life Is Murder": {
@@ -25497,6 +26883,12 @@
     3216
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-09-21",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Mythic Quest": {
@@ -25587,6 +26979,12 @@
     849
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-25",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Nailed It!": {
@@ -25673,6 +27071,12 @@
     67855
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-10-05",
+    "season": 7,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "NCIS: Los Angeles": {
@@ -25776,6 +27180,12 @@
     241549
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-21",
+    "season": 14,
+    "episode": 21
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "New Amsterdam": {
@@ -25874,6 +27284,12 @@
     258165
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-01-17",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "New Girl": {
@@ -25981,6 +27397,12 @@
     42272
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-05-15",
+    "season": 7,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "No Activity (Australian series)": {
@@ -26055,6 +27477,12 @@
     2548
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-10-26",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "No Demo Reno": {
@@ -26189,6 +27617,12 @@
     61789
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-12-07",
+    "season": 3,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Nobody Wants This": {
@@ -26280,6 +27714,12 @@
     42282
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-22",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Not Dead Yet": {
@@ -26374,6 +27814,12 @@
     67117
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-04-24",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Once Upon a Time": {
@@ -26478,6 +27924,12 @@
     60735
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-05-18",
+    "season": 7,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "One Day (2024)": {
@@ -26564,6 +28016,12 @@
     229236
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-02-08",
+    "season": 1,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "One Day at a Time (2017)": {
@@ -26658,6 +28116,12 @@
     3308
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-06-16",
+    "season": 4,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "Only Murders in the Building": {
@@ -26755,6 +28219,12 @@
     "season": 6,
     "episode": 1
    },
+   "lastEpisode": {
+    "date": "2025-10-28",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Orphan Black": {
@@ -26881,6 +28351,12 @@
     39358
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-08-12",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Our Planet": {
@@ -26970,6 +28446,12 @@
     208230
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-06-14",
+    "season": 2,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Outer Banks": {
@@ -27062,6 +28544,12 @@
     47665
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-08-20",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Outlander": {
@@ -27196,6 +28684,12 @@
     7704
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-15",
+    "season": 8,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Palm Royale": {
@@ -27280,6 +28774,12 @@
     73925
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-01-13",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Parenthood": {
@@ -27396,6 +28896,12 @@
     1950
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-01-29",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Parks and Recreation": {
@@ -27503,6 +29009,12 @@
     86893
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-02-24",
+    "season": 7,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Person of Interest": {
@@ -27630,6 +29142,12 @@
     60708
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-06-21",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Planet Earth II": {
@@ -27757,6 +29275,12 @@
     213609
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-12-11",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Platonic": {
@@ -27845,6 +29369,12 @@
     713
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-09-30",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": 3,
    "match": "name"
   },
   "Playing House": {
@@ -27944,6 +29474,12 @@
     90877
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-07-14",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Plebs": {
@@ -28056,6 +29592,12 @@
     1434
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-11-11",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Poker Face": {
@@ -28166,6 +29708,12 @@
     64513
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-07-10",
+    "season": 2,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Poldark": {
@@ -28295,6 +29843,12 @@
     70785
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-08-26",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Professor T (UK)": {
@@ -28409,6 +29963,12 @@
     4582
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-09",
+    "season": 4,
+    "episode": 4
+   },
+   "announcedSeason": 5,
    "match": "hint"
   },
   "Property Brothers": {
@@ -28532,6 +30092,12 @@
     80991
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-10-16",
+    "season": 14,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Property Brothers: Buying and Selling": {
@@ -28643,6 +30209,12 @@
     4535
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-01",
+    "season": 8,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Property Brothers: Forever Home": {
@@ -28761,6 +30333,12 @@
     34996
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-17",
+    "season": 8,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Psych": {
@@ -28891,6 +30469,12 @@
     1205
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-03-26",
+    "season": 8,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Queens of Mystery": {
@@ -29008,6 +30592,12 @@
     306603
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-12-13",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -29098,6 +30688,12 @@
     38409
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-01-21",
+    "season": 10,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Race Across the World": {
@@ -29190,6 +30786,12 @@
     87387
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-21",
+    "season": 6,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Raising Dion": {
@@ -29282,6 +30884,12 @@
     10724
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-02-01",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Raising Hope": {
@@ -29386,6 +30994,12 @@
     10649
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-04-04",
+    "season": 4,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Reacher": {
@@ -29503,6 +31117,12 @@
     40675
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-16",
+    "season": 4,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rehab Addict": {
@@ -29607,6 +31227,12 @@
     62
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-07-01",
+    "season": 10,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Renovation Island": {
@@ -29723,6 +31349,12 @@
     61581
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-20",
+    "season": 4,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Renovation Resort": {
@@ -29827,6 +31459,12 @@
     4535
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-24",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Reservation Dogs": {
@@ -29908,6 +31546,12 @@
     186
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-09-27",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Resident Alien": {
@@ -30040,6 +31684,12 @@
     239770
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-08-08",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Restoration Australia": {
@@ -30125,6 +31775,12 @@
     1754
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-25",
+    "season": 8,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 3
   },
@@ -30210,6 +31866,12 @@
     31677
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-08-28",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
   },
@@ -30331,6 +31993,12 @@
     62705
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-04-25",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": 7,
    "match": "name"
   },
   "Restored by the Fords": {
@@ -30426,6 +32094,12 @@
     133723
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-07",
+    "season": 2,
+    "episode": 15
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Revolution": {
@@ -30530,6 +32204,12 @@
     85723
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-05-21",
+    "season": 2,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rick Stein's Cornwall": {
@@ -30615,6 +32295,12 @@
     209167
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-02-24",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rick Stein's India": {
@@ -30695,6 +32381,12 @@
     1904
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-07-22",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rick Stein's Secret France": {
@@ -30767,6 +32459,12 @@
     1292
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-12-10",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rick Stein's Spain": {
@@ -30844,6 +32542,12 @@
     21145
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-12-21",
+    "season": 1,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rick Steves' Europe": {
@@ -30998,6 +32702,12 @@
     92807
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-12-10",
+    "season": 13,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rizzoli & Isles": {
@@ -31122,6 +32832,12 @@
     1620
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-09-05",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Robin Hood": {
@@ -31234,6 +32950,12 @@
     62487
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2009-06-27",
+    "season": 3,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Rock the Block": {
@@ -31374,6 +33096,12 @@
     62481
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-25",
+    "season": 7,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Royal Pains": {
@@ -31469,6 +33197,12 @@
     237748
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-07-06",
+    "season": 8,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rules of Engagement": {
@@ -31574,6 +33308,12 @@
     57031
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-05-20",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Rutherford Falls": {
@@ -31675,6 +33415,12 @@
     334
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-06-16",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "S.W.A.T.": {
@@ -31820,6 +33566,12 @@
     73544
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-16",
+    "season": 8,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Schitt's Creek": {
@@ -31943,6 +33695,12 @@
     46431
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-04-07",
+    "season": 6,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Scrubs": {
@@ -32035,10 +33793,10 @@
     1964,
     60766,
     4454,
-    73333,
-    1100,
-    1530,
     1869,
+    1100,
+    73333,
+    1530,
     3497,
     43082,
     1400,
@@ -32049,6 +33807,12 @@
     62649
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-03-17",
+    "season": 9,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Severance": {
@@ -32137,6 +33901,12 @@
     130464
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-20",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": 3,
    "match": "name"
   },
   "Shakespeare & Hathaway": {
@@ -32280,6 +34050,12 @@
     4177
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-23",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Shark Tank": {
@@ -32375,8 +34151,8 @@
     62674,
     44470,
     62959,
-    29173,
     249522,
+    29173,
     2778,
     204082,
     30810,
@@ -32397,6 +34173,12 @@
     "season": 18,
     "episode": 7
    },
+   "lastEpisode": {
+    "date": "2026-11-04",
+    "season": 18,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Sherlock": {
@@ -32566,6 +34348,12 @@
     71769
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-01-15",
+    "season": 4,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Shrill": {
@@ -32672,6 +34460,12 @@
     211
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-07",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Shrinking": {
@@ -32768,6 +34562,12 @@
     16208
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-07",
+    "season": 3,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Shōgun": {
@@ -32865,6 +34665,12 @@
     57092
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-04-23",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Signora Volpe": {
@@ -32986,6 +34792,12 @@
     5273
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-19",
+    "season": 3,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Silicon Valley": {
@@ -33088,6 +34900,12 @@
     610
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-12-08",
+    "season": 6,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Silo": {
@@ -33183,6 +35001,12 @@
     "season": 4,
     "episode": 1
    },
+   "lastEpisode": {
+    "date": "2026-09-03",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Single Parents": {
@@ -33273,6 +35097,12 @@
     2702
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-13",
+    "season": 2,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Slow Horses": {
@@ -33374,6 +35204,12 @@
     137127
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-21",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "So Help Me Todd": {
@@ -33471,6 +35307,12 @@
     106454
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-05-16",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Somebody Feed Phil": {
@@ -33557,6 +35399,12 @@
     12323
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-06-18",
+    "season": 8,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Speechless": {
@@ -33649,6 +35497,12 @@
     4589
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-04-12",
+    "season": 3,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Sprung": {
@@ -33740,6 +35594,12 @@
     10649
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-09-15",
+    "season": 1,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Staged": {
@@ -33862,6 +35722,12 @@
     4546
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-24",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Stanley Tucci: Searching for Italy": {
@@ -33984,6 +35850,12 @@
     10179
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-10-30",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Star Trek: Discovery": {
@@ -34117,6 +35989,12 @@
     127235
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-05-30",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Star Trek: Picard": {
@@ -34246,6 +36124,12 @@
     48860
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-04-20",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Star Trek: Strange New Worlds": {
@@ -34374,6 +36258,12 @@
     135211
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-24",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Stargate Atlantis": {
@@ -34502,6 +36392,12 @@
     3575
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2009-01-08",
+    "season": 5,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Stargate Universe": {
@@ -34616,6 +36512,12 @@
     92830
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-05-09",
+    "season": 2,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Starstruck": {
@@ -34710,6 +36612,12 @@
     7317
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-09-11",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Stath Lets Flats": {
@@ -34802,6 +36710,12 @@
     34435
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-11-30",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Stay Here": {
@@ -34884,6 +36798,12 @@
     45669
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-08-17",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Stranger Things": {
@@ -34983,6 +36903,12 @@
     82104
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-12-31",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Such Brave Girls": {
@@ -35062,6 +36988,12 @@
     73925
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-07-17",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Suits": {
@@ -35166,6 +37098,12 @@
     69158
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-09-25",
+    "season": 9,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Superstore": {
@@ -35270,6 +37208,12 @@
     1456
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-03-25",
+    "season": 6,
+    "episode": 15
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Survivor": {
@@ -35425,6 +37369,12 @@
     "season": 51,
     "episode": 8
    },
+   "lastEpisode": {
+    "date": "2026-11-04",
+    "season": 51,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Sweet Tooth": {
@@ -35536,6 +37486,12 @@
     225171
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-06",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Taste the Nation": {
@@ -35599,6 +37555,12 @@
     89557
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2009-04-24",
+    "season": 1,
+    "episode": 30
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Ted Lasso": {
@@ -35702,6 +37664,12 @@
     1480
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-06",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Terra Nova": {
@@ -35800,6 +37768,12 @@
     66837
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-12-19",
+    "season": 1,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The 100": {
@@ -35906,6 +37880,12 @@
     1972
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-09-30",
+    "season": 7,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Act": {
@@ -36008,6 +37988,12 @@
     4920
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-01",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Affair": {
@@ -36132,6 +38118,12 @@
     61986
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-11-03",
+    "season": 5,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Afterparty": {
@@ -36215,6 +38207,12 @@
     62046
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-09-05",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Amazing Race": {
@@ -36350,6 +38348,12 @@
     "season": 39,
     "episode": 8
    },
+   "lastEpisode": {
+    "date": "2026-11-04",
+    "season": 39,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Amazing Race Canada": {
@@ -36425,6 +38429,12 @@
     73319
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-15",
+    "season": 12,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Americans": {
@@ -36531,6 +38541,12 @@
     67384
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-05-30",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Americas": {
@@ -36647,6 +38663,12 @@
     15069
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-13",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Artful Dodger": {
@@ -36734,6 +38756,12 @@
     213306
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-10",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Bay": {
@@ -36838,6 +38866,12 @@
     135868
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-11",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": 6,
    "match": "name"
   },
   "The Bidding Room": {
@@ -36908,6 +38942,12 @@
     "season": 8,
     "episode": 19
    },
+   "lastEpisode": {
+    "date": "2026-11-04",
+    "season": 8,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Big Bang Theory": {
@@ -37018,6 +39058,12 @@
     1849
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-16",
+    "season": 12,
+    "episode": 24
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Big Build": {
@@ -37085,6 +39131,12 @@
     204554
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2005-11-25",
+    "season": 1,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Big Family Cooking Showdown": {
@@ -37159,6 +39211,12 @@
     16358
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-10-29",
+    "season": 2,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Big Flower Fight": {
@@ -37239,6 +39297,12 @@
     82108
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-18",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Billion Dollar Code": {
@@ -37326,6 +39390,12 @@
     82883
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-10-07",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Blacklist": {
@@ -37428,6 +39498,12 @@
     273207
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-07-13",
+    "season": 10,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Bletchley Circle": {
@@ -37619,6 +39695,12 @@
     587
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-01-27",
+    "season": 2,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Borgias": {
@@ -37741,6 +39823,12 @@
     153657
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-06-16",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Boys": {
@@ -37861,6 +39949,12 @@
     93484
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-20",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Brokenwood Mysteries": {
@@ -37997,6 +40091,12 @@
     74430
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-11",
+    "season": 12,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Buccaneers": {
@@ -38082,6 +40182,12 @@
     62088
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-08-06",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Bureau": {
@@ -38227,6 +40333,12 @@
     75666
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-04",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Cabin Chronicles": {
@@ -38317,6 +40429,12 @@
     12323
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-07-28",
+    "season": 3,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Calling": {
@@ -38416,6 +40534,12 @@
     241372
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-10",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Capture": {
@@ -38534,6 +40658,12 @@
     278178
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-12",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Carmichael Show": {
@@ -38633,6 +40763,12 @@
     67117
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-08-09",
+    "season": 3,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Challenge": {
@@ -38753,6 +40889,12 @@
     2912
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-28",
+    "season": 42,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Change": {
@@ -38837,6 +40979,12 @@
     33155
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-22",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Chef Show": {
@@ -38928,6 +41076,12 @@
     105763
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-09-24",
+    "season": 2,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Chelsea Detective": {
@@ -39034,6 +41188,12 @@
     44264
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-08-24",
+    "season": 4,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Cleaner (UK)": {
@@ -39121,6 +41281,12 @@
     1964
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-11-08",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Cleaner (US)": {
@@ -39206,6 +41372,12 @@
     4529
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2009-09-15",
+    "season": 2,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Closer": {
@@ -39313,6 +41485,12 @@
     58841
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-08-13",
+    "season": 7,
+    "episode": 21
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Cockfields": {
@@ -39386,6 +41564,12 @@
     3968
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-11-12",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Collection": {
@@ -39508,6 +41692,12 @@
     93870
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-10-21",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Completely Made-Up Adventures of Dick Turpin": {
@@ -39591,6 +41781,12 @@
     2513
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-10-15",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Cook of Castamar": {
@@ -39679,6 +41875,12 @@
     196454
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-09",
+    "season": 1,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Cook Up with Adam Liaw": {
@@ -39740,6 +41942,12 @@
     21641
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-03-03",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Cormoran Strike Mysteries": {
@@ -39847,6 +42055,12 @@
     61859
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-24",
+    "season": 6,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Crazy Ones": {
@@ -39939,6 +42153,12 @@
     154827
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-04-17",
+    "season": 1,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Crimson Field": {
@@ -40050,6 +42270,12 @@
     61251
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-05-11",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Crown": {
@@ -40150,6 +42376,12 @@
     65708
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-12-14",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Crowned Clown": {
@@ -40245,6 +42477,12 @@
     66433
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-03-04",
+    "season": 1,
+    "episode": 16
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Deceived": {
@@ -40346,6 +42584,12 @@
     89905
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-08-06",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Detour": {
@@ -40426,6 +42670,12 @@
     112211
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-08-20",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Deuce": {
@@ -40536,6 +42786,12 @@
     60574
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-10-28",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Diplomat": {
@@ -40644,6 +42900,12 @@
     262352
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-10-15",
+    "season": 4,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Doctor Blake Mysteries": {
@@ -40807,6 +43069,12 @@
     43078
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-11-05",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Dropout": {
@@ -40900,6 +43168,12 @@
     199001
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-04-07",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Drowning": {
@@ -41021,6 +43295,12 @@
     51370
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-02-04",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Dry": {
@@ -41134,6 +43414,12 @@
     2204
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-22",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Duchess": {
@@ -41219,6 +43505,12 @@
     61118
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-09-11",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Durrells in Corfu": {
@@ -41349,6 +43641,12 @@
     31936
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-12",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Empress": {
@@ -41440,6 +43738,12 @@
     "season": 3,
     "episode": 1
    },
+   "lastEpisode": {
+    "date": "2024-11-22",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The English": {
@@ -41527,6 +43831,12 @@
     1423
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-15",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The English Game": {
@@ -41616,6 +43926,12 @@
     303630
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-03-20",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Essex Serpent": {
@@ -41707,6 +44023,12 @@
     40204
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-06-10",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Established Home": {
@@ -41824,6 +44146,12 @@
     62618
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-02-01",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Established Home: Special Projects": {
@@ -41941,6 +44269,12 @@
     62618
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-02-01",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Expanse": {
@@ -42058,6 +44392,12 @@
     67683
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-01-13",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The F Word": {
@@ -42149,6 +44489,12 @@
     66943
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-01-07",
+    "season": 5,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Fall": {
@@ -42321,6 +44667,12 @@
     2428
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-10-28",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Flatshare": {
@@ -42397,6 +44749,12 @@
     33155
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-01",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Flipping El Moussas": {
@@ -42528,6 +44886,12 @@
     65339
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-08",
+    "season": 2,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Food That Built America": {
@@ -42675,6 +45039,12 @@
     248287
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-07-26",
+    "season": 7,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Forsyte Saga (2007)": {
@@ -42800,6 +45170,12 @@
     17836
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2003-06-15",
+    "season": 2,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Fosters": {
@@ -42915,6 +45291,12 @@
     2464
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-06-06",
+    "season": 5,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Gardeners' World": {
@@ -43031,6 +45413,12 @@
     65339
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-11-06",
+    "season": 59,
+    "episode": 32
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Gardeners' World: Winter Specials": {
@@ -43147,6 +45535,12 @@
     65339
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-11-06",
+    "season": 59,
+    "episode": 32
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Gilded Age": {
@@ -43268,6 +45662,12 @@
     "season": 4,
     "episode": 2
    },
+   "lastEpisode": {
+    "date": "2026-11-01",
+    "season": 4,
+    "episode": 1
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Girl Before": {
@@ -43362,6 +45762,12 @@
     136275
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-12-22",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Gold": {
@@ -43465,6 +45871,12 @@
     68735
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-06-23",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Goldbergs": {
@@ -43561,6 +45973,12 @@
     6515
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-03",
+    "season": 10,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Good Doctor": {
@@ -43665,6 +46083,12 @@
     269
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-05-21",
+    "season": 7,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Good Fight": {
@@ -43790,6 +46214,12 @@
     153657
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-10",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Good Place": {
@@ -43914,6 +46344,12 @@
     67773
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-01-30",
+    "season": 4,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Good Wife": {
@@ -44044,6 +46480,12 @@
     33155
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-05-08",
+    "season": 7,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Grand Tour": {
@@ -44145,6 +46587,12 @@
     3887
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-09-13",
+    "season": 6,
+    "episode": 1
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Great": {
@@ -44256,6 +46704,12 @@
     208851
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-12",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Great American Baking Show": {
@@ -44345,6 +46799,12 @@
     110381
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-01-02",
+    "season": 5,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Great British Bake Off: An Extra Slice": {
@@ -44426,6 +46886,12 @@
     2470
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-11-07",
+    "season": 9,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great British Baking Show": {
@@ -44515,6 +46981,12 @@
     249522
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-10-27",
+    "season": 7,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great British Food Revival": {
@@ -44587,6 +47059,12 @@
     62391
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-12-01",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great British Garden Revival": {
@@ -44653,6 +47131,12 @@
     320472
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-01-21",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great British Menu": {
@@ -44769,6 +47253,12 @@
     17562
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-24",
+    "season": 21,
+    "episode": 29
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great British Railway Journeys: Australia": {
@@ -44836,6 +47326,12 @@
     74911
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-11-30",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great British Sewing Bee": {
@@ -44913,6 +47409,12 @@
     17562
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-15",
+    "season": 12,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 6
   },
@@ -44988,6 +47490,12 @@
     44100
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-08-08",
+    "season": 5,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Great House Revival": {
@@ -45060,6 +47568,12 @@
     137735
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-19",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Great Interior Design Challenge": {
@@ -45146,6 +47660,12 @@
     87012
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-01-19",
+    "season": 4,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Great Interior Design Challenge: Celebrity Special": {
@@ -45232,6 +47752,12 @@
     87012
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-01-19",
+    "season": 4,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Great Pottery Throw Down": {
@@ -45322,6 +47848,12 @@
     90524
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-03-08",
+    "season": 9,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Grinder": {
@@ -45415,6 +47947,12 @@
     2132
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-05-10",
+    "season": 1,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Guest Book": {
@@ -45502,6 +48040,12 @@
     42032
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-12-18",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Halcyon": {
@@ -45603,6 +48147,12 @@
     46657
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-02-20",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Handmaid's Tale": {
@@ -45712,6 +48262,12 @@
     80752
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-27",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Honourable Woman": {
@@ -45811,6 +48367,12 @@
     108181
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-08-21",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Hotel Inspector": {
@@ -45929,6 +48491,12 @@
     1966
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-21",
+    "season": 21,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -46048,6 +48616,12 @@
     1966
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-21",
+    "season": 21,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Hour": {
@@ -46178,6 +48752,12 @@
     40675
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-12-13",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The House of Eliott": {
@@ -46266,6 +48846,12 @@
     3828
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "1993-03-06",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Inbetweeners": {
@@ -46390,6 +48976,12 @@
     71884
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-10-18",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Indian Doctor": {
@@ -46495,6 +49087,12 @@
     92875
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-11-08",
+    "season": 3,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Irrational": {
@@ -46586,6 +49184,12 @@
     226174
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-25",
+    "season": 2,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The IT Crowd": {
@@ -46717,6 +49321,12 @@
     2962
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-07-30",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Jetty": {
@@ -46832,6 +49442,12 @@
     13266
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-07-22",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Job Lot": {
@@ -46932,6 +49548,12 @@
     9895
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-11-10",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Kennedys (UK)": {
@@ -47020,6 +49642,12 @@
     33858
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-11-06",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Kids in the Hall (2022)": {
@@ -47102,6 +49730,12 @@
     1795
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-05-12",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Knick": {
@@ -47221,6 +49855,12 @@
     1621
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-12-18",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Kominsky Method": {
@@ -47333,6 +49973,12 @@
     815
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-28",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Larkins": {
@@ -47439,6 +50085,12 @@
     3346
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-11-27",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Last Czars": {
@@ -47527,6 +50179,12 @@
     62982
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-07-03",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Last Dance": {
@@ -47613,25 +50271,31 @@
     157002,
     67027,
     118876,
-    110193,
     93219,
-    300999,
     102905,
-    108987,
-    316898,
-    318880,
-    335536,
-    216386,
     235345,
+    318880,
+    110193,
+    108987,
+    300999,
+    316898,
+    335536,
     329274,
-    81337,
     213083,
+    81337,
     87083,
-    328735,
-    209167,
-    233051
+    216386,
+    88401,
+    105763,
+    328735
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-17",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Last Dance: Behind the Scenes": {
@@ -47718,25 +50382,31 @@
     157002,
     67027,
     118876,
-    110193,
     93219,
-    300999,
     102905,
-    108987,
-    316898,
-    318880,
-    335536,
-    216386,
     235345,
+    318880,
+    110193,
+    108987,
+    300999,
+    316898,
+    335536,
     329274,
-    81337,
     213083,
+    81337,
     87083,
-    328735,
-    209167,
-    233051
+    216386,
+    88401,
+    105763,
+    328735
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-05-17",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Last Detective": {
@@ -47857,6 +50527,12 @@
     138181
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2007-05-31",
+    "season": 4,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Last Kingdom": {
@@ -47979,6 +50655,12 @@
     156390
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-03-09",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Last Ship": {
@@ -48085,6 +50767,12 @@
     47640
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-11-11",
+    "season": 5,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Last Tycoon": {
@@ -48198,6 +50886,12 @@
     258165
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-07-28",
+    "season": 1,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Law According to Lidia Poët": {
@@ -48272,9 +50966,9 @@
     72742,
     73671,
     78064,
-    212333,
     32940,
     226174,
+    212333,
     33025,
     116799,
     4920,
@@ -48291,6 +50985,12 @@
     12822
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-15",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Lazarus Project": {
@@ -48387,6 +51087,12 @@
     78670
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-01-03",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The League": {
@@ -48499,6 +51205,12 @@
     243316
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-12-09",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Librarians": {
@@ -48644,6 +51356,12 @@
     4289
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-02-07",
+    "season": 4,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Lincoln Lawyer": {
@@ -48756,6 +51474,12 @@
     239826
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-05",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Little Drummer Girl": {
@@ -48848,6 +51572,12 @@
     4046
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-12-02",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Living and the Dead": {
@@ -48970,6 +51700,12 @@
     126254
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-08-02",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Long Call": {
@@ -49059,6 +51795,12 @@
     244243
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-10-28",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Long Shadow": {
@@ -49174,6 +51916,12 @@
     6127
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-11-06",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Looming Tower": {
@@ -49275,6 +52023,12 @@
     289560
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-04-18",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Luminaries": {
@@ -49388,6 +52142,12 @@
     126660
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-06-21",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Madame Blanc Mysteries": {
@@ -49507,6 +52267,12 @@
     "season": 5,
     "episode": 3
    },
+   "lastEpisode": {
+    "date": "2026-11-05",
+    "season": 5,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Magicians": {
@@ -49603,6 +52369,12 @@
     84773
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-04-01",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Mallorca Files": {
@@ -49728,6 +52500,12 @@
     1059
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-08-08",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Mandalorian": {
@@ -49811,6 +52589,12 @@
     443
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-04-19",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Marlow Murder Club": {
@@ -49930,6 +52714,12 @@
     5100
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-04-01",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Marvelous Mrs. Maisel": {
@@ -50029,6 +52819,12 @@
     4415
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-25",
+    "season": 5,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Mentalist": {
@@ -50125,8 +52921,8 @@
     1620,
     587,
     3716,
-    72597,
     39483,
+    72597,
     58057,
     39276,
     71722,
@@ -50134,6 +52930,12 @@
     39546
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-02-18",
+    "season": 7,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Mick": {
@@ -50240,6 +53042,12 @@
     1849
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-04-03",
+    "season": 2,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Middle": {
@@ -50352,6 +53160,12 @@
     2586
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-05-22",
+    "season": 9,
+    "episode": 24
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Mill": {
@@ -50452,6 +53266,12 @@
     81747
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-08-24",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Mindy Project": {
@@ -50554,6 +53374,12 @@
     43082
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-11-14",
+    "season": 6,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Missing": {
@@ -50704,6 +53530,12 @@
     64513
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-11-30",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Morning Show": {
@@ -50796,6 +53628,12 @@
     90399
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-11-18",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": 5,
    "match": "name"
   },
   "The Movies That Made Us": {
@@ -50886,6 +53724,12 @@
     125972
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-10-12",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Musketeers": {
@@ -51022,6 +53866,12 @@
     13561
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-07-30",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Nate and Jeremiah Home Project": {
@@ -51142,6 +53992,12 @@
     62
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-04-12",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -51287,6 +54143,12 @@
     39297
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-11",
+    "season": 8,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The New Look": {
@@ -51376,6 +54238,12 @@
     10370
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-04-02",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Newsreader": {
@@ -51488,6 +54356,12 @@
     292742
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-09",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Newsroom": {
@@ -51593,6 +54467,12 @@
     234212
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-12-14",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Night Agent": {
@@ -51686,6 +54566,12 @@
     227114
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-19",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": 4,
    "match": "name"
   },
   "The Night Manager": {
@@ -51797,6 +54683,12 @@
     284558
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-02-01",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Night Of": {
@@ -51920,6 +54812,12 @@
     86848
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-08-28",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Offer": {
@@ -52038,6 +54936,12 @@
     156819
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-06-16",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Office (UK)": {
@@ -52176,6 +55080,12 @@
     4556
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2002-11-04",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Office (US)": {
@@ -52290,6 +55200,12 @@
     88110
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-05-16",
+    "season": 9,
+    "episode": 23
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Orville": {
@@ -52397,6 +55313,12 @@
     51704
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-08-04",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Other One": {
@@ -52526,6 +55448,12 @@
     4429
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-06-03",
+    "season": 2,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Other Two": {
@@ -52625,6 +55553,12 @@
     1974
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-06-29",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Outlaws": {
@@ -52724,6 +55658,12 @@
     82139
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-27",
+    "season": 3,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Paradise": {
@@ -52855,6 +55795,12 @@
     46609
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-12-08",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Pembrokeshire Murders": {
@@ -52965,6 +55911,12 @@
     67743
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-01-13",
+    "season": 1,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Peripheral": {
@@ -53087,6 +56039,12 @@
     85273
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-01",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Playlist": {
@@ -53170,6 +56128,12 @@
     233256
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-10-13",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Pursuit of Love": {
@@ -53264,6 +56228,12 @@
     199001
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-23",
+    "season": 1,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Queen's Gambit": {
@@ -53366,6 +56336,12 @@
     273240
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-10-23",
+    "season": 1,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Reluctant Traveler": {
@@ -53447,6 +56423,12 @@
     113085
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-10-31",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual",
    "castCheck": 2
   },
@@ -53529,6 +56511,12 @@
     113085
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-10-31",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Renovators": {
@@ -53624,6 +56612,12 @@
     62
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2011-10-12",
+    "season": 1,
+    "episode": 66
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Repair Shop": {
@@ -53713,6 +56707,12 @@
     210939
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-24",
+    "season": 16,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 4
   },
@@ -53803,6 +56803,12 @@
     210939
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-24",
+    "season": 16,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "hint",
    "castCheck": 1
   },
@@ -53863,6 +56869,12 @@
     204554
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-07-24",
+    "season": 1,
+    "episode": 15
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Residence": {
@@ -53953,6 +56965,12 @@
     69470
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-03-20",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Resident": {
@@ -54058,6 +57076,12 @@
     211564
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-01-17",
+    "season": 6,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Responder": {
@@ -54167,6 +57191,12 @@
     284558
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-02",
+    "season": 2,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Restoration Man": {
@@ -54263,6 +57293,12 @@
     3670
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-11-30",
+    "season": 4,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Rise and Fall of Reggie Dinkins": {
@@ -54387,6 +57423,12 @@
     "season": 2,
     "episode": 2
    },
+   "lastEpisode": {
+    "date": "2026-11-02",
+    "season": 2,
+    "episode": 1
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Romanoffs": {
@@ -54477,6 +57519,12 @@
     3470
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-11-22",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Rookie": {
@@ -54598,6 +57646,12 @@
     "season": 9,
     "episode": 1
    },
+   "lastEpisode": {
+    "date": "2026-05-04",
+    "season": 8,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Salvage Hunters": {
@@ -54739,6 +57793,12 @@
     101978
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-11-27",
+    "season": 20,
+    "episode": 20
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Secret of Crickley Hall": {
@@ -54860,6 +57920,12 @@
     241549
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2012-12-02",
+    "season": 1,
+    "episode": 3
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Serpent": {
@@ -54947,6 +58013,12 @@
     287238
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-02-14",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Serpent Queen": {
@@ -55069,6 +58141,12 @@
     57092
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-08-30",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Sinner": {
@@ -55176,6 +58254,12 @@
     137127
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-12-01",
+    "season": 4,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Sixth Commandment": {
@@ -55268,6 +58352,12 @@
     135868
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-07-25",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Spanish Princess": {
@@ -55405,6 +58495,12 @@
     69541
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-11-29",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Split": {
@@ -55500,6 +58596,12 @@
     67384
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-05-09",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Spy": {
@@ -55601,6 +58703,12 @@
     113962
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-09-06",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Staircase": {
@@ -55713,6 +58821,12 @@
     66023
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-06-09",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Story of China": {
@@ -55823,6 +58937,12 @@
     19215
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-02-25",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Story of Egypt": {
@@ -55910,6 +59030,12 @@
     92807
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2016-01-25",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Studio": {
@@ -55996,6 +59122,12 @@
     62117
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-05-20",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": 2,
    "match": "name"
   },
   "The Suspect": {
@@ -56112,6 +59244,12 @@
     121710
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-09-26",
+    "season": 1,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Syndicate": {
@@ -56217,6 +59355,12 @@
     51370
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-05-04",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Tattooist of Auschwitz": {
@@ -56310,6 +59454,12 @@
     292741
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-06-06",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Thief, His Wife and the Canoe": {
@@ -56404,6 +59554,12 @@
     3828
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-04-20",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Time in Between": {
@@ -56484,6 +59640,12 @@
     100383
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-01-20",
+    "season": 1,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Tourist": {
@@ -56567,6 +59729,12 @@
     215522
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-01-28",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Tower": {
@@ -56668,6 +59836,12 @@
     223438
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-09-05",
+    "season": 3,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Toys That Made Us": {
@@ -56759,6 +59933,12 @@
     3956
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-11-15",
+    "season": 3,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Traitors (UK)": {
@@ -56859,6 +60039,12 @@
     63726
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-01-23",
+    "season": 4,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The Tudors": {
@@ -56988,6 +60174,12 @@
     241372
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2010-06-20",
+    "season": 4,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Umbrella Academy": {
@@ -57090,6 +60282,12 @@
     79340
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-08-08",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Undoing": {
@@ -57200,6 +60398,12 @@
     46786
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-11-29",
+    "season": 1,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Unicorn": {
@@ -57289,6 +60493,12 @@
     4454
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-03-18",
+    "season": 2,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Upshaws": {
@@ -57374,6 +60584,12 @@
     227139
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-01-15",
+    "season": 5,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Village": {
@@ -57491,6 +60707,12 @@
     46880
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-09-14",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Walk-In": {
@@ -57567,6 +60789,12 @@
     61299
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-10-31",
+    "season": 1,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The West Wing": {
@@ -57682,6 +60910,12 @@
     6467
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2006-05-14",
+    "season": 7,
+    "episode": 22
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The White Lotus": {
@@ -57804,6 +61038,12 @@
     4607
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-04-06",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The White Princess": {
@@ -57949,6 +61189,12 @@
     32675
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2017-06-04",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The White Queen": {
@@ -58091,6 +61337,12 @@
     4613
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2013-08-18",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Wine Show": {
@@ -58150,6 +61402,12 @@
     260471
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-10-29",
+    "season": 3,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Wonder Years (2021)": {
@@ -58249,6 +61507,12 @@
     32815
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-08-16",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "The World According to Jeff Goldblum": {
@@ -58315,6 +61579,12 @@
     19215
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-01-19",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The World Cook": {
@@ -58376,6 +61646,12 @@
     17562
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-03-16",
+    "season": 2,
+    "episode": 5
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The World's Most Amazing Vacation Rentals": {
@@ -58451,6 +61727,12 @@
     1831
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-09-14",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The World's Most Extraordinary Homes": {
@@ -58518,6 +61800,12 @@
     32900
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-06-27",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 2
   },
@@ -58586,6 +61874,12 @@
     32900
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-06-27",
+    "season": 2,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "The Yorkshire Auction House": {
@@ -58668,6 +61962,12 @@
     1044
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-30",
+    "season": 7,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "The Young Offenders": {
@@ -58752,6 +62052,12 @@
     69659
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-01",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "This Country": {
@@ -58827,6 +62133,12 @@
     11821
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2020-03-23",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Three Pines": {
@@ -58911,6 +62223,12 @@
     39852
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-12-22",
+    "season": 1,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Timeless": {
@@ -59030,6 +62348,12 @@
     80986
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-12-20",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Toast of London": {
@@ -59113,6 +62437,12 @@
     3690
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2015-12-23",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Tom Clancy's Jack Ryan": {
@@ -59232,6 +62562,12 @@
     225385
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-07-13",
+    "season": 4,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Tom Jones (2023)": {
@@ -59332,6 +62668,12 @@
     199001
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-05-21",
+    "season": 1,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "hint"
   },
   "Top Chef": {
@@ -59461,6 +62803,12 @@
     110381
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-08",
+    "season": 23,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Travel Man": {
@@ -59573,6 +62921,12 @@
     4994
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-01-31",
+    "season": 13,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Travelers": {
@@ -59674,6 +63028,12 @@
     131992
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-12-14",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Trial & Error": {
@@ -59765,6 +63125,12 @@
     2537
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-08-23",
+    "season": 2,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Trying": {
@@ -59853,6 +63219,12 @@
     197449
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-08-26",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Undercover Boss": {
@@ -59959,6 +63331,12 @@
     4277
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-04-08",
+    "season": 11,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Unforgotten": {
@@ -60087,6 +63465,12 @@
     95272
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-02-24",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Unsellable Houses": {
@@ -60203,6 +63587,12 @@
     67392
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-11-27",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Upload": {
@@ -60309,6 +63699,12 @@
     1410
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-08-25",
+    "season": 4,
+    "episode": 4
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Veep": {
@@ -60405,20 +63801,26 @@
     65150,
     296756,
     4483,
+    15907,
     69555,
     61969,
-    15907,
     66573,
     33922,
     4415,
     112211,
+    63,
     1433,
     1772,
     90877,
-    251608,
     76747
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-12",
+    "season": 7,
+    "episode": 7
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Vera": {
@@ -60534,6 +63936,12 @@
     34235
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2025-01-02",
+    "season": 14,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Victoria": {
@@ -60666,6 +64074,12 @@
     2072
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-05-12",
+    "season": 3,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "manual"
   },
   "Vienna Blood": {
@@ -60789,6 +64203,12 @@
     106349
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-08-11",
+    "season": 4,
+    "episode": 2
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Vigil": {
@@ -60874,6 +64294,12 @@
     98657
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-09-14",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": 4,
    "match": "name"
   },
   "Warehouse 13": {
@@ -60969,6 +64395,12 @@
     312693
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-05-19",
+    "season": 5,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Welcome to Wrexham": {
@@ -61088,6 +64520,12 @@
     40971
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-25",
+    "season": 5,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Westworld": {
@@ -61191,6 +64629,12 @@
     241554
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2022-08-14",
+    "season": 4,
+    "episode": 8
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "What We Do in the Shadows": {
@@ -61295,6 +64739,12 @@
     4415
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-12-16",
+    "season": 6,
+    "episode": 11
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "White Collar": {
@@ -61405,6 +64855,12 @@
     4333
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2014-12-18",
+    "season": 6,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Whitstable Pearl": {
@@ -61518,6 +64974,12 @@
     203744
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-11-25",
+    "season": 3,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Widow's Bay": {
@@ -61613,6 +65075,12 @@
     54671
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-06-16",
+    "season": 1,
+    "episode": 10
+   },
+   "announcedSeason": 2,
    "match": "name"
   },
   "Will Trent": {
@@ -61735,6 +65203,12 @@
     39525
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2026-05-05",
+    "season": 4,
+    "episode": 18
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "World on Fire": {
@@ -61848,6 +65322,12 @@
     284558
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-08-20",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Wrecked": {
@@ -61925,6 +65405,12 @@
     66732
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2018-10-02",
+    "season": 3,
+    "episode": 10
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "You're the Worst": {
@@ -62032,6 +65518,12 @@
     81532
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2019-04-03",
+    "season": 5,
+    "episode": 13
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Young Sheldon": {
@@ -62159,6 +65651,12 @@
     1835
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2024-05-16",
+    "season": 7,
+    "episode": 14
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Younger": {
@@ -62289,6 +65787,12 @@
     209727
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-06-10",
+    "season": 7,
+    "episode": 12
+   },
+   "announcedSeason": null,
    "match": "name"
   },
   "Your Home Made Perfect": {
@@ -62370,8 +65874,217 @@
     45669
    ],
    "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-08-22",
+    "season": 4,
+    "episode": 9
+   },
+   "announcedSeason": null,
    "match": "name",
    "castCheck": 1
+  },
+  "WandaVision": {
+   "id": 85271,
+   "name": "WandaVision",
+   "year": "2021",
+   "endYear": "2021",
+   "status": "Ended",
+   "seasons": 1,
+   "episodes": 9,
+   "overview": "Wanda Maximoff and Vision—two super-powered beings living idealized suburban lives—begin to suspect that everything is not as it seems.",
+   "genres": [
+    "Sci-Fi & Fantasy",
+    "Mystery",
+    "Drama"
+   ],
+   "networks": [
+    {
+     "name": "Disney+",
+     "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+    }
+   ],
+   "poster": "/ijWWwINc8h71NQ8j1LTJMFSj5wr.jpg",
+   "backdrop": "/fSCb3lzRbHknuKD7apdH4RYJLkc.jpg",
+   "cast": [
+    "Elizabeth Olsen",
+    "Paul Bettany",
+    "Kathryn Hahn",
+    "Teyonah Parris",
+    "Randall Park",
+    "Kat Dennings",
+    "Selena Anduze",
+    "Josh Stamberg"
+   ],
+   "rating": "TV-14",
+   "imdb": "tt9140560",
+   "providers": {
+    "link": "https://www.themoviedb.org/tv/85271-wandavision/watch?locale=US",
+    "stream": [
+     {
+      "name": "Disney Plus",
+      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+     },
+     {
+      "name": "Hulu",
+      "logo": "/44uAnmSqvA4yBOdbPWN8YgQHjWm.png"
+     }
+    ],
+    "free": [],
+    "ads": [],
+    "buy": [],
+    "rent": []
+   },
+   "country": [
+    "US"
+   ],
+   "language": "en",
+   "keywords": [
+    "artificial intelligence (a.i.)",
+    "witch",
+    "loss of loved one",
+    "magic",
+    "sorcery",
+    "supernatural",
+    "superhero",
+    "based on comic",
+    "grief",
+    "suburbia",
+    "miniseries",
+    "family",
+    "superhero team",
+    "marvel cinematic universe (mcu)",
+    "sitcom",
+    "supervillain",
+    "tv show",
+    "hilarious",
+    "admiring",
+    "bold",
+    "exhilarated"
+   ],
+   "similar": [
+    89572,
+    138501,
+    80986,
+    79611,
+    69629,
+    84958,
+    2883,
+    60735,
+    88396,
+    68716,
+    1606,
+    2603,
+    95057,
+    67466,
+    213375,
+    298505,
+    1449,
+    64432,
+    16399,
+    15741
+   ],
+   "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2021-03-05",
+    "season": 1,
+    "episode": 9
+   },
+   "announcedSeason": null,
+   "match": "manual"
+  },
+  "Loki": {
+   "id": 84958,
+   "name": "Loki",
+   "year": "2021",
+   "endYear": "2023",
+   "status": "Ended",
+   "seasons": 2,
+   "episodes": 12,
+   "overview": "After stealing the Tesseract during the events of “Avengers: Endgame,” an alternate version of Loki is brought to the mysterious Time Variance Authority, a bureaucratic organization that exists outside of time and space and monitors the timeline. They give Loki a choice: face being erased from existence due to being a “time variant” or help fix the timeline and stop a greater threat.",
+   "genres": [
+    "Drama",
+    "Sci-Fi & Fantasy"
+   ],
+   "networks": [
+    {
+     "name": "Disney+",
+     "logo": "/1edZOYAfoyZyZ3rklNSiUpXX30Q.png"
+    }
+   ],
+   "poster": "/kEl2t3OhXc3Zb9FBh1AuYzRTgZp.jpg",
+   "backdrop": "/q3jHCb4dMfYF6ojikKuHd6LscxC.jpg",
+   "cast": [
+    "Tom Hiddleston",
+    "Sophia Di Martino",
+    "Wunmi Mosaku",
+    "Owen Wilson",
+    "Gugu Mbatha-Raw",
+    "Tara Strong",
+    "Eugene Cordero",
+    "Neil Ellice"
+   ],
+   "rating": "TV-14",
+   "imdb": "tt9140554",
+   "providers": {
+    "link": "https://www.themoviedb.org/tv/84958-loki/watch?locale=US",
+    "stream": [
+     {
+      "name": "Disney Plus",
+      "logo": "/5eZ872CghnHFLB1j8grszbrx0dx.png"
+     }
+    ],
+    "free": [],
+    "ads": [],
+    "buy": [],
+    "rent": []
+   },
+   "country": [
+    "US"
+   ],
+   "language": "en",
+   "keywords": [
+    "anti hero",
+    "secret organization",
+    "time",
+    "time travel",
+    "superhero",
+    "based on comic",
+    "spin off",
+    "marvel cinematic universe (mcu)",
+    "alternate timeline",
+    "woman director",
+    "multiverse"
+   ],
+   "similar": [
+    4562,
+    6343,
+    80986,
+    67466,
+    88396,
+    1449,
+    69629,
+    14956,
+    138502,
+    60735,
+    2407,
+    33217,
+    66786,
+    85271,
+    213375,
+    114461,
+    63175,
+    95057,
+    111837,
+    125474
+   ],
+   "nextEpisode": null,
+   "lastEpisode": {
+    "date": "2023-11-09",
+    "season": 2,
+    "episode": 6
+   },
+   "announcedSeason": null,
+   "match": "name"
   }
  }
 }
