@@ -10,14 +10,26 @@
 //   node tools/review.mjs clear "<title>" "<notes>"     reviewed: OK to recommend (notes shown on the show page)
 //   node tools/review.mjs block "<title>" "<reason>"    reviewed: never recommend (still searchable)
 // For You only recommends shows that have been content-reviewed.
+// Every review records content levels (none/mild/moderate/strong) for the show page's colour tags. They're
+// worked out from the note; set any explicitly with --violence= --sex= --language= and --themes="grief,war".
+// Moderate content never blocks a show; strong content only appears in For You when it's a strong match.
+// Reserve reject/block for shows that clearly don't fit at all (e.g. graphic, gratuitous content).
 import fs from 'node:fs';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {levelsFrom, LEVELS} from './lib/levels.mjs';
 
 const FILE = path.join(path.dirname(fileURLToPath(import.meta.url)), '..', 'discoveries.json');
 const disc = JSON.parse(fs.readFileSync(FILE, 'utf8'));
-const [cmd, id, ...rest] = process.argv.slice(2);
+const args = process.argv.slice(2), flags = {};
+for (const a of [...args]) { const m = a.match(/^--(violence|sex|language|themes)=(.*)$/); if (m) { flags[m[1]] = m[2]; args.splice(args.indexOf(a), 1); } }
+for (const k of ['violence', 'sex', 'language']) if (flags[k] && !LEVELS.includes(flags[k])) { console.error(`--${k} must be one of ${LEVELS.join(', ')}`); process.exit(1); }
+const [cmd, id, ...rest] = args;
 const note = rest.join(' ').trim();
+const levels = (text, rating) => { const l = levelsFrom(text, rating);
+  for (const k of ['violence', 'sex', 'language']) if (flags[k]) l[k] = flags[k];
+  if (flags.themes != null) l.themes = flags.themes.split(',').map(x => x.trim()).filter(Boolean);
+  return l; };
 const find = () => Object.entries(disc.shows).find(([, d]) => String(d.tmdb.id) === String(id));
 const save = () => fs.writeFileSync(FILE, JSON.stringify(disc, null, 1) + '\n');
 
@@ -48,7 +60,7 @@ if (cmd === 'list') {
       console.log(`  Keywords: ${x.keywords.join(', ') || 'none'}`);
     }
   } else {
-    guidance.shows[id] = {notes: note, reviewed: new Date().toISOString().slice(0, 10)};
+    guidance.shows[id] = {notes: note, reviewed: new Date().toISOString().slice(0, 10), levels: levels(note, (tmdb[id] || {}).rating)};
     fs.writeFileSync(GF, JSON.stringify(guidance, null, 1) + '\n');
     console.log(`Noted: ${id}`);
   }
@@ -78,7 +90,8 @@ if (cmd === 'list') {
       console.log(`  Keywords: ${x.keywords.join(', ') || 'none'}`);
     }
   } else {
-    guidance.shows[id] = {status: cmd === 'clear' ? 'ok' : 'blocked', notes: note, reviewed: new Date().toISOString().slice(0, 10)};
+    const tm = rd('tmdb.json').shows[id] || {};
+    guidance.shows[id] = {status: cmd === 'clear' ? 'ok' : 'blocked', notes: note, reviewed: new Date().toISOString().slice(0, 10), levels: levels(note, tm.rating)};
     fs.writeFileSync(GF, JSON.stringify(guidance, null, 1) + '\n');
     console.log(`${cmd === 'clear' ? 'Cleared' : 'Blocked'}: ${id}`);
   }
@@ -87,7 +100,7 @@ if (cmd === 'list') {
   if (!hit) { console.error(`No discovered show with TMDB id ${id}.`); process.exit(1); }
   const [title, d] = hit;
   if (cmd === 'ok') {
-    d.guidance = {status: 'ok', notes: note, reviewed: new Date().toISOString().slice(0, 10)};
+    d.guidance = {status: 'ok', notes: note, reviewed: new Date().toISOString().slice(0, 10), levels: levels(note, d.tmdb.rating)};
     console.log(`Approved: ${title}`);
   } else {
     disc.rejected[d.tmdb.id] = {title, reason: note, on: new Date().toISOString().slice(0, 10)};

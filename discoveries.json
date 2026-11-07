@@ -98,7 +98,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Classic BBC car magazine show (pre-2002 era): reviews and road tests, family-friendly, TV-PG. No content concerns.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Natural World": {
@@ -217,7 +224,14 @@
    "guidance": {
     "status": "ok",
     "notes": "BBC flagship nature documentary; calm, educational, TV-PG. Some predator/prey scenes, nothing graphic.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "mild",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Ed Sheeran: The Sum of It All": {
@@ -324,7 +338,18 @@
    "guidance": {
     "status": "ok",
     "notes": "Warm, candid music documentary (TV-14). Heads up: deals openly with grief and a spouse's illness, but the tone is hopeful, not bleak.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [
+      "grief",
+      "illness",
+      "heavy themes"
+     ],
+     "usRating": "TV-14"
+    }
    }
   },
   "Disney Gallery / Star Wars: The Mandalorian": {
@@ -436,7 +461,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Behind-the-scenes series on making The Mandalorian; interviews and roundtables, TV-PG. No content concerns.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Green Wing": {
@@ -572,7 +604,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Surreal, character-led hospital comedy in the vein of Scrubs. Heads up: frequent sexual innuendo and some crude moments; within the family's moderate tolerance.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "mild",
+     "language": "moderate",
+     "themes": [],
+     "usRating": null
+    }
    }
   },
   "Super/Natural": {
@@ -671,7 +710,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Upbeat nature documentary about animals' senses and abilities; TV-PG. No content concerns.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Mysteries at the Museum": {
@@ -853,7 +899,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Light history/curiosities series hosted by Don Wildman; some segments recount historic crimes, told without graphic detail. TV-PG.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "mild",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Monty Python's Flying Circus": {
@@ -1025,7 +1078,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Classic surreal British sketch comedy (TV-14). Heads up: dated innuendo and occasional brief nudity, played for absurdity rather than shock.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "strong",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-14"
+    }
    }
   },
   "Long Way Home": {
@@ -1137,7 +1197,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Easygoing motorcycle travelogue: Ewan McGregor and Charley Boorman ride from Scotland to England through 17 European countries. Heads up: rated TV-14, so expect occasional language.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "moderate",
+     "themes": [],
+     "usRating": "TV-14"
+    }
    }
   },
   "Baseball": {
@@ -1261,7 +1328,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Ken Burns's PBS history of American baseball told through archival photos, film and interviews; TV-PG. Heads up: long, measured archival-style episodes rather than a fast pace.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Doc Martin": {
@@ -1434,7 +1508,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Warm, character-led British comedy-drama about a blunt doctor in a Cornish seaside village. Heads up: TV-14, with some medical scenes (injuries, blood) and a prickly lead.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "mild",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-14"
+    }
    }
   },
   "James May's Cars of the People": {
@@ -1550,7 +1631,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Light BBC history of cars built for ordinary people, from the Beetle to Japanese kei cars, presented by James May. No content concerns found.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": null
+    }
    }
   },
   "Earth at Night in Colour": {
@@ -1654,7 +1742,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Apple TV+ nature series filming animals' nocturnal behaviour in colour with low-light cameras; TV-PG. Some predator–prey moments typical of nature documentaries, nothing graphic noted.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "mild",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-PG"
+    }
    }
   },
   "Anne with an E": {
@@ -1788,7 +1883,14 @@
    "guidance": {
     "status": "ok",
     "notes": "Heartfelt TV-G period drama about an imaginative orphan finding a family on Prince Edward Island. Heads up: deals with Anne's abusive past and bullying, mostly through memories, with an overall hopeful tone.",
-    "reviewed": "2026-11-07"
+    "reviewed": "2026-11-07",
+    "levels": {
+     "violence": "none",
+     "sex": "none",
+     "language": "none",
+     "themes": [],
+     "usRating": "TV-G"
+    }
    }
   }
  },
