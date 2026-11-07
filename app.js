@@ -58,6 +58,7 @@ function rail(list,extra){return `<div class="grid rail">${list.map(s=>card(s,ex
 function gridOf(list,extra){return `<div class="grid">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
 
 // ── For You: ranked by the Taste Profile ──
+function firstSentence(t){const m=String(t).match(/^.{20,220}?[.!?](?=\s|$)/);return m?m[0]:String(t).slice(0,200)+(String(t).length>200?"…":"")}
 function renderHome(){
  const all=allShows().filter(s=>!PREVIEW.has(s.title)),profile=buildProfile(all),ranked=rankedCandidates(all,profile),seen=new Set();
  const take=(list,n)=>{const out=list.filter(x=>!seen.has(x.s.title)).slice(0,n);out.forEach(x=>seen.add(x.s.title));return out.map(x=>x.s)};
@@ -66,7 +67,7 @@ function renderHome(){
   const {s:f,m}=ranked[0];seen.add(f.title);
   const [c1,c2]=art(f.title),ft=tm(f.title)||{},bd=img(ft.backdrop,"w1280");
   const meta=[ft.genres&&ft.genres[0],COUNTRY_NAMES[(ft.country||[])[0]],(ft.networks||[])[0]&&ft.networks[0].name].filter(Boolean);
-  html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Top match for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top match</span>${meta.map(x=>`<span class="dot">·</span><span>${esc(x)}</span>`).join("")}</div><p>${esc(whyText(m)||ft.overview||"")}</p>${REC_ACTIONS}</section>`;
+  html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Top match for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top match</span>${meta.map(x=>`<span class="dot">·</span><span>${esc(x)}</span>`).join("")}</div>${ft.overview?`<p class="spot-about">${esc(firstSentence(ft.overview))}</p>`:""}${whyText(m)?`<p class="spot-why"><strong>Why it's your top match</strong>${esc(whyText(m))}</p>`:""}${REC_ACTIONS}</section>`;
  }else html=`<section class="hero"><div class="hero-content"><div class="eyebrow">Picked for the Swords family</div><h2>You've seen everything here.</h2><p>New matches will appear as more shows are added.</p></div></section>`;
  const finds=take(ranked.filter(x=>DISCOVERED[x.s.title]),12);
  if(finds.length)html+=heading("New finds for you")+recRail(finds);
