@@ -409,3 +409,52 @@ body.sheet-open{position:fixed;left:0;right:0;overflow:hidden}
 .modal{max-height:88vh;max-height:88dvh;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch}
 @media(max-width:650px){.modal{max-height:92vh;max-height:calc(100dvh - 24px);padding-bottom:calc(env(safe-area-inset-bottom) + 22px)}}
 .modal-actions{position:sticky;bottom:-22px;background:var(--panel);padding:10px 0 4px;margin-bottom:-4px}
+
+/* ── Header: one compact bar, playful wordmark ── */
+.subbar{display:none}
+.top{justify-content:space-between;align-items:center;gap:10px;padding:calc(env(safe-area-inset-top) + 6px) max(14px,env(safe-area-inset-right)) 8px max(14px,env(safe-area-inset-left))}
+.brand{gap:clamp(6px,1.5vw,10px);min-width:0}
+.mark-img{width:clamp(40px,10vw,54px);height:clamp(40px,10vw,54px);transform:rotate(-8deg);transition:transform .3s}
+.brand:hover .mark-img{transform:rotate(4deg) scale(1.05)}
+.brand h1.wordmark{font-size:clamp(28px,7.2vw,42px);align-items:flex-end}
+.wordmark span{animation:hop .7s cubic-bezier(.3,1.6,.5,1) both;animation-delay:calc(var(--i) * 70ms)}
+.wordmark span:nth-child(1){font-size:1.28em;line-height:.9;margin-right:1px;transform:rotate(-10deg)}
+@keyframes hop{0%{opacity:0;translate:0 -14px}60%{opacity:1;translate:0 3px}100%{translate:0 0}}
+@media (prefers-reduced-motion:reduce){.wordmark span{animation:none}}
+.top-tools{display:flex;align-items:center;gap:8px;flex:0 0 auto}
+.search-btn{position:static;width:clamp(38px,9.5vw,44px);height:clamp(38px,9.5vw,44px)}
+.sync-btn{border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.06);color:#e9ebef;border-radius:999px;padding:6px 11px;font-size:12px;font-weight:700;white-space:nowrap}
+.sync-btn.signed-in{border-color:#4cc38a;color:#bff0d2}
+.sync-btn.signed-in::before{content:"";display:inline-block;width:7px;height:7px;border-radius:50%;background:#4cc38a;margin-right:6px;vertical-align:1px}
+.backup-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.backup-actions .btn{flex:1 1 160px}
+
+/* ── Proportional sizing across phones and tablets, portrait and landscape ── */
+.shell{padding-left:max(clamp(14px,3vw,28px),env(safe-area-inset-left));padding-right:max(clamp(14px,3vw,28px),env(safe-area-inset-right))}
+.grid.rail{margin-left:calc(-1 * max(clamp(14px,3vw,28px),env(safe-area-inset-left)));margin-right:calc(-1 * max(clamp(14px,3vw,28px),env(safe-area-inset-right)));padding-left:max(clamp(14px,3vw,28px),env(safe-area-inset-left));padding-right:max(clamp(14px,3vw,28px),env(safe-area-inset-right))}
+.grid.rail>.show{flex-basis:clamp(128px,28vw,190px)}
+.nav{padding-left:max(8px,env(safe-area-inset-left));padding-right:max(8px,env(safe-area-inset-right))}
+/* Tablets */
+@media (min-width:768px){
+ .grid{grid-template-columns:repeat(auto-fill,minmax(170px,1fr))}
+ .nav button{flex-basis:140px;font-size:12px}
+ .modal{width:min(560px,92vw)}
+}
+/* Phones in landscape: short screens get a slimmer header and tab bar */
+@media (orientation:landscape) and (max-height:520px){
+ .top{padding-top:calc(env(safe-area-inset-top) + 4px);padding-bottom:4px}
+ .mark-img{width:34px;height:34px}
+ .brand h1.wordmark{font-size:26px}
+ .search-btn{width:34px;height:34px}
+ .nav{padding-top:3px;padding-bottom:calc(env(safe-area-inset-bottom) + 3px)}
+ .nav button{flex-direction:row;gap:6px;padding:5px 8px}
+ .nav svg{width:18px;height:18px}
+ .shell{padding-bottom:70px}
+ .spotlight,.detail-hero{min-height:0}
+ .spotlight.has-bd{min-height:220px}
+ .grid.rail>.show{flex-basis:clamp(120px,18vw,170px)}
+ .welcome-mascot{width:40px;height:40px}
+ .hero.welcome .eyebrow,.hero.welcome p{display:none}
+ .modal-bg{align-items:center;padding:8px}
+ .modal{max-height:calc(100dvh - 16px);border-radius:18px}
+}

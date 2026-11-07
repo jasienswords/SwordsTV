@@ -193,6 +193,7 @@ function renderProfile(){
   +(()=>{const ins=buildInsights(allShows());return ins.length?`<div class="card insights"><h3 class="card-title">Insights on Your Taste Profile</h3><p class="muted">What your ratings say about why shows resonate with you (or don’t). Updates as you rate.</p>${ins.map(i=>`<div class="insight"><strong>${esc(i.title)}</strong><p>${esc(i.text)}</p>${i.examples&&i.examples.length?`<div class="service-row">${i.examples.map(t=>`<span class="pill" data-title="${esc(t)}">${esc(t)}</span>`).join("")}</div>`:""}</div>`).join("")}</div>`:""})()
   +(()=>{const hidden=allShows().filter(s=>s.dismissed||(s.snoozeUntil||0)>Date.now());return hidden.length?`<details class="card"><summary><strong>Hidden from For You (${hidden.length})</strong></summary>${hidden.map(s=>`<div class="hidden-row"><span>${esc(s.title)}<small>${s.dismissed?"Not interested":"Later · until "+new Date(s.snoozeUntil).toLocaleDateString("en-US",{month:"short",day:"numeric"})}</small></span><button class="btn" data-unhide="${esc(s.title)}">Show again</button></div>`).join("")}</details>`:""})()
   +renderStreamingInsights()
+  +`<div class="card"><h3 class="card-title">Backup</h3><p class="muted">Ratings sync automatically for the family. You can also save a copy to a file, or restore one.</p><div class="backup-actions"><button class="btn" id="exportBtn">Export a backup</button><button class="btn" id="importBtn">Import a backup</button></div></div>`
   +`<div class="note">To install on iPhone: open Queuey in Safari, tap Share, then Add to Home Screen.</div>`;
 }
 
@@ -344,10 +345,11 @@ document.getElementById("rateForm").onsubmit=e=>{e.preventDefault();const w=RATE
 document.getElementById("cancelRate").onclick=()=>hideSheet();
 document.getElementById("nav").onclick=e=>{let b=e.target.closest("button[data-view]");if(!b)return;currentView=b.dataset.view;document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x===b));render();window.scrollTo(0,0)};
 document.getElementById("browseBtn").onclick=()=>{currentView="library";document.querySelectorAll(".nav button").forEach(x=>x.classList.toggle("active",x.dataset.view==="library"));render();window.scrollTo(0,0)};
-document.getElementById("exportBtn").onclick=()=>{let backup={project:DATA.project,changes,roundHistory:DATA.roundHistory,subscriptions:JSON.parse(localStorage.getItem(SUBS_KEY)||"{}")};let blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Queuey-backup.json";a.click();URL.revokeObjectURL(a.href)};
+const doExport=()=>{let backup={project:DATA.project,changes,roundHistory:DATA.roundHistory,subscriptions:JSON.parse(localStorage.getItem(SUBS_KEY)||"{}")};let blob=new Blob([JSON.stringify(backup,null,2)],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="Queuey-backup.json";a.click();URL.revokeObjectURL(a.href)};
 document.getElementById("syncBtn").onclick=()=>syncSignIn();
 document.getElementById("searchBtn").onclick=()=>openSearch();
-document.getElementById("importBtn").onclick=()=>document.getElementById("importFile").click();
+// Export / Import live in the Backup card on Taste Profile.
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.id==="exportBtn")doExport();if(b.id==="importBtn")document.getElementById("importFile").click()});
 document.getElementById("importFile").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(d.changes){changes={...changes,...Object.fromEntries(Object.entries(d.changes).map(([k,v])=>[k,{...v,_t:Date.now()}]))};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();if(d.subscriptions)localStorage.setItem(SUBS_KEY,JSON.stringify(d.subscriptions));toast("Backup imported");render()}else toast("That file is not a Queuey backup")}catch{toast("Could not read backup file")}};
 function showLoadError(){document.getElementById("main").innerHTML='<div class="empty">Queuey couldn\'t load its show data. Check your connection and reload the page.</div>'}
 function loadJSON(url){return fetch(url,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(url+" "+r.status);return r.json()})}
