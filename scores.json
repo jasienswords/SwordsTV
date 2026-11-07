@@ -1,0 +1,8035 @@
+{
+ "source": "IMDb ratings from the IMDb datasets (personal, non-commercial use); Rotten Tomatoes and Metacritic scores read from each show's page.",
+ "checked": "November 7, 2026",
+ "shows": {
+  "Black Ops": {
+   "imdb": {
+    "id": "tt15296862",
+    "rating": 6.5,
+    "votes": 1065
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/black_ops"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 4,
+    "url": "https://www.metacritic.com/tv/black-ops/"
+   }
+  },
+  "Brothers": {
+   "imdb": {
+    "id": "tt6773088",
+    "rating": 6.2,
+    "votes": 4162
+   },
+   "rt": {
+    "critics": 56,
+    "audience": 59,
+    "reviews": 43,
+    "url": "https://www.rottentomatoes.com/tv/brothers_2026"
+   },
+   "metascore": {
+    "score": 52,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/brothers-2026/"
+   }
+  },
+  "Counterpart": {
+   "imdb": {
+    "id": "tt4643084",
+    "rating": 8,
+    "votes": 35407
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 85,
+    "reviews": 72,
+    "url": "https://www.rottentomatoes.com/tv/counterpart"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 22,
+    "url": "https://www.metacritic.com/tv/counterpart/"
+   }
+  },
+  "Dark Matter": {
+   "imdb": {
+    "id": "tt19231492",
+    "rating": 7.6,
+    "votes": 86521
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 81,
+    "reviews": 87,
+    "url": "https://www.rottentomatoes.com/tv/dark_matter_2024"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/dark-matter-2024/"
+   }
+  },
+  "Defiance": {
+   "imdb": {
+    "id": "tt2189221",
+    "rating": 7,
+    "votes": 47162
+   },
+   "rt": {
+    "critics": 77,
+    "audience": 85,
+    "reviews": 38,
+    "url": "https://www.rottentomatoes.com/tv/defiance"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 20,
+    "url": "https://www.metacritic.com/tv/defiance/"
+   }
+  },
+  "Difficult People": {
+   "imdb": {
+    "id": "tt4676574",
+    "rating": 7.2,
+    "votes": 5000
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 83,
+    "reviews": 56,
+    "url": "https://www.rottentomatoes.com/tv/difficult_people"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 24,
+    "url": "https://www.metacritic.com/tv/difficult-people/"
+   }
+  },
+  "Don't Trust the B---- in Apartment 23": {
+   "imdb": {
+    "id": "tt1819509",
+    "rating": 7.3,
+    "votes": 43104
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 84,
+    "reviews": 53,
+    "url": "https://www.rottentomatoes.com/tv/don-t-trust-the-b-in-apartment-23"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 32,
+    "url": "https://www.metacritic.com/tv/dont-trust-the-b-----in-apartment-23/"
+   }
+  },
+  "Enlightened": {
+   "imdb": {
+    "id": "tt1509004",
+    "rating": 7.5,
+    "votes": 11721
+   },
+   "rt": {
+    "critics": 87,
+    "audience": 87,
+    "reviews": 52,
+    "url": "https://www.rottentomatoes.com/tv/enlightened"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/enlightened/"
+   }
+  },
+  "ER (later seasons)": {
+   "imdb": {
+    "id": "tt0108757",
+    "rating": 7.9,
+    "votes": 81234
+   },
+   "rt": {
+    "critics": null,
+    "audience": 88,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/er"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/er/"
+   }
+  },
+  "Eureka": {
+   "imdb": {
+    "id": "tt0796264",
+    "rating": 7.9,
+    "votes": 62450
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 90,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/eureka"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 46,
+    "url": "https://www.metacritic.com/tv/eureka/"
+   }
+  },
+  "Expedition Unknown": {
+   "imdb": {
+    "id": "tt4305162",
+    "rating": 8.2,
+    "votes": 4787
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/expedition_unknown"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Extras": {
+   "imdb": {
+    "id": "tt0445114",
+    "rating": 8.3,
+    "votes": 64230
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 92,
+    "reviews": 86,
+    "url": "https://www.rottentomatoes.com/tv/extras"
+   },
+   "metascore": {
+    "score": 83,
+    "reviews": 50,
+    "url": "https://www.metacritic.com/tv/extras/"
+   }
+  },
+  "Falling Skies": {
+   "imdb": {
+    "id": "tt1462059",
+    "rating": 7.1,
+    "votes": 100101
+   },
+   "rt": {
+    "critics": null,
+    "audience": 68,
+    "reviews": null,
+    "url": "https://www.rottentomatoes.com/tv/falling_skies"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 43,
+    "url": "https://www.metacritic.com/tv/falling-skies/"
+   }
+  },
+  "Fargo": {
+   "imdb": {
+    "id": "tt2802850",
+    "rating": 8.8,
+    "votes": 478059
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 85,
+    "reviews": 304,
+    "url": "https://www.rottentomatoes.com/tv/fargo"
+   },
+   "metascore": {
+    "score": 84,
+    "reviews": 176,
+    "url": "https://www.metacritic.com/tv/fargo/"
+   }
+  },
+  "Farmhouse Fixer": {
+   "imdb": {
+    "id": "tt9426360",
+    "rating": 8.2,
+    "votes": 495
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/farmhouse_fixer"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Farmhouse Fixer: Camp Revamp": {
+   "imdb": {
+    "id": "tt32756286",
+    "rating": 7.6,
+    "votes": 87
+   },
+   "rt": {
+    "critics": null,
+    "audience": 80,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/farmhouse_fixer_camp_revamp"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Feel Good": {
+   "imdb": {
+    "id": "tt10098620",
+    "rating": 7.5,
+    "votes": 15554
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 89,
+    "reviews": 65,
+    "url": "https://www.rottentomatoes.com/tv/feel_good"
+   },
+   "metascore": {
+    "score": 84,
+    "reviews": 22,
+    "url": "https://www.metacritic.com/tv/feel-good-2020/"
+   }
+  },
+  "Fellow Travelers": {
+   "imdb": {
+    "id": "tt15384586",
+    "rating": 8.2,
+    "votes": 19335
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 87,
+    "reviews": 46,
+    "url": "https://www.rottentomatoes.com/tv/fellow_travelers"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/fellow-travelers/"
+   }
+  },
+  "Firefly": {
+   "imdb": {
+    "id": "tt0303461",
+    "rating": 8.9,
+    "votes": 305528
+   },
+   "rt": {
+    "critics": 77,
+    "audience": 96,
+    "reviews": 43,
+    "url": "https://www.rottentomatoes.com/tv/firefly"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/firefly/"
+   }
+  },
+  "Fixer to Fabulous": {
+   "imdb": {
+    "id": "tt12226680",
+    "rating": 8,
+    "votes": 689
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/diamond_in_the_rough"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Fixer to Fabulous: Italiano": {
+   "imdb": {
+    "id": "tt27953349",
+    "rating": 6.5,
+    "votes": 109
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Fixer Upper": {
+   "imdb": {
+    "id": "tt4591390",
+    "rating": 8.1,
+    "votes": 3752
+   },
+   "rt": {
+    "critics": null,
+    "audience": 83,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/fixer_upper"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Fleabag": {
+   "imdb": {
+    "id": "tt5687612",
+    "rating": 8.7,
+    "votes": 256028
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 92,
+    "reviews": 141,
+    "url": "https://www.rottentomatoes.com/tv/fleabag"
+   },
+   "metascore": {
+    "score": 92,
+    "reviews": 40,
+    "url": "https://www.metacritic.com/tv/fleabag/"
+   }
+  },
+  "For All Mankind": {
+   "imdb": {
+    "id": "tt7772588",
+    "rating": 8.1,
+    "votes": 94726
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 75,
+    "reviews": 168,
+    "url": "https://www.rottentomatoes.com/tv/for_all_mankind"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 64,
+    "url": "https://www.metacritic.com/tv/for-all-mankind/"
+   }
+  },
+  "Forged in Fire": {
+   "imdb": {
+    "id": "tt4680444",
+    "rating": 8.2,
+    "votes": 5147
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/forged_in_fire"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Formula 1: Drive to Survive": {
+   "imdb": {
+    "id": "tt8289930",
+    "rating": 8.4,
+    "votes": 61076
+   },
+   "rt": {
+    "critics": null,
+    "audience": 60,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/formula_1_drive_to_survive"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/formula-1-drive-to-survive/"
+   }
+  },
+  "Foundation": {
+   "imdb": {
+    "id": "tt0804484",
+    "rating": 7.6,
+    "votes": 130290
+   },
+   "rt": {
+    "critics": 87,
+    "audience": 73,
+    "reviews": 137,
+    "url": "https://www.rottentomatoes.com/tv/foundation"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 40,
+    "url": "https://www.metacritic.com/tv/foundation/"
+   }
+  },
+  "Foyle's War": {
+   "imdb": {
+    "id": "tt0310455",
+    "rating": 8.6,
+    "votes": 21757
+   },
+   "rt": {
+    "critics": null,
+    "audience": 96,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/foyles_war"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 4,
+    "url": "https://www.metacritic.com/tv/foyles-war/"
+   }
+  },
+  "Fresh Off the Boat": {
+   "imdb": {
+    "id": "tt3551096",
+    "rating": 7.7,
+    "votes": 32945
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 80,
+    "reviews": 81,
+    "url": "https://www.rottentomatoes.com/tv/fresh_off_the_boat"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/fresh-off-the-boat/"
+   }
+  },
+  "Friday Night Dinner": {
+   "imdb": {
+    "id": "tt1844923",
+    "rating": 8.2,
+    "votes": 26805
+   },
+   "rt": {
+    "critics": null,
+    "audience": 90,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/friday_night_dinner"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/friday-night-dinner/"
+   }
+  },
+  "Friday Night Lights": {
+   "imdb": {
+    "id": "tt0758745",
+    "rating": 8.7,
+    "votes": 81090
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 93,
+    "reviews": 129,
+    "url": "https://www.rottentomatoes.com/tv/friday-night-lights"
+   },
+   "metascore": {
+    "score": 83,
+    "reviews": 88,
+    "url": "https://www.metacritic.com/tv/friday-night-lights/"
+   }
+  },
+  "Fringe": {
+   "imdb": {
+    "id": "tt1119644",
+    "rating": 8.4,
+    "votes": 273580
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 81,
+    "reviews": 87,
+    "url": "https://www.rottentomatoes.com/tv/fringe"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 47,
+    "url": "https://www.metacritic.com/tv/fringe/"
+   }
+  },
+  "Game of Thrones": {
+   "imdb": {
+    "id": "tt0944947",
+    "rating": 9.2,
+    "votes": 2681806
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 85,
+    "reviews": 339,
+    "url": "https://www.rottentomatoes.com/tv/game_of_thrones"
+   },
+   "metascore": {
+    "score": 86,
+    "reviews": 171,
+    "url": "https://www.metacritic.com/tv/game-of-thrones/"
+   }
+  },
+  "Gavin & Stacey": {
+   "imdb": {
+    "id": "tt0908454",
+    "rating": 8.2,
+    "votes": 28774
+   },
+   "rt": {
+    "critics": 98,
+    "audience": 91,
+    "reviews": 27,
+    "url": "https://www.rottentomatoes.com/tv/gavin_and_stacey"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/gavin-and-stacey/"
+   }
+  },
+  "George Clarke's Amazing Spaces": {
+   "imdb": {
+    "id": "tt3321546",
+    "rating": 7.6,
+    "votes": 340
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/george_clarkes_amazing_spaces"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Ghosts (Australia)": {
+   "imdb": {
+    "id": "tt11379026",
+    "rating": 7.9,
+    "votes": 53697
+   },
+   "rt": {
+    "critics": null,
+    "audience": 87,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/ghosts_2021"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/ghosts-2021/"
+   }
+  },
+  "Ghosts (UK)": {
+   "imdb": {
+    "id": "tt8594324",
+    "rating": 8.4,
+    "votes": 34672
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 91,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/ghosts"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/ghosts/"
+   }
+  },
+  "Ghosts (US)": {
+   "imdb": {
+    "id": "tt11379026",
+    "rating": 7.9,
+    "votes": 53697
+   },
+   "rt": {
+    "critics": null,
+    "audience": 87,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/ghosts_2021"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/ghosts-2021/"
+   }
+  },
+  "Gilmore Girls": {
+   "imdb": {
+    "id": "tt0238784",
+    "rating": 8.2,
+    "votes": 179637
+   },
+   "rt": {
+    "critics": null,
+    "audience": 87,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/gilmore-girls"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 55,
+    "url": "https://www.metacritic.com/tv/gilmore-girls/"
+   }
+  },
+  "Goliath": {
+   "imdb": {
+    "id": "tt4687880",
+    "rating": 8.1,
+    "votes": 65194
+   },
+   "rt": {
+    "critics": 86,
+    "audience": 70,
+    "reviews": 55,
+    "url": "https://www.rottentomatoes.com/tv/goliath"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/goliath/"
+   }
+  },
+  "Gordon Ramsay: Uncharted": {
+   "imdb": {
+    "id": "tt9165706",
+    "rating": 7.7,
+    "votes": 2163
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Grace and Frankie": {
+   "imdb": {
+    "id": "tt3609352",
+    "rating": 8.2,
+    "votes": 62918
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 87,
+    "reviews": 95,
+    "url": "https://www.rottentomatoes.com/tv/grace_and_frankie"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 38,
+    "url": "https://www.metacritic.com/tv/grace-and-frankie/"
+   }
+  },
+  "Grand Designs Australia": {
+   "imdb": {
+    "id": "tt1677691",
+    "rating": 7.2,
+    "votes": 403
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Grantchester": {
+   "imdb": {
+    "id": "tt3747572",
+    "rating": 7.9,
+    "votes": 21202
+   },
+   "rt": {
+    "critics": null,
+    "audience": 79,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/grantchester"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 22,
+    "url": "https://www.metacritic.com/tv/grantchester/"
+   }
+  },
+  "Great News": {
+   "imdb": {
+    "id": "tt4955480",
+    "rating": 7,
+    "votes": 8920
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 74,
+    "reviews": 46,
+    "url": "https://www.rottentomatoes.com/tv/great_news"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/great-news/"
+   }
+  },
+  "Hacks": {
+   "imdb": {
+    "id": "tt11815682",
+    "rating": 8.3,
+    "votes": 71627
+   },
+   "rt": {
+    "critics": 98,
+    "audience": 86,
+    "reviews": 258,
+    "url": "https://www.rottentomatoes.com/tv/hacks"
+   },
+   "metascore": {
+    "score": 87,
+    "reviews": 106,
+    "url": "https://www.metacritic.com/tv/hacks/"
+   }
+  },
+  "Halt and Catch Fire": {
+   "imdb": {
+    "id": "tt2543312",
+    "rating": 8.4,
+    "votes": 39144
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 91,
+    "reviews": 121,
+    "url": "https://www.rottentomatoes.com/tv/halt_and_catch_fire"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 59,
+    "url": "https://www.metacritic.com/tv/halt-and-catch-fire/"
+   }
+  },
+  "Happy Endings": {
+   "imdb": {
+    "id": "tt1587678",
+    "rating": 7.8,
+    "votes": 41969
+   },
+   "rt": {
+    "critics": 76,
+    "audience": 85,
+    "reviews": 51,
+    "url": "https://www.rottentomatoes.com/tv/happy-endings"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/happy-endings/"
+   }
+  },
+  "Happy Valley": {
+   "imdb": {
+    "id": "tt3428912",
+    "rating": 8.5,
+    "votes": 75581
+   },
+   "rt": {
+    "critics": 98,
+    "audience": 94,
+    "reviews": 91,
+    "url": "https://www.rottentomatoes.com/tv/happy_valley"
+   },
+   "metascore": {
+    "score": 87,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/happy-valley/"
+   }
+  },
+  "Harry Wild": {
+   "imdb": {
+    "id": "tt14527610",
+    "rating": 7.2,
+    "votes": 6116
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/harry_wild"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/harry-wild/"
+   }
+  },
+  "Hawaii Five-0": {
+   "imdb": {
+    "id": "tt1600194",
+    "rating": 7.4,
+    "votes": 84566
+   },
+   "rt": {
+    "critics": null,
+    "audience": 73,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/hawaii_five_0"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/hawaii-five-0/"
+   }
+  },
+  "Help! I Wrecked My House": {
+   "imdb": {
+    "id": "tt12867784",
+    "rating": 7.6,
+    "votes": 330
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/help_i_wrecked_my_house"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Here We Go": {
+   "imdb": {
+    "id": "tt13684264",
+    "rating": 7.5,
+    "votes": 3463
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/here_we_go"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/here-we-go/"
+   }
+  },
+  "High Potential": {
+   "imdb": {
+    "id": "tt22091076",
+    "rating": 7.5,
+    "votes": 55391
+   },
+   "rt": {
+    "critics": 98,
+    "audience": 78,
+    "reviews": 32,
+    "url": "https://www.rottentomatoes.com/tv/high_potential"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 22,
+    "url": "https://www.metacritic.com/tv/high-potential/"
+   }
+  },
+  "His Dark Materials": {
+   "imdb": {
+    "id": "tt5607976",
+    "rating": 7.7,
+    "votes": 96327
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 82,
+    "reviews": 151,
+    "url": "https://www.rottentomatoes.com/tv/his_dark_materials"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 38,
+    "url": "https://www.metacritic.com/tv/his-dark-materials/"
+   }
+  },
+  "Home Economics": {
+   "imdb": {
+    "id": "tt9214684",
+    "rating": 7,
+    "votes": 7274
+   },
+   "rt": {
+    "critics": null,
+    "audience": 80,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/home_economics"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 6,
+    "url": "https://www.metacritic.com/tv/home-economics/"
+   }
+  },
+  "Home Town Takeover": {
+   "imdb": {
+    "id": "tt13081914",
+    "rating": 7.1,
+    "votes": 152
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/home_town_takeover"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Home Town: Ben's Workshop": {
+   "imdb": {
+    "id": "tt13613526",
+    "rating": 8.3,
+    "votes": 38
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/home_town_bens_workshop"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Hotel Portofino": {
+   "imdb": {
+    "id": "tt14815774",
+    "rating": 6.9,
+    "votes": 4168
+   },
+   "rt": {
+    "critics": null,
+    "audience": 58,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/hotel_portofino"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/hotel-portofino/"
+   }
+  },
+  "House": {
+   "imdb": {
+    "id": "tt0412142",
+    "rating": 8.7,
+    "votes": 603556
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 95,
+    "reviews": 81,
+    "url": "https://www.rottentomatoes.com/tv/house"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 50,
+    "url": "https://www.metacritic.com/tv/house/"
+   }
+  },
+  "House of Lies": {
+   "imdb": {
+    "id": "tt1797404",
+    "rating": 7.4,
+    "votes": 27841
+   },
+   "rt": {
+    "critics": null,
+    "audience": 83,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/house_of_lies"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/house-of-lies/"
+   }
+  },
+  "How I Met Your Mother": {
+   "imdb": {
+    "id": "tt0460649",
+    "rating": 8.3,
+    "votes": 792847
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 84,
+    "reviews": 83,
+    "url": "https://www.rottentomatoes.com/tv/how_i_met_your_mother"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 46,
+    "url": "https://www.metacritic.com/tv/how-i-met-your-mother/"
+   }
+  },
+  "Indian Summers": {
+   "imdb": {
+    "id": "tt3706628",
+    "rating": 7.3,
+    "votes": 4905
+   },
+   "rt": {
+    "critics": 79,
+    "audience": 90,
+    "reviews": 19,
+    "url": "https://www.rottentomatoes.com/tv/indian_summers"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/indian-summers/"
+   }
+  },
+  "Inspector George Gently": {
+   "imdb": {
+    "id": "tt1430509",
+    "rating": 8.1,
+    "votes": 10127
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/inspector-george-gently"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/inspector-george-gently/"
+   }
+  },
+  "Instant Dream Home": {
+   "imdb": {
+    "id": "tt21107788",
+    "rating": 6.4,
+    "votes": 1390
+   },
+   "rt": {
+    "critics": null,
+    "audience": 49,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/instant_dream_home"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Instant Hotel": {
+   "imdb": {
+    "id": "tt9316032",
+    "rating": 7.3,
+    "votes": 1703
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 67,
+    "reviews": 5,
+    "url": "https://www.rottentomatoes.com/tv/instant_hotel"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Interior Design Masters": {
+   "imdb": {
+    "id": "tt8367694",
+    "rating": 6.5,
+    "votes": 1951
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/interior_design_masters"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "James May: Our Man in Italy": {
+   "imdb": {
+    "id": "tt11302324",
+    "rating": 8.2,
+    "votes": 9897
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/james-may-our-man-in/"
+   }
+  },
+  "James May: Our Man in Japan": {
+   "imdb": {
+    "id": "tt11302324",
+    "rating": 8.2,
+    "votes": 9897
+   },
+   "rt": {
+    "critics": null,
+    "audience": 100,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/james_may_our_man_in_japan"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/james-may-our-man-in/"
+   }
+  },
+  "Jamestown": {
+   "imdb": {
+    "id": "tt5650650",
+    "rating": 6.9,
+    "votes": 6542
+   },
+   "rt": {
+    "critics": null,
+    "audience": 57,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/jamestown"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Jury Duty": {
+   "imdb": {
+    "id": "tt22074164",
+    "rating": 8.2,
+    "votes": 58123
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 96,
+    "reviews": 37,
+    "url": "https://www.rottentomatoes.com/tv/jury_duty"
+   },
+   "metascore": {
+    "score": 62,
+    "reviews": 22,
+    "url": "https://www.metacritic.com/tv/jury-duty-2023/"
+   }
+  },
+  "Justified": {
+   "imdb": {
+    "id": "tt1489428",
+    "rating": 8.6,
+    "votes": 133410
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 95,
+    "reviews": 182,
+    "url": "https://www.rottentomatoes.com/tv/justified"
+   },
+   "metascore": {
+    "score": 86,
+    "reviews": 92,
+    "url": "https://www.metacritic.com/tv/justified/"
+   }
+  },
+  "Karen Pirie": {
+   "imdb": {
+    "id": "tt11725900",
+    "rating": 7.6,
+    "votes": 15146
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 84,
+    "reviews": 21,
+    "url": "https://www.rottentomatoes.com/tv/karen_pirie"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/karen-pirie/"
+   }
+  },
+  "Killjoys": {
+   "imdb": {
+    "id": "tt3952222",
+    "rating": 7.2,
+    "votes": 25076
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 90,
+    "reviews": 34,
+    "url": "https://www.rottentomatoes.com/tv/killjoys"
+   },
+   "metascore": {
+    "score": 53,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/killjoys/"
+   }
+  },
+  "Kim's Convenience": {
+   "imdb": {
+    "id": "tt5912064",
+    "rating": 8.2,
+    "votes": 29531
+   },
+   "rt": {
+    "critics": null,
+    "audience": 86,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/kims_convenience"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Last Man Standing": {
+   "imdb": {
+    "id": "tt1828327",
+    "rating": 7.5,
+    "votes": 40900
+   },
+   "rt": {
+    "critics": null,
+    "audience": 80,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/last_man_standing"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Law & Order: SVU": {
+   "imdb": {
+    "id": "tt0203259",
+    "rating": 8.1,
+    "votes": 148966
+   },
+   "rt": {
+    "critics": null,
+    "audience": 84,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/law_and_order_special_victims_unit"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Lessons in Chemistry": {
+   "imdb": {
+    "id": "tt13911628",
+    "rating": 8.2,
+    "votes": 56950
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 83,
+    "reviews": 71,
+    "url": "https://www.rottentomatoes.com/tv/lessons_in_chemistry"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/lessons-in-chemistry/"
+   }
+  },
+  "Life in Pieces": {
+   "imdb": {
+    "id": "tt4384086",
+    "rating": 8,
+    "votes": 19583
+   },
+   "rt": {
+    "critics": null,
+    "audience": 84,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/life_in_pieces"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/life-in-pieces/"
+   }
+  },
+  "Locke & Key": {
+   "imdb": {
+    "id": "tt3007572",
+    "rating": 7.3,
+    "votes": 110179
+   },
+   "rt": {
+    "critics": 68,
+    "audience": 56,
+    "reviews": 84,
+    "url": "https://www.rottentomatoes.com/tv/locke_and_key"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/locke-key/"
+   }
+  },
+  "Long Way Down": {
+   "imdb": {
+    "id": "tt0959858",
+    "rating": 8.3,
+    "votes": 7651
+   },
+   "rt": {
+    "critics": null,
+    "audience": 94,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/long_way_down"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/long-way-down/"
+   }
+  },
+  "Long Way Round": {
+   "imdb": {
+    "id": "tt0403778",
+    "rating": 8.6,
+    "votes": 17473
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/long-way-round/"
+   }
+  },
+  "Long Way Up": {
+   "imdb": {
+    "id": "tt12824922",
+    "rating": 8.2,
+    "votes": 6242
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 79,
+    "reviews": 5,
+    "url": "https://www.rottentomatoes.com/tv/long_way_up"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/long-way-up/"
+   }
+  },
+  "Longmire": {
+   "imdb": {
+    "id": "tt1836037",
+    "rating": 8.3,
+    "votes": 44578
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 92,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/longmire"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 21,
+    "url": "https://www.metacritic.com/tv/longmire/"
+   }
+  },
+  "Loot": {
+   "imdb": {
+    "id": "tt14271498",
+    "rating": 6.9,
+    "votes": 18332
+   },
+   "rt": {
+    "critics": 82,
+    "audience": 65,
+    "reviews": 68,
+    "url": "https://www.rottentomatoes.com/tv/loot"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/loot/"
+   }
+  },
+  "Lost": {
+   "imdb": {
+    "id": "tt0411008",
+    "rating": 8.3,
+    "votes": 685762
+   },
+   "rt": {
+    "critics": 86,
+    "audience": 89,
+    "reviews": 177,
+    "url": "https://www.rottentomatoes.com/tv/lost"
+   },
+   "metascore": {
+    "score": 84,
+    "reviews": 73,
+    "url": "https://www.metacritic.com/tv/lost/"
+   }
+  },
+  "Lost in Space (2018)": {
+   "imdb": {
+    "id": "tt5232792",
+    "rating": 7.3,
+    "votes": 115201
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 78,
+    "reviews": 92,
+    "url": "https://www.rottentomatoes.com/tv/lost_in_space"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/lost-in-space-2018/"
+   }
+  },
+  "Love It or List It": {
+   "imdb": {
+    "id": "tt1773182",
+    "rating": 6.6,
+    "votes": 2931
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/love_it_or_list_it"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Lovesick": {
+   "imdb": {
+    "id": "tt4051832",
+    "rating": 8,
+    "votes": 24326
+   },
+   "rt": {
+    "critics": 98,
+    "audience": 90,
+    "reviews": 41,
+    "url": "https://www.rottentomatoes.com/tv/lovesick"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/lovesick/"
+   }
+  },
+  "Ludwig": {
+   "imdb": {
+    "id": "tt27846061",
+    "rating": 8.1,
+    "votes": 27331
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 81,
+    "reviews": 48,
+    "url": "https://www.rottentomatoes.com/tv/ludwig"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/ludwig/"
+   }
+  },
+  "Luther": {
+   "imdb": {
+    "id": "tt1474684",
+    "rating": 8.4,
+    "votes": 165852
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 88,
+    "reviews": 117,
+    "url": "https://www.rottentomatoes.com/tv/luther"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 60,
+    "url": "https://www.metacritic.com/tv/luther/"
+   }
+  },
+  "Mad Men": {
+   "imdb": {
+    "id": "tt0804503",
+    "rating": 8.7,
+    "votes": 296309
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 95,
+    "reviews": 276,
+    "url": "https://www.rottentomatoes.com/tv/mad-men"
+   },
+   "metascore": {
+    "score": 86,
+    "reviews": 199,
+    "url": "https://www.metacritic.com/tv/mad-men/"
+   }
+  },
+  "Madam Secretary": {
+   "imdb": {
+    "id": "tt3501074",
+    "rating": 7.8,
+    "votes": 30019
+   },
+   "rt": {
+    "critics": null,
+    "audience": 80,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/madam_secretary"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 32,
+    "url": "https://www.metacritic.com/tv/madam-secretary/"
+   }
+  },
+  "Magpie Murders": {
+   "imdb": {
+    "id": "tt13186264",
+    "rating": 7.5,
+    "votes": 10585
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 82,
+    "reviews": 16,
+    "url": "https://www.rottentomatoes.com/tv/magpie_murders"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/magpie-murders/"
+   }
+  },
+  "Maine Cabin Masters": {
+   "imdb": {
+    "id": "tt6906110",
+    "rating": 8.5,
+    "votes": 709
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/maine_cabin_masters"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Maine Cabin Masters: Building Italy": {
+   "imdb": {
+    "id": "tt32510438",
+    "rating": 8.6,
+    "votes": 54
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Major Crimes": {
+   "imdb": {
+    "id": "tt1936532",
+    "rating": 7.8,
+    "votes": 18415
+   },
+   "rt": {
+    "critics": null,
+    "audience": 75,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/major-crimes"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/major-crimes/"
+   }
+  },
+  "Making It": {
+   "imdb": {
+    "id": "tt6874206",
+    "rating": 8,
+    "votes": 1786
+   },
+   "rt": {
+    "critics": null,
+    "audience": 90,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/making_it"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/making-it/"
+   }
+  },
+  "Man Down": {
+   "imdb": {
+    "id": "tt3063454",
+    "rating": 7.6,
+    "votes": 5991
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 82,
+    "reviews": 10,
+    "url": "https://www.rottentomatoes.com/tv/man_down"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Man Like Mobeen": {
+   "imdb": {
+    "id": "tt7639280",
+    "rating": 8,
+    "votes": 4387
+   },
+   "rt": {
+    "critics": null,
+    "audience": 90,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/man_like_mobeen"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Man with a Plan": {
+   "imdb": {
+    "id": "tt5536400",
+    "rating": 7,
+    "votes": 12668
+   },
+   "rt": {
+    "critics": null,
+    "audience": 68,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/man_with_a_plan"
+   },
+   "metascore": {
+    "score": 36,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/man-with-a-plan/"
+   }
+  },
+  "Mare of Easttown": {
+   "imdb": {
+    "id": "tt10155688",
+    "rating": 8.4,
+    "votes": 229995
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 94,
+    "reviews": 131,
+    "url": "https://www.rottentomatoes.com/tv/mare_of_easttown"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 42,
+    "url": "https://www.metacritic.com/tv/mare-of-easttown/"
+   }
+  },
+  "Married to Real Estate": {
+   "imdb": {
+    "id": "tt14914358",
+    "rating": 8.1,
+    "votes": 273
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/married_to_real_estate"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Mary & George": {
+   "imdb": {
+    "id": "tt26246248",
+    "rating": 6.8,
+    "votes": 9188
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 69,
+    "reviews": 52,
+    "url": "https://www.rottentomatoes.com/tv/mary_and_george"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "MasterChef": {
+   "imdb": {
+    "id": "tt1694423",
+    "rating": 7.2,
+    "votes": 10980
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/masterchef"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/masterchef/"
+   }
+  },
+  "MasterChef: The Professionals": {
+   "imdb": {
+    "id": "tt1281256",
+    "rating": 7.8,
+    "votes": 647
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/masterchef_the_professionals"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "McDonald & Dodds": {
+   "imdb": {
+    "id": "tt10720914",
+    "rating": 7.6,
+    "votes": 10704
+   },
+   "rt": {
+    "critics": 63,
+    "audience": 87,
+    "reviews": 11,
+    "url": "https://www.rottentomatoes.com/tv/mcdonald_and_dodds"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Merlin": {
+   "imdb": {
+    "id": "tt1199099",
+    "rating": 7.9,
+    "votes": 95071
+   },
+   "rt": null,
+   "metascore": {
+    "score": 57,
+    "reviews": 17,
+    "url": "https://www.metacritic.com/tv/merlin/"
+   }
+  },
+  "Merlin (BBC)": {
+   "imdb": {
+    "id": "tt1199099",
+    "rating": 7.9,
+    "votes": 95071
+   },
+   "rt": null,
+   "metascore": {
+    "score": 57,
+    "reviews": 17,
+    "url": "https://www.metacritic.com/tv/merlin/"
+   }
+  },
+  "Midsomer Murders": {
+   "imdb": {
+    "id": "tt0118401",
+    "rating": 7.9,
+    "votes": 45215
+   },
+   "rt": {
+    "critics": null,
+    "audience": 83,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/midsomer_murders"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/midsomer-murders/"
+   }
+  },
+  "Mindhunter": {
+   "imdb": {
+    "id": "tt5290382",
+    "rating": 8.6,
+    "votes": 409469
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 95,
+    "reviews": 172,
+    "url": "https://www.rottentomatoes.com/tv/mindhunter"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 37,
+    "url": "https://www.metacritic.com/tv/mindhunter/"
+   }
+  },
+  "Miranda": {
+   "imdb": {
+    "id": "tt1533435",
+    "rating": 8.2,
+    "votes": 19343
+   },
+   "rt": {
+    "critics": 75,
+    "audience": 91,
+    "reviews": 15,
+    "url": "https://www.rottentomatoes.com/tv/miranda"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/miranda/"
+   }
+  },
+  "Miss Fisher's Murder Mysteries": {
+   "imdb": {
+    "id": "tt1988386",
+    "rating": 8.2,
+    "votes": 19516
+   },
+   "rt": {
+    "critics": null,
+    "audience": 95,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/miss_fisher_s_murder_mysteries"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Miss Scarlet": {
+   "imdb": {
+    "id": "tt8270592",
+    "rating": 7.7,
+    "votes": 14155
+   },
+   "rt": null,
+   "metascore": {
+    "score": 67,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/miss-scarlet/"
+   }
+  },
+  "Modern Family": {
+   "imdb": {
+    "id": "tt1442437",
+    "rating": 8.5,
+    "votes": 550885
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 89,
+    "reviews": 108,
+    "url": "https://www.rottentomatoes.com/tv/modern_family"
+   },
+   "metascore": {
+    "score": 87,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/modern-family/"
+   }
+  },
+  "Moonflower Murders": {
+   "imdb": {
+    "id": "tt26314987",
+    "rating": 7.4,
+    "votes": 4909
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 79,
+    "reviews": 10,
+    "url": "https://www.rottentomatoes.com/tv/moonflower_murders"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 4,
+    "url": "https://www.metacritic.com/tv/moonflower-murders/"
+   }
+  },
+  "Motherland": {
+   "imdb": {
+    "id": "tt6006350",
+    "rating": 8,
+    "votes": 12201
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 87,
+    "reviews": 51,
+    "url": "https://www.rottentomatoes.com/tv/motherland"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/motherland/"
+   }
+  },
+  "Mozart in the Jungle": {
+   "imdb": {
+    "id": "tt3502172",
+    "rating": 8.1,
+    "votes": 27422
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 90,
+    "reviews": 81,
+    "url": "https://www.rottentomatoes.com/tv/mozart_in_the_jungle"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 35,
+    "url": "https://www.metacritic.com/tv/mozart-in-the-jungle/"
+   }
+  },
+  "Mr Selfridge": {
+   "imdb": {
+    "id": "tt2310212",
+    "rating": 7.7,
+    "votes": 18152
+   },
+   "rt": null,
+   "metascore": {
+    "score": 60,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/mr-selfridge/"
+   }
+  },
+  "Mrs Wilson": {
+   "imdb": {
+    "id": "tt6859806",
+    "rating": 7.4,
+    "votes": 10500
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 93,
+    "reviews": 34,
+    "url": "https://www.rottentomatoes.com/tv/mrs_wilson"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/mrs-wilson/"
+   }
+  },
+  "Ms Fisher's Modern Murder Mysteries": {
+   "imdb": {
+    "id": "tt9224216",
+    "rating": 7.3,
+    "votes": 3544
+   },
+   "rt": {
+    "critics": null,
+    "audience": 75,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/ms_fishers_modern_murder_mysteries"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Mum": {
+   "imdb": {
+    "id": "tt5687446",
+    "rating": 8.3,
+    "votes": 4816
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 83,
+    "reviews": 33,
+    "url": "https://www.rottentomatoes.com/tv/mum"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Murder in Provence": {
+   "imdb": {
+    "id": "tt14728056",
+    "rating": 7.2,
+    "votes": 5164
+   },
+   "rt": {
+    "critics": null,
+    "audience": 58,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/murder_in_provence"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Murderville": {
+   "imdb": {
+    "id": "tt15264192",
+    "rating": 6.9,
+    "votes": 16856
+   },
+   "rt": {
+    "critics": 74,
+    "audience": 77,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/murderville"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 17,
+    "url": "https://www.metacritic.com/tv/murderville/"
+   }
+  },
+  "My Life Is Murder": {
+   "imdb": {
+    "id": "tt10584446",
+    "rating": 7.5,
+    "votes": 7563
+   },
+   "rt": {
+    "critics": null,
+    "audience": 91,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/my_life_is_murder"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/my-life-is-murder/"
+   }
+  },
+  "Mythic Quest": {
+   "imdb": {
+    "id": "tt8879940",
+    "rating": 7.6,
+    "votes": 38717
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 80,
+    "reviews": 128,
+    "url": "https://www.rottentomatoes.com/tv/mythic_quest"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/mythic-quest/"
+   }
+  },
+  "Nailed It!": {
+   "imdb": {
+    "id": "tt6987788",
+    "rating": 7.4,
+    "votes": 5817
+   },
+   "rt": {
+    "critics": null,
+    "audience": 71,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/nailed_it"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "NCIS: Los Angeles": {
+   "imdb": {
+    "id": "tt1378167",
+    "rating": 6.8,
+    "votes": 61026
+   },
+   "rt": {
+    "critics": null,
+    "audience": 62,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/ncis_los_angeles"
+   },
+   "metascore": {
+    "score": 59,
+    "reviews": 24,
+    "url": "https://www.metacritic.com/tv/ncis-los-angeles/"
+   }
+  },
+  "New Amsterdam": {
+   "imdb": {
+    "id": "tt7817340",
+    "rating": 7.9,
+    "votes": 56707
+   },
+   "rt": {
+    "critics": null,
+    "audience": 49,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/new_amsterdam_2018"
+   },
+   "metascore": {
+    "score": 47,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/new-amsterdam-2018/"
+   }
+  },
+  "New Girl": {
+   "imdb": {
+    "id": "tt1826940",
+    "rating": 7.8,
+    "votes": 267284
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 84,
+    "reviews": 103,
+    "url": "https://www.rottentomatoes.com/tv/new_girl"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/new-girl/"
+   }
+  },
+  "No Activity (Australian series)": {
+   "imdb": {
+    "id": "tt4651812",
+    "rating": 7.7,
+    "votes": 1644
+   },
+   "rt": {
+    "critics": null,
+    "audience": 83,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/no_activity"
+   },
+   "metascore": {
+    "score": 56,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/no-activity/"
+   }
+  },
+  "No Demo Reno": {
+   "imdb": {
+    "id": "tt13681676",
+    "rating": 7.7,
+    "votes": 501
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/no_demo_reno"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Nobody Wants This": {
+   "imdb": {
+    "id": "tt26933824",
+    "rating": 7.7,
+    "votes": 87816
+   },
+   "rt": {
+    "critics": 87,
+    "audience": 70,
+    "reviews": 134,
+    "url": "https://www.rottentomatoes.com/tv/nobody_wants_this"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 57,
+    "url": "https://www.metacritic.com/tv/nobody-wants-this/"
+   }
+  },
+  "Not Dead Yet": {
+   "imdb": {
+    "id": "tt18250904",
+    "rating": 7,
+    "votes": 10673
+   },
+   "rt": {
+    "critics": 50,
+    "audience": 69,
+    "reviews": 16,
+    "url": "https://www.rottentomatoes.com/tv/not_dead_yet"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/not-dead-yet/"
+   }
+  },
+  "Once Upon a Time": {
+   "imdb": {
+    "id": "tt1843230",
+    "rating": 7.6,
+    "votes": 250059
+   },
+   "rt": {
+    "critics": 78,
+    "audience": 78,
+    "reviews": 92,
+    "url": "https://www.rottentomatoes.com/tv/once_upon_a_time"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 31,
+    "url": "https://www.metacritic.com/tv/once-upon-a-time/"
+   }
+  },
+  "One Day (2024)": {
+   "imdb": {
+    "id": "tt16283804",
+    "rating": 8,
+    "votes": 68307
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 85,
+    "reviews": 49,
+    "url": "https://www.rottentomatoes.com/tv/one_day_2024"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/one-day-2024/"
+   }
+  },
+  "One Day at a Time (2017)": {
+   "imdb": {
+    "id": "tt5339440",
+    "rating": 8.1,
+    "votes": 20277
+   },
+   "rt": {
+    "critics": 99,
+    "audience": 89,
+    "reviews": 116,
+    "url": "https://www.rottentomatoes.com/tv/one_day_at_a_time"
+   },
+   "metascore": {
+    "score": 82,
+    "reviews": 51,
+    "url": "https://www.metacritic.com/tv/one-day-at-a-time-2017/"
+   }
+  },
+  "Only Murders in the Building": {
+   "imdb": {
+    "id": "tt11691774",
+    "rating": 8,
+    "votes": 208419
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 89,
+    "reviews": 406,
+    "url": "https://www.rottentomatoes.com/tv/only_murders_in_the_building"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 138,
+    "url": "https://www.metacritic.com/tv/only-murders-in-the-building/"
+   }
+  },
+  "Orphan Black": {
+   "imdb": {
+    "id": "tt2234222",
+    "rating": 8.3,
+    "votes": 126463
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 92,
+    "reviews": 135,
+    "url": "https://www.rottentomatoes.com/tv/orphan-black"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 70,
+    "url": "https://www.metacritic.com/tv/orphan-black/"
+   }
+  },
+  "Our Planet": {
+   "imdb": {
+    "id": "tt9253866",
+    "rating": 9.2,
+    "votes": 64280
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 91,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/our_planet"
+   },
+   "metascore": {
+    "score": 84,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/our-planet/"
+   }
+  },
+  "Outer Banks": {
+   "imdb": {
+    "id": "tt10293938",
+    "rating": 7.5,
+    "votes": 116429
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 62,
+    "reviews": 48,
+    "url": "https://www.rottentomatoes.com/tv/outer_banks"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 21,
+    "url": "https://www.metacritic.com/tv/outer-banks/"
+   }
+  },
+  "Outlander": {
+   "imdb": {
+    "id": "tt3006802",
+    "rating": 8.3,
+    "votes": 205915
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 82,
+    "reviews": 143,
+    "url": "https://www.rottentomatoes.com/tv/outlander"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 75,
+    "url": "https://www.metacritic.com/tv/outlander-2014/"
+   }
+  },
+  "Palm Royale": {
+   "imdb": {
+    "id": "tt8888540",
+    "rating": 6.8,
+    "votes": 21795
+   },
+   "rt": {
+    "critics": 57,
+    "audience": 72,
+    "reviews": 77,
+    "url": "https://www.rottentomatoes.com/tv/palm_royale"
+   },
+   "metascore": {
+    "score": 59,
+    "reviews": 39,
+    "url": "https://www.metacritic.com/tv/palm-royale/"
+   }
+  },
+  "Parenthood": {
+   "imdb": {
+    "id": "tt1416765",
+    "rating": 8.3,
+    "votes": 45002
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 94,
+    "reviews": 106,
+    "url": "https://www.rottentomatoes.com/tv/parenthood"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 39,
+    "url": "https://www.metacritic.com/tv/parenthood/"
+   }
+  },
+  "Parks and Recreation": {
+   "imdb": {
+    "id": "tt1266020",
+    "rating": 8.6,
+    "votes": 321104
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 89,
+    "reviews": 203,
+    "url": "https://www.rottentomatoes.com/tv/parks_and_recreation"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 46,
+    "url": "https://www.metacritic.com/tv/parks-and-recreation/"
+   }
+  },
+  "Person of Interest": {
+   "imdb": {
+    "id": "tt1839578",
+    "rating": 8.4,
+    "votes": 218698
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 81,
+    "reviews": 84,
+    "url": "https://www.rottentomatoes.com/tv/person_of_interest"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/person-of-interest/"
+   }
+  },
+  "Planet Earth II": {
+   "imdb": {
+    "id": "tt5491994",
+    "rating": 9.4,
+    "votes": 178000
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/planet_earth_ii"
+   },
+   "metascore": {
+    "score": 96,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/planet-earth-ii/"
+   }
+  },
+  "Platonic": {
+   "imdb": {
+    "id": "tt13366604",
+    "rating": 7.2,
+    "votes": 28841
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 80,
+    "reviews": 88,
+    "url": "https://www.rottentomatoes.com/tv/platonic"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 39,
+    "url": "https://www.metacritic.com/tv/platonic/"
+   }
+  },
+  "Playing House": {
+   "imdb": {
+    "id": "tt2750182",
+    "rating": 7.7,
+    "votes": 3191
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 91,
+    "reviews": 30,
+    "url": "https://www.rottentomatoes.com/tv/playing_house"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 19,
+    "url": "https://www.metacritic.com/tv/playing-house/"
+   }
+  },
+  "Plebs": {
+   "imdb": {
+    "id": "tt2731624",
+    "rating": 7.8,
+    "votes": 11533
+   },
+   "rt": {
+    "critics": null,
+    "audience": 75,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/plebs"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Poker Face": {
+   "imdb": {
+    "id": "tt14269590",
+    "rating": 7.7,
+    "votes": 69926
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 76,
+    "reviews": 165,
+    "url": "https://www.rottentomatoes.com/tv/poker_face"
+   },
+   "metascore": {
+    "score": 83,
+    "reviews": 70,
+    "url": "https://www.metacritic.com/tv/poker-face-2023/"
+   }
+  },
+  "Poldark": {
+   "imdb": {
+    "id": "tt3636060",
+    "rating": 8.2,
+    "votes": 41872
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 79,
+    "reviews": 77,
+    "url": "https://www.rottentomatoes.com/tv/poldark"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 20,
+    "url": "https://www.metacritic.com/tv/poldark/"
+   }
+  },
+  "Professor T (UK)": {
+   "imdb": {
+    "id": "tt11981644",
+    "rating": 7.4,
+    "votes": 10167
+   },
+   "rt": {
+    "critics": null,
+    "audience": 88,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/professor_t"
+   },
+   "metascore": {
+    "score": 55,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/professor-t/"
+   }
+  },
+  "Property Brothers": {
+   "imdb": {
+    "id": "tt1827882",
+    "rating": 7.1,
+    "votes": 3773
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Property Brothers: Buying and Selling": {
+   "imdb": {
+    "id": "tt2272112",
+    "rating": 7.1,
+    "votes": 944
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Property Brothers: Forever Home": {
+   "imdb": {
+    "id": "tt9855018",
+    "rating": 6.7,
+    "votes": 484
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Psych": {
+   "imdb": {
+    "id": "tt0491738",
+    "rating": 8.4,
+    "votes": 122448
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 94,
+    "reviews": 90,
+    "url": "https://www.rottentomatoes.com/tv/psych"
+   },
+   "metascore": {
+    "score": 60,
+    "reviews": 41,
+    "url": "https://www.metacritic.com/tv/psych/"
+   }
+  },
+  "Queer Eye": {
+   "imdb": {
+    "id": "tt7259746",
+    "rating": 8.5,
+    "votes": 22582
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 82,
+    "reviews": 93,
+    "url": "https://www.rottentomatoes.com/tv/queer_eye_2018"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 24,
+    "url": "https://www.metacritic.com/tv/queer-eye-2018/"
+   }
+  },
+  "Race Across the World": {
+   "imdb": {
+    "id": "tt9909248",
+    "rating": 8.3,
+    "votes": 1933
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/race_across_the_world"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Raising Dion": {
+   "imdb": {
+    "id": "tt7826108",
+    "rating": 7.1,
+    "votes": 18362
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 53,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/raising_dion"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/raising-dion/"
+   }
+  },
+  "Raising Hope": {
+   "imdb": {
+    "id": "tt1615919",
+    "rating": 8,
+    "votes": 43994
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 90,
+    "reviews": 63,
+    "url": "https://www.rottentomatoes.com/tv/raising-hope"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 24,
+    "url": "https://www.metacritic.com/tv/raising-hope/"
+   }
+  },
+  "Reacher": {
+   "imdb": {
+    "id": "tt9288030",
+    "rating": 8,
+    "votes": 328385
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 77,
+    "reviews": 200,
+    "url": "https://www.rottentomatoes.com/tv/reacher"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 57,
+    "url": "https://www.metacritic.com/tv/reacher/"
+   }
+  },
+  "Rehab Addict": {
+   "imdb": {
+    "id": "tt2107314",
+    "rating": 7.8,
+    "votes": 906
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rehab_addict"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Renovation Island": {
+   "imdb": {
+    "id": "tt9233830",
+    "rating": 6.9,
+    "votes": 525
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Renovation Resort": {
+   "imdb": {
+    "id": "tt26442970",
+    "rating": 7.1,
+    "votes": 127
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Reservation Dogs": {
+   "imdb": {
+    "id": "tt13623580",
+    "rating": 8.3,
+    "votes": 28957
+   },
+   "rt": {
+    "critics": 99,
+    "audience": 91,
+    "reviews": 142,
+    "url": "https://www.rottentomatoes.com/tv/reservation_dogs"
+   },
+   "metascore": {
+    "score": 89,
+    "reviews": 53,
+    "url": "https://www.metacritic.com/tv/reservation-dogs/"
+   }
+  },
+  "Resident Alien": {
+   "imdb": {
+    "id": "tt8690918",
+    "rating": 8,
+    "votes": 92786
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 87,
+    "reviews": 44,
+    "url": "https://www.rottentomatoes.com/tv/resident_alien"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/resident-alien/"
+   }
+  },
+  "Restored": {
+   "imdb": {
+    "id": "tt8141256",
+    "rating": 9.1,
+    "votes": 358
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/restored"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Restored by the Fords": {
+   "imdb": {
+    "id": "tt7875628",
+    "rating": 6.4,
+    "votes": 309
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/restored_by_the_fords"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Revolution": {
+   "imdb": {
+    "id": "tt2070791",
+    "rating": 6.6,
+    "votes": 88605
+   },
+   "rt": {
+    "critics": 67,
+    "audience": 65,
+    "reviews": 69,
+    "url": "https://www.rottentomatoes.com/tv/revolution"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 33,
+    "url": "https://www.metacritic.com/tv/revolution/"
+   }
+  },
+  "Rick Stein's Cornwall": {
+   "imdb": {
+    "id": "tt13702080",
+    "rating": 7.9,
+    "votes": 152
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rick_steins_cornwall"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Rick Stein's India": {
+   "imdb": {
+    "id": "tt3796080",
+    "rating": 8.2,
+    "votes": 233
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Rick Stein's Secret France": {
+   "imdb": {
+    "id": "tt11352740",
+    "rating": 7.9,
+    "votes": 138
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rick_steins_secret_france"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Rick Stein's Spain": {
+   "imdb": {
+    "id": "tt2943110",
+    "rating": 8,
+    "votes": 137
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rick_steins_spain"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Rick Steves' Europe": {
+   "imdb": {
+    "id": "tt1243815",
+    "rating": 8.6,
+    "votes": 907
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rick_steves_europe"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Rizzoli & Isles": {
+   "imdb": {
+    "id": "tt1551632",
+    "rating": 7.7,
+    "votes": 43029
+   },
+   "rt": null,
+   "metascore": {
+    "score": 63,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/rizzoli-isles/"
+   }
+  },
+  "Robin Hood": {
+   "imdb": {
+    "id": "tt0787985",
+    "rating": 7.4,
+    "votes": 18243
+   },
+   "rt": {
+    "critics": null,
+    "audience": 83,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/robin-hood"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/robin-hood/"
+   }
+  },
+  "Rock the Block": {
+   "imdb": {
+    "id": "tt10183798",
+    "rating": 7.2,
+    "votes": 587
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rock_the_block"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Royal Pains": {
+   "imdb": {
+    "id": "tt1319735",
+    "rating": 7.2,
+    "votes": 25097
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 80,
+    "reviews": 47,
+    "url": "https://www.rottentomatoes.com/tv/royal_pains"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/royal-pains/"
+   }
+  },
+  "Rules of Engagement": {
+   "imdb": {
+    "id": "tt0790772",
+    "rating": 7.4,
+    "votes": 38290
+   },
+   "rt": {
+    "critics": null,
+    "audience": 81,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/rules-of-engagement"
+   },
+   "metascore": {
+    "score": 28,
+    "reviews": 54,
+    "url": "https://www.metacritic.com/tv/rules-of-engagement/"
+   }
+  },
+  "Rutherford Falls": {
+   "imdb": {
+    "id": "tt11058054",
+    "rating": 6.7,
+    "votes": 3378
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 62,
+    "reviews": 43,
+    "url": "https://www.rottentomatoes.com/tv/rutherford_falls"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/rutherford-falls/"
+   }
+  },
+  "S.W.A.T.": {
+   "imdb": {
+    "id": "tt6111130",
+    "rating": 7.2,
+    "votes": 42816
+   },
+   "rt": null,
+   "metascore": {
+    "score": 45,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/swat-2017/"
+   }
+  },
+  "Schitt's Creek": {
+   "imdb": {
+    "id": "tt3526078",
+    "rating": 8.5,
+    "votes": 178580
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 93,
+    "reviews": 110,
+    "url": "https://www.rottentomatoes.com/tv/schitts_creek"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 16,
+    "url": "https://www.metacritic.com/tv/schitts-creek/"
+   }
+  },
+  "Scrubs": {
+   "imdb": {
+    "id": "tt0285403",
+    "rating": 8.4,
+    "votes": 288532
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 86,
+    "reviews": 68,
+    "url": "https://www.rottentomatoes.com/tv/scrubs"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 38,
+    "url": "https://www.metacritic.com/tv/scrubs/"
+   }
+  },
+  "Severance": {
+   "imdb": {
+    "id": "tt11280740",
+    "rating": 8.6,
+    "votes": 414736
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 80,
+    "reviews": 242,
+    "url": "https://www.rottentomatoes.com/tv/severance"
+   },
+   "metascore": {
+    "score": 85,
+    "reviews": 82,
+    "url": "https://www.metacritic.com/tv/severance/"
+   }
+  },
+  "Shakespeare & Hathaway": {
+   "imdb": {
+    "id": "tt7526498",
+    "rating": 7.6,
+    "votes": 8136
+   },
+   "rt": {
+    "critics": null,
+    "audience": 82,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/shakespeare_and_hathaway_private_investigators"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Shark Tank": {
+   "imdb": {
+    "id": "tt1442550",
+    "rating": 7.6,
+    "votes": 11780
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/shark_tank"
+   },
+   "metascore": {
+    "score": 60,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/shark-tank/"
+   }
+  },
+  "Sherlock": {
+   "imdb": {
+    "id": "tt1475582",
+    "rating": 9,
+    "votes": 1104877
+   },
+   "rt": {
+    "critics": 78,
+    "audience": 83,
+    "reviews": 169,
+    "url": "https://www.rottentomatoes.com/tv/sherlock"
+   },
+   "metascore": {
+    "score": 88,
+    "reviews": 67,
+    "url": "https://www.metacritic.com/tv/sherlock/"
+   }
+  },
+  "Shrill": {
+   "imdb": {
+    "id": "tt8962130",
+    "rating": 7.4,
+    "votes": 10873
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 65,
+    "reviews": 94,
+    "url": "https://www.rottentomatoes.com/tv/shrill"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 41,
+    "url": "https://www.metacritic.com/tv/shrill/"
+   }
+  },
+  "Shrinking": {
+   "imdb": {
+    "id": "tt15677150",
+    "rating": 8.2,
+    "votes": 133556
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 87,
+    "reviews": 168,
+    "url": "https://www.rottentomatoes.com/tv/shrinking"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 58,
+    "url": "https://www.metacritic.com/tv/shrinking/"
+   }
+  },
+  "Shōgun": {
+   "imdb": {
+    "id": "tt2788316",
+    "rating": 8.6,
+    "votes": 255191
+   },
+   "rt": {
+    "critics": 99,
+    "audience": 85,
+    "reviews": 109,
+    "url": "https://www.rottentomatoes.com/tv/shogun_2024"
+   },
+   "metascore": {
+    "score": 85,
+    "reviews": 41,
+    "url": "https://www.metacritic.com/tv/shogun-2024/"
+   }
+  },
+  "Signora Volpe": {
+   "imdb": {
+    "id": "tt15193160",
+    "rating": 7.2,
+    "votes": 5021
+   },
+   "rt": {
+    "critics": null,
+    "audience": 66,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/signora_volpe"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/signora-volpe/"
+   }
+  },
+  "Silicon Valley": {
+   "imdb": {
+    "id": "tt2575988",
+    "rating": 8.5,
+    "votes": 185238
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 93,
+    "reviews": 186,
+    "url": "https://www.rottentomatoes.com/tv/silicon_valley"
+   },
+   "metascore": {
+    "score": 84,
+    "reviews": 79,
+    "url": "https://www.metacritic.com/tv/silicon-valley/"
+   }
+  },
+  "Silo": {
+   "imdb": {
+    "id": "tt14688458",
+    "rating": 8.1,
+    "votes": 253801
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 70,
+    "reviews": 132,
+    "url": "https://www.rottentomatoes.com/tv/silo"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 44,
+    "url": "https://www.metacritic.com/tv/silo/"
+   }
+  },
+  "Single Parents": {
+   "imdb": {
+    "id": "tt7845644",
+    "rating": 7.2,
+    "votes": 8036
+   },
+   "rt": null,
+   "metascore": {
+    "score": 67,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/single-parents/"
+   }
+  },
+  "Slow Horses": {
+   "imdb": {
+    "id": "tt5875444",
+    "rating": 8.4,
+    "votes": 169147
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 87,
+    "reviews": 247,
+    "url": "https://www.rottentomatoes.com/tv/slow_horses"
+   },
+   "metascore": {
+    "score": 82,
+    "reviews": 101,
+    "url": "https://www.metacritic.com/tv/slow-horses/"
+   }
+  },
+  "So Help Me Todd": {
+   "imdb": {
+    "id": "tt18573724",
+    "rating": 7.6,
+    "votes": 9550
+   },
+   "rt": {
+    "critics": 56,
+    "audience": 91,
+    "reviews": 9,
+    "url": "https://www.rottentomatoes.com/tv/so_help_me_todd"
+   },
+   "metascore": {
+    "score": 51,
+    "reviews": 6,
+    "url": "https://www.metacritic.com/tv/so-help-me-todd/"
+   }
+  },
+  "Somebody Feed Phil": {
+   "imdb": {
+    "id": "tt7752034",
+    "rating": 8.3,
+    "votes": 7998
+   },
+   "rt": {
+    "critics": null,
+    "audience": 78,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/somebody_feed_phil"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Speechless": {
+   "imdb": {
+    "id": "tt5592146",
+    "rating": 7.6,
+    "votes": 9190
+   },
+   "rt": {
+    "critics": null,
+    "audience": 79,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/speechless"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/speechless-2016/"
+   }
+  },
+  "Sprung": {
+   "imdb": {
+    "id": "tt14544190",
+    "rating": 8.2,
+    "votes": 7553
+   },
+   "rt": {
+    "critics": 82,
+    "audience": 97,
+    "reviews": 11,
+    "url": "https://www.rottentomatoes.com/tv/sprung"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 6,
+    "url": "https://www.metacritic.com/tv/sprung-2022/"
+   }
+  },
+  "Staged": {
+   "imdb": {
+    "id": "tt12369754",
+    "rating": 8.5,
+    "votes": 12050
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 97,
+    "reviews": 28,
+    "url": "https://www.rottentomatoes.com/tv/staged"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/staged/"
+   }
+  },
+  "Stanley Tucci: Searching for Italy": {
+   "imdb": {
+    "id": "tt11852724",
+    "rating": 8.6,
+    "votes": 4119
+   },
+   "rt": {
+    "critics": 78,
+    "audience": 71,
+    "reviews": 9,
+    "url": "https://www.rottentomatoes.com/tv/stanley_tucci_searching_for_italy"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/stanley-tucci-searching-for-italy/"
+   }
+  },
+  "Star Trek: Discovery": {
+   "imdb": {
+    "id": "tt5171438",
+    "rating": 6.9,
+    "votes": 147596
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 34,
+    "reviews": 182,
+    "url": "https://www.rottentomatoes.com/tv/star_trek_discovery"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 44,
+    "url": "https://www.metacritic.com/tv/star-trek-discovery/"
+   }
+  },
+  "Star Trek: Picard": {
+   "imdb": {
+    "id": "tt8806524",
+    "rating": 7.5,
+    "votes": 103112
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 57,
+    "reviews": 135,
+    "url": "https://www.rottentomatoes.com/tv/star_trek_picard"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 50,
+    "url": "https://www.metacritic.com/tv/star-trek-picard/"
+   }
+  },
+  "Star Trek: Strange New Worlds": {
+   "imdb": {
+    "id": "tt12327578",
+    "rating": 8.1,
+    "votes": 81707
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 61,
+    "reviews": 133,
+    "url": "https://www.rottentomatoes.com/tv/star_trek_strange_new_worlds"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 45,
+    "url": "https://www.metacritic.com/tv/star-trek-strange-new-worlds/"
+   }
+  },
+  "Stargate Atlantis": {
+   "imdb": {
+    "id": "tt0374455",
+    "rating": 8.2,
+    "votes": 76812
+   },
+   "rt": {
+    "critics": null,
+    "audience": 90,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/stargate_atlantis"
+   },
+   "metascore": {
+    "score": 53,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/stargate-atlantis/"
+   }
+  },
+  "Stargate Universe": {
+   "imdb": {
+    "id": "tt1286039",
+    "rating": 7.6,
+    "votes": 56231
+   },
+   "rt": {
+    "critics": 70,
+    "audience": 74,
+    "reviews": 33,
+    "url": "https://www.rottentomatoes.com/tv/stargate-universe"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/stargate-universe/"
+   }
+  },
+  "Starstruck": {
+   "imdb": {
+    "id": "tt10801368",
+    "rating": 7.5,
+    "votes": 9540
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 78,
+    "reviews": 83,
+    "url": "https://www.rottentomatoes.com/tv/starstruck"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 33,
+    "url": "https://www.metacritic.com/tv/starstruck-2021/"
+   }
+  },
+  "Stath Lets Flats": {
+   "imdb": {
+    "id": "tt7524382",
+    "rating": 7.6,
+    "votes": 6688
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 81,
+    "reviews": 12,
+    "url": "https://www.rottentomatoes.com/tv/stath_lets_flats"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/stath-lets-flats/"
+   }
+  },
+  "Stay Here": {
+   "imdb": {
+    "id": "tt8773338",
+    "rating": 7.5,
+    "votes": 1237
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/stay_here"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Stranger Things": {
+   "imdb": {
+    "id": "tt4574334",
+    "rating": 8.6,
+    "votes": 1752831
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 82,
+    "reviews": 663,
+    "url": "https://www.rottentomatoes.com/tv/stranger_things"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 174,
+    "url": "https://www.metacritic.com/tv/stranger-things/"
+   }
+  },
+  "Such Brave Girls": {
+   "imdb": {
+    "id": "tt18974452",
+    "rating": 7.4,
+    "votes": 3813
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 83,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/such_brave_girls"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/such-brave-girls/"
+   }
+  },
+  "Suits": {
+   "imdb": {
+    "id": "tt1632701",
+    "rating": 8.4,
+    "votes": 552657
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 87,
+    "reviews": 118,
+    "url": "https://www.rottentomatoes.com/tv/suits"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/suits/"
+   }
+  },
+  "Superstore": {
+   "imdb": {
+    "id": "tt4477976",
+    "rating": 7.9,
+    "votes": 87504
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 80,
+    "reviews": 105,
+    "url": "https://www.rottentomatoes.com/tv/superstore"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/superstore/"
+   }
+  },
+  "Survivor": {
+   "imdb": {
+    "id": "tt0239195",
+    "rating": 7.6,
+    "votes": 30594
+   },
+   "rt": {
+    "critics": null,
+    "audience": 70,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/survivor"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/survivor/"
+   }
+  },
+  "Sweet Tooth": {
+   "imdb": {
+    "id": "tt12809988",
+    "rating": 7.7,
+    "votes": 80108
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 78,
+    "reviews": 113,
+    "url": "https://www.rottentomatoes.com/tv/sweet_tooth"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 32,
+    "url": "https://www.metacritic.com/tv/sweet-tooth/"
+   }
+  },
+  "Taste the Nation": {
+   "imdb": null,
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Ted Lasso": {
+   "imdb": {
+    "id": "tt10986410",
+    "rating": 8.7,
+    "votes": 478694
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 81,
+    "reviews": 380,
+    "url": "https://www.rottentomatoes.com/tv/ted_lasso"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 117,
+    "url": "https://www.metacritic.com/tv/ted-lasso/"
+   }
+  },
+  "Terra Nova": {
+   "imdb": {
+    "id": "tt1641349",
+    "rating": 6.7,
+    "votes": 89303
+   },
+   "rt": {
+    "critics": 62,
+    "audience": 68,
+    "reviews": 55,
+    "url": "https://www.rottentomatoes.com/tv/terra-nova"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/terra-nova/"
+   }
+  },
+  "The 100": {
+   "imdb": {
+    "id": "tt2661044",
+    "rating": 7.5,
+    "votes": 309514
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 68,
+    "reviews": 106,
+    "url": "https://www.rottentomatoes.com/tv/the_100"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 34,
+    "url": "https://www.metacritic.com/tv/the-100/"
+   }
+  },
+  "The Act": {
+   "imdb": {
+    "id": "tt8682948",
+    "rating": 7.8,
+    "votes": 43745
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 91,
+    "reviews": 49,
+    "url": "https://www.rottentomatoes.com/tv/the_act"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 17,
+    "url": "https://www.metacritic.com/tv/the-act/"
+   }
+  },
+  "The Affair": {
+   "imdb": {
+    "id": "tt2699110",
+    "rating": 7.9,
+    "votes": 52723
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 76,
+    "reviews": 133,
+    "url": "https://www.rottentomatoes.com/tv/the_affair"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 58,
+    "url": "https://www.metacritic.com/tv/the-affair/"
+   }
+  },
+  "The Afterparty": {
+   "imdb": {
+    "id": "tt12614214",
+    "rating": 7.3,
+    "votes": 25614
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 77,
+    "reviews": 111,
+    "url": "https://www.rottentomatoes.com/tv/the_afterparty"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 40,
+    "url": "https://www.metacritic.com/tv/the-afterparty/"
+   }
+  },
+  "The Amazing Race": {
+   "imdb": {
+    "id": "tt0285335",
+    "rating": 7.8,
+    "votes": 16692
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_amazing_race_cbs"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 31,
+    "url": "https://www.metacritic.com/tv/the-amazing-race/"
+   }
+  },
+  "The Amazing Race Canada": {
+   "imdb": {
+    "id": "tt3069720",
+    "rating": 7.7,
+    "votes": 902
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Americans": {
+   "imdb": {
+    "id": "tt2149175",
+    "rating": 8.4,
+    "votes": 127869
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 94,
+    "reviews": 279,
+    "url": "https://www.rottentomatoes.com/tv/the_americans"
+   },
+   "metascore": {
+    "score": 89,
+    "reviews": 154,
+    "url": "https://www.metacritic.com/tv/the-americans/"
+   }
+  },
+  "The Americas": {
+   "imdb": {
+    "id": "tt27739990",
+    "rating": 8.4,
+    "votes": 1691
+   },
+   "rt": {
+    "critics": 86,
+    "audience": null,
+    "reviews": 7,
+    "url": "https://www.rottentomatoes.com/tv/the_americas"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/the-americas/"
+   }
+  },
+  "The Artful Dodger": {
+   "imdb": {
+    "id": "tt20285780",
+    "rating": 8,
+    "votes": 19949
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 96,
+    "reviews": 33,
+    "url": "https://www.rottentomatoes.com/tv/the_artful_dodger"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/the-artful-dodger/"
+   }
+  },
+  "The Bay": {
+   "imdb": {
+    "id": "tt8425404",
+    "rating": 7.2,
+    "votes": 14416
+   },
+   "rt": {
+    "critics": null,
+    "audience": 68,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_bay"
+   },
+   "metascore": {
+    "score": 60,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/the-bay/"
+   }
+  },
+  "The Bidding Room": {
+   "imdb": {
+    "id": "tt11434078",
+    "rating": 5.8,
+    "votes": 157
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_bidding_room"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Big Bang Theory": {
+   "imdb": {
+    "id": "tt0898266",
+    "rating": 8.1,
+    "votes": 950134
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 85,
+    "reviews": 123,
+    "url": "https://www.rottentomatoes.com/tv/the_big_bang_theory"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 50,
+    "url": "https://www.metacritic.com/tv/the-big-bang-theory/"
+   }
+  },
+  "The Big Build": {
+   "imdb": {
+    "id": "tt0397927",
+    "rating": 7,
+    "votes": 10
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_big_build"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Big Family Cooking Showdown": {
+   "imdb": {
+    "id": "tt7518558",
+    "rating": 7,
+    "votes": 812
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Big Flower Fight": {
+   "imdb": {
+    "id": "tt12200714",
+    "rating": 7.4,
+    "votes": 1557
+   },
+   "rt": {
+    "critics": 56,
+    "audience": 89,
+    "reviews": 16,
+    "url": "https://www.rottentomatoes.com/tv/the-big-flower-fight"
+   },
+   "metascore": {
+    "score": 41,
+    "reviews": 4,
+    "url": "https://www.metacritic.com/tv/the-big-flower-fight/"
+   }
+  },
+  "The Billion Dollar Code": {
+   "imdb": {
+    "id": "tt15392100",
+    "rating": 7.9,
+    "votes": 13110
+   },
+   "rt": {
+    "critics": null,
+    "audience": 95,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_billion_dollar_code"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Blacklist": {
+   "imdb": {
+    "id": "tt2741602",
+    "rating": 7.9,
+    "votes": 305567
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 80,
+    "reviews": 109,
+    "url": "https://www.rottentomatoes.com/tv/the_blacklist"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 32,
+    "url": "https://www.metacritic.com/tv/the-blacklist/"
+   }
+  },
+  "The Bletchley Circle": {
+   "imdb": {
+    "id": "tt2275990",
+    "rating": 7.9,
+    "votes": 15830
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 92,
+    "reviews": 21,
+    "url": "https://www.rottentomatoes.com/tv/the-bletchley-circle"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/the-bletchley-circle/"
+   }
+  },
+  "The Borgias": {
+   "imdb": {
+    "id": "tt1582457",
+    "rating": 7.9,
+    "votes": 57118
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 86,
+    "reviews": 65,
+    "url": "https://www.rottentomatoes.com/tv/the-borgias"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 35,
+    "url": "https://www.metacritic.com/tv/the-borgias/"
+   }
+  },
+  "The Boys": {
+   "imdb": {
+    "id": "tt1190634",
+    "rating": 8.5,
+    "votes": 1034928
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 69,
+    "reviews": 454,
+    "url": "https://www.rottentomatoes.com/tv/the_boys_2019"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 93,
+    "url": "https://www.metacritic.com/tv/the-boys/"
+   }
+  },
+  "The Brokenwood Mysteries": {
+   "imdb": {
+    "id": "tt3640276",
+    "rating": 7.9,
+    "votes": 10892
+   },
+   "rt": {
+    "critics": null,
+    "audience": 88,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_brokenwood_mysteries"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-brokenwood-mysteries/"
+   }
+  },
+  "The Buccaneers": {
+   "imdb": {
+    "id": "tt21108774",
+    "rating": 6.6,
+    "votes": 11301
+   },
+   "rt": {
+    "critics": 72,
+    "audience": 85,
+    "reviews": 62,
+    "url": "https://www.rottentomatoes.com/tv/the_buccaneers_2023"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/the-buccaneers-2023/"
+   }
+  },
+  "The Bureau": {
+   "imdb": {
+    "id": "tt4063800",
+    "rating": 8.7,
+    "votes": 20219
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Cabin Chronicles": {
+   "imdb": {
+    "id": "tt21426914",
+    "rating": 8,
+    "votes": 57
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_cabin_chronicles"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Calling": {
+   "imdb": {
+    "id": "tt15765450",
+    "rating": 7.1,
+    "votes": 4773
+   },
+   "rt": {
+    "critics": 18,
+    "audience": 85,
+    "reviews": 11,
+    "url": "https://www.rottentomatoes.com/tv/the_calling"
+   },
+   "metascore": {
+    "score": 42,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/the-calling/"
+   }
+  },
+  "The Capture": {
+   "imdb": {
+    "id": "tt8201186",
+    "rating": 8,
+    "votes": 37293
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 72,
+    "reviews": 62,
+    "url": "https://www.rottentomatoes.com/tv/the_capture"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/the-capture/"
+   }
+  },
+  "The Carmichael Show": {
+   "imdb": {
+    "id": "tt4307902",
+    "rating": 7.7,
+    "votes": 3510
+   },
+   "rt": {
+    "critics": 87,
+    "audience": 92,
+    "reviews": 50,
+    "url": "https://www.rottentomatoes.com/tv/the_carmichael_show"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/the-carmichael-show/"
+   }
+  },
+  "The Challenge": {
+   "imdb": {
+    "id": "tt0176095",
+    "rating": 8.1,
+    "votes": 5288
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_challenge"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Change": {
+   "imdb": {
+    "id": "tt26115810",
+    "rating": 7.4,
+    "votes": 2006
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 98,
+    "reviews": 18,
+    "url": "https://www.rottentomatoes.com/tv/the_change"
+   },
+   "metascore": {
+    "score": 82,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/the-change/"
+   }
+  },
+  "The Chef Show": {
+   "imdb": {
+    "id": "tt10359446",
+    "rating": 8.2,
+    "votes": 5959
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 92,
+    "reviews": 9,
+    "url": "https://www.rottentomatoes.com/tv/the_chef_show"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Chelsea Detective": {
+   "imdb": {
+    "id": "tt14321914",
+    "rating": 7.4,
+    "votes": 9401
+   },
+   "rt": {
+    "critics": null,
+    "audience": 69,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_chelsea_detective"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Cleaner (UK)": {
+   "imdb": {
+    "id": "tt12994356",
+    "rating": 7.1,
+    "votes": 8572
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 85,
+    "reviews": 13,
+    "url": "https://www.rottentomatoes.com/tv/the_cleaner_2021"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Cleaner (US)": {
+   "imdb": {
+    "id": "tt1103973",
+    "rating": 7.2,
+    "votes": 1922
+   },
+   "rt": {
+    "critics": 24,
+    "audience": null,
+    "reviews": 17,
+    "url": "https://www.rottentomatoes.com/tv/the_cleaner"
+   },
+   "metascore": {
+    "score": 41,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/the-cleaner/"
+   }
+  },
+  "The Closer": {
+   "imdb": {
+    "id": "tt0458253",
+    "rating": 7.9,
+    "votes": 33658
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 81,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/the-closer"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 33,
+    "url": "https://www.metacritic.com/tv/the-closer/"
+   }
+  },
+  "The Cockfields": {
+   "imdb": {
+    "id": "tt10443972",
+    "rating": 7.4,
+    "votes": 1890
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Collection": {
+   "imdb": {
+    "id": "tt5239494",
+    "rating": 7,
+    "votes": 2585
+   },
+   "rt": {
+    "critics": 42,
+    "audience": 93,
+    "reviews": 12,
+    "url": "https://www.rottentomatoes.com/tv/the_collection"
+   },
+   "metascore": {
+    "score": 59,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-collection/"
+   }
+  },
+  "The Completely Made-Up Adventures of Dick Turpin": {
+   "imdb": {
+    "id": "tt19516036",
+    "rating": 7,
+    "votes": 7571
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 80,
+    "reviews": 32,
+    "url": "https://www.rottentomatoes.com/tv/the_completely_made_up_adventures_of_dick_turpin"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/the-completely-made-up-adventures-of-dick-turpin/"
+   }
+  },
+  "The Cook of Castamar": {
+   "imdb": {
+    "id": "tt12626014",
+    "rating": 7.4,
+    "votes": 6530
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Cook Up with Adam Liaw": {
+   "imdb": {
+    "id": "tt14344360",
+    "rating": 5.7,
+    "votes": 56
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Cormoran Strike Mysteries": {
+   "imdb": {
+    "id": "tt4276618",
+    "rating": 7.9,
+    "votes": 33818
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Crazy Ones": {
+   "imdb": {
+    "id": "tt2710104",
+    "rating": 7,
+    "votes": 13435
+   },
+   "rt": {
+    "critics": 54,
+    "audience": 67,
+    "reviews": 41,
+    "url": "https://www.rottentomatoes.com/tv/the-crazy-ones"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/the-crazy-ones/"
+   }
+  },
+  "The Crimson Field": {
+   "imdb": {
+    "id": "tt3494220",
+    "rating": 7.8,
+    "votes": 3747
+   },
+   "rt": {
+    "critics": null,
+    "audience": 86,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_crimson_field"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-crimson-field/"
+   }
+  },
+  "The Crown": {
+   "imdb": {
+    "id": "tt4786824",
+    "rating": 8.6,
+    "votes": 286353
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 92,
+    "reviews": 552,
+    "url": "https://www.rottentomatoes.com/tv/the_crown"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 181,
+    "url": "https://www.metacritic.com/tv/the-crown/"
+   }
+  },
+  "The Crowned Clown": {
+   "imdb": {
+    "id": "tt9266592",
+    "rating": 8,
+    "votes": 1864
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Deceived": {
+   "imdb": {
+    "id": "tt10681614",
+    "rating": 5.9,
+    "votes": 2395
+   },
+   "rt": {
+    "critics": 67,
+    "audience": 54,
+    "reviews": 6,
+    "url": "https://www.rottentomatoes.com/tv/the_deceived"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Detour": {
+   "imdb": {
+    "id": "tt4903242",
+    "rating": 7.7,
+    "votes": 8230
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 88,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/the_detour"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/the-detour/"
+   }
+  },
+  "The Deuce": {
+   "imdb": {
+    "id": "tt4998350",
+    "rating": 8,
+    "votes": 36288
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 87,
+    "reviews": 144,
+    "url": "https://www.rottentomatoes.com/tv/the_deuce"
+   },
+   "metascore": {
+    "score": 85,
+    "reviews": 54,
+    "url": "https://www.metacritic.com/tv/the-deuce/"
+   }
+  },
+  "The Diplomat": {
+   "imdb": {
+    "id": "tt17491088",
+    "rating": 8.1,
+    "votes": 108026
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 77,
+    "reviews": 159,
+    "url": "https://www.rottentomatoes.com/tv/the_diplomat"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 72,
+    "url": "https://www.metacritic.com/tv/the-diplomat-2023/"
+   }
+  },
+  "The Doctor Blake Mysteries": {
+   "imdb": {
+    "id": "tt2375720",
+    "rating": 8,
+    "votes": 5984
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_doctor_blake_mysteries"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Dropout": {
+   "imdb": {
+    "id": "tt10166622",
+    "rating": 7.5,
+    "votes": 46039
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 83,
+    "reviews": 97,
+    "url": "https://www.rottentomatoes.com/tv/the_dropout"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 34,
+    "url": "https://www.metacritic.com/tv/the-dropout/"
+   }
+  },
+  "The Drowning": {
+   "imdb": {
+    "id": "tt11818430",
+    "rating": 5.6,
+    "votes": 2915
+   },
+   "rt": {
+    "critics": 80,
+    "audience": 36,
+    "reviews": 10,
+    "url": "https://www.rottentomatoes.com/tv/the_drowning"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/the-drowning/"
+   }
+  },
+  "The Dry": {
+   "imdb": {
+    "id": "tt15210882",
+    "rating": 7.3,
+    "votes": 1939
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 95,
+    "reviews": 16,
+    "url": "https://www.rottentomatoes.com/tv/the_dry"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-dry/"
+   }
+  },
+  "The Duchess": {
+   "imdb": {
+    "id": "tt9310390",
+    "rating": 6.7,
+    "votes": 6415
+   },
+   "rt": {
+    "critics": 65,
+    "audience": 57,
+    "reviews": 20,
+    "url": "https://www.rottentomatoes.com/tv/the_duchess"
+   },
+   "metascore": {
+    "score": 35,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-duchess/"
+   }
+  },
+  "The Durrells in Corfu": {
+   "imdb": {
+    "id": "tt5014882",
+    "rating": 8.2,
+    "votes": 17155
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 94,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/the_durrells_in_corfu"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/the-durrells-in-corfu/"
+   }
+  },
+  "The Empress": {
+   "imdb": {
+    "id": "tt13720112",
+    "rating": 7.8,
+    "votes": 22500
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 89,
+    "reviews": 6,
+    "url": "https://www.rottentomatoes.com/tv/the_empress"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The English": {
+   "imdb": {
+    "id": "tt11771270",
+    "rating": 7.8,
+    "votes": 34120
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 84,
+    "reviews": 62,
+    "url": "https://www.rottentomatoes.com/tv/the_english"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/the-english/"
+   }
+  },
+  "The English Game": {
+   "imdb": {
+    "id": "tt8403664",
+    "rating": 7.6,
+    "votes": 19241
+   },
+   "rt": {
+    "critics": 55,
+    "audience": 82,
+    "reviews": 20,
+    "url": "https://www.rottentomatoes.com/tv/the_english_game"
+   },
+   "metascore": {
+    "score": 62,
+    "reviews": 4,
+    "url": "https://www.metacritic.com/tv/the-english-game/"
+   }
+  },
+  "The Essex Serpent": {
+   "imdb": {
+    "id": "tt12976224",
+    "rating": 6.3,
+    "votes": 8967
+   },
+   "rt": {
+    "critics": 75,
+    "audience": 70,
+    "reviews": 44,
+    "url": "https://www.rottentomatoes.com/tv/the_essex_serpent"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 19,
+    "url": "https://www.metacritic.com/tv/the-essex-serpent/"
+   }
+  },
+  "The Established Home": {
+   "imdb": {
+    "id": "tt18272580",
+    "rating": 7.9,
+    "votes": 92
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_established_home"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Established Home: Special Projects": {
+   "imdb": {
+    "id": "tt18272580",
+    "rating": 7.9,
+    "votes": 92
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_established_home"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Expanse": {
+   "imdb": {
+    "id": "tt3230854",
+    "rating": 8.5,
+    "votes": 196170
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 85,
+    "reviews": 188,
+    "url": "https://www.rottentomatoes.com/tv/the_expanse"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 40,
+    "url": "https://www.metacritic.com/tv/the-expanse/"
+   }
+  },
+  "The F Word": {
+   "imdb": {
+    "id": "tt0490035",
+    "rating": 6.9,
+    "votes": 1765
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_f_word"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-f-word/"
+   }
+  },
+  "The Fall": {
+   "imdb": {
+    "id": "tt2294189",
+    "rating": 8.1,
+    "votes": 134541
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 85,
+    "reviews": 62,
+    "url": "https://www.rottentomatoes.com/tv/the_fall"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/the-fall/"
+   }
+  },
+  "The Flatshare": {
+   "imdb": {
+    "id": "tt11714672",
+    "rating": 7.2,
+    "votes": 4641
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 80,
+    "reviews": 6,
+    "url": "https://www.rottentomatoes.com/tv/the_flatshare"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Flipping El Moussas": {
+   "imdb": {
+    "id": "tt21102904",
+    "rating": 4.9,
+    "votes": 532
+   },
+   "rt": {
+    "critics": null,
+    "audience": 29,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_flipping_el_moussas"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Food That Built America": {
+   "imdb": {
+    "id": "tt10098248",
+    "rating": 8.4,
+    "votes": 1977
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_food_that_built_america"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Forsyte Saga (2007)": {
+   "imdb": {
+    "id": "tt0260615",
+    "rating": 8.1,
+    "votes": 7997
+   },
+   "rt": {
+    "critics": 86,
+    "audience": 71,
+    "reviews": 7,
+    "url": "https://www.rottentomatoes.com/tv/the_forsyte_saga"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Fosters": {
+   "imdb": {
+    "id": "tt2262532",
+    "rating": 7.9,
+    "votes": 32996
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 85,
+    "reviews": 41,
+    "url": "https://www.rottentomatoes.com/tv/the_fosters"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/the-fosters/"
+   }
+  },
+  "The Gardeners' World": {
+   "imdb": {
+    "id": "tt0260618",
+    "rating": 8.3,
+    "votes": 384
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/gardeners_world"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Gardeners' World: Winter Specials": {
+   "imdb": {
+    "id": "tt0260618",
+    "rating": 8.3,
+    "votes": 384
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/gardeners_world"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Gilded Age": {
+   "imdb": {
+    "id": "tt4406178",
+    "rating": 8.1,
+    "votes": 55669
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 70,
+    "reviews": 164,
+    "url": "https://www.rottentomatoes.com/tv/the_gilded_age"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 89,
+    "url": "https://www.metacritic.com/tv/the-gilded-age/"
+   }
+  },
+  "The Girl Before": {
+   "imdb": {
+    "id": "tt5232622",
+    "rating": 6.6,
+    "votes": 6445
+   },
+   "rt": {
+    "critics": 57,
+    "audience": 65,
+    "reviews": 21,
+    "url": "https://www.rottentomatoes.com/tv/the_girl_before"
+   },
+   "metascore": {
+    "score": 55,
+    "reviews": 16,
+    "url": "https://www.metacritic.com/tv/the-girl-before/"
+   }
+  },
+  "The Gold": {
+   "imdb": {
+    "id": "tt14063678",
+    "rating": 7.4,
+    "votes": 10720
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 79,
+    "reviews": 38,
+    "url": "https://www.rottentomatoes.com/tv/the_gold"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/the-gold/"
+   }
+  },
+  "The Goldbergs": {
+   "imdb": {
+    "id": "tt2712740",
+    "rating": 8,
+    "votes": 44846
+   },
+   "rt": {
+    "critics": null,
+    "audience": 73,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_goldbergs"
+   },
+   "metascore": {
+    "score": 53,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/the-goldbergs/"
+   }
+  },
+  "The Good Doctor": {
+   "imdb": {
+    "id": "tt6470478",
+    "rating": 8,
+    "votes": 133115
+   },
+   "rt": {
+    "critics": null,
+    "audience": 72,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_good_doctor"
+   },
+   "metascore": {
+    "score": 53,
+    "reviews": 17,
+    "url": "https://www.metacritic.com/tv/the-good-doctor/"
+   }
+  },
+  "The Good Fight": {
+   "imdb": {
+    "id": "tt5853176",
+    "rating": 8.3,
+    "votes": 36540
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 67,
+    "reviews": 157,
+    "url": "https://www.rottentomatoes.com/tv/the_good_fight"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 56,
+    "url": "https://www.metacritic.com/tv/the-good-fight/"
+   }
+  },
+  "The Good Place": {
+   "imdb": {
+    "id": "tt4955642",
+    "rating": 8.2,
+    "votes": 227079
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 90,
+    "reviews": 234,
+    "url": "https://www.rottentomatoes.com/tv/good_place"
+   },
+   "metascore": {
+    "score": 82,
+    "reviews": 48,
+    "url": "https://www.metacritic.com/tv/the-good-place/"
+   }
+  },
+  "The Good Wife": {
+   "imdb": {
+    "id": "tt1442462",
+    "rating": 8.3,
+    "votes": 90501
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 91,
+    "reviews": 215,
+    "url": "https://www.rottentomatoes.com/tv/the_good_wife"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 53,
+    "url": "https://www.metacritic.com/tv/the-good-wife/"
+   }
+  },
+  "The Grand Tour": {
+   "imdb": {
+    "id": "tt5712554",
+    "rating": 8.7,
+    "votes": 96808
+   },
+   "rt": {
+    "critics": 66,
+    "audience": 94,
+    "reviews": 30,
+    "url": "https://www.rottentomatoes.com/tv/the_grand_tour"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-grand-tour/"
+   }
+  },
+  "The Great": {
+   "imdb": {
+    "id": "tt2235759",
+    "rating": 8.1,
+    "votes": 66899
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 84,
+    "reviews": 142,
+    "url": "https://www.rottentomatoes.com/tv/the_great"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 50,
+    "url": "https://www.metacritic.com/tv/the-great/"
+   }
+  },
+  "The Great American Baking Show": {
+   "imdb": {
+    "id": "tt5233284",
+    "rating": 8,
+    "votes": 893
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-great-american-baking-show/"
+   }
+  },
+  "The Great British Bake Off: An Extra Slice": {
+   "imdb": null,
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great British Baking Show": {
+   "imdb": {
+    "id": "tt1877368",
+    "rating": 8.6,
+    "votes": 16375
+   },
+   "rt": {
+    "critics": 87,
+    "audience": null,
+    "reviews": 151,
+    "url": "https://www.rottentomatoes.com/tv/the_great_british_bake_off"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 45,
+    "url": "https://www.metacritic.com/tv/the-great-british-baking-show-2010/"
+   }
+  },
+  "The Great British Food Revival": {
+   "imdb": null,
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/great_british_food_revival"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great British Garden Revival": {
+   "imdb": {
+    "id": "tt3662332",
+    "rating": 7.9,
+    "votes": 23
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/great_british_garden_revival"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great British Menu": {
+   "imdb": {
+    "id": "tt0977628",
+    "rating": 7.5,
+    "votes": 556
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/great_british_menu"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great British Railway Journeys: Australia": {
+   "imdb": {
+    "id": "tt11141268",
+    "rating": 8,
+    "votes": 92
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/great_australian_railway_journeys"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great House Giveaway": {
+   "imdb": {
+    "id": "tt13125938",
+    "rating": 5.2,
+    "votes": 170
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_great_house_giveaway"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great House Revival": {
+   "imdb": {
+    "id": "tt31957835",
+    "rating": 7.6,
+    "votes": 44
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_great_house_revival"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great Interior Design Challenge": {
+   "imdb": {
+    "id": "tt4695902",
+    "rating": 7.3,
+    "votes": 539
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_great_interior_design_challenge"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great Interior Design Challenge: Celebrity Special": {
+   "imdb": {
+    "id": "tt4695902",
+    "rating": 7.3,
+    "votes": 539
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_great_interior_design_challenge"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Great Pottery Throw Down": {
+   "imdb": {
+    "id": "tt6417190",
+    "rating": 8.6,
+    "votes": 2024
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_great_pottery_throw_down"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/the-great-pottery-throw-down/"
+   }
+  },
+  "The Grinder": {
+   "imdb": {
+    "id": "tt4481322",
+    "rating": 7.2,
+    "votes": 8206
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 81,
+    "reviews": 58,
+    "url": "https://www.rottentomatoes.com/tv/the_grinder"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/the-grinder/"
+   }
+  },
+  "The Guest Book": {
+   "imdb": {
+    "id": "tt5990096",
+    "rating": 7.3,
+    "votes": 4384
+   },
+   "rt": {
+    "critics": 64,
+    "audience": 88,
+    "reviews": 11,
+    "url": "https://www.rottentomatoes.com/tv/the_guest_book"
+   },
+   "metascore": {
+    "score": 55,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/the-guest-book/"
+   }
+  },
+  "The Halcyon": {
+   "imdb": {
+    "id": "tt5808318",
+    "rating": 7.4,
+    "votes": 3348
+   },
+   "rt": {
+    "critics": 60,
+    "audience": 100,
+    "reviews": 10,
+    "url": "https://www.rottentomatoes.com/tv/the_halcyon"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Handmaid's Tale": {
+   "imdb": {
+    "id": "tt5834204",
+    "rating": 8.3,
+    "votes": 307009
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 57,
+    "reviews": 391,
+    "url": "https://www.rottentomatoes.com/tv/the_handmaids_tale"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 119,
+    "url": "https://www.metacritic.com/tv/the-handmaids-tale/"
+   }
+  },
+  "The Honourable Woman": {
+   "imdb": {
+    "id": "tt3021686",
+    "rating": 7.9,
+    "votes": 12223
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_honourable_woman"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Hotel Inspector Returns": {
+   "imdb": {
+    "id": "tt1183335",
+    "rating": 7.4,
+    "votes": 346
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-hotel-inspector/"
+   }
+  },
+  "The Hour": {
+   "imdb": {
+    "id": "tt1778108",
+    "rating": 8,
+    "votes": 12668
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 89,
+    "reviews": 61,
+    "url": "https://www.rottentomatoes.com/tv/the-hour"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 34,
+    "url": "https://www.metacritic.com/tv/the-hour-uk/"
+   }
+  },
+  "The House of Eliott": {
+   "imdb": {
+    "id": "tt0101123",
+    "rating": 8.1,
+    "votes": 1947
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_house_of_eliott"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Inbetweeners": {
+   "imdb": {
+    "id": "tt1220617",
+    "rating": 8.4,
+    "votes": 102448
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 93,
+    "reviews": 33,
+    "url": "https://www.rottentomatoes.com/tv/the-inbetweeners"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/the-inbetweeners-uk/"
+   }
+  },
+  "The Indian Doctor": {
+   "imdb": {
+    "id": "tt1731601",
+    "rating": 7.9,
+    "votes": 1864
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_indian_doctor"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Irrational": {
+   "imdb": {
+    "id": "tt16288838",
+    "rating": 7,
+    "votes": 7456
+   },
+   "rt": {
+    "critics": 47,
+    "audience": 73,
+    "reviews": 17,
+    "url": "https://www.rottentomatoes.com/tv/the_irrational"
+   },
+   "metascore": {
+    "score": 55,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/the-irrational/"
+   }
+  },
+  "The IT Crowd": {
+   "imdb": {
+    "id": "tt0487831",
+    "rating": 8.5,
+    "votes": 178520
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 89,
+    "reviews": 31,
+    "url": "https://www.rottentomatoes.com/tv/the_it_crowd_2006"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/the-it-crowd-uk/"
+   }
+  },
+  "The Jetty": {
+   "imdb": {
+    "id": "tt28775005",
+    "rating": 6.4,
+    "votes": 6710
+   },
+   "rt": {
+    "critics": 59,
+    "audience": 61,
+    "reviews": 17,
+    "url": "https://www.rottentomatoes.com/tv/the_jetty"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-jetty/"
+   }
+  },
+  "The Job Lot": {
+   "imdb": {
+    "id": "tt2885556",
+    "rating": 7.1,
+    "votes": 2871
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Kennedys (UK)": {
+   "imdb": {
+    "id": "tt5079178",
+    "rating": 7.2,
+    "votes": 796
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_kennedys"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Kids in the Hall (2022)": {
+   "imdb": {
+    "id": "tt11921588",
+    "rating": 8.1,
+    "votes": 2493
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_kids_in_the_hall"
+   },
+   "metascore": {
+    "score": 83,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-kids-in-the-hall/"
+   }
+  },
+  "The Knick": {
+   "imdb": {
+    "id": "tt2937900",
+    "rating": 8.4,
+    "votes": 57955
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 96,
+    "reviews": 94,
+    "url": "https://www.rottentomatoes.com/tv/the-knick"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 54,
+    "url": "https://www.metacritic.com/tv/the-knick/"
+   }
+  },
+  "The Kominsky Method": {
+   "imdb": {
+    "id": "tt7255502",
+    "rating": 8.2,
+    "votes": 47894
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 89,
+    "reviews": 61,
+    "url": "https://www.rottentomatoes.com/tv/the_kominsky_method"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/the-kominsky-method/"
+   }
+  },
+  "The Larkins": {
+   "imdb": {
+    "id": "tt13678304",
+    "rating": 6.6,
+    "votes": 2276
+   },
+   "rt": {
+    "critics": null,
+    "audience": 64,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_larkins"
+   },
+   "metascore": {
+    "score": 54,
+    "reviews": 6,
+    "url": "https://www.metacritic.com/tv/the-larkins/"
+   }
+  },
+  "The Last Czars": {
+   "imdb": {
+    "id": "tt7949606",
+    "rating": 7.3,
+    "votes": 10899
+   },
+   "rt": {
+    "critics": 56,
+    "audience": 60,
+    "reviews": 9,
+    "url": "https://www.rottentomatoes.com/tv/the_last_czars"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Last Dance": {
+   "imdb": {
+    "id": "tt8420184",
+    "rating": 9,
+    "votes": 185875
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_last_dance_2020"
+   },
+   "metascore": {
+    "score": 90,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/the-last-dance/"
+   }
+  },
+  "The Last Dance: Behind the Scenes": {
+   "imdb": {
+    "id": "tt8420184",
+    "rating": 9,
+    "votes": 185875
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_last_dance_2020"
+   },
+   "metascore": {
+    "score": 90,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/the-last-dance/"
+   }
+  },
+  "The Last Detective": {
+   "imdb": {
+    "id": "tt0312895",
+    "rating": 7.8,
+    "votes": 2581
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_last_detective"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Last Kingdom": {
+   "imdb": {
+    "id": "tt4179452",
+    "rating": 8.5,
+    "votes": 194371
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 95,
+    "reviews": 45,
+    "url": "https://www.rottentomatoes.com/tv/the_last_kingdom"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/the-last-kingdom/"
+   }
+  },
+  "The Last Ship": {
+   "imdb": {
+    "id": "tt2402207",
+    "rating": 7.4,
+    "votes": 71378
+   },
+   "rt": {
+    "critics": null,
+    "audience": 69,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the-last-ship"
+   },
+   "metascore": {
+    "score": 60,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/the-last-ship/"
+   }
+  },
+  "The Last Tycoon": {
+   "imdb": {
+    "id": "tt3390892",
+    "rating": 7.5,
+    "votes": 6211
+   },
+   "rt": {
+    "critics": 45,
+    "audience": 92,
+    "reviews": 42,
+    "url": "https://www.rottentomatoes.com/tv/the_last_tycoon"
+   },
+   "metascore": {
+    "score": 57,
+    "reviews": 30,
+    "url": "https://www.metacritic.com/tv/the-last-tycoon/"
+   }
+  },
+  "The Law According to Lidia Poët": {
+   "imdb": {
+    "id": "tt15441160",
+    "rating": 7.5,
+    "votes": 13043
+   },
+   "rt": {
+    "critics": null,
+    "audience": 89,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_law_according_to_lidia_poet"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Lazarus Project": {
+   "imdb": {
+    "id": "tt14190592",
+    "rating": 7.3,
+    "votes": 13278
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 76,
+    "reviews": 13,
+    "url": "https://www.rottentomatoes.com/tv/the_lazarus_project"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/the-lazarus-project/"
+   }
+  },
+  "The League": {
+   "imdb": {
+    "id": "tt1480684",
+    "rating": 8.2,
+    "votes": 55039
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 83,
+    "reviews": 77,
+    "url": "https://www.rottentomatoes.com/tv/the_league"
+   },
+   "metascore": {
+    "score": 58,
+    "reviews": 34,
+    "url": "https://www.metacritic.com/tv/the-league/"
+   }
+  },
+  "The Librarians": {
+   "imdb": {
+    "id": "tt3663490",
+    "rating": 7.3,
+    "votes": 28162
+   },
+   "rt": {
+    "critics": 89,
+    "audience": 87,
+    "reviews": 24,
+    "url": "https://www.rottentomatoes.com/tv/the_librarians"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/the-librarians-2014/"
+   }
+  },
+  "The Lincoln Lawyer": {
+   "imdb": {
+    "id": "tt13833978",
+    "rating": 7.8,
+    "votes": 102033
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 84,
+    "reviews": 65,
+    "url": "https://www.rottentomatoes.com/tv/the_lincoln_lawyer"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/the-lincoln-lawyer-2022/"
+   }
+  },
+  "The Little Drummer Girl": {
+   "imdb": {
+    "id": "tt7598448",
+    "rating": 7.4,
+    "votes": 18075
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 80,
+    "reviews": 68,
+    "url": "https://www.rottentomatoes.com/tv/the_little_drummer_girl"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/the-little-drummer-girl/"
+   }
+  },
+  "The Living and the Dead": {
+   "imdb": {
+    "id": "tt4928166",
+    "rating": 7.3,
+    "votes": 4381
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-living-and-the-dead/"
+   }
+  },
+  "The Long Call": {
+   "imdb": {
+    "id": "tt13610872",
+    "rating": 6.5,
+    "votes": 4428
+   },
+   "rt": {
+    "critics": 60,
+    "audience": 45,
+    "reviews": 5,
+    "url": "https://www.rottentomatoes.com/tv/the_long_call"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Long Shadow": {
+   "imdb": {
+    "id": "tt13323596",
+    "rating": 7.7,
+    "votes": 11524
+   },
+   "rt": {
+    "critics": 87,
+    "audience": 89,
+    "reviews": 15,
+    "url": "https://www.rottentomatoes.com/tv/the_long_shadow"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/the-long-shadow/"
+   }
+  },
+  "The Looming Tower": {
+   "imdb": {
+    "id": "tt6474236",
+    "rating": 8,
+    "votes": 19887
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 69,
+    "reviews": 60,
+    "url": "https://www.rottentomatoes.com/tv/the_looming_tower"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/the-looming-tower/"
+   }
+  },
+  "The Luminaries": {
+   "imdb": {
+    "id": "tt8075008",
+    "rating": 6.4,
+    "votes": 4870
+   },
+   "rt": {
+    "critics": 65,
+    "audience": 43,
+    "reviews": 31,
+    "url": "https://www.rottentomatoes.com/tv/the_luminaries"
+   },
+   "metascore": {
+    "score": 62,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/the-luminaries/"
+   }
+  },
+  "The Madame Blanc Mysteries": {
+   "imdb": {
+    "id": "tt15499118",
+    "rating": 7.1,
+    "votes": 5238
+   },
+   "rt": {
+    "critics": null,
+    "audience": 65,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_madame_blanc_mysteries"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-madame-blanc-mysteries/"
+   }
+  },
+  "The Magicians": {
+   "imdb": {
+    "id": "tt4254242",
+    "rating": 7.6,
+    "votes": 61052
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 74,
+    "reviews": 123,
+    "url": "https://www.rottentomatoes.com/tv/the_magicians"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 38,
+    "url": "https://www.metacritic.com/tv/the-magicians-2016/"
+   }
+  },
+  "The Mallorca Files": {
+   "imdb": {
+    "id": "tt9204128",
+    "rating": 6.8,
+    "votes": 4492
+   },
+   "rt": {
+    "critics": null,
+    "audience": 86,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_mallorca_files"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-mallorca-files/"
+   }
+  },
+  "The Mandalorian": {
+   "imdb": {
+    "id": "tt8111088",
+    "rating": 8.6,
+    "votes": 669512
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 78,
+    "reviews": 110,
+    "url": "https://www.rottentomatoes.com/tv/the_mandalorian"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 58,
+    "url": "https://www.metacritic.com/tv/the-mandalorian/"
+   }
+  },
+  "The Marlow Murder Club": {
+   "imdb": {
+    "id": "tt27950663",
+    "rating": 7.2,
+    "votes": 5721
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_marlow_murder_club"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/the-marlow-murder-club/"
+   }
+  },
+  "The Marvelous Mrs. Maisel": {
+   "imdb": {
+    "id": "tt5788792",
+    "rating": 8.6,
+    "votes": 161364
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 84,
+    "reviews": 286,
+    "url": "https://www.rottentomatoes.com/tv/the_marvelous_mrs_maisel"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 102,
+    "url": "https://www.metacritic.com/tv/the-marvelous-mrs-maisel/"
+   }
+  },
+  "The Mentalist": {
+   "imdb": {
+    "id": "tt1196946",
+    "rating": 8.2,
+    "votes": 261307
+   },
+   "rt": {
+    "critics": null,
+    "audience": 90,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the-mentalist"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 52,
+    "url": "https://www.metacritic.com/tv/the-mentalist/"
+   }
+  },
+  "The Mick": {
+   "imdb": {
+    "id": "tt5638056",
+    "rating": 7.8,
+    "votes": 22743
+   },
+   "rt": {
+    "critics": 58,
+    "audience": 91,
+    "reviews": 26,
+    "url": "https://www.rottentomatoes.com/tv/the_mick"
+   },
+   "metascore": {
+    "score": 50,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/the-mick/"
+   }
+  },
+  "The Middle": {
+   "imdb": {
+    "id": "tt1442464",
+    "rating": 7.7,
+    "votes": 63961
+   },
+   "rt": {
+    "critics": null,
+    "audience": 87,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the-middle"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/the-middle/"
+   }
+  },
+  "The Mill": {
+   "imdb": {
+    "id": "tt2220768",
+    "rating": 7.5,
+    "votes": 1444
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_mill"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Mindy Project": {
+   "imdb": {
+    "id": "tt2211129",
+    "rating": 7.5,
+    "votes": 36879
+   },
+   "rt": {
+    "critics": 86,
+    "audience": 83,
+    "reviews": 118,
+    "url": "https://www.rottentomatoes.com/tv/the_mindy_project"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 43,
+    "url": "https://www.metacritic.com/tv/the-mindy-project/"
+   }
+  },
+  "The Missing": {
+   "imdb": {
+    "id": "tt3877200",
+    "rating": 8.1,
+    "votes": 32948
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 90,
+    "reviews": 58,
+    "url": "https://www.rottentomatoes.com/tv/the_missing"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 35,
+    "url": "https://www.metacritic.com/tv/the-missing/"
+   }
+  },
+  "The Morning Show": {
+   "imdb": {
+    "id": "tt7203552",
+    "rating": 8.1,
+    "votes": 153427
+   },
+   "rt": {
+    "critics": 69,
+    "audience": 43,
+    "reviews": 253,
+    "url": "https://www.rottentomatoes.com/tv/the_morning_show"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 107,
+    "url": "https://www.metacritic.com/tv/the-morning-show/"
+   }
+  },
+  "The Movies That Made Us": {
+   "imdb": {
+    "id": "tt10681222",
+    "rating": 7.7,
+    "votes": 7742
+   },
+   "rt": {
+    "critics": null,
+    "audience": 71,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_movies_that_made_us"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Musketeers": {
+   "imdb": {
+    "id": "tt2733252",
+    "rating": 7.8,
+    "votes": 25562
+   },
+   "rt": {
+    "critics": 67,
+    "audience": 87,
+    "reviews": 38,
+    "url": "https://www.rottentomatoes.com/tv/the-musketeers"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/the-musketeers/"
+   }
+  },
+  "The Neighborhood": {
+   "imdb": {
+    "id": "tt7942794",
+    "rating": 6.8,
+    "votes": 13675
+   },
+   "rt": {
+    "critics": null,
+    "audience": 67,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_neighborhood"
+   },
+   "metascore": {
+    "score": 50,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/the-neighborhood/"
+   }
+  },
+  "The New Look": {
+   "imdb": {
+    "id": "tt18177528",
+    "rating": 7.4,
+    "votes": 9683
+   },
+   "rt": {
+    "critics": 58,
+    "audience": 69,
+    "reviews": 55,
+    "url": "https://www.rottentomatoes.com/tv/the_new_look"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 24,
+    "url": "https://www.metacritic.com/tv/the-new-look/"
+   }
+  },
+  "The Newsreader": {
+   "imdb": {
+    "id": "tt13925142",
+    "rating": 7.9,
+    "votes": 5990
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 93,
+    "reviews": 26,
+    "url": "https://www.rottentomatoes.com/tv/the_newsreader"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/the-newsreader/"
+   }
+  },
+  "The Newsroom": {
+   "imdb": {
+    "id": "tt1870479",
+    "rating": 8.6,
+    "votes": 137219
+   },
+   "rt": {
+    "critics": null,
+    "audience": 90,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_newsroom"
+   },
+   "metascore": {
+    "score": 61,
+    "reviews": 67,
+    "url": "https://www.metacritic.com/tv/the-newsroom/"
+   }
+  },
+  "The Night Agent": {
+   "imdb": {
+    "id": "tt13918776",
+    "rating": 7.4,
+    "votes": 166421
+   },
+   "rt": {
+    "critics": 82,
+    "audience": 67,
+    "reviews": 74,
+    "url": "https://www.rottentomatoes.com/tv/the_night_agent"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/the-night-agent/"
+   }
+  },
+  "The Night Manager": {
+   "imdb": {
+    "id": "tt1399664",
+    "rating": 8,
+    "votes": 144042
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 75,
+    "reviews": 118,
+    "url": "https://www.rottentomatoes.com/tv/the_night_manager"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 50,
+    "url": "https://www.metacritic.com/tv/the-night-manager/"
+   }
+  },
+  "The Night Of": {
+   "imdb": {
+    "id": "tt2401256",
+    "rating": 8.4,
+    "votes": 202647
+   },
+   "rt": {
+    "critics": 94,
+    "audience": 93,
+    "reviews": 88,
+    "url": "https://www.rottentomatoes.com/tv/the_night_of"
+   },
+   "metascore": {
+    "score": 90,
+    "reviews": 40,
+    "url": "https://www.metacritic.com/tv/the-night-of/"
+   }
+  },
+  "The Offer": {
+   "imdb": {
+    "id": "tt13111040",
+    "rating": 8.6,
+    "votes": 52631
+   },
+   "rt": {
+    "critics": 57,
+    "audience": 95,
+    "reviews": 53,
+    "url": "https://www.rottentomatoes.com/tv/the_offer"
+   },
+   "metascore": {
+    "score": 48,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/the-offer/"
+   }
+  },
+  "The Office (UK)": {
+   "imdb": {
+    "id": "tt0290978",
+    "rating": 8.5,
+    "votes": 134520
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 87,
+    "reviews": 49,
+    "url": "https://www.rottentomatoes.com/tv/the_office_2001"
+   },
+   "metascore": {
+    "score": 97,
+    "reviews": 47,
+    "url": "https://www.metacritic.com/tv/the-office-uk/"
+   }
+  },
+  "The Office (US)": {
+   "imdb": {
+    "id": "tt0386676",
+    "rating": 9,
+    "votes": 858337
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 89,
+    "reviews": 202,
+    "url": "https://www.rottentomatoes.com/tv/the_office"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 51,
+    "url": "https://www.metacritic.com/tv/the-office/"
+   }
+  },
+  "The Orville": {
+   "imdb": {
+    "id": "tt5691552",
+    "rating": 8,
+    "votes": 111322
+   },
+   "rt": {
+    "critics": 77,
+    "audience": 90,
+    "reviews": 77,
+    "url": "https://www.rottentomatoes.com/tv/orville"
+   },
+   "metascore": {
+    "score": 36,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/the-orville/"
+   }
+  },
+  "The Other One": {
+   "imdb": {
+    "id": "tt7374240",
+    "rating": 7.5,
+    "votes": 2877
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 95,
+    "reviews": 13,
+    "url": "https://www.rottentomatoes.com/tv/the_other_one_2017"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/the-other-one/"
+   }
+  },
+  "The Other Two": {
+   "imdb": {
+    "id": "tt8310612",
+    "rating": 7.8,
+    "votes": 12636
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 84,
+    "reviews": 87,
+    "url": "https://www.rottentomatoes.com/tv/the_other_two"
+   },
+   "metascore": {
+    "score": 81,
+    "reviews": 35,
+    "url": "https://www.metacritic.com/tv/the-other-two/"
+   }
+  },
+  "The Outlaws": {
+   "imdb": {
+    "id": "tt11646832",
+    "rating": 7.7,
+    "votes": 20691
+   },
+   "rt": {
+    "critics": 86,
+    "audience": 81,
+    "reviews": 43,
+    "url": "https://www.rottentomatoes.com/tv/the_outlaws"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/the-outlaws/"
+   }
+  },
+  "The Paradise": {
+   "imdb": {
+    "id": "tt2391224",
+    "rating": 7.7,
+    "votes": 13928
+   },
+   "rt": null,
+   "metascore": {
+    "score": 71,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/the-paradise/"
+   }
+  },
+  "The Pembrokeshire Murders": {
+   "imdb": {
+    "id": "tt11649104",
+    "rating": 7.1,
+    "votes": 13305
+   },
+   "rt": {
+    "critics": 82,
+    "audience": null,
+    "reviews": 11,
+    "url": "https://www.rottentomatoes.com/tv/the_pembrokeshire_murders"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Peripheral": {
+   "imdb": {
+    "id": "tt8291284",
+    "rating": 7.5,
+    "votes": 93413
+   },
+   "rt": {
+    "critics": 79,
+    "audience": 85,
+    "reviews": 56,
+    "url": "https://www.rottentomatoes.com/tv/the_peripheral"
+   },
+   "metascore": {
+    "score": 57,
+    "reviews": 20,
+    "url": "https://www.metacritic.com/tv/the-peripheral/"
+   }
+  },
+  "The Playlist": {
+   "imdb": {
+    "id": "tt11564258",
+    "rating": 7.4,
+    "votes": 17869
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 86,
+    "reviews": 9,
+    "url": "https://www.rottentomatoes.com/tv/the_playlist"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/the-playlist/"
+   }
+  },
+  "The Pursuit of Love": {
+   "imdb": {
+    "id": "tt10556338",
+    "rating": 6.7,
+    "votes": 6158
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 64,
+    "reviews": 52,
+    "url": "https://www.rottentomatoes.com/tv/the_pursuit_of_love"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 20,
+    "url": "https://www.metacritic.com/tv/the-pursuit-of-love/"
+   }
+  },
+  "The Queen's Gambit": {
+   "imdb": {
+    "id": "tt10048342",
+    "rating": 8.5,
+    "votes": 684043
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 94,
+    "reviews": 104,
+    "url": "https://www.rottentomatoes.com/tv/the_queens_gambit"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/the-queens-gambit/"
+   }
+  },
+  "The Reluctant Traveler: Special Episodes": {
+   "imdb": {
+    "id": "tt15822846",
+    "rating": 7.5,
+    "votes": 3587
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Renovators": {
+   "imdb": {
+    "id": "tt2203435",
+    "rating": 7.8,
+    "votes": 67
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Repair Shop: Fixing Britain": {
+   "imdb": {
+    "id": "tt12669616",
+    "rating": 8.6,
+    "votes": 35
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Residence": {
+   "imdb": {
+    "id": "tt8740614",
+    "rating": 7.7,
+    "votes": 66377
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 79,
+    "reviews": 68,
+    "url": "https://www.rottentomatoes.com/tv/the_residence"
+   },
+   "metascore": {
+    "score": 67,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/the-residence/"
+   }
+  },
+  "The Resident": {
+   "imdb": {
+    "id": "tt6483832",
+    "rating": 7.8,
+    "votes": 44923
+   },
+   "rt": {
+    "critics": null,
+    "audience": 73,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_resident"
+   },
+   "metascore": {
+    "score": 54,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/the-resident/"
+   }
+  },
+  "The Responder": {
+   "imdb": {
+    "id": "tt11899030",
+    "rating": 7.5,
+    "votes": 17922
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 81,
+    "reviews": 38,
+    "url": "https://www.rottentomatoes.com/tv/the_responder"
+   },
+   "metascore": {
+    "score": 88,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/the-responder/"
+   }
+  },
+  "The Restoration Man": {
+   "imdb": {
+    "id": "tt1632329",
+    "rating": 7.8,
+    "votes": 277
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Rise and Fall of Reggie Dinkins": {
+   "imdb": {
+    "id": "tt36153709",
+    "rating": 6.9,
+    "votes": 2891
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 75,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/the_fall_and_rise_of_reggie_dinkins"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/the-fall-and-rise-of-reggie-dinkins/"
+   }
+  },
+  "The Romanoffs": {
+   "imdb": {
+    "id": "tt6599482",
+    "rating": 7,
+    "votes": 7150
+   },
+   "rt": {
+    "critics": 49,
+    "audience": 63,
+    "reviews": 63,
+    "url": "https://www.rottentomatoes.com/tv/the_romanoffs"
+   },
+   "metascore": {
+    "score": 56,
+    "reviews": 25,
+    "url": "https://www.metacritic.com/tv/the-romanoffs/"
+   }
+  },
+  "The Rookie": {
+   "imdb": {
+    "id": "tt7587890",
+    "rating": 8,
+    "votes": 139400
+   },
+   "rt": {
+    "critics": null,
+    "audience": 75,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_rookie"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/the-rookie/"
+   }
+  },
+  "The Salvage Hunters": {
+   "imdb": {
+    "id": "tt2223298",
+    "rating": 7.8,
+    "votes": 763
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Secret of Crickley Hall": {
+   "imdb": {
+    "id": "tt2294227",
+    "rating": 6.8,
+    "votes": 4043
+   },
+   "rt": {
+    "critics": null,
+    "audience": 74,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the-secret-of-crickley-hall"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Serpent": {
+   "imdb": {
+    "id": "tt7985576",
+    "rating": 7.6,
+    "votes": 55689
+   },
+   "rt": {
+    "critics": 69,
+    "audience": 81,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/the_serpent"
+   },
+   "metascore": {
+    "score": 59,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/the-serpent/"
+   }
+  },
+  "The Serpent Queen": {
+   "imdb": {
+    "id": "tt14022350",
+    "rating": 7.7,
+    "votes": 12494
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 88,
+    "reviews": 33,
+    "url": "https://www.rottentomatoes.com/tv/the_serpent_queen"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/the-serpent-queen/"
+   }
+  },
+  "The Sinner": {
+   "imdb": {
+    "id": "tt6048596",
+    "rating": 7.8,
+    "votes": 155153
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 73,
+    "reviews": 98,
+    "url": "https://www.rottentomatoes.com/tv/the_sinner"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 48,
+    "url": "https://www.metacritic.com/tv/the-sinner/"
+   }
+  },
+  "The Sixth Commandment": {
+   "imdb": {
+    "id": "tt20916306",
+    "rating": 7.7,
+    "votes": 9034
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 85,
+    "reviews": 20,
+    "url": "https://www.rottentomatoes.com/tv/the_sixth_commandment"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-sixth-commandment/"
+   }
+  },
+  "The Spanish Princess": {
+   "imdb": {
+    "id": "tt8417308",
+    "rating": 7,
+    "votes": 12863
+   },
+   "rt": {
+    "critics": 75,
+    "audience": 49,
+    "reviews": 12,
+    "url": "https://www.rottentomatoes.com/tv/the_spanish_princess"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 6,
+    "url": "https://www.metacritic.com/tv/the-spanish-princess/"
+   }
+  },
+  "The Split": {
+   "imdb": {
+    "id": "tt7631146",
+    "rating": 7.9,
+    "votes": 13125
+   },
+   "rt": {
+    "critics": 75,
+    "audience": 91,
+    "reviews": 31,
+    "url": "https://www.rottentomatoes.com/tv/the_split"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/the-split/"
+   }
+  },
+  "The Spy": {
+   "imdb": {
+    "id": "tt5952634",
+    "rating": 7.9,
+    "votes": 59002
+   },
+   "rt": {
+    "critics": 86,
+    "audience": 85,
+    "reviews": 43,
+    "url": "https://www.rottentomatoes.com/tv/the_spy"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 16,
+    "url": "https://www.metacritic.com/tv/the-spy/"
+   }
+  },
+  "The Staircase": {
+   "imdb": {
+    "id": "tt11324406",
+    "rating": 7.1,
+    "votes": 44154
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 59,
+    "reviews": 72,
+    "url": "https://www.rottentomatoes.com/tv/the_staircase_2022"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/the-staircase-2022/"
+   }
+  },
+  "The Story of China": {
+   "imdb": {
+    "id": "tt5361834",
+    "rating": 8,
+    "votes": 446
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Story of Egypt": {
+   "imdb": null,
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Studio": {
+   "imdb": {
+    "id": "tt23649128",
+    "rating": 8,
+    "votes": 71627
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 77,
+    "reviews": 130,
+    "url": "https://www.rottentomatoes.com/tv/the_studio"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 42,
+    "url": "https://www.metacritic.com/tv/the-studio/"
+   }
+  },
+  "The Suspect": {
+   "imdb": {
+    "id": "tt15548144",
+    "rating": 6.9,
+    "votes": 4838
+   },
+   "rt": {
+    "critics": 67,
+    "audience": 56,
+    "reviews": 15,
+    "url": "https://www.rottentomatoes.com/tv/the_suspect"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 5,
+    "url": "https://www.metacritic.com/tv/the-suspect/"
+   }
+  },
+  "The Syndicate": {
+   "imdb": {
+    "id": "tt2299141",
+    "rating": 7.3,
+    "votes": 2081
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_syndicate"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Tattooist of Auschwitz": {
+   "imdb": {
+    "id": "tt9022422",
+    "rating": 8,
+    "votes": 14544
+   },
+   "rt": {
+    "critics": 77,
+    "audience": 76,
+    "reviews": 35,
+    "url": "https://www.rottentomatoes.com/tv/the_tattooist_of_auschwitz"
+   },
+   "metascore": {
+    "score": 60,
+    "reviews": 17,
+    "url": "https://www.metacritic.com/tv/the-tattooist-of-auschwitz/"
+   }
+  },
+  "The Thief, His Wife and the Canoe": {
+   "imdb": {
+    "id": "tt14183410",
+    "rating": 7.2,
+    "votes": 5592
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 89,
+    "reviews": 12,
+    "url": "https://www.rottentomatoes.com/tv/the_thief_his_wife_and_the_canoe"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-thief-his-wife-and-the-canoe/"
+   }
+  },
+  "The Time in Between": {
+   "imdb": {
+    "id": "tt1864750",
+    "rating": 8.2,
+    "votes": 5173
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Tourist": {
+   "imdb": {
+    "id": "tt11847842",
+    "rating": 7.1,
+    "votes": 34443
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 60,
+    "reviews": 61,
+    "url": "https://www.rottentomatoes.com/tv/the_tourist"
+   },
+   "metascore": {
+    "score": 79,
+    "reviews": 22,
+    "url": "https://www.metacritic.com/tv/the-tourist/"
+   }
+  },
+  "The Tower": {
+   "imdb": {
+    "id": "tt14364876",
+    "rating": 7,
+    "votes": 9293
+   },
+   "rt": {
+    "critics": 100,
+    "audience": null,
+    "reviews": 10,
+    "url": "https://www.rottentomatoes.com/tv/the_tower"
+   },
+   "metascore": {
+    "score": 74,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/the-tower/"
+   }
+  },
+  "The Toys That Made Us": {
+   "imdb": {
+    "id": "tt7053920",
+    "rating": 7.9,
+    "votes": 6485
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 82,
+    "reviews": 11,
+    "url": "https://www.rottentomatoes.com/tv/the_toys_that_made_us"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Traitors (UK)": {
+   "imdb": {
+    "id": "tt23743442",
+    "rating": 8.7,
+    "votes": 8907
+   },
+   "rt": {
+    "critics": null,
+    "audience": 67,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_traitors_2022"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/the-traitors/"
+   }
+  },
+  "The Tudors": {
+   "imdb": {
+    "id": "tt0758790",
+    "rating": 8.1,
+    "votes": 89088
+   },
+   "rt": {
+    "critics": 69,
+    "audience": 84,
+    "reviews": 76,
+    "url": "https://www.rottentomatoes.com/tv/the-tudors"
+   },
+   "metascore": {
+    "score": 66,
+    "reviews": 55,
+    "url": "https://www.metacritic.com/tv/the-tudors/"
+   }
+  },
+  "The Umbrella Academy": {
+   "imdb": {
+    "id": "tt1312171",
+    "rating": 7.8,
+    "votes": 319551
+   },
+   "rt": {
+    "critics": 78,
+    "audience": 61,
+    "reviews": 280,
+    "url": "https://www.rottentomatoes.com/tv/the_umbrella_academy"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 55,
+    "url": "https://www.metacritic.com/tv/the-umbrella-academy/"
+   }
+  },
+  "The Undoing": {
+   "imdb": {
+    "id": "tt8134470",
+    "rating": 7.4,
+    "votes": 120213
+   },
+   "rt": {
+    "critics": 75,
+    "audience": 66,
+    "reviews": 99,
+    "url": "https://www.rottentomatoes.com/tv/the_undoing"
+   },
+   "metascore": {
+    "score": 62,
+    "reviews": 32,
+    "url": "https://www.metacritic.com/tv/the-undoing/"
+   }
+  },
+  "The Unicorn": {
+   "imdb": {
+    "id": "tt10329028",
+    "rating": 7.2,
+    "votes": 5135
+   },
+   "rt": {
+    "critics": 85,
+    "audience": 71,
+    "reviews": 27,
+    "url": "https://www.rottentomatoes.com/tv/the_unicorn"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/the-unicorn/"
+   }
+  },
+  "The Upshaws": {
+   "imdb": {
+    "id": "tt10945036",
+    "rating": 7.1,
+    "votes": 5228
+   },
+   "rt": {
+    "critics": null,
+    "audience": 80,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_upshaws"
+   },
+   "metascore": {
+    "score": 57,
+    "reviews": 7,
+    "url": "https://www.metacritic.com/tv/the-upshaws/"
+   }
+  },
+  "The Village": {
+   "imdb": {
+    "id": "tt2394340",
+    "rating": 7.7,
+    "votes": 3183
+   },
+   "rt": {
+    "critics": null,
+    "audience": 92,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_village_2013"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Walk-In": {
+   "imdb": {
+    "id": "tt22175166",
+    "rating": 7.3,
+    "votes": 6104
+   },
+   "rt": {
+    "critics": 80,
+    "audience": 85,
+    "reviews": 5,
+    "url": "https://www.rottentomatoes.com/tv/the_walk_in"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The West Wing": {
+   "imdb": {
+    "id": "tt0200276",
+    "rating": 8.9,
+    "votes": 102011
+   },
+   "rt": {
+    "critics": 81,
+    "audience": 95,
+    "reviews": 156,
+    "url": "https://www.rottentomatoes.com/tv/the-west-wing"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/the-west-wing/"
+   }
+  },
+  "The White Lotus": {
+   "imdb": {
+    "id": "tt13406094",
+    "rating": 8,
+    "votes": 338192
+   },
+   "rt": {
+    "critics": 90,
+    "audience": 78,
+    "reviews": 311,
+    "url": "https://www.rottentomatoes.com/tv/the_white_lotus"
+   },
+   "metascore": {
+    "score": 80,
+    "reviews": 125,
+    "url": "https://www.metacritic.com/tv/the-white-lotus/"
+   }
+  },
+  "The White Princess": {
+   "imdb": {
+    "id": "tt5705956",
+    "rating": 7.5,
+    "votes": 18451
+   },
+   "rt": {
+    "critics": 75,
+    "audience": 83,
+    "reviews": 16,
+    "url": "https://www.rottentomatoes.com/tv/the_white_princess"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 9,
+    "url": "https://www.metacritic.com/tv/the-white-princess/"
+   }
+  },
+  "The White Queen": {
+   "imdb": {
+    "id": "tt2372220",
+    "rating": 7.7,
+    "votes": 34714
+   },
+   "rt": {
+    "critics": 80,
+    "audience": 82,
+    "reviews": 20,
+    "url": "https://www.rottentomatoes.com/tv/the-white-queen"
+   },
+   "metascore": {
+    "score": 70,
+    "reviews": 14,
+    "url": "https://www.metacritic.com/tv/the-white-queen/"
+   }
+  },
+  "The Wine Show": {
+   "imdb": {
+    "id": "tt5599110",
+    "rating": 8.7,
+    "votes": 498
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_wine_show"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Wonder Years (2021)": {
+   "imdb": {
+    "id": "tt12682076",
+    "rating": 6.6,
+    "votes": 6105
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 71,
+    "reviews": 25,
+    "url": "https://www.rottentomatoes.com/tv/the_wonder_years_2021"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 21,
+    "url": "https://www.metacritic.com/tv/the-wonder-years-2021/"
+   }
+  },
+  "The World According to Jeff Goldblum": {
+   "imdb": {
+    "id": "tt10196390",
+    "rating": 7.6,
+    "votes": 3166
+   },
+   "rt": {
+    "critics": 83,
+    "audience": 76,
+    "reviews": 23,
+    "url": "https://www.rottentomatoes.com/tv/the_world_according_to_jeff_goldblum"
+   },
+   "metascore": {
+    "score": 64,
+    "reviews": 8,
+    "url": "https://www.metacritic.com/tv/the-world-according-to-jeff-goldblum/"
+   }
+  },
+  "The World Cook": {
+   "imdb": {
+    "id": "tt24852552",
+    "rating": 7.8,
+    "votes": 43
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_world_cook"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The World's Most Amazing Vacation Rentals": {
+   "imdb": {
+    "id": "tt14691382",
+    "rating": 6.8,
+    "votes": 1759
+   },
+   "rt": {
+    "critics": null,
+    "audience": 54,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_worlds_most_amazing_vacation_rentals"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The World's Most Extraordinary Homes: Revisited": {
+   "imdb": {
+    "id": "tt7804132",
+    "rating": 7.6,
+    "votes": 3863
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_worlds_most_extraordinary_homes"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Yorkshire Auction House": {
+   "imdb": {
+    "id": "tt14403160",
+    "rating": 7.3,
+    "votes": 78
+   },
+   "rt": null,
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "The Young Offenders": {
+   "imdb": {
+    "id": "tt7988304",
+    "rating": 8,
+    "votes": 5649
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/the_young_offenders"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "This Country": {
+   "imdb": {
+    "id": "tt6583806",
+    "rating": 8.4,
+    "votes": 10056
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 96,
+    "reviews": 21,
+    "url": "https://www.rottentomatoes.com/tv/this_country"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Three Pines": {
+   "imdb": {
+    "id": "tt15351648",
+    "rating": 7.2,
+    "votes": 17189
+   },
+   "rt": {
+    "critics": 72,
+    "audience": 73,
+    "reviews": 18,
+    "url": "https://www.rottentomatoes.com/tv/three_pines"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 6,
+    "url": "https://www.metacritic.com/tv/three-pines/"
+   }
+  },
+  "Timeless": {
+   "imdb": {
+    "id": "tt5511582",
+    "rating": 7.6,
+    "votes": 51932
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 67,
+    "reviews": 54,
+    "url": "https://www.rottentomatoes.com/tv/timeless"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/timeless/"
+   }
+  },
+  "Toast of London": {
+   "imdb": {
+    "id": "tt2432604",
+    "rating": 8.2,
+    "votes": 12209
+   },
+   "rt": {
+    "critics": 84,
+    "audience": 94,
+    "reviews": 19,
+    "url": "https://www.rottentomatoes.com/tv/toast_of_london"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/toast-of-london/"
+   }
+  },
+  "Tom Clancy's Jack Ryan": {
+   "imdb": {
+    "id": "tt5057054",
+    "rating": 8,
+    "votes": 198165
+   },
+   "rt": null,
+   "metascore": {
+    "score": 66,
+    "reviews": 42,
+    "url": "https://www.metacritic.com/tv/tom-clancys-jack-ryan/"
+   }
+  },
+  "Tom Jones (2023)": {
+   "imdb": {
+    "id": "tt15398980",
+    "rating": 5.5,
+    "votes": 1496
+   },
+   "rt": null,
+   "metascore": {
+    "score": 62,
+    "reviews": 12,
+    "url": "https://www.metacritic.com/tv/tom-jones-2023/"
+   }
+  },
+  "Top Chef": {
+   "imdb": {
+    "id": "tt0765425",
+    "rating": 7.7,
+    "votes": 7762
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/top_chef"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 29,
+    "url": "https://www.metacritic.com/tv/top-chef/"
+   }
+  },
+  "Travel Man": {
+   "imdb": {
+    "id": "tt4719744",
+    "rating": 8.1,
+    "votes": 3832
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/travel_man_48_hours_in_"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Travelers": {
+   "imdb": {
+    "id": "tt5651844",
+    "rating": 8,
+    "votes": 73712
+   },
+   "rt": {
+    "critics": 100,
+    "audience": 97,
+    "reviews": 15,
+    "url": "https://www.rottentomatoes.com/tv/travelers"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/travelers/"
+   }
+  },
+  "Trial & Error": {
+   "imdb": {
+    "id": "tt5511512",
+    "rating": 7.9,
+    "votes": 7096
+   },
+   "rt": {
+    "critics": 88,
+    "audience": 88,
+    "reviews": 46,
+    "url": "https://www.rottentomatoes.com/tv/trial_error"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 40,
+    "url": "https://www.metacritic.com/tv/trial-error/"
+   }
+  },
+  "Trying": {
+   "imdb": {
+    "id": "tt10982034",
+    "rating": 8,
+    "votes": 16967
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 86,
+    "reviews": 59,
+    "url": "https://www.rottentomatoes.com/tv/trying"
+   },
+   "metascore": {
+    "score": 69,
+    "reviews": 16,
+    "url": "https://www.metacritic.com/tv/trying/"
+   }
+  },
+  "Undercover Boss": {
+   "imdb": {
+    "id": "tt1442553",
+    "rating": 5.8,
+    "votes": 4021
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/undercover_boss"
+   },
+   "metascore": {
+    "score": 60,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/undercover-boss/"
+   }
+  },
+  "Unforgotten": {
+   "imdb": {
+    "id": "tt4192812",
+    "rating": 8.4,
+    "votes": 38542
+   },
+   "rt": {
+    "critics": 91,
+    "audience": 76,
+    "reviews": 46,
+    "url": "https://www.rottentomatoes.com/tv/unforgotten"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 23,
+    "url": "https://www.metacritic.com/tv/unforgotten/"
+   }
+  },
+  "Unsellable Houses": {
+   "imdb": {
+    "id": "tt12007528",
+    "rating": 6.9,
+    "votes": 608
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/unsellable_homes"
+   },
+   "metascore": {
+    "score": null,
+    "status": "Not listed on Metacritic"
+   }
+  },
+  "Upload": {
+   "imdb": {
+    "id": "tt7826376",
+    "rating": 7.7,
+    "votes": 91893
+   },
+   "rt": {
+    "critics": 87,
+    "audience": 72,
+    "reviews": 107,
+    "url": "https://www.rottentomatoes.com/tv/upload"
+   },
+   "metascore": {
+    "score": 68,
+    "reviews": 35,
+    "url": "https://www.metacritic.com/tv/upload/"
+   }
+  },
+  "Veep": {
+   "imdb": {
+    "id": "tt1759761",
+    "rating": 8.4,
+    "votes": 73325
+   },
+   "rt": {
+    "critics": 93,
+    "audience": 90,
+    "reviews": 251,
+    "url": "https://www.rottentomatoes.com/tv/veep"
+   },
+   "metascore": {
+    "score": 82,
+    "reviews": 115,
+    "url": "https://www.metacritic.com/tv/veep/"
+   }
+  },
+  "Vera": {
+   "imdb": {
+    "id": "tt1693592",
+    "rating": 8.2,
+    "votes": 25151
+   },
+   "rt": {
+    "critics": null,
+    "audience": 84,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/vera"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/vera/"
+   }
+  },
+  "Victoria": {
+   "imdb": {
+    "id": "tt5137338",
+    "rating": 8.2,
+    "votes": 35690
+   },
+   "rt": null,
+   "metascore": {
+    "score": 67,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/victoria-2016/"
+   }
+  },
+  "Vienna Blood": {
+   "imdb": {
+    "id": "tt9179616",
+    "rating": 7.6,
+    "votes": 10782
+   },
+   "rt": {
+    "critics": null,
+    "audience": 88,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/vienna_blood"
+   },
+   "metascore": {
+    "score": 72,
+    "reviews": 10,
+    "url": "https://www.metacritic.com/tv/vienna-blood/"
+   }
+  },
+  "Vigil": {
+   "imdb": {
+    "id": "tt11846996",
+    "rating": 7.4,
+    "votes": 33183
+   },
+   "rt": {
+    "critics": 66,
+    "audience": 56,
+    "reviews": 43,
+    "url": "https://www.rottentomatoes.com/tv/vigil_2021"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 15,
+    "url": "https://www.metacritic.com/tv/vigil/"
+   }
+  },
+  "Warehouse 13": {
+   "imdb": {
+    "id": "tt1132290",
+    "rating": 7.6,
+    "votes": 61955
+   },
+   "rt": {
+    "critics": 82,
+    "audience": 90,
+    "reviews": 78,
+    "url": "https://www.rottentomatoes.com/tv/warehouse-13"
+   },
+   "metascore": {
+    "score": 65,
+    "reviews": 27,
+    "url": "https://www.metacritic.com/tv/warehouse-13/"
+   }
+  },
+  "Welcome to Wrexham": {
+   "imdb": {
+    "id": "tt14674086",
+    "rating": 8.3,
+    "votes": 25961
+   },
+   "rt": {
+    "critics": 95,
+    "audience": 88,
+    "reviews": 68,
+    "url": "https://www.rottentomatoes.com/tv/welcome_to_wrexham"
+   },
+   "metascore": {
+    "score": 77,
+    "reviews": 33,
+    "url": "https://www.metacritic.com/tv/welcome-to-wrexham/"
+   }
+  },
+  "Westworld": {
+   "imdb": {
+    "id": "tt0475784",
+    "rating": 8.4,
+    "votes": 562988
+   },
+   "rt": {
+    "critics": 80,
+    "audience": 75,
+    "reviews": 293,
+    "url": "https://www.rottentomatoes.com/tv/westworld"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 113,
+    "url": "https://www.metacritic.com/tv/westworld/"
+   }
+  },
+  "What We Do in the Shadows": {
+   "imdb": {
+    "id": "tt7908628",
+    "rating": 8.5,
+    "votes": 130345
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 92,
+    "reviews": 222,
+    "url": "https://www.rottentomatoes.com/tv/what_we_do_in_the_shadows"
+   },
+   "metascore": {
+    "score": 83,
+    "reviews": 79,
+    "url": "https://www.metacritic.com/tv/what-we-do-in-the-shadows-2019/"
+   }
+  },
+  "White Collar": {
+   "imdb": {
+    "id": "tt1358522",
+    "rating": 8.2,
+    "votes": 155501
+   },
+   "rt": {
+    "critics": 96,
+    "audience": 93,
+    "reviews": 74,
+    "url": "https://www.rottentomatoes.com/tv/white_collar"
+   },
+   "metascore": {
+    "score": 76,
+    "reviews": 34,
+    "url": "https://www.metacritic.com/tv/white-collar/"
+   }
+  },
+  "Whitstable Pearl": {
+   "imdb": {
+    "id": "tt13259878",
+    "rating": 7.1,
+    "votes": 5614
+   },
+   "rt": {
+    "critics": null,
+    "audience": null,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/whitstable_pearl"
+   },
+   "metascore": {
+    "score": null,
+    "status": "No Metascore yet (too few critic reviews)",
+    "url": "https://www.metacritic.com/tv/whitstable-pearl/"
+   }
+  },
+  "Widow's Bay": {
+   "imdb": {
+    "id": "tt33332385",
+    "rating": 8.1,
+    "votes": 102987
+   },
+   "rt": {
+    "critics": 98,
+    "audience": 92,
+    "reviews": 109,
+    "url": "https://www.rottentomatoes.com/tv/widows_bay"
+   },
+   "metascore": {
+    "score": 78,
+    "reviews": 26,
+    "url": "https://www.metacritic.com/tv/widows-bay/"
+   }
+  },
+  "Will Trent": {
+   "imdb": {
+    "id": "tt17543592",
+    "rating": 7.7,
+    "votes": 31281
+   },
+   "rt": {
+    "critics": null,
+    "audience": 74,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/will_trent"
+   },
+   "metascore": {
+    "score": 71,
+    "reviews": 13,
+    "url": "https://www.metacritic.com/tv/will-trent/"
+   }
+  },
+  "World on Fire": {
+   "imdb": {
+    "id": "tt8001092",
+    "rating": 7.4,
+    "votes": 9109
+   },
+   "rt": {
+    "critics": 92,
+    "audience": 54,
+    "reviews": 39,
+    "url": "https://www.rottentomatoes.com/tv/world_on_fire"
+   },
+   "metascore": {
+    "score": 73,
+    "reviews": 18,
+    "url": "https://www.metacritic.com/tv/world-on-fire/"
+   }
+  },
+  "Wrecked": {
+   "imdb": {
+    "id": "tt4168956",
+    "rating": 7.3,
+    "votes": 8580
+   },
+   "rt": {
+    "critics": null,
+    "audience": 91,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/wrecked"
+   },
+   "metascore": {
+    "score": 56,
+    "reviews": 11,
+    "url": "https://www.metacritic.com/tv/wrecked-2016/"
+   }
+  },
+  "You're the Worst": {
+   "imdb": {
+    "id": "tt3228420",
+    "rating": 8.1,
+    "votes": 30321
+   },
+   "rt": null,
+   "metascore": {
+    "score": 77,
+    "reviews": 58,
+    "url": "https://www.metacritic.com/tv/youre-the-worst/"
+   }
+  },
+  "Young Sheldon": {
+   "imdb": {
+    "id": "tt6226232",
+    "rating": 7.8,
+    "votes": 154546
+   },
+   "rt": {
+    "critics": null,
+    "audience": 84,
+    "reviews": 0,
+    "url": "https://www.rottentomatoes.com/tv/young_sheldon"
+   },
+   "metascore": {
+    "score": 63,
+    "reviews": 28,
+    "url": "https://www.metacritic.com/tv/young-sheldon/"
+   }
+  },
+  "Younger": {
+   "imdb": {
+    "id": "tt3288518",
+    "rating": 7.7,
+    "votes": 36076
+   },
+   "rt": {
+    "critics": 97,
+    "audience": 76,
+    "reviews": 100,
+    "url": "https://www.rottentomatoes.com/tv/younger"
+   },
+   "metascore": {
+    "score": 75,
+    "reviews": 35,
+    "url": "https://www.metacritic.com/tv/younger/"
+   }
+  }
+ }
+}
