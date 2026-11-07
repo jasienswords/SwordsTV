@@ -279,3 +279,5 @@ details.card summary{cursor:pointer}
 .why-card{background:var(--panel);border-left:4px solid var(--green);border-radius:10px;padding:12px 14px;margin:12px 0 0;font-size:14px;line-height:1.5;box-shadow:var(--shadow)}
 .why-card strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:3px}
 @media(max-width:650px){.rating-split .fact strong{font-size:19px}}
+.subbar .sync-btn.signed-in{border-color:var(--green);color:#bff0d2}
+@media(max-width:650px){.subbar small{display:none}.subbar{justify-content:flex-end}}
