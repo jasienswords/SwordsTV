@@ -145,9 +145,14 @@ const dayOf=d=>new Date(d+"T12:00:00").getDay();
 function isReleasing(s){const t=tm(s.title);if(!t||["Ended","Canceled"].includes(t.status))return false;const today=new Date().toISOString().slice(0,10);
  const ago=d=>Math.floor((Date.parse(today+"T12:00:00Z")-Date.parse(d+"T12:00:00Z"))/864e5);
  return !!((t.nextEpisode&&t.nextEpisode.date&&ago(t.nextEpisode.date)>=-14&&ago(t.nextEpisode.date)<=0)||(t.lastEpisode&&t.lastEpisode.date&&ago(t.lastEpisode.date)>=0&&ago(t.lastEpisode.date)<=8))}
-function releaseService(s){if(s.releaseService)return s.releaseService;const t=tm(s.title)||{},p=t.providers||{},active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
+let RELEASE={};
+// U.S. broadcast channels put new episodes on their streaming partner the next day.
+const BROADCAST=new Set(["ABC","NBC","CBS","FOX","The CW"]);
+function releaseService(s){if(s.releaseService)return s.releaseService;if(RELEASE[s.title]&&RELEASE[s.title].service)return RELEASE[s.title].service;const t=tm(s.title)||{},p=t.providers||{},active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
  const mine=(p.stream||[]).map(x=>serviceFor(x.name)).find(n=>n&&active.has(n));return mine||(((p.stream||[])[0]||{}).name)||(((t.networks||[])[0]||{}).name)||""}
-function releaseDay(s){if(s.releaseDay!=null&&s.releaseDay!=="")return +s.releaseDay;const t=tm(s.title)||{},d=(t.nextEpisode&&t.nextEpisode.date)||(t.lastEpisode&&t.lastEpisode.date);return d?dayOf(d):null}
+function releaseDay(s){if(s.releaseDay!=null&&s.releaseDay!=="")return +s.releaseDay;if(RELEASE[s.title]&&RELEASE[s.title].day!=null)return +RELEASE[s.title].day;
+ const t=tm(s.title)||{},d=(t.nextEpisode&&t.nextEpisode.date)||(t.lastEpisode&&t.lastEpisode.date);if(!d)return null;
+ const net=((t.networks||[])[0]||{}).name||"",svc=releaseService(s);return (dayOf(d)+(BROADCAST.has(net)&&svc&&!BROADCAST.has(svc)?1:0))%7}
 function releaseText(s){const d=releaseDay(s),svc=releaseService(s);return [d!=null?"New episodes "+DAYS[d]:"New episodes weekly",svc].filter(Boolean).join(" · ")}
 function daysUntil(day){if(day==null)return 99;const now=new Date().getDay();return (day-now+7)%7}
 function wantList(all){return all.filter(s=>s.libraryStatus==="Want to Watch").sort((a,b)=>(a.rank??1e9)-(b.rank??1e9)||(a._t||0)-(b._t||0)||a.title.localeCompare(b.title))}
@@ -358,5 +363,5 @@ document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)r
 document.getElementById("importFile").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(d.changes){changes={...changes,...Object.fromEntries(Object.entries(d.changes).map(([k,v])=>[k,{...v,_t:Date.now()}]))};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();if(d.subscriptions)localStorage.setItem(SUBS_KEY,JSON.stringify(d.subscriptions));toast("Backup imported");render()}else toast("That file is not a Queuey backup")}catch{toast("Could not read backup file")}};
 function showLoadError(){document.getElementById("main").innerHTML='<div class="empty">Queuey couldn\'t load its show data. Check your connection and reload the page.</div>'}
 function loadJSON(url){return fetch(url,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(url+" "+r.status);return r.json()})}
-Promise.all([loadJSON("data.json"),loadJSON("shows.json").catch(()=>({})),loadJSON("tmdb.json").catch(()=>({})),loadJSON("scores.json").catch(()=>({})),loadJSON("discoveries.json").catch(()=>({})),loadJSON("app-config.json").catch(()=>({})),loadJSON("guidance.json").catch(()=>({}))]).then(([d,r,t,sc,dc,cfg,gd])=>{DATA=d;RESEARCH=r;TMDB=t.shows||{};SCORES=sc.shows||{};SCORES_CHECKED=sc.checked||"";APP_CONFIG=cfg||{};GUIDANCE=(gd&&gd.shows)||{};addDiscoveries(dc);loadAddedShows();render();syncStart()}).catch(showLoadError);
+Promise.all([loadJSON("data.json"),loadJSON("shows.json").catch(()=>({})),loadJSON("tmdb.json").catch(()=>({})),loadJSON("scores.json").catch(()=>({})),loadJSON("discoveries.json").catch(()=>({})),loadJSON("app-config.json").catch(()=>({})),loadJSON("guidance.json").catch(()=>({})),loadJSON("release.json").catch(()=>({}))]).then(([d,r,t,sc,dc,cfg,gd,rl])=>{RELEASE=(rl&&rl.shows)||{};DATA=d;RESEARCH=r;TMDB=t.shows||{};SCORES=sc.shows||{};SCORES_CHECKED=sc.checked||"";APP_CONFIG=cfg||{};GUIDANCE=(gd&&gd.shows)||{};addDiscoveries(dc);loadAddedShows();render();syncStart()}).catch(showLoadError);
 if("serviceWorker" in navigator && location.protocol.startsWith("http")){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}));}
