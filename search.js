@@ -120,7 +120,7 @@ function renderSearch() {
   const unlinked = new Set(Object.keys(ADDED).filter(t => !ADDED[t].id).map(t => t.toLowerCase()));
   let html = `${heading('Search', liveSearch() ? 'Your shows, plus every TV series on TMDB.' : 'Search your shows, or add one by name.')}
    <div class="filters"><input id="searchAll" class="field search" type="search" autocomplete="off" placeholder="Show title…" value="${esc(searchQuery)}"></div>`;
-  if (!q) return html + `<div class="empty">Type a show's name. Found it? Rate it if you've seen it, or add it to your Watchlist.</div>`;
+  if (!q) return html + `<div class="empty">Type a show's name. Found it? Rate it if you've seen it, or add it to My Queue.</div>`;
   html += `<h4 class="group-head">In your shows <span>${inCat.length}</span></h4>` + (inCat.length ? gridOf(inCat) : `<p class="muted">Not in your shows yet.</p>`);
   if (liveSearch()) {
     const more = (searchResults || []).filter(r => !catIds.has(r.id));
