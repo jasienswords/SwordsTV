@@ -64,14 +64,14 @@ function buildProfile(shows) {
   for (const s of withData) {
     const w = RATING_WEIGHT[s.rating];
     for (const tr of traitsOf(s.title)) {
-      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0, rated: 0, passed: 0});
-      x.n++; x.rated++; x.sum += w; if (s.rating === 'Loved') x.loved++;
+      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0, liked: 0, rated: 0, passed: 0});
+      x.n++; x.rated++; x.sum += w; if (s.rating === 'Loved') x.loved++; if (s.rating === 'Liked') x.liked++;
     }
   }
   // Shows passed on with "Not interested" (never rated) add a half-weight dislike to their traits.
   for (const s of shows.filter(s => s.dismissed && !(s.rating in RATING_WEIGHT) && TMDB[s.title])) {
     for (const tr of traitsOf(s.title)) {
-      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0, rated: 0, passed: 0});
+      const x = traits[tr.key] || (traits[tr.key] = {...tr, n: 0, sum: 0, loved: 0, liked: 0, rated: 0, passed: 0});
       x.n += NOT_INTERESTED.share; x.sum += NOT_INTERESTED.weight * NOT_INTERESTED.share; x.passed++;
     }
   }
@@ -86,18 +86,29 @@ function buildProfile(shows) {
     likedTitles: rated.filter(s => s.rating === 'Liked').map(s => s.title)};
 }
 
-// Which loved/liked shows list this one among TMDB's similar shows (or the reverse).
+// TMDB keywords that describe mood or format rather than what a show is about.
+const VAGUE_KEYWORDS = new Set(['miniseries', 'tv show', 'documentary series', 'docuseries', 'sitcom', 'woman director', 'duringcreditsstinger',
+  'based on novel or book', 'based on comic', 'spin off', 'remake', 'reboot', 'anthology', 'hilarious', 'amused', 'witty', 'familiar',
+  'heartfelt', 'cheerful', 'admiring', 'bold', 'exhilarated', 'inspirational', 'comforting', 'whimsical', 'dramatic', 'intense',
+  'suspenseful', 'playful', 'joyous', 'celebratory', 'enthusiastic', 'sentimental', 'earnest', 'casual', 'satirical', 'absurd']);
+const topics = t => new Set((t.keywords || []).map(k => k.toLowerCase()).filter(k => !VAGUE_KEYWORDS.has(k)));
+
+// Loved/liked shows that TMDB links to this one AND that genuinely overlap with it:
+// at least one genre in common and at least one real topic (e.g. "road trip", "baking").
 function similarSources(title, profile) {
   const t = TMDB[title];
   if (!t) return [];
   const out = [];
-  for (const [list, weight] of [[profile.lovedTitles, 0.35], [profile.likedTitles, 0.15]]) {
+  for (const [list, weight, rating] of [[profile.lovedTitles, 0.35, 'Loved'], [profile.likedTitles, 0.15, 'Liked']]) {
     for (const src of list) {
       const st = TMDB[src];
-      if (st && ((st.similar || []).includes(t.id) || (t.similar || []).includes(st.id))) out.push({title: src, weight});
+      if (!st || !((st.similar || []).includes(t.id) || (t.similar || []).includes(st.id))) continue;
+      const genre = (t.genres || []).some(g => (st.genres || []).includes(g));
+      const a = topics(st), shared = [...topics(t)].filter(k => a.has(k));
+      if (genre && shared.length) out.push({title: src, weight, rating, shared: shared.slice(0, 3)});
     }
   }
-  return out;
+  return out.sort((x, y) => y.weight - x.weight || y.shared.length - x.shared.length);
 }
 
 function matchShow(title, profile) {
@@ -112,9 +123,11 @@ function matchShow(title, profile) {
   if (imdb != null) score += Math.max(-0.8, Math.min(0.8, (imdb - 7.2) * 0.4));
   const flags = contentFlags(title);
   score -= 0.7 * flags.length;
-  const reasons = traits.map(tr => ({type: tr.type, label: tr.label, a: (profile.traits[tr.key] || {}).affinity || 0, n: (profile.traits[tr.key] || {}).n || 0}))
-    .filter(x => x.a > 0.05 && x.n >= minShown(x.type)).sort((a, b) => b.a - a.a).slice(0, 3).map(x => x.label);
-  return {score, reasons, because: because.map(b => b.title), flags, imdb};
+  const reasons = traits.filter(tr => ['genre', 'country', 'network'].includes(tr.type)).map(tr => profile.traits[tr.key]).filter(Boolean)
+    .filter(x => x.affinity > 0.05 && x.rated >= (x.type === 'network' ? 8 : 5) && (x.loved + x.liked) / x.rated >= 0.4)
+    .sort((a, b) => b.affinity - a.affinity).slice(0, 2)
+    .map(x => ({type: x.type, label: x.label, loved: x.loved, liked: x.liked, rated: x.rated}));
+  return {score, reasons, because, flags, imdb, title};
 }
 
 const minShown = type => MIN_SHOWN_BY_TYPE[type] || MIN_SHOWN;
@@ -134,12 +147,24 @@ function rankedCandidates(shows, profile) {
     .filter(({s}) => { const id = TMDB[s.title].id; if (taken.has(id) || seen.has(id)) return false; seen.add(id); return true; });
 }
 
+const PLURAL = {'Documentary': 'documentaries', 'Comedy': 'comedies', 'Drama': 'dramas', 'Reality': 'reality shows', 'Crime': 'crime shows',
+  'Mystery': 'mysteries', 'Sci-Fi & Fantasy': 'sci-fi and fantasy shows', 'Action & Adventure': 'action and adventure shows', 'Family': 'family shows',
+  'Animation': 'animated shows', 'War & Politics': 'war and politics shows', 'Western': 'westerns', 'Kids': "kids' shows", 'Talk': 'talk shows'};
+const traitName = r => r.type === 'genre' ? (PLURAL[r.label] || r.label.toLowerCase() + ' shows') : r.type === 'country' ? r.label + ' shows' : r.label + ' shows';
+const counted = (loved, liked) => [loved ? `loved ${loved}` : '', liked ? `liked ${liked}` : ''].filter(Boolean).join(' and ');
+
+// A plain-language reason, e.g. "Shares themes with Travel Man, which you loved: road trip, travel.
+// You've loved 4 and liked 6 of the 15 documentaries you've rated. IMDb 8.4 · Rotten Tomatoes 90%."
 function whyText(m) {
-  const parts = [];
-  if (m.because.length) parts.push('Similar to ' + m.because.slice(0, 2).join(' and '));
-  if (m.reasons.length) parts.push('you rate ' + m.reasons.join(', ') + ' highly');
-  let txt = parts.join('; ');
-  if (txt) txt = txt[0].toUpperCase() + txt.slice(1) + '.';
-  if (m.flags.length) txt += (txt ? ' ' : '') + 'Heads up: ' + m.flags.join(', ').toLowerCase() + '.';
-  return txt;
+  const out = [];
+  const b = m.because[0];
+  if (b) out.push(`Shares themes with ${b.title}, which you ${b.rating.toLowerCase()}: ${b.shared.slice(0, 3).join(', ')}.`);
+  for (const r of m.reasons) out.push(`You've ${counted(r.loved, r.liked)} of the ${r.rated} ${traitName(r)} you've rated.`);
+  const sc = (typeof SCORES !== 'undefined' && SCORES[m.title]) || {};
+  const rtm = String((RESEARCH[m.title] || {}).rt || '').match(/(\d{1,3})%\s*(?:critic|tomatometer)/i);
+  const rt = sc.rt && sc.rt.critics != null ? sc.rt.critics : rtm ? +rtm[1] : null;
+  const q = [m.imdb != null ? `IMDb ${m.imdb}` : '', rt != null ? `Rotten Tomatoes ${rt}%` : ''].filter(Boolean).join(' · ');
+  if (q) out.push(q + '.');
+  if (m.flags.length) out.push('Heads up: ' + m.flags.join(', ').toLowerCase() + '.');
+  return out.join(' ');
 }
