@@ -10,7 +10,8 @@ function allShows(){return DATA.catalog.map(x=>{let c=changes[x.title]||{},legac
 function getShow(t){return allShows().find(x=>x.title===t)}
 function art(title){let h=0;for(let c of title)h=(h*31+c.charCodeAt(0))>>>0;return colors[h%colors.length]}
 function poster(s,small=false){let [a,b]=art(s.title),t=tm(s.title),src=t&&img(t.poster,"w342");return `<div class="poster${src?" has-img":""}" style="--c1:${a};--c2:${b}">${src?`<img class="poster-img" src="${src}" alt="" loading="lazy" decoding="async" crossorigin="anonymous" onerror="this.parentNode.classList.remove('has-img');this.remove()">`:""}<span class="tag r-${({Loved:"loved",Liked:"liked",Okay:"okay",Disliked:"disliked"})[s.rating]||"none"}">${esc(shownRating(s))}</span><div class="poster-title">${esc(s.title)}</div></div>`}
-function card(s){return `<article class="show" data-title="${esc(s.title)}">${poster(s)}<div class="show-meta"><strong>${esc(s.title)}</strong><span>${esc(shownRating(s))} · ${esc(s.status||"Unwatched")}</span></div></article>`}
+function captionOf(s){const l=listLabel(s);if(RATINGS.includes(s.rating)||l!=="Not on a list")return shownRating(s)+" · "+l;const t=tm(s.title)||{};return [(t.genres||[])[0],((t.networks||[])[0]||{}).name].filter(Boolean).join(" · ")||"Not rated"}
+function card(s,extra){return `<article class="show" data-title="${esc(s.title)}">${poster(s)}<div class="show-meta"><strong>${esc(s.title)}</strong><span>${esc(captionOf(s))}</span>${extra?`<small class="next-ep">${esc(extra)}</small>`:""}</div></article>`}
 const RATINGS=["Loved","Liked","Okay","Disliked"];
 function shownRating(s){return RATINGS.includes(s.rating)?s.rating:"Not rated"}
 function shortMeta(r){if(!r)return [];const g=String(r.genre||"").split("/")[0].trim(),cr=String(r.rating||"").match(/\b(TV-(?:Y7|Y|G|PG|14|MA)|PG-13|PG|G|R)\b/);return [g,cr&&cr[1]].filter(Boolean)}
@@ -20,50 +21,86 @@ function heading(title,sub=""){return `<div class="section-head"><div><h3>${titl
 let previousView="home",previousScroll=0;
 function syncWelcome(){let w=document.querySelector(".welcome");if(w)w.classList.toggle("hidden",currentView!=="home")}
 function openDetail(title){if(currentView!=="detail"){previousView=currentView;previousScroll=window.scrollY}currentTitle=title;currentView="detail";renderDetail();window.scrollTo(0,0)}
+// ── Lists ──
+// My Library: rated shows you finished, or whose series has ended (and you're not still watching).
+function inLibrary(s){return RATINGS.includes(s.rating)&&(s.watched===true||s.seriesComplete===true)&&s.libraryStatus!=="Watching"}
+function listLabel(s){return s.libraryStatus==="Watching"?"Watching":s.libraryStatus==="Want to Watch"?"Want to Watch":inLibrary(s)?"In My Library":"Not on a list"}
+function nextEpisodeText(s){const n=(tm(s.title)||{}).nextEpisode;if(!n||!n.date)return "";const d=new Date(n.date+"T12:00:00");return "S"+n.season+" E"+n.episode+" · "+d.toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"})}
+function rail(list){return `<div class="grid rail">${list.map(s=>card(s)).join("")}</div>`}
+function gridOf(list,extra){return `<div class="grid">${list.map(s=>card(s,extra&&extra(s))).join("")}</div>`}
+
+// ── For You: ranked by the Taste Profile ──
 function renderHome(){
- const all=allShows(), byTitle=new Map(all.map(x=>[x.title,x]));
- const watchedOrRated=s=>s.watched===true||["Loved","Liked","Okay","Disliked"].includes(s.rating);
- const seen=new Set();
- const rows=[
-  {name:"Because you loved…",sub:"Unwatched possibilities inspired by the shows your family already enjoys.",titles:["The Durrells in Corfu","Trying","Detectorists","The Outlaws","The Goes Wrong Show","Stath Lets Flats","The Cockfields","The Royle Family"]},
-  {name:"British Favorites",sub:"Distinctive places, warm personalities and British storytelling.",titles:["Great British Railway Journeys","Great British Railway Journeys: Australia","Great British Home Restoration","The Great British Garden Revival","Escape to the Country","The Great British Sewing Bee","The Great British Food Revival","The Great British Menu","The Repair Shop","Restoration Home","Great British Home Restoration","Escape to the Country"]},
-  {name:"Smart Comedies",sub:"Clever, character-led comedy rather than bleak or mean-spirited humor.",titles:["Better Off Ted","Trial & Error","Black-ish","Home Economics","The Mindy Project","Life in Pieces","The Middle","Raising Hope","Speechless","The Kids in the Hall"]},
-  {name:"Travel & Exploration",sub:"A change of scenery, curious hosts and places worth discovering.",titles:["The Reluctant Traveler","Travel Man","Rick Steves' Europe","Down to Earth with Zac Efron","The World's Most Extraordinary Homes","Somebody Feed Phil","Long Way Round","Long Way Up","Around the World in 80 Days"]},
-  {name:"Homes & Renovation",sub:"Welcoming homes, interesting locations and satisfying transformations.",titles:["Great British Home Restoration","Escape to the Chateau","Escape to the Chateau: DIY","Renovation Island","Renovation Resort","Farmhouse Fixer","The Nate and Jeremiah Home Project","Your Home Made Perfect","Maine Cabin Masters: Building Italy"]},
-  {name:"Mysteries & Adventures",sub:"Intrigue and momentum, with tone and content still to be checked.",titles:["Queens of Mystery","The Chelsea Detective","The Last Detective","The Completely Made-Up Adventures of Dick Turpin","The Librarians","Warehouse 13","Eureka","Hooten & the Lady"]},
-  {name:"Hidden Gems",sub:"Less obvious catalog picks worth a closer look.",titles:["The Great","The Indian Doctor","The Café","The Detectorists","The Goes Wrong Show","The Durrells in Corfu","The Paradise","Mr Selfridge","Blandings","The Hour"]}
- ];
- const pick=(titles)=>titles.map(t=>byTitle.get(t)).filter(s=>s&&!watchedOrRated(s)&&!seen.has(s.title)&&s.libraryStatus==="Not in My Library");
- const featureCandidates=pick(["Great British Railway Journeys","Great British Home Restoration","Better Off Ted","Queens of Mystery","The Repair Shop","Escape to the Country"]);
- const featured=featureCandidates.slice(0,3);featured.forEach(s=>seen.add(s.title));
- const intro="Recommendations start with what you love—and filter out the tones and content you want to avoid. These are discovery candidates; individual content and streaming details still need verification.";
+ const all=allShows(),profile=buildProfile(all),ranked=rankedCandidates(all,profile),seen=new Set();
+ const take=(list,n)=>{const out=list.filter(x=>!seen.has(x.s.title)).slice(0,n);out.forEach(x=>seen.add(x.s.title));return out.map(x=>x.s)};
  let html;
- if(featured.length){const f=featured[0],[c1,c2]=art(f.title),r=RESEARCH[f.title]||{},ft=tm(f.title)||{},bd=img(ft.backdrop,"w1280"),meta=[String(r.genre||"").split(/[,;/]/)[0].trim(),String((r.platforms||[])[0]||"").replace(/\s*\(.*\)/,"")||(ft.networks||[])[0]?.name].filter(Boolean);if(!r.genre&&ft.genres&&ft.genres[0])meta[0]=ft.genres[0];
-  html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Picked for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top pick</span>${meta.map(m=>`<span class="dot">·</span><span>${esc(m)}</span>`).join("")}</div><p>${intro}</p></section>`;}
- else html=`<section class="hero"><div class="hero-content"><div class="eyebrow">Picked for the Swords family</div><h2>Find your next great show.</h2><p>${intro}</p></div></section>`;
- if(featured.length!==1){html+=heading("Featured recommendations","A first shortlist based on your interest in British factual series, smart comedy and engaging mysteries.");
- html+=featured.length?`<div class="grid rail">${featured.slice(1).map(card).join("")}</div>`:`<div class="empty">You've explored these picks. More recommendations will appear as the catalog is expanded.</div>`;}
- for(const row of rows){
-   const items=pick(row.titles).slice(0,8);
-   if(!items.length)continue;
-   items.forEach(s=>seen.add(s.title));
-   html+=heading(row.name,row.sub)+`<div class="grid rail">${items.map(card).join("")}</div>`;
- }
- const library=all.filter(s=>["Watching","Want to Watch"].includes(s.libraryStatus));
- html+=heading("Your Library","Shows you've deliberately added to Watching or Want to Watch.");
- html+=library.length?`<div class="grid rail">${library.slice(0,6).map(card).join("")}</div>`:`<div class="empty">Your Library is empty. Add a title when you decide you want to watch it.</div>`;
- html+=heading("New & Upcoming","Fresh seasons of shows already on your radar.");
- const upcoming=[
-  {title:"All Creatures Great and Small (modern)",season:"Season 7",date:"January 17, 2027 · 9/8c",service:"MASTERPIECE on PBS",detail:"The new season returns to Yorkshire. PBS lists the series on pbs.org and the PBS app.",url:"https://www.pbs.org/show/all-creatures-great-and-small/"},
-  {title:"Miss Scarlet",season:"Season 7 · Final season",date:"November 29, 2026 · PBS Passport early access; January 17, 2027 broadcast",service:"MASTERPIECE on PBS",detail:"The final season begins its early PBS Passport release before its broadcast premiere.",url:"https://www.pbs.org/wgbh/masterpiece/clips/miss-scarlet-s7-official-trailer/"}
- ];
- html+=`<div class="grid">${upcoming.map(u=>{let found=byTitle.get(u.title);return `<article class="show" ${found?`data-title="${esc(u.title)}"`:""}><div class="poster" style="--c1:#34465c;--c2:#8d755b"><span class="tag r-next">UP NEXT</span><div class="poster-title">${esc(u.title)}</div></div><div class="show-meta"><strong>${esc(u.title)}</strong><span>${esc(u.season)}</span><span>${esc(u.date)}</span><span>${esc(u.service)}</span><a href="${u.url}" target="_blank" rel="noopener" style="color:var(--accent);font-size:12px">Official details ↗</a><small style="color:var(--muted)">${esc(u.detail)}</small></div></article>`}).join("")}</div>`;
- html+=`<div class="note">Recommendation safeguards: titles already marked watched or rated are excluded from discovery rows. Recommendations are curated starting points, not verified content approvals. We will check tone, pacing, violence, sexual content and supernatural elements before treating a title as a strong match.</div>`;
+ if(ranked.length){
+  const {s:f,m}=ranked[0];seen.add(f.title);
+  const [c1,c2]=art(f.title),ft=tm(f.title)||{},bd=img(ft.backdrop,"w1280");
+  const meta=[ft.genres&&ft.genres[0],COUNTRY_NAMES[(ft.country||[])[0]],(ft.networks||[])[0]&&ft.networks[0].name].filter(Boolean);
+  html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Top match for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top match</span>${meta.map(x=>`<span class="dot">·</span><span>${esc(x)}</span>`).join("")}</div><p>${esc(whyText(m)||ft.overview||"")}</p></section>`;
+ }else html=`<section class="hero"><div class="hero-content"><div class="eyebrow">Picked for the Swords family</div><h2>You've seen everything here.</h2><p>New matches will appear as more shows are added.</p></div></section>`;
+ const top=take(ranked,12);
+ if(top.length)html+=heading("Top matches for you",`Ranked from your ${profile.total} ratings. Updates every time you rate a show.`)+rail(top);
+ // "Because you loved…" rows rotate daily through loved shows that have enough similar picks.
+ const day=Math.floor(Date.now()/864e5),loved=profile.lovedTitles,rows=[];
+ for(let i=0;i<loved.length&&rows.length<2;i++){const src=loved[(i+day)%loved.length];const items=ranked.filter(x=>x.m.because.includes(src)&&!seen.has(x.s.title));if(items.length>=3)rows.push([src,take(items,10)])}
+ rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`,"Shows TMDB links to it, ranked by your taste.")+rail(items));
+ // Your two highest-rated genres.
+ Object.values(profile.traits).filter(x=>x.type==="genre"&&x.n>=minShown("genre")&&x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,2).forEach(g=>{
+  const items=take(ranked.filter(x=>(tm(x.s.title).genres||[]).includes(g.label)),10);
+  if(items.length>=3)html+=heading(`More ${esc(g.label)}`,`${esc(g.label)} is one of your highest-rated genres.`)+rail(items)});
+ const active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
+ const onYours=take(ranked.filter(x=>((tm(x.s.title).providers||{}).stream||[]).some(p=>active.has(serviceFor(p.name)))),10);
+ if(onYours.length)html+=heading("On your streaming services","Top matches included with the services you have.")+rail(onYours);
+ const free=take(ranked.filter(x=>{const p=tm(x.s.title).providers||{};return (p.free||[]).length||(p.ads||[]).length}),10);
+ if(free.length)html+=heading("Free to watch","Top matches on free, ad-supported services.")+rail(free);
+ const watching=all.filter(s=>s.libraryStatus==="Watching");
+ if(watching.length)html+=heading("Continue watching","From your Watchlist.")+rail(watching);
+ const today=new Date().toISOString().slice(0,10);
+ const upcoming=all.filter(s=>{const n=(tm(s.title)||{}).nextEpisode;return n&&n.date>=today&&(["Loved","Liked"].includes(s.rating)||["Watching","Want to Watch"].includes(s.libraryStatus))})
+  .sort((a,b)=>tm(a.title).nextEpisode.date.localeCompare(tm(b.title).nextEpisode.date));
+ if(upcoming.length)html+=heading("New & Upcoming","Next episodes of shows you love or are watching, from TMDB.")+gridOf(upcoming,nextEpisodeText);
+ html+=`<div class="note">How For You works: every show you haven't seen is scored against your Taste Profile (the genres, countries and channels you rate highly, and TMDB's links to shows you loved), plus its IMDb rating. Shows whose TMDB keywords hit your content limits are pushed down. Rate more shows and the picks adjust automatically.</div>`;
  return html;
 }
-function renderLibrary(){let all=allShows().filter(s=>["Watching","Want to Watch"].includes(s.libraryStatus)&&s.title.toLowerCase().includes(searchTerm.toLowerCase()));if(ratingFilter!=="All")all=all.filter(s=>s.rating===ratingFilter);return `${heading("My Library",`${all.length} shows you've chosen to add`)}<div class="filters"><input id="search" class="field search" placeholder="Search your library…" value="${esc(searchTerm)}"><select id="ratingFilter" class="field"><option>All</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select></div><div class="grid">${all.map(card).join("")||`<div class="empty">Your Library is empty. Add a show as Watching or Want to Watch from its detail page.</div>`}</div>`}
-function renderWatchlist(){let all=allShows(),groups={};["Loved","Liked","Okay","Disliked"].forEach(r=>groups[r]=all.filter(s=>s.rating===r&&s.watched===true&&s.seriesComplete===true));let total=Object.values(groups).reduce((n,a)=>n+a.length,0);return `${heading("Watchlist",`${total} verified completed series you've watched and rated`)}<p style="color:var(--muted);font-size:13px;margin:-4px 0 18px">Your finished-TV collection, ordered by your family's ratings. A show appears here once you have watched and rated it and TMDB lists the series as ended. Being watched does not add it to My Library.</p>${["Loved","Liked","Okay","Disliked"].map(r=>`<details ${r==="Loved"||r==="Liked"?"open":""} style="background:var(--panel);border:1px solid var(--line);border-radius:13px;padding:14px;margin:10px 0"><summary><strong>${r}</strong> <span style="color:var(--muted)"> · ${groups[r].length} shows</span></summary><div style="margin-top:12px;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px">${groups[r].map(s=>`<div class="pill" data-title="${esc(s.title)}" style="justify-content:flex-start;cursor:pointer">${esc(s.title)}</div>`).join("")||`<span style="color:var(--muted);font-size:12px">No eligible shows yet. Completion status will be verified before titles are added.</span>`}</div></details>`).join("")}`;
+
+// ── My Library: rated shows you've finished or whose series has ended ──
+function renderLibrary(){
+ const q=searchTerm.toLowerCase(),lib=allShows().filter(inLibrary).filter(s=>s.title.toLowerCase().includes(q));
+ const groups=RATINGS.filter(r=>ratingFilter==="All"||ratingFilter===r).map(r=>[r,lib.filter(s=>s.rating===r)]).filter(([,l])=>l.length);
+ const total=groups.reduce((n,[,l])=>n+l.length,0);
+ return `${heading("My Library",`${total} rated shows you've finished or whose series has ended`)}<div class="filters"><input id="search" class="field search" placeholder="Search your library…" value="${esc(searchTerm)}"><select id="ratingFilter" class="field"><option>All</option><option>Loved</option><option>Liked</option><option>Okay</option><option>Disliked</option></select></div>`
+  +(groups.map(([r,l])=>`<h4 class="group-head">${r} <span>${l.length}</span></h4>${gridOf(l)}`).join("")||`<div class="empty">${q||ratingFilter!=="All"?"No shows match.":"No finished shows yet. Rate a show you've watched and it will appear here."}</div>`);
 }
+
+// ── Watchlist: what you're watching now, and what's next ──
+function renderWatchlist(){
+ const all=allShows(),watching=all.filter(s=>s.libraryStatus==="Watching"),want=all.filter(s=>s.libraryStatus==="Want to Watch");
+ return `${heading("Watchlist",`${watching.length} watching · ${want.length} want to watch`)}`
+  +`<h4 class="group-head">Watching <span>${watching.length}</span></h4>`+(watching.length?gridOf(watching,nextEpisodeText):`<div class="empty">Nothing in progress. Open a show and tap “Add as Watching”.</div>`)
+  +`<h4 class="group-head">Want to Watch <span>${want.length}</span></h4>`+(want.length?gridOf(want):`<div class="empty">Nothing saved yet. Tap “Want to Watch” on any show.</div>`)
+  +`<div class="note">When you rate a show you've finished, it moves to My Library.</div>`;
+}
+
+// ── Taste Profile: learned from your ratings ──
+function traitBar(x,max){const w=Math.max(6,Math.round(Math.abs(x.affinity)/max*100));return `<div class="trait"><div class="trait-label">${esc(x.label)}<small>${x.n} rated</small></div><div class="trait-bar"><span class="${x.affinity>0?"pos":"neg"}" style="width:${w}%"></span></div></div>`}
+function renderProfile(){
+ const p=buildProfile(allShows()),tr=Object.values(p.traits).filter(x=>x.n>=minShown(x.type));
+ const loves=tr.filter(x=>x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,10),avoids=tr.filter(x=>x.affinity<-0.05).sort((a,b)=>a.affinity-b.affinity).slice(0,8);
+ const max=Math.max(0.01,...loves.concat(avoids).map(x=>Math.abs(x.affinity)));
+ const rule=d=>(DATA.tasteProfile.find(x=>x.dimension===d)||{}).profile||"";
+ return `${heading("Your family's taste profile",`Learned from ${p.total} ratings. Updates every time you rate a show.`)}`
+  +`<div class="rating-split">${RATINGS.map(r=>`<div class="fact"><small>${r}</small><strong>${p.counts[r]}</strong></div>`).join("")}</div>`
+  +`<div class="card"><h3 class="card-title">What you rate highly</h3>${loves.map(x=>traitBar(x,max)).join("")||'<p class="muted">Rate a few more shows to see patterns.</p>'}</div>`
+  +`<div class="card"><h3 class="card-title">What you tend to rate lower</h3>${avoids.map(x=>traitBar(x,max)).join("")||'<p class="muted">No clear dislikes yet.</p>'}</div>`
+  +(p.imdbLoved!=null&&p.imdbDisliked!=null?`<div class="facts"><div class="fact"><small>Shows you love · average IMDb</small><strong>${p.imdbLoved.toFixed(1)}</strong></div><div class="fact"><small>Shows you dislike · average IMDb</small><strong>${p.imdbDisliked.toFixed(1)}</strong></div></div>`:"")
+  +`<div class="card"><h3 class="card-title">Your content limits</h3><p class="muted">Shows whose TMDB keywords match these are pushed down in For You:</p><div class="service-row">${CONTENT_LIMITS.map(l=>`<span class="pill">${esc(l.label)}</span>`).join("")}</div>${rule("Tone thresholds")?`<p class="muted" style="margin-top:12px">${esc(rule("Tone thresholds"))}</p>`:""}</div>`
+  +`<details class="card"><summary><strong>Notes from your early rating rounds</strong></summary>${DATA.tasteProfile.map(x=>`<div class="fact" style="margin:8px 0"><small>${esc(x.dimension)}</small><strong>${esc(x.profile)}</strong></div>`).join("")}</details>`
+  +renderStreamingInsights()
+  +`<div class="note">To install on iPhone: open the hosted SwordsTV link in Safari, tap Share, then Add to Home Screen.</div>`;
+}
+
 function renderHistory(){
 let watched=DATA.roundHistory.filter(x=>String(x.status).toLowerCase()==="watched" && x.rating && !["haven't watched","not rated","unrated"].includes(String(x.rating).toLowerCase()));
 let groups={};["Loved","Liked","Okay","Disliked"].forEach(r=>groups[r]=watched.filter(x=>x.rating===r));
@@ -77,7 +114,7 @@ function saveSubscriptions(){let obj={};SUBSCRIPTION_DEFAULTS.forEach(x=>{let n=
 function renderStreamingInsights(){
  const watched={},loved={};
  allShows().filter(s=>s.watched===true).forEach(s=>(s.watchedOn||[]).forEach(p=>{watched[p]=(watched[p]||0)+1;if(s.rating==="Loved")loved[p]=(loved[p]||0)+1}));
- const rec={};const current=allShows();[...new Set(FOR_YOU_TITLES)].forEach(t=>{let show=current.find(x=>x.title===t),r=RESEARCH[t];if(show&&show.libraryStatus==="Not in My Library"&&!show.watched&&!["Loved","Liked","Okay","Disliked"].includes(show.rating)&&r&&Array.isArray(r.platforms))r.platforms.forEach(p=>{rec[p]=(rec[p]||0)+1})});
+ const rec={};rankedCandidates(allShows(),buildProfile(allShows())).slice(0,60).forEach(({s})=>{const p=(tm(s.title)||{}).providers||{};new Set([...(p.stream||[]),...(p.free||[]),...(p.ads||[])].map(x=>serviceFor(x.name)||x.name)).forEach(n=>{rec[n]=(rec[n]||0)+1})});
  const names=[...new Set([...Object.keys(watched),...Object.keys(rec)])].sort((a,b)=>((watched[b]||0)+(rec[b]||0))-((watched[a]||0)+(rec[a]||0))||a.localeCompare(b));
  const rows=names.map(n=>'<tr><td>'+esc(n)+'</td><td style="text-align:right">'+(watched[n]||0)+'</td><td style="text-align:right">'+(loved[n]||0)+'</td><td style="text-align:right">'+(rec[n]||0)+'</td></tr>').join('');
  const totalRecorded=Object.values(watched).reduce((a,b)=>a+b,0),totalRec=Object.values(rec).reduce((a,b)=>a+b,0);
@@ -86,8 +123,6 @@ function renderStreamingInsights(){
  const costRows=subs.map(x=>`<tr><td>${esc(x.name)}</td><td><input type="checkbox" data-sub-active="${esc(x.name)}" ${x.active?"checked":""}></td><td><input class="field" style="width:92px;padding:6px" type="number" min="0" step="0.01" placeholder="$/mo" data-sub-cost="${esc(x.name)}" value="${esc(x.monthlyCost||"")}"></td><td style="text-align:right">${watched[x.name]||0}</td><td style="text-align:right">${loved[x.name]||0}</td><td style="text-align:right">${rec[x.name]||0}</td><td style="text-align:right">${x.active&&Number(x.monthlyCost)>0&&loved[x.name]?("$"+(Number(x.monthlyCost)/loved[x.name]).toFixed(2)):"—"}</td></tr>`).join("");
  return `${heading("Streaming Insights","Where your watched favorites come from—and where your next discoveries are available.")}<div class="facts"><div class="fact"><small>Watched platform records</small><strong>${totalRecorded}</strong></div><div class="fact"><small>Platform-title recommendations</small><strong>${totalRec}</strong></div><div class="fact"><small>Current monthly spend entered</small><strong>$${activeCost.toFixed(2)}</strong></div></div><div style="overflow-x:auto"><table class="insights-table" style="width:100%;border-collapse:collapse;margin:12px 0"><thead><tr><th style="text-align:left">Platform</th><th>Watched</th><th>Loved</th><th>Recommended</th></tr></thead><tbody>${rows||'<tr><td colspan="4">No platform research or viewing records yet.</td></tr>'}</tbody></table></div><h3 style="margin:24px 0 6px">Subscription value tracker</h3><p style="color:var(--muted);font-size:13px">Enter your actual monthly prices (including the plan/tax you pay). This compares your cost with the number of Loved shows watched and the current recommendation pipeline.</p><div style="overflow-x:auto"><table class="insights-table" style="width:100%;border-collapse:collapse"><thead><tr><th>Service</th><th>Subscribed</th><th>Monthly $</th><th>Watched</th><th>Loved</th><th>Recommended</th><th>Cost / Loved</th></tr></thead><tbody>${costRows}</tbody></table></div><button class="btn primary" id="saveSubs" style="margin-top:12px">Save subscription details</button><div class="note">Cost per Loved show is a simple directional metric: monthly service price divided by the number of Loved shows you've recorded watching there. It is not a true per-show cost calculation, since viewing spans months and some shows are available on multiple services. Counts only include platform data you enter; historical viewing services are not guessed. Recommendation counts include researched eligible For You titles, regardless of whether you subscribe. A show available on multiple services counts under each one.</div>`;
 }
-function renderProfile(){return `${heading("Your family's taste profile","The working recommendation signals captured so far.")}${DATA.tasteProfile.map(x=>`<div class="fact" style="margin:8px 0"><small>${esc(x.dimension)}</small><strong>${esc(x.profile)}</strong></div>`).join("")}${renderStreamingInsights()}<div class="note">To install on iPhone: open the hosted SwordsTV link in Safari, tap Share, then Add to Home Screen. Hosting over HTTPS is required for the app-like install and offline cache.</div><div class="note">Content guardrails: avoid bleak or hopeless tone, excessive gore or disturbing violence, heavy sexual content, very slow pacing, and too much supernatural/fantasy material.</div>`}
-const FOR_YOU_TITLES=["Great British Railway Journeys", "The Great British Railway Journeys: Australia", "Great British Home Restoration", "Escape to the Country", "The Great British Sewing Bee", "The Repair Shop", "The Repair Shop (UK)", "Restoration Home", "Better Off Ted", "Trial & Error", "Black-ish", "Home Economics", "The Mindy Project", "Life in Pieces", "The Middle", "Raising Hope", "Speechless", "The Reluctant Traveler", "Travel Man", "Rick Steves' Europe", "Down to Earth with Zac Efron", "The World's Most Extraordinary Homes", "Somebody Feed Phil", "Queens of Mystery", "The Chelsea Detective", "The Last Detective", "The Librarians", "Warehouse 13", "Eureka", "Hooten & the Lady", "The Great", "The Indian Doctor", "The Café", "The Detectorists", "The Goes Wrong Show", "The Durrells in Corfu", "The Paradise", "Mr Selfridge", "Blandings", "The Hour"];
 function renderRatingPanel(research,t){
  const imdb=String(research.imdb||"").match(/(\d+(?:\.\d+)?)\s*\/\s*10/);
  const rt=String(research.rt||"");
@@ -162,9 +197,9 @@ function renderDetail(){
   note=`<div class="note">This title has not yet been researched. Your subscription list is not a confirmation that this show is available on those services.</div>`;
  }
  document.getElementById("main").innerHTML=`<button class="back" id="backBtn">‹ Back</button><section class="show-detail">
-<div class="detail-hero${bd?" has-bd":""}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="detail-poster">${poster(s)}</div><div class="detail-heading">${meta.length?`<div class="meta-line">${meta.map(esc).join('<span class="dot">·</span>')}</div>`:""}<h2>${esc(s.title)}</h2><div class="service-row"><span class="pill gold">${esc(shownRating(s))}</span><span class="pill">${esc(s.libraryStatus||"Not in My Library")}</span><span class="pill">${s.watched?"Watched":"Not watched"}</span></div></div></div>
+<div class="detail-hero${bd?" has-bd":""}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="detail-poster">${poster(s)}</div><div class="detail-heading">${meta.length?`<div class="meta-line">${meta.map(esc).join('<span class="dot">·</span>')}</div>`:""}<h2>${esc(s.title)}</h2><div class="service-row"><span class="pill gold">${esc(shownRating(s))}</span>${listLabel(s)!=="Not on a list"?`<span class="pill">${esc(listLabel(s))}</span>`:""}<span class="pill">${s.watched?"Watched":"Not watched"}</span></div></div></div>
 <div class="detail-actions"><button class="btn primary" id="rateThis">✦ Rate It</button><button class="btn" id="addWatching">＋ Add as Watching</button><button class="btn" id="addWant">＋ Want to Watch</button></div>
-<div class="detail-content">
+${(()=>{if(s.rating in RATING_WEIGHT||s.watched)return "";const w=whyText(matchShow(s.title,buildProfile(allShows())));return w?`<div class="why-card"><strong>Why it's for you</strong>${esc(w)}</div>`:""})()}<div class="detail-content">
 <div class="card"><h3 class="card-title">Where to Watch</h3>${renderWhere(r,t)}</div>
 <div class="card"><h3 class="card-title">Ratings &amp; Reviews</h3>${renderRatingPanel(r||{},t)}</div>
 <div class="card"><h3 class="card-title">About this Show</h3>${about?`<p class="about-text">${esc(about)}</p>`:""}${facts}</div>
