@@ -156,6 +156,44 @@ function similarSources(title, profile) {
   return out.sort((x, y) => y.weight - x.weight || y.shared.length - x.shared.length);
 }
 
+// "In the mood for": what the profile wants more of right now. A show matching a chosen
+// genre, service, style or era moves up; each kind counts once.
+const FOCUS_WEIGHT = {genre: 0.8, service: 0.7, style: 0.5, era: 0.5};
+const FOCUS_STYLES = {
+  cozy: {label: 'Cozy & feel-good', test: t => t.rating !== 'TV-MA' && (t.genres || []).some(g => ['Comedy', 'Family', 'Reality', 'Animation'].includes(g))},
+  funny: {label: 'Funny', test: t => (t.genres || []).includes('Comedy')},
+  gritty: {label: 'Gritty & intense', test: t => t.rating === 'TV-MA' || (t.genres || []).some(g => ['Crime', 'War & Politics'].includes(g))},
+  mystery: {label: 'Mysteries & whodunits', test: t => (t.genres || []).some(g => ['Mystery', 'Crime'].includes(g))},
+  true: {label: 'True stories & docs', test: t => (t.genres || []).includes('Documentary')},
+  reality: {label: 'Reality & competition', test: t => (t.genres || []).includes('Reality')},
+  british: {label: 'British', test: t => (t.country || []).includes('GB')},
+  short: {label: 'Short & bingeable', test: t => t.seasons && t.seasons <= 2},
+  long: {label: 'Long-running', test: t => t.seasons >= 5}
+};
+const FOCUS_ERAS = {
+  new: {label: 'Brand new', test: t => +t.year >= new Date().getFullYear() - 1 || !!t.nextEpisode},
+  recent: {label: 'Last 5 years', test: t => +t.year >= new Date().getFullYear() - 5},
+  '2000s': {label: '2000s & 2010s', test: t => +t.year >= 2000 && +t.year < 2020},
+  classic: {label: 'Classics (before 2000)', test: t => +t.year < 2000}
+};
+function focusHits(title, focus) {
+  const t = TMDB[title];
+  if (!t || !focus) return [];
+  const hits = [];
+  const g = (focus.genres || []).find(x => (t.genres || []).includes(x));
+  if (g) hits.push({kind: 'genre', label: g});
+  if ((focus.services || []).length && typeof serviceFor === 'function') {
+    const p = t.providers || {}, on = new Set([...(p.stream || []), ...(p.free || []), ...(p.ads || [])].map(x => serviceFor(x.name) || x.name));
+    const s = focus.services.find(x => on.has(x));
+    if (s) hits.push({kind: 'service', label: 'on ' + s});
+  }
+  const st = (focus.styles || []).find(k => FOCUS_STYLES[k] && FOCUS_STYLES[k].test(t));
+  if (st) hits.push({kind: 'style', label: FOCUS_STYLES[st].label.toLowerCase()});
+  const er = (focus.eras || []).find(k => FOCUS_ERAS[k] && FOCUS_ERAS[k].test(t));
+  if (er) hits.push({kind: 'era', label: FOCUS_ERAS[er].label.toLowerCase()});
+  return hits;
+}
+
 function matchShow(title, profile) {
   const traits = traitsOf(title);
   let score = 0;
@@ -168,6 +206,8 @@ function matchShow(title, profile) {
   // IMDb is judged against the show's own genre: documentaries are rated higher across the board.
   if (imdb != null) score += Math.max(-0.8, Math.min(0.8, (imdb - imdbPivot(title)) * 0.4));
   const flags = contentFlags(title);
+  const focus = focusHits(title, (profile.prefs || {}).focus);
+  score += focus.reduce((n, h) => n + FOCUS_WEIGHT[h.kind], 0);
   // Dark-theme penalty follows the profile's comfort level ("Sometimes" by default).
   const dark = (profile.prefs || {}).dark;
   score -= (dark === 'fine' ? 0 : dark === 'avoid' ? 1.6 : 0.7) * flags.length;
@@ -175,7 +215,7 @@ function matchShow(title, profile) {
     .filter(x => x.affinity > 0.05 && x.rated >= (x.type === 'network' ? 8 : 5) && (x.loved + x.liked) / x.rated >= 0.4)
     .sort((a, b) => b.affinity - a.affinity).slice(0, 2)
     .map(x => ({type: x.type, label: x.label, loved: x.loved, liked: x.liked, rated: x.rated}));
-  return {score, reasons, because, flags, imdb, title};
+  return {score, reasons, because, flags, imdb, title, focus};
 }
 
 const minShown = type => MIN_SHOWN_BY_TYPE[type] || MIN_SHOWN;
@@ -232,6 +272,7 @@ const counted = (loved, liked) => [loved ? `loved ${loved}` : '', liked ? `liked
 // You've loved 4 and liked 6 of the 15 documentaries you've rated. IMDb 8.4 · Rotten Tomatoes 90%."
 function whyText(m) {
   const out = [];
+  if (m.focus && m.focus.length) out.push(`Fits what you’re in the mood for: ${m.focus.map(h => h.label).join(', ')}.`);
   const b = m.because[0];
   if (b && b.creator) out.push(`From ${b.creator}, who created ${b.title}, which you ${b.rating.toLowerCase()}.`);
   else if (b) out.push(`Shares themes with ${b.title}, which you ${b.rating.toLowerCase()}: ${b.shared.slice(0, 3).join(', ')}.`);

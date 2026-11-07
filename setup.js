@@ -51,9 +51,9 @@ function renderSetup() {
       <p class="gate-lead">${kids ? 'Let’s find shows you’ll love. Tell me what you like, then rate a few shows you know.' : 'Let’s build your Taste Profile. A few quick questions, a few favourite shows, then fast ratings of shows you might know. About 5 minutes, and you can skip anything.'}</p>
       <button class="btn primary wide" id="sNext">Let’s go</button><div class="gate-links"><button class="link-btn" id="sSkip">Skip for now</button></div>`;
   } else if (kind === 'services') {
-    const subs = getSubscriptions();
-    html = `<h2>Your streaming services</h2><p class="gate-lead">Which ones does your household have? I’ll point out what’s included and what costs extra.</p>
-      <div class="chips multi" data-multi="services">${subs.map(s => `<button type="button" data-v="${esc(s.name)}" class="${s.active && SYNC.household && SYNC.household.servicesSet ? 'on' : ''}">${esc(s.name)}</button>`).join('')}</div>
+    SETUP.services = SETUP.services || new Set(SYNC.household && SYNC.household.servicesSet ? getSubscriptions().filter(s => s.active).map(s => s.name) : []);
+    html = `<h2>Your streaming services</h2><p class="gate-lead">Which ones does your household have? Tap every one, including free and live TV services. I’ll point out what’s included and what costs extra.</p>
+      ${servicePicker(SETUP.services)}
       <button class="btn primary wide" id="sNext">Next</button>`;
   } else if (kind === 'comfort') {
     html = `<h2>Comfort levels</h2><p class="gate-lead">What are you comfortable seeing? Shows above these levels are left out of your picks. You can change this any time.</p>
@@ -105,17 +105,13 @@ function renderSetup() {
 function bindSetup(kind) {
   const g = document.getElementById('gate'), on = (id, f) => { const el = document.getElementById(id); if (el) el.onclick = f; };
   bindChoiceChips(g);
+  if (kind === 'services') bindServicePicker(g, SETUP.services);
   g.querySelectorAll('.chips.multi button').forEach(b => b.onclick = () => b.classList.toggle('on'));
   const multi = name => [...g.querySelectorAll(`[data-multi="${name}"] .on`)].map(b => b.dataset.v);
   on('sSkip', () => { if (confirm('Skip the rest of the setup? You can rate shows anytime, and I’ll remind you on For You.')) finishSetup(); });
   on('sDone', finishSetup);
   on('sNext', async () => {
-    if (kind === 'services') {
-      const chosen = multi('services'), obj = {};
-      getSubscriptions().forEach(s => { obj[s.name] = {active: chosen.includes(s.name), monthlyCost: s.monthlyCost || ''}; });
-      localStorage.setItem(SUBS_KEY, JSON.stringify(obj));
-      SYNC.db.doc('households/' + SYNC.hid).set({subscriptions: obj, servicesSet: true}, {merge: true}).catch(e => console.warn(e));
-    }
+    if (kind === 'services') setSubscriptions([...SETUP.services]);
     if (kind === 'comfort') for (const [k] of COMFORT_ROWS) SETUP.comfort[k] = picked(g, 'comfort-' + k) || SETUP.comfort[k];
     if (kind === 'taste') {
       SETUP.prefs.loveGenres = multi('loveGenres');
@@ -212,4 +208,47 @@ async function buildStarter() {
   for (let i = 0; out.length < 30 && order.some(g => byGenre[g][i]); i++) for (const g of order) if (byGenre[g][i] && out.length < 30) out.push(byGenre[g][i]);
   SETUP.starter = out;
   SETUP.idx = 0;
+}
+
+// ── Rate more shows (from the Profile page) ──
+// 100 of the profile's best current matches, one at a time: rate it if you've seen it,
+// add it to Want to Watch, or say you're not interested.
+const RATEMORE = {list: [], idx: 0, done: 0};
+function startRateMore() {
+  const all = allShows().filter(s => !PREVIEW.has(s.title)), profile = buildProfile(all);
+  RATEMORE.list = rankedCandidates(all, profile).filter(x => eligible(x.s.title, x.m)).slice(0, 100).map(x => ({title: x.s.title, why: whyText(x.m)}));
+  RATEMORE.idx = 0; RATEMORE.done = 0;
+  SYNC.gate = 'ratemore';
+  renderRateMore();
+}
+function renderRateMore() {
+  const g = document.getElementById('gate'), item = RATEMORE.list[RATEMORE.idx];
+  document.body.classList.add('gated'); g.hidden = false;
+  if (!item) { endRateMore(); return; }
+  const t = tm(item.title) || {}, n = RATEMORE.list.length;
+  g.innerHTML = `<div class="gate-card setup"><div class="setup-top"><div class="setup-bar"><span style="width:${Math.round(100 * RATEMORE.idx / n)}%"></span></div><button class="link-btn" id="rmDone">Done</button></div>
+    <div class="rate-card">${t.poster ? `<img src="${img(t.poster, 'w342')}" alt="${esc(item.title)}" onerror="this.outerHTML='<div class=&quot;rate-noimg&quot;>'+this.alt+'</div>'">` : `<div class="rate-noimg">${esc(item.title)}</div>`}
+    <div class="rate-info"><strong>${esc(item.title)}</strong><small>${esc([t.year, (t.genres || [])[0], ((t.networks || [])[0] || {}).name].filter(Boolean).join(' · '))}</small></div></div>
+    ${t.overview ? `<p class="rm-about">${esc(firstSentence(t.overview))}</p>` : ''}
+    <div class="rm-label">Seen it?</div>
+    <div class="rate-buttons">${SETUP_RATINGS.map(([v, l]) => `<button type="button" class="btn rate-${v.toLowerCase()}" data-rm="${v}">${l}</button>`).join('')}</div>
+    <div class="rm-label">Not yet?</div>
+    <div class="rate-buttons three"><button type="button" class="btn rm-want" data-rm="want">＋ Want to Watch</button><button type="button" class="btn" data-rm="no">Not interested</button><button type="button" class="btn" data-rm="skip">Skip</button></div>
+    <div class="gate-links"><span class="muted">${RATEMORE.idx + 1} of ${n} · ${RATEMORE.done} answered</span></div></div>`;
+  g.scrollTop = 0;
+  document.getElementById('rmDone').onclick = endRateMore;
+  g.querySelectorAll('[data-rm]').forEach(b => b.onclick = () => {
+    const v = b.dataset.rm, title = item.title;
+    if (SETUP_RATINGS.some(([r]) => r === v)) rateWatched(title, v);
+    else if (v === 'want') { const c = getShow(title) || {}; saveChange(title, {libraryStatus: 'Want to Watch', status: 'Want to Watch', dismissed: false, snoozeUntil: 0, ...(c.libraryStatus !== 'Want to Watch' ? {rank: nextRank()} : {})}, {quiet: true}); }
+    else if (v === 'no') saveChange(title, {dismissed: true}, {quiet: true});
+    if (v !== 'skip') RATEMORE.done++;
+    RATEMORE.idx++;
+    renderRateMore();
+  });
+}
+function endRateMore() {
+  hideGate();
+  if (RATEMORE.done) toast(`Thanks! ${RATEMORE.done} answer${RATEMORE.done === 1 ? '' : 's'} saved. Your picks are updated.`);
+  render();
 }
