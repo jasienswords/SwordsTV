@@ -91,7 +91,7 @@ const prov = list => (list || []).sort((a, b) => a.display_priority - b.display_
   .map(p => ({name: p.provider_name, logo: p.logo_path}));
 
 async function details(title, found) {
-  const d = await api(`/tv/${found.id}`, {append_to_response: 'aggregate_credits,content_ratings,watch/providers,external_ids'});
+  const d = await api(`/tv/${found.id}`, {append_to_response: 'aggregate_credits,content_ratings,watch/providers,external_ids,keywords,recommendations'});
   const us = d['watch/providers']?.results?.US || {};
   const cast = (d.aggregate_credits?.cast || []).slice(0, 8).map(p => p.name);
   const rec = {
@@ -103,6 +103,10 @@ async function details(title, found) {
     rating: (d.content_ratings?.results || []).find(r => r.iso_3166_1 === 'US')?.rating || null,
     imdb: d.external_ids?.imdb_id || null,
     providers: {link: us.link || null, stream: prov(us.flatrate), free: prov(us.free), ads: prov(us.ads), buy: prov(us.buy), rent: prov(us.rent)},
+    country: d.origin_country || [], language: d.original_language || null,
+    keywords: (d.keywords?.results || []).map(k => k.name),
+    similar: (d.recommendations?.results || []).slice(0, 20).map(r => r.id),
+    nextEpisode: d.next_episode_to_air ? {date: d.next_episode_to_air.air_date, season: d.next_episode_to_air.season_number, episode: d.next_episode_to_air.episode_number} : null,
     match: found.match
   };
   const profileCast = profiles[title]?.cast;

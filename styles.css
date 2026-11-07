@@ -258,3 +258,24 @@ input[data-sub-active]:checked:before{transform:translateX(18px)}
 .provider-credit{font-size:11px;color:var(--muted);margin:14px 0 0;text-align:center}
 .about-text{font-size:15px;line-height:1.6;margin:0 0 14px}
 .footer a{color:inherit}
+
+/* Lists, taste profile, recommendations */
+.group-head{font-size:16px;font-weight:800;margin:22px 0 10px}
+.group-head span{color:var(--muted);font-weight:600;margin-left:4px}
+.show-meta .next-ep{color:var(--accent);font-weight:700}
+.rating-split{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 6px}
+.rating-split .fact{text-align:center;padding:10px 6px}
+.rating-split .fact strong{font-size:22px;font-weight:800}
+.trait{display:grid;grid-template-columns:minmax(0,44%) 1fr;align-items:center;gap:10px;padding:7px 0;border-top:1px solid var(--line)}
+.trait:first-of-type{border-top:0}
+.trait-label{font-size:14px;font-weight:700;min-width:0;overflow-wrap:anywhere}
+.trait-label small{display:block;font-size:11px;font-weight:500;color:var(--muted)}
+.trait-bar{height:10px;border-radius:999px;background:var(--panel2);overflow:hidden}
+.trait-bar span{display:block;height:100%;border-radius:999px}
+.trait-bar .pos{background:linear-gradient(90deg,#6cc28a,#2fa66b)}
+.trait-bar .neg{background:linear-gradient(90deg,#f3a07a,#e0563f)}
+.muted{color:var(--muted);font-size:13px;margin:0}
+details.card summary{cursor:pointer}
+.why-card{background:var(--panel);border-left:4px solid var(--green);border-radius:10px;padding:12px 14px;margin:12px 0 0;font-size:14px;line-height:1.5;box-shadow:var(--shadow)}
+.why-card strong{display:block;font-size:11px;text-transform:uppercase;letter-spacing:1px;color:var(--green);margin-bottom:3px}
+@media(max-width:650px){.rating-split .fact strong{font-size:19px}}
