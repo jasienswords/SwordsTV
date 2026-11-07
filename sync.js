@@ -49,6 +49,22 @@ function useProfileStorage(pid, legacy) {
   else LEGACY_CATALOG = !!localStorage.getItem(LEGACY_CHANGES_KEY);
 })();
 
+// ── The current profile's settings ──
+// ageGroup: adult | teen | kids. comfort (adults): violence, sex, language = mild | moderate | any;
+// dark = avoid | some | fine. prefs: answers from the taste setup.
+const AGE_GROUPS = {adult: 'Adult (18+)', teen: 'Teen (13–17)', kids: 'Kids (under 13)'};
+const DEFAULT_COMFORT = {violence: 'moderate', sex: 'moderate', language: 'moderate', dark: 'some'};
+function currentProfile() {
+  const p = SYNC.profiles[SYNC.pid] || {};
+  return {ageGroup: p.ageGroup || 'adult', comfort: {...DEFAULT_COMFORT, ...(p.comfort || {})}, prefs: p.prefs || {}, setupDone: !!p.setupDone || !!p.legacyCatalog, name: p.name || '', legacyCatalog: !!p.legacyCatalog};
+}
+// What the taste engine reads: the setup answers plus how the profile feels about dark themes.
+function currentPrefs() { const p = currentProfile(); return {...p.prefs, dark: p.ageGroup === 'adult' ? p.comfort.dark : 'avoid'}; }
+async function updateProfile(pid, fields) {
+  await SYNC.db.doc(`households/${SYNC.hid}/profiles/${pid}`).set({...fields, updatedAt: Date.now()}, {merge: true});
+  SYNC.profiles[pid] = {...(SYNC.profiles[pid] || {}), ...fields};
+}
+
 function profileName() { const p = SYNC.profiles[SYNC.pid]; return p ? p.name : ((readSession() || {}).name || ''); }
 
 const SYNC_SHORT = {'Sign in to sync': 'Sign in', 'Sync paused': 'Paused'};
@@ -157,6 +173,7 @@ function selectProfile(pid) {
   applyRemoteProfile(p, true);
   syncStatus('Synced', true);
   syncPush(); // keeps the anonymous signals copy current
+  if (!p.setupDone && !p.legacyCatalog && typeof startSetup === 'function') startSetup();
   if (DATA) { currentView = currentView === 'detail' ? 'home' : currentView; render(); }
 }
 
@@ -189,7 +206,8 @@ function syncPush() {
     const db = SYNC.db, now = Date.now(), b = db.batch(), hid = SYNC.hid, pid = SYNC.pid;
     b.set(db.doc(`households/${hid}/profiles/${pid}`), {changes, updatedAt: now, updatedBy: SYNC.user.email || ''}, {merge: true});
     b.set(db.doc('households/' + hid), {added: ADDED, subscriptions: subs, updatedAt: now}, {merge: true});
-    b.set(db.doc('signals/' + hid), {profiles: {[pid]: {legacyCatalog: LEGACY_CATALOG, changes: signalOf(changes)}}, added: ADDED, updatedAt: now}, {merge: true});
+    const cp = currentProfile();
+    b.set(db.doc('signals/' + hid), {profiles: {[pid]: {legacyCatalog: LEGACY_CATALOG, ageGroup: cp.ageGroup, prefs: currentPrefs(), comfort: cp.comfort, changes: signalOf(changes)}}, added: ADDED, updatedAt: now}, {merge: true});
     b.commit().then(() => syncStatus('Synced', true))
       .catch(e => { syncStatus('Sync paused', true); console.warn('Sync failed', e); });
   }, 400);
@@ -242,7 +260,7 @@ async function createHousehold({name, profile, invite, legacy}) {
     invitedEmails: [], subscriptions: legacy ? (legacy.subscriptions || subs) : {}, added, createdAt: Date.now()
   });
   const profileChanges = legacy ? mergeChanges(JSON.parse(localStorage.getItem(LEGACY_CHANGES_KEY) || '{}'), legacy.changes || {}) : {};
-  await db.doc(`households/${hid}/profiles/${pid}`).set({name: profile, color: AVATAR_COLORS[0], legacyCatalog: !!legacy, changes: profileChanges, createdAt: Date.now()});
+  await db.doc(`households/${hid}/profiles/${pid}`).set({name: profile, color: AVATAR_COLORS[0], ageGroup: 'adult', legacyCatalog: !!legacy, setupDone: !!legacy, changes: profileChanges, createdAt: Date.now()});
   await db.doc('users/' + u.uid).set({householdId: hid});
   SYNC.hid = hid;
   if (legacy) {
@@ -254,10 +272,10 @@ async function createHousehold({name, profile, invite, legacy}) {
   await enterHousehold(hid);
 }
 
-async function addProfile(name) {
+async function addProfile(name, ageGroup = 'adult') {
   const pid = newId(), used = Object.values(SYNC.profiles).map(p => p.color);
   const color = AVATAR_COLORS.find(c => !used.includes(c)) || AVATAR_COLORS[Object.keys(SYNC.profiles).length % AVATAR_COLORS.length];
-  await SYNC.db.doc(`households/${SYNC.hid}/profiles/${pid}`).set({name, color, legacyCatalog: false, changes: {}, createdAt: Date.now()});
+  await SYNC.db.doc(`households/${SYNC.hid}/profiles/${pid}`).set({name, color, ageGroup, legacyCatalog: false, setupDone: false, changes: {}, createdAt: Date.now()});
   return pid;
 }
 
@@ -360,8 +378,18 @@ function showGate(kind, opts = {}) {
   } else if (kind === 'newprofile') {
     html = `${mascot}<h2>Add a profile</h2><p class="gate-lead">Each person gets their own ratings, For You picks and Taste Profile.</p>
       <form id="gNewProfile" class="gate-form"><label for="gPName">Name</label><input class="field" id="gPName" required maxlength="24">
+      <label>Age group</label>${ageChips('adult')}<p class="gate-hint" id="ageNote">${AGE_NOTES.adult}</p>
       <p class="gate-error" id="gateError" hidden></p><button class="btn primary" type="submit">Add profile</button></form>
       ${Object.keys(SYNC.profiles).length ? '<div class="gate-links"><button class="link-btn" id="gBack">Back</button></div>' : ''}`;
+  } else if (kind === 'editprofile') {
+    const p = SYNC.profiles[opts.pid] || {}, c = {...DEFAULT_COMFORT, ...(p.comfort || {})}, age = p.ageGroup || 'adult';
+    html = `${avatar(p, true)}<h2>${esc(p.name)}</h2>
+      <form id="gEditProfile" class="gate-form"><label for="gPName">Name</label><input class="field" id="gPName" required maxlength="24" value="${esc(p.name)}">
+      <label>Age group</label>${ageChips(age)}
+      <div class="comfort-block"${age === 'adult' ? '' : ' hidden'}><label>Comfort levels</label>${comfortRows(c)}</div>
+      <p class="gate-hint" id="ageNote">${AGE_NOTES[age]}</p>
+      <p class="gate-error" id="gateError" hidden></p><button class="btn primary" type="submit">Save</button></form>
+      <div class="gate-links"><button class="link-btn" id="gRedo">Redo taste setup</button>${opts.pid !== SYNC.pid ? '<button class="link-btn danger" id="gDelete">Delete profile</button>' : ''}<button class="link-btn" id="gCancel">Cancel</button></div>`;
   } else if (kind === 'message') {
     html = `${mascot}<h2>${esc(opts.title)}</h2><p class="gate-lead">${esc(opts.text)}</p>${opts.button ? `<button class="btn primary" id="gMsgBtn">${esc(opts.button)}</button>` : ''}`;
   }
@@ -397,7 +425,13 @@ function showGate(kind, opts = {}) {
   const hf = document.getElementById('gHouseForm');
   if (hf) hf.onsubmit = busy(hf, () => createHousehold({name: document.getElementById('gHouse').value.trim(), profile: document.getElementById('gProfile').value.trim(), invite: document.getElementById('gInvite').value.trim(), legacy: opts.legacy}));
   const pf = document.getElementById('gNewProfile');
-  if (pf) pf.onsubmit = busy(pf, async () => { const pid = await addProfile(document.getElementById('gPName').value.trim()); SYNC.pid = null; waitForProfile(pid); });
+  if (pf) pf.onsubmit = busy(pf, async () => { const pid = await addProfile(document.getElementById('gPName').value.trim(), pickedAge()); SYNC.pid = null; waitForProfile(pid); });
+  bindChoiceChips(g);
+  const ep = document.getElementById('gEditProfile');
+  if (ep) ep.onsubmit = busy(ep, () => saveProfileEdit(opts.pid));
+  on('gRedo', async () => { await updateProfile(opts.pid, {setupDone: false}); if (opts.pid === SYNC.pid) startSetup(); else { selectProfile(opts.pid); } });
+  on('gDelete', async () => { if (!confirm(`Delete ${SYNC.profiles[opts.pid].name}'s profile and ratings? This can't be undone.`)) return; await SYNC.db.doc(`households/${SYNC.hid}/profiles/${opts.pid}`).delete(); hideGate(); toast('Profile deleted'); });
+  on('gCancel', () => hideGate());
 }
 // Profiles arrive through the live listener; switch once the new one shows up.
 function waitForProfile(pid, tries = 0) {
@@ -411,11 +445,12 @@ function renderAccount() {
   const body = document.getElementById('accountBody');
   if (!body) return;
   const h = SYNC.household || {}, ps = Object.values(SYNC.profiles).sort((a, b) => (a.createdAt || 0) - (b.createdAt || 0));
-  const members = Object.values(h.members || {}), invited = h.invitedEmails || [];
+  const members = Object.values(h.members || {}), invited = h.invitedEmails || [], adultHere = currentProfile().ageGroup === 'adult';
   body.innerHTML = `<h3>${esc(h.name || 'Your household')}</h3>
     <div class="acct-section"><div class="acct-label">Profiles</div>
       <div class="profile-row">${ps.map(p => `<button class="profile-pick small${p.id === SYNC.pid ? ' on' : ''}" data-switch="${esc(p.id)}">${avatar(p)}<span>${esc(p.name)}</span></button>`).join('')}
-      <button class="profile-pick small add" id="aAdd"><span class="avatar add">+</span><span>Add</span></button></div></div>
+      ${adultHere ? '<button class="profile-pick small add" id="aAdd"><span class="avatar add">+</span><span>Add</span></button>' : ''}</div>
+      ${adultHere ? `<div class="edit-row">${ps.map(p => `<button class="link-btn" data-edit="${esc(p.id)}">Edit ${esc(p.name)}</button>`).join('')}</div>` : ''}</div>
     <div class="acct-section"><div class="acct-label">People who can sign in</div>
       <ul class="acct-list">${members.map(m => `<li>${esc(m.email)}</li>`).join('')}${invited.map(e => `<li class="pending">${esc(e)} <em>invited</em> <button class="link-btn" data-uninvite="${esc(e)}">Cancel</button></li>`).join('')}</ul>
       <form id="aInvite" class="invite-form"><input class="field" id="aInviteEmail" type="email" autocomplete="off" autocapitalize="off" placeholder="Invite by email"><button class="btn" type="submit">Invite</button></form>
@@ -424,7 +459,8 @@ function renderAccount() {
     <div class="modal-actions"><button class="btn primary" id="aDone">Done</button></div>`;
   body.querySelectorAll('[data-switch]').forEach(b => b.onclick = () => { hideSheet(); SYNC.gate = null; if (b.dataset.switch !== SYNC.pid) { selectProfile(b.dataset.switch); toast('Switched to ' + SYNC.profiles[b.dataset.switch].name); } });
   body.querySelectorAll('[data-uninvite]').forEach(b => b.onclick = () => cancelInvite(b.dataset.uninvite).catch(e => toast('Couldn’t cancel: ' + e.message)));
-  document.getElementById('aAdd').onclick = () => { hideSheet(); SYNC.gate = null; showGate('newprofile'); };
+  const add = document.getElementById('aAdd'); if (add) add.onclick = () => { hideSheet(); SYNC.gate = null; showGate('newprofile'); };
+  body.querySelectorAll('[data-edit]').forEach(b => b.onclick = () => { hideSheet(); SYNC.gate = null; showGate('editprofile', {pid: b.dataset.edit}); });
   document.getElementById('aDone').onclick = () => { hideSheet(); SYNC.gate = null; };
   document.getElementById('aSignOut').onclick = () => { if (confirm('Sign out of Queuey on this device?')) { hideSheet(); SYNC.gate = null; localStorage.removeItem(SESSION_KEY); SYNC.pid = null; firebase.auth().signOut(); } };
   document.getElementById('aInvite').onsubmit = async e => {
@@ -432,4 +468,39 @@ function renderAccount() {
     const v = document.getElementById('aInviteEmail').value;
     try { if (await inviteEmail(v)) toast('Invited ' + lower(v)); } catch (x) { toast('Couldn’t invite: ' + (x.message || x.code)); }
   };
+}
+
+// ── Age group and comfort-level controls (shared by the add and edit screens) ──
+const AGE_NOTES = {
+  adult: 'Adults choose their own comfort levels. Anything above them is left out of recommendations.',
+  teen: 'Teens see shows rated up to TV-14. Strong content is never recommended, and unrated shows wait for Queuey’s content check.',
+  kids: 'Kids see shows rated TV-Y, TV-Y7, TV-G or TV-PG only, in recommendations and in search.'
+};
+const COMFORT_ROWS = [
+  ['violence', 'Violence', [['mild', 'Keep it mild'], ['moderate', 'Moderate is fine'], ['any', 'Anything']]],
+  ['sex', 'Sexual content', [['mild', 'Keep it mild'], ['moderate', 'Moderate is fine'], ['any', 'Anything']]],
+  ['language', 'Language', [['mild', 'Keep it mild'], ['moderate', 'Moderate is fine'], ['any', 'Anything']]],
+  ['dark', 'Dark or bleak themes', [['avoid', 'Avoid'], ['some', 'Sometimes'], ['fine', 'Bring it on']]]
+];
+const chipGroup = (name, options, value) => `<div class="chips choice" data-choice="${name}">${options.map(([v, l]) => `<button type="button" data-v="${v}" class="${v === value ? 'on' : ''}" aria-pressed="${v === value}">${l}</button>`).join('')}</div>`;
+const ageChips = v => chipGroup('age', Object.entries(AGE_GROUPS), v);
+const comfortRows = c => COMFORT_ROWS.map(([k, label, opts]) => `<div class="comfort-row"><span>${label}</span>${chipGroup('comfort-' + k, opts, c[k])}</div>`).join('') + '<p class="gate-hint">“Moderate is fine” still allows strong content when a show is an exceptionally good match.</p>';
+const picked = (root, name) => { const b = root.querySelector(`[data-choice="${name}"] .on`); return b ? b.dataset.v : null; };
+const pickedAge = () => picked(document, 'age') || 'adult';
+function bindChoiceChips(root) {
+  root.querySelectorAll('.chips.choice').forEach(group => group.querySelectorAll('button').forEach(b => b.onclick = () => {
+    group.querySelectorAll('button').forEach(x => { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+    if (group.dataset.choice === 'age') {
+      const cb = root.querySelector('.comfort-block'); if (cb) cb.hidden = b.dataset.v !== 'adult';
+      const n = root.querySelector('#ageNote'); if (n) n.textContent = AGE_NOTES[b.dataset.v];
+    }
+  }));
+}
+async function saveProfileEdit(pid) {
+  const age = pickedAge(), fields = {name: document.getElementById('gPName').value.trim(), ageGroup: age};
+  if (age === 'adult') fields.comfort = Object.fromEntries(COMFORT_ROWS.map(([k]) => [k, picked(document, 'comfort-' + k) || DEFAULT_COMFORT[k]]));
+  await updateProfile(pid, fields);
+  hideGate();
+  if (pid === SYNC.pid) { syncStatus('Synced', true); syncPush(); render(); }
+  toast('Profile saved');
 }

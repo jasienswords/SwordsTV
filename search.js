@@ -104,7 +104,7 @@ function openSearch() {
 function catalogMatches(q) {
   const n = q.toLowerCase().trim();
   if (!n) return [];
-  return allShows().filter(s => s.title.toLowerCase().includes(n) && !PREVIEW.has(s.title))
+  return allShows().filter(s => s.title.toLowerCase().includes(n) && !PREVIEW.has(s.title) && ratingAllowed(usRatingOf(s.title)))
     .sort((a, b) => (a.title.toLowerCase().startsWith(n) ? 0 : 1) - (b.title.toLowerCase().startsWith(n) ? 0 : 1) || a.title.localeCompare(b.title)).slice(0, 24);
 }
 function resultCard(r) {
@@ -147,7 +147,8 @@ function bindSearch() {
     if (liveSearch() && searchQuery.trim().length >= 2) {
       const seq = ++searchSeq, term = searchQuery.trim();
       searchTimer = setTimeout(() => tmdbGet('/search/tv', {query: term, include_adult: 'false'})
-        .then(r => { if (seq === searchSeq) { searchResults = (r.results || []).slice(0, 18); if (currentView === 'search') { const p2 = document.getElementById('searchAll').selectionStart; render(); const m = document.getElementById('searchAll'); m.focus(); m.setSelectionRange(p2, p2); } } })
+        .then(r => ageFilter((r.results || []).slice(0, 18)))
+        .then(list => { if (seq === searchSeq) { searchResults = list; if (currentView === 'search') { const p2 = document.getElementById('searchAll').selectionStart; render(); const m = document.getElementById('searchAll'); m.focus(); m.setSelectionRange(p2, p2); } } })
         .catch(() => { if (seq === searchSeq) { searchResults = 'error'; if (currentView === 'search') render(); } }), 350);
     }
   };
@@ -160,10 +161,18 @@ function bindSearch() {
     saveAdded(); ensureInCatalog(title); syncPush(); openDetail(title);
   };
 }
+// Teen and kids profiles only see TMDB results whose U.S. rating suits their age group.
+async function ageFilter(results) {
+  if (currentProfile().ageGroup === 'adult') return results;
+  const rated = await Promise.all(results.map(r => tmdbGet(`/tv/${r.id}/content_ratings`)
+    .then(c => ((c.results || []).find(x => x.iso_3166_1 === 'US') || {}).rating || null).catch(() => null)));
+  return results.filter((r, i) => ratingAllowed(rated[i]));
+}
 async function previewTmdb(id) {
   toast('Loading…');
   try {
     const rec = await fetchShow(id);
+    if (!ratingAllowed(rec.rating)) { toast(`That show isn’t available on ${currentProfile().name || 'this'} profile`); return; }
     const title = catalogTitleFor(rec);
     if (!DATA.catalog.some(x => x.title === title)) { TMDB[title] = rec; ensureInCatalog(title); PREVIEW.add(title); }
     openDetail(title);

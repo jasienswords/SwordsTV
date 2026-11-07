@@ -25,7 +25,12 @@ const MAX_NEW_PER_NIGHT = 10;      // new finds added per run
 const MAX_PENDING_OR_SHOWN = 60;   // unrated discoveries kept in the app at once
 const MIN_IMDB = 7.0, MIN_IMDB_VOTES = 500;
 const MIN_IMDB_SAME_CREATOR = 6.5; // a new show from the creator of a show you loved gets more leeway
-const SKIP_GENRES = new Set(['Kids', 'News', 'Talk', 'Soap']);
+const SKIP_GENRES = new Set(['News', 'Talk', 'Soap']);
+// What each age group may be offered, by U.S. TV rating (adults: anything; kids' shows only to kids and teens).
+const KIDS_RATINGS = ['TV-Y', 'TV-Y7', 'TV-Y7-FV', 'TV-G', 'TV-PG'], TEEN_RATINGS = [...KIDS_RATINGS, 'TV-14'];
+const suits = (p, rec) => { const age = p.ageGroup || 'adult';
+  if (age === 'adult') return !(rec.genres || []).includes('Kids');
+  return !!rec.rating && (age === 'kids' ? KIDS_RATINGS : TEEN_RATINGS).includes(rec.rating); };
 const today = new Date().toISOString().slice(0, 10);
 
 const data = read('data.json'), research = read('shows.json', {}), tmdbFile = read('tmdb.json');
@@ -44,14 +49,14 @@ const {buildProfile, rankedCandidates, matchShow, whyText, contentFlags, diversi
 // One taste profile per person. A find is kept when it fits at least one of them as well as
 // that person's 25th-best current match; its reason comes from the person it fits best.
 const engines = people.map(p => {
-  const shows = showsFor(catalog, p), profile = buildProfile(shows), ranked = rankedCandidates(shows, profile);
+  const shows = showsFor(catalog, p), profile = buildProfile(shows, p.prefs || null), ranked = rankedCandidates(shows, profile);
   return {p, shows, profile, bar: ranked.length ? ranked[Math.min(24, ranked.length - 1)].m.score : 0};
 }).filter(e => e.profile.total >= 10);
 for (const e of engines) console.log(`Profile ${e.p.household}/${e.p.profile}: ${e.profile.total} ratings; new finds must score at least ${e.bar.toFixed(2)}.`);
 if (!engines.length) { console.log('No profile has 10 ratings yet; nothing to search for.'); process.exit(0); }
-const bestFit = title => {
+const bestFit = (title, rec) => {
   let best = null;
-  for (const e of engines) { const m = matchShow(title, e.profile); if (!best || m.score - e.bar > best.margin) best = {e, m, margin: m.score - e.bar}; }
+  for (const e of engines.filter(e => suits(e.p, rec))) { const m = matchShow(title, e.profile); if (!best || m.score - e.bar > best.margin) best = {e, m, margin: m.score - e.bar}; }
   return best;
 };
 const rated = t => people.some(p => { const c = (p.changes || {})[t]; return c && (c.rating || c.libraryStatus); });
@@ -92,9 +97,9 @@ for (const [id, source] of pool) {
   const sameCreator = engines.some(e => matchShow(title, e.profile).because.some(b => b.creator && b.rating === 'Loved'));
   if (im.rating < (sameCreator ? MIN_IMDB_SAME_CREATOR : MIN_IMDB)) { delete TMDB[title]; continue; }
   if (contentFlags(title).length) { delete TMDB[title]; continue; }
-  const best = bestFit(title);
+  const best = bestFit(title, rec);
   delete TMDB[title];
-  if (best.margin >= 0) found.push({title, rec, im, m: best.m, e: best.e, margin: best.margin, source});
+  if (best && best.margin >= 0) found.push({title, rec, im, m: best.m, e: best.e, margin: best.margin, source});
 }
 found.sort((a, b) => b.margin - a.margin);
 

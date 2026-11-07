@@ -72,8 +72,21 @@ function contentLevels(t){return (GUIDANCE[t]&&GUIDANCE[t].levels)||(DISCOVERED[
 // For You recommends content-reviewed shows. Moderate violence, sexual content and language are fine (they're
 // tagged on the show page); a show with STRONG content is only recommended when it's a strong match.
 const STRONG_FIT=1.2;
-function eligible(t,m){const g=GUIDANCE[t];if(g&&g.status==="blocked")return false;if(ADDED[t])return true;const l=contentLevels(t);if(!l)return false;
- const strong=["violence","sex","language"].some(k=>l[k]==="strong");return !strong||(m&&m.score>=STRONG_FIT)}
+// What each age group may see, by U.S. TV rating. Adults set their own comfort levels instead.
+const KIDS_RATINGS=["TV-Y","TV-Y7","TV-Y7-FV","TV-G","TV-PG"],TEEN_RATINGS=[...KIDS_RATINGS,"TV-14"];
+const LEVEL_ORDER={none:0,mild:1,moderate:2,strong:3};
+function usRatingOf(t){const l=contentLevels(t);return (l&&l.usRating)||(tm(t)||{}).rating||null}
+// Whether a TV rating is within the current profile's age group (adults: always).
+function ratingAllowed(us,age){age=age||currentProfile().ageGroup;return age==="adult"||(!!us&&(age==="kids"?KIDS_RATINGS:TEEN_RATINGS).includes(us))}
+// Whether a show may be recommended to the current profile. Unreviewed shows wait for the
+// nightly content check; adults' own added shows are always allowed.
+function eligible(t,m){const g=GUIDANCE[t];if(g&&g.status==="blocked")return false;const P=currentProfile(),age=P.ageGroup;
+ if(!ratingAllowed(usRatingOf(t),age))return false;
+ if(ADDED[t]&&age==="adult")return true;const l=contentLevels(t);if(!l)return false;
+ for(const k of ["violence","sex","language"]){const lim=age==="kids"?"mild":age==="teen"?"moderate":P.comfort[k];if(lim==="any")continue;
+  const lvl=LEVEL_ORDER[l[k]]||0;if(lvl<=LEVEL_ORDER[lim])continue;
+  if(age==="adult"&&lim==="moderate"&&l[k]==="strong"&&m&&m.score>=STRONG_FIT)continue;return false}
+ return true}
 const cap=x=>x[0].toUpperCase()+x.slice(1);
 function contentTags(s){const l=contentLevels(s.title),us=(l&&l.usRating)||(tm(s.title)||{}).rating;
  const rating=us?`<span class="ctag rating">Rated ${esc(us)}</span>`:"";
@@ -82,6 +95,13 @@ function contentTags(s){const l=contentLevels(s.title),us=(l&&l.usRating)||(tm(s
  const tag=(k,label)=>l[k]==="none"&&us==="TV-MA"?`<span class="ctag unk">${label}: Not noted</span>`:`<span class="ctag lvl-${l[k]}">${label}: ${cap(l[k])}</span>`;
  return `<div class="content-tags" aria-label="Content">${rating}${tag("violence","Violence")}${tag("sex","Sexual content")}${tag("language","Language")}${(l.themes||[]).map(x=>`<span class="ctag theme">${esc(cap(x))}</span>`).join("")}</div>`}
 function firstSentence(t){const m=String(t).match(/^.{20,220}?[.!?](?=\s|$)/);return m?m[0]:String(t).slice(0,200)+(String(t).length>200?"…":"")}
+function contentSettingsCard(){const P=currentProfile(),c=P.comfort,word={mild:"kept mild",moderate:"moderate is fine",any:"anything goes"},dark={avoid:"avoided",some:"pushed down",fine:"not held back"};
+ const body=P.ageGroup==="adult"?`<p class="muted">Violence: <strong>${word[c.violence]}</strong> · Sexual content: <strong>${word[c.sex]}</strong> · Language: <strong>${word[c.language]}</strong>. Dark or bleak themes are <strong>${dark[c.dark]}</strong>.${[c.violence,c.sex,c.language].includes("moderate")?" Strong content still appears when a show is an exceptionally good match.":""}</p>`
+  :`<p class="muted">${esc(P.name)} has a <strong>${P.ageGroup==="kids"?"Kids":"Teen"}</strong> profile: only shows rated ${P.ageGroup==="kids"?"TV-Y, TV-Y7, TV-G or TV-PG":"up to TV-14"} appear, in recommendations and in search.</p>`;
+ return `<div class="card"><h3 class="card-title">Your content settings</h3>${body}<p class="muted" style="margin-top:8px">Every show page tags content in colour: <span class="ctag lvl-mild">Mild</span> <span class="ctag lvl-moderate">Moderate</span> <span class="ctag lvl-strong">Strong</span>.</p>${P.ageGroup==="adult"&&typeof SYNC!=="undefined"&&SYNC.pid?`<button class="btn" id="editComfort">Change content settings</button>`:""}</div>`}
+// New profiles that skipped part of the taste setup get a nudge until they've rated enough.
+function setupNudge(){const P=currentProfile();if(P.legacyCatalog||typeof SYNC==="undefined"||!SYNC.pid)return "";const n=allShows().filter(s=>RATINGS.includes(s.rating)).length;
+ return n<10?`<section class="hero nudge"><img class="welcome-mascot" src="queuey.svg" alt="" aria-hidden="true"><div class="hero-content"><h2>Let’s get to know you</h2><p>You’ve rated ${n} show${n===1?"":"s"}. Rate ${10-n} more and my picks get much better.</p></div><button class="btn primary" id="resumeSetup">Rate shows&nbsp;→</button></section>`:""}
 function renderHome(){
  const all=allShows().filter(s=>!PREVIEW.has(s.title)),profile=buildProfile(all),ranked=rankedCandidates(all,profile).filter(x=>eligible(x.s.title,x.m)),seen=new Set();
  const take=(list,n)=>{const out=list.filter(x=>!seen.has(x.s.title)).slice(0,n);out.forEach(x=>seen.add(x.s.title));return out.map(x=>x.s)};
@@ -126,7 +146,7 @@ function renderHome(){
  const announced=all.filter(s=>{const t=tm(s.title)||{};return followed(s)&&t.announcedSeason&&!(t.nextEpisode&&t.nextEpisode.date>=today)})
   .sort((a,b)=>a.title.localeCompare(b.title));
  if(announced.length)html+=heading("Season announced")+rail(announced,s=>"Season "+tm(s.title).announcedSeason+" announced · date TBA");
- return html;
+ return setupNudge()+html;
 }
 
 // ── My Library: rated shows you've finished or whose series has ended ──
@@ -187,7 +207,7 @@ function setWantOrder(order){const now=Date.now();order.forEach((t,i)=>{changes[
 // ── Taste Profile: learned from your ratings ──
 function traitBar(x,max){const w=Math.max(6,Math.round(Math.abs(x.affinity)/max*100));return `<div class="trait"><div class="trait-label">${esc(x.label)}<small>${x.rated} rated${x.passed?` · ${x.passed} passed on`:""}</small></div><div class="trait-bar"><span class="${x.affinity>0?"pos":"neg"}" style="width:${w}%"></span></div></div>`}
 function renderProfile(){
- const p=buildProfile(allShows()),tr=Object.values(p.traits).filter(x=>x.n>=minShown(x.type));
+ const p=buildProfile(allShows()),tr=Object.values(p.traits).filter(x=>x.rated>=minShown(x.type)||(x.seeded&&x.rated>=1));
  const loves=tr.filter(x=>x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,10),avoids=tr.filter(x=>x.affinity<-0.05).sort((a,b)=>a.affinity-b.affinity).slice(0,8);
  const max=Math.max(0.01,...loves.concat(avoids).map(x=>Math.abs(x.affinity)));
  const rule=d=>(DATA.tasteProfile.find(x=>x.dimension===d)||{}).profile||"";
@@ -196,7 +216,7 @@ function renderProfile(){
   +`<div class="card"><h3 class="card-title">What you rate highly</h3>${loves.map(x=>traitBar(x,max)).join("")||'<p class="muted">Rate a few more shows to see patterns.</p>'}</div>`
   +`<div class="card"><h3 class="card-title">What you tend to rate lower</h3>${avoids.map(x=>traitBar(x,max)).join("")||'<p class="muted">No clear dislikes yet.</p>'}</div>`
   +(p.imdbLoved!=null&&p.imdbDisliked!=null?`<div class="facts"><div class="fact"><small>Shows you love · average IMDb</small><strong>${p.imdbLoved.toFixed(1)}</strong></div><div class="fact"><small>Shows you dislike · average IMDb</small><strong>${p.imdbDisliked.toFixed(1)}</strong></div></div>`:"")
-  +`<div class="card"><h3 class="card-title">Your content settings</h3><p class="muted">Moderate violence, sexual content and language are fine. Every show page tags them in colour: <span class="ctag lvl-mild">Mild</span> <span class="ctag lvl-moderate">Moderate</span> <span class="ctag lvl-strong">Strong</span>. Shows with strong content only appear in For You when they're a strong match for your taste.</p><p class="muted" style="margin-top:10px">Pushed down in For You when TMDB's keywords mention them:</p><div class="service-row">${CONTENT_LIMITS.map(l=>`<span class="pill">${esc(l.label)}</span>`).join("")}</div></div>`
+  +contentSettingsCard()
   +(()=>{const ins=buildInsights(allShows());return ins.length?`<div class="card insights"><h3 class="card-title">Insights on Your Taste Profile</h3><p class="muted">What your ratings say about why shows resonate with you (or don’t). Updates as you rate.</p>${ins.map(i=>`<div class="insight"><strong>${esc(i.title)}</strong><p>${esc(i.text)}</p>${i.examples&&i.examples.length?`<div class="service-row">${i.examples.map(t=>`<span class="pill" data-title="${esc(t)}">${esc(t)}</span>`).join("")}</div>`:""}</div>`).join("")}</div>`:""})()
   +(()=>{const hidden=allShows().filter(s=>s.dismissed||(s.snoozeUntil||0)>Date.now());return hidden.length?`<details class="card"><summary><strong>Hidden from For You (${hidden.length})</strong></summary>${hidden.map(s=>`<div class="hidden-row"><span>${esc(s.title)}<small>${s.dismissed?"Not interested":"Later · until "+new Date(s.snoozeUntil).toLocaleDateString("en-US",{month:"short",day:"numeric"})}</small></span><button class="btn" data-unhide="${esc(s.title)}">Show again</button></div>`).join("")}</details>`:""})()
   +renderStreamingInsights()
@@ -318,7 +338,7 @@ ${note}</div></section>`;
 }
 function bindRecActions(){document.querySelectorAll(".rec-actions button").forEach(b=>b.onclick=e=>{e.stopPropagation();const host=b.closest("[data-title]");recAction(host?host.dataset.title:currentTitle,b.dataset.act)})}
 function render(){document.getElementById("main").innerHTML=currentView==="search"?renderSearch():currentView==="home"?renderHome():currentView==="library"?renderLibrary():currentView==="watchlist"?renderWatchlist():renderProfile();document.querySelectorAll(".show").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));document.querySelectorAll("[data-title]:not(.show)").forEach(el=>el.onclick=()=>openDetail(el.dataset.title));if(currentView==="library"){let q=document.getElementById("search");q.oninput=e=>{searchTerm=e.target.value;let pos=q.selectionStart;render();let n=document.getElementById("search");n.focus();n.setSelectionRange(pos,pos)};let f=document.getElementById("ratingFilter");f.value=ratingFilter;f.onchange=e=>{ratingFilter=e.target.value;render()}}let sb=document.getElementById("saveSubs");if(sb)sb.onclick=saveSubscriptions;syncWelcome();;if(currentView==="search")bindSearch();document.getElementById("searchBtn").classList.toggle("active",currentView==="search");bindRecActions();document.querySelectorAll("[data-unhide]").forEach(b=>b.onclick=()=>saveChange(b.dataset.unhide,{dismissed:false,snoozeUntil:0},{msg:"It can be suggested again"}));bindWantDrag()}
-function saveChange(title,obj,opts){adoptShow(title);const before=getShow(title);if(before&&obj.completed===undefined){if(obj.libraryStatus==="Watching"&&isOngoing(before))obj={...obj,completed:false};else if(isCompleted(before)&&obj.watched!==false)obj={...obj,completed:true}}changes[title]={...(changes[title]||{}),...obj,_t:Date.now()};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();toast((opts&&opts.msg)||(SYNC.user?"Saved for the family":"Saved to this device"),opts&&opts.undo);if(currentView==="detail")renderDetail();else render()}
+function saveChange(title,obj,opts){adoptShow(title);const before=getShow(title);if(before&&obj.completed===undefined){if(obj.libraryStatus==="Watching"&&isOngoing(before))obj={...obj,completed:false};else if(isCompleted(before)&&obj.watched!==false)obj={...obj,completed:true}}changes[title]={...(changes[title]||{}),...obj,_t:Date.now()};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();if(opts&&opts.quiet)return;toast((opts&&opts.msg)||(SYNC.user?"Saved":"Saved to this device"),opts&&opts.undo);if(currentView==="detail")renderDetail();else render()}
 // Rate dialog: three plain questions. Watched it / Watching now / Not yet; then either
 // How was it? (Loved…Disliked, No rating) or Want to watch it? (Up Next, Want to Watch, Maybe later, Not interested).
 const RATE={};
@@ -362,7 +382,7 @@ const doExport=()=>{let backup={project:DATA.project,changes,roundHistory:DATA.r
 document.getElementById("syncBtn").onclick=()=>syncSignIn();
 document.getElementById("searchBtn").onclick=()=>openSearch();
 // Export / Import live in the Backup card on Taste Profile.
-document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.id==="exportBtn")doExport();if(b.id==="importBtn")document.getElementById("importFile").click()});
+document.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.id==="resumeSetup")startSetup("rate");if(b.id==="editComfort")showGate("editprofile",{pid:SYNC.pid});if(b.id==="exportBtn")doExport();if(b.id==="importBtn")document.getElementById("importFile").click()});
 document.getElementById("importFile").onchange=async e=>{let f=e.target.files[0];if(!f)return;try{let d=JSON.parse(await f.text());if(d.changes){changes={...changes,...Object.fromEntries(Object.entries(d.changes).map(([k,v])=>[k,{...v,_t:Date.now()}]))};localStorage.setItem(STORAGE,JSON.stringify(changes));syncPush();if(d.subscriptions)localStorage.setItem(SUBS_KEY,JSON.stringify(d.subscriptions));toast("Backup imported");render()}else toast("That file is not a Queuey backup")}catch{toast("Could not read backup file")}};
 function showLoadError(){document.getElementById("main").innerHTML='<div class="empty">Queuey couldn\'t load its show data. Check your connection and reload the page.</div>'}
 function loadJSON(url){return fetch(url,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(url+" "+r.status);return r.json()})}

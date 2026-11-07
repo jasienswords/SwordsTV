@@ -516,3 +516,47 @@ body.gated{overflow:hidden}
 .acct-hint{font-size:12.5px;color:var(--muted);margin:6px 0 0}
 .acct-foot{display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:13px;color:var(--muted);border-top:1px solid var(--line,rgba(127,127,127,.2));padding-top:12px;overflow-wrap:anywhere}
 @media (orientation:landscape) and (max-height:520px){.gate-mascot{width:52px;height:52px}.gate-card{padding:18px}}
+
+/* ── Taste setup ── */
+.gate-card.setup{text-align:left}
+.gate-card.setup h2,.gate-card.setup .gate-lead,.gate-card.setup .gate-mascot{text-align:center}
+.setup-top{display:flex;align-items:center;gap:12px;margin:-6px 0 14px}
+.setup-bar{flex:1;height:6px;border-radius:99px;background:var(--line,rgba(127,127,127,.2));overflow:hidden}
+.setup-bar span{display:block;height:100%;background:var(--gold,#f6c75a);border-radius:99px;transition:width .3s}
+.btn.wide{width:100%;margin-top:16px;padding:13px;font-size:15px}
+.chips.multi,.chips.choice{display:flex;flex-wrap:wrap;gap:8px}
+.chips.multi button,.chips.choice button{-webkit-appearance:none;appearance:none;border:1px solid var(--line,rgba(127,127,127,.3));background:transparent;color:inherit;border-radius:99px;padding:8px 13px;font:600 14px/1.2 inherit;font-family:inherit;cursor:pointer}
+.chips.multi button.on,.chips.choice button.on{background:var(--gold,#f6c75a);border-color:var(--gold,#f6c75a);color:#1c1e23}
+.chips.multi button.on:before{content:"✓ "}
+.setup-q{margin:14px 0}
+.setup-q label,.comfort-row>span{display:block;font-size:13px;font-weight:800;color:var(--muted);margin-bottom:8px}
+.comfort-row{margin:12px 0}
+.comfort-block[hidden]{display:none}
+.fav-chosen{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px;justify-content:center}
+.pill.fav{display:inline-flex;align-items:center;gap:6px}
+.pill.fav button{-webkit-appearance:none;border:0;background:none;color:inherit;font-size:16px;line-height:1;padding:0 2px;cursor:pointer}
+.fav-results{display:flex;flex-direction:column;gap:6px;margin-top:10px}
+.fav-result{-webkit-appearance:none;display:flex;align-items:center;gap:10px;text-align:left;border:1px solid var(--line,rgba(127,127,127,.2));background:transparent;color:inherit;border-radius:12px;padding:6px 10px 6px 6px;font-family:inherit;cursor:pointer}
+.fav-result img,.fav-noimg{width:36px;height:54px;border-radius:6px;object-fit:cover;background:#333;flex:0 0 auto}
+.fav-result span{flex:1;min-width:0;display:flex;flex-direction:column}
+.fav-result strong{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fav-result small{color:var(--muted);font-size:12px}
+.fav-result em{font-style:normal;font-weight:800;font-size:18px;color:var(--gold,#e0a33a)}
+.rate-card{display:flex;flex-direction:column;align-items:center;gap:10px;margin:6px 0 14px}
+.rate-card img,.rate-noimg{width:min(200px,52vw);aspect-ratio:2/3;border-radius:14px;object-fit:cover;box-shadow:0 10px 30px rgba(0,0,0,.3);background:#2b2d33;display:grid;place-items:center;color:#fff;padding:10px;text-align:center}
+.rate-info{text-align:center}
+.rate-info strong{display:block;font-size:18px}
+.rate-info small{color:var(--muted)}
+.rate-buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.rate-buttons .btn{padding:12px 8px;font-size:14px}
+.rate-buttons .rate-loved{background:#4cc38a;border-color:#4cc38a;color:#0f2a1c}
+.rate-buttons .rate-liked{background:#bfe8cf;border-color:#bfe8cf;color:#0f2a1c}
+.rate-buttons .rate-disliked{background:#f3c1bb;border-color:#f3c1bb;color:#3a1410}
+.btn.unseen{margin-top:8px}
+.service-row.center{justify-content:center;margin:6px 0 4px}
+.link-btn.danger{color:#d9534f}
+.edit-row{display:flex;flex-wrap:wrap;gap:4px 14px;margin-top:6px}
+.hero.nudge{display:flex;align-items:center;gap:14px;flex-wrap:wrap;border:2px solid var(--gold,#f6c75a)}
+.hero.nudge .hero-content{flex:1 1 200px}
+.hero.nudge h2{font-size:18px;margin:0 0 4px}
+@media (orientation:landscape) and (max-height:520px){.rate-card{flex-direction:row;justify-content:center}.rate-card img,.rate-noimg{width:110px}.rate-buttons{grid-template-columns:repeat(4,1fr)}}
