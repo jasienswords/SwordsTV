@@ -54,28 +54,28 @@ function renderHome(){
   html=`<section class="spotlight${bd?" has-bd":""}" data-title="${esc(f.title)}" style="--c1:${c1};--c2:${c2}${bd?`;--bd:url(${bd})`:""}"><div class="eyebrow">Top match for the Swords family</div><h2>${esc(f.title)}</h2><div class="meta-line"><span class="badge-new">Top match</span>${meta.map(x=>`<span class="dot">·</span><span>${esc(x)}</span>`).join("")}</div><p>${esc(whyText(m)||ft.overview||"")}</p></section>`;
  }else html=`<section class="hero"><div class="hero-content"><div class="eyebrow">Picked for the Swords family</div><h2>You've seen everything here.</h2><p>New matches will appear as more shows are added.</p></div></section>`;
  const finds=take(ranked.filter(x=>DISCOVERED[x.s.title]),12);
- if(finds.length)html+=heading("New finds for you","Found by the nightly search for shows outside your catalog that fit your taste, and checked against your content limits.")+rail(finds);
+ if(finds.length)html+=heading("New finds for you")+rail(finds);
  const top=take(ranked,12);
- if(top.length)html+=heading("Top matches for you",`Ranked from your ${profile.total} ratings. Updates every time you rate a show.`)+rail(top);
+ if(top.length)html+=heading("Top matches for you")+rail(top);
  // "Because you loved…" rows rotate daily through loved shows that have enough similar picks.
  const day=Math.floor(Date.now()/864e5),loved=profile.lovedTitles,rows=[];
  for(let i=0;i<loved.length&&rows.length<2;i++){const src=loved[(i+day)%loved.length];const items=ranked.filter(x=>x.m.because.includes(src)&&!seen.has(x.s.title));if(items.length>=3)rows.push([src,take(items,10)])}
- rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`,"Shows TMDB links to it, ranked by your taste.")+rail(items));
+ rows.forEach(([src,items])=>html+=heading(`Because you loved ${esc(src)}`)+rail(items));
  // Your two highest-rated genres.
  Object.values(profile.traits).filter(x=>x.type==="genre"&&x.n>=minShown("genre")&&x.affinity>0.05).sort((a,b)=>b.affinity-a.affinity).slice(0,2).forEach(g=>{
   const items=take(ranked.filter(x=>(tm(x.s.title).genres||[]).includes(g.label)),10);
-  if(items.length>=3)html+=heading(`More ${esc(g.label)}`,`${esc(g.label)} is one of your highest-rated genres.`)+rail(items)});
+  if(items.length>=3)html+=heading(`More ${esc(g.label)}`)+rail(items)});
  const active=new Set(getSubscriptions().filter(x=>x.active).map(x=>x.name));
  const onYours=take(ranked.filter(x=>((tm(x.s.title).providers||{}).stream||[]).some(p=>active.has(serviceFor(p.name)))),10);
- if(onYours.length)html+=heading("On your streaming services","Top matches included with the services you have.")+rail(onYours);
+ if(onYours.length)html+=heading("On your streaming services")+rail(onYours);
  const free=take(ranked.filter(x=>{const p=tm(x.s.title).providers||{};return (p.free||[]).length||(p.ads||[]).length}),10);
- if(free.length)html+=heading("Free to watch","Top matches on free, ad-supported services.")+rail(free);
+ if(free.length)html+=heading("Free to watch")+rail(free);
  const watching=all.filter(s=>s.libraryStatus==="Watching");
- if(watching.length)html+=heading("Continue watching","From your Watchlist.")+rail(watching);
+ if(watching.length)html+=heading("Continue watching")+rail(watching);
  const today=new Date().toISOString().slice(0,10);
  const upcoming=all.filter(s=>{const n=(tm(s.title)||{}).nextEpisode;return n&&n.date>=today&&(["Loved","Liked"].includes(s.rating)||["Watching","Want to Watch"].includes(s.libraryStatus))})
   .sort((a,b)=>tm(a.title).nextEpisode.date.localeCompare(tm(b.title).nextEpisode.date));
- if(upcoming.length)html+=heading("New & Upcoming","Next episodes of shows you love or are watching, from TMDB.")+gridOf(upcoming,nextEpisodeText);
+ if(upcoming.length)html+=heading("New & Upcoming")+gridOf(upcoming,nextEpisodeText);
  html+=`<div class="note">How For You works: every show you haven't seen is scored against your Taste Profile (the genres, countries and channels you rate highly, and TMDB's links to shows you loved), plus its IMDb rating. Shows whose TMDB keywords hit your content limits are pushed down. Rate more shows and the picks adjust automatically.</div>`;
  return html;
 }
