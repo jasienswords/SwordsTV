@@ -25,7 +25,12 @@
       "BritBox (Apple TV Channel add-on)",
       "BBC Select (Apple TV Channel add-on)",
       "Tubi (free with ads)"
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "The Repair Shop": {
     "availability": "The Roku Channel, Plex and Tubi (free with ads)",
@@ -53,7 +58,12 @@
       "The Roku Channel",
       "Plex",
       "Tubi"
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "The Repair Shop (UK)": {
     "availability": "See The Repair Shop listing; catalog title likely refers to the same UK series",
@@ -77,7 +87,12 @@
       "The Roku Channel",
       "Plex",
       "Tubi"
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Better Off Ted": {
     "availability": "Purchase only on Amazon Video, Apple TV Store and Fandango At Home; no subscription streaming listed",
@@ -99,13 +114,23 @@
       [
         "Rotten Tomatoes",
         "https://www.rottentomatoes.com/tv/better_off_ted"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/better-off-ted/"
       ]
     ],
     "platforms": [
       "Amazon Video (purchase)",
       "Apple TV Store (purchase)",
       "Fandango at Home (purchase)"
-    ]
+    ],
+    "metascore": {
+      "score": 73,
+      "reviews": 32,
+      "url": "https://www.metacritic.com/tv/better-off-ted/",
+      "checked": "November 7, 2026"
+    }
   },
   "Queens of Mystery": {
     "availability": "Acorn TV; PBS / PBS app; also listed via Acorn TV channels and other services",
@@ -136,7 +161,12 @@
     "platforms": [
       "Acorn TV",
       "PBS"
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "The Great British Sewing Bee": {
     "availability": "No U.S. streaming option currently listed",
@@ -156,7 +186,12 @@
         "JustWatch U.S. availability, seasons, score and cast",
         "https://www.justwatch.com/us/tv-show/the-great-british-sewing-bee"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Great British Home Restoration": {
     "availability": "The Roku Channel (free with ads)",
@@ -182,7 +217,12 @@
         "Windfall Films official series page",
         "https://windfallfilms.com/project/18778/great-british-home-restoration"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Escape to the Country": {
     "availability": "BritBox and Prime Video (selected seasons); also free with ads on The Roku Channel and Prime Video Free with Ads; Hoopla free",
@@ -212,7 +252,12 @@
         "Rotten Tomatoes series listing and TV-G rating",
         "https://www.rottentomatoes.com/tv/escape-to-the-country"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Monty Don's Italian Gardens": {
     "availability": "No U.S. streaming option currently listed",
@@ -236,7 +281,12 @@
         "Netflix title listing and TV-PG rating (currently unavailable in U.S.)",
         "https://www.netflix.com/title/81032659"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Great British Garden Revival": {
     "availability": "Not currently available to stream in the U.S.; DVD purchase listed",
@@ -256,7 +306,12 @@
         "JustWatch U.S. streaming, seasons, rating and synopsis",
         "https://www.justwatch.com/us/tv-show/great-british-garden-revival"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Restoration Home": {
     "availability": "Prime Video and Prime Video Free with Ads (selected catalog availability)",
@@ -279,7 +334,12 @@
         "JustWatch U.S. streaming, seasons, IMDb and synopsis",
         "https://www.justwatch.com/us/tv-show/restoration-home"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Restoration Australia": {
     "availability": "Prime Video (selected seasons); Hoopla free",
@@ -306,7 +366,12 @@
         "Rotten Tomatoes series listing and season information",
         "https://www.rottentomatoes.com/tv/restoration_australia"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Gardeners' World": {
     "availability": "BritBox and Prime Video (selected seasons); free with ads on Tubi, The Roku Channel, Xumo Play and Prime Video Free with Ads; Hoopla free",
@@ -333,7 +398,12 @@
         "JustWatch U.S. streaming, IMDb, rating and cast",
         "https://www.justwatch.com/us/tv-show/gardeners-world"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "A Place in the Sun": {
     "availability": "No U.S. subscription or free streaming option verified in the current listing; check for changing offers",
@@ -353,7 +423,12 @@
         "JustWatch U.S. listing",
         "https://www.justwatch.com/us/tv-show/a-place-in-the-sun"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Amazing Hotels: Life Beyond the Lobby": {
     "availability": "BritBox and BBC Select Apple TV Channels (paid add-ons); The Roku Channel (free with ads); Prime Video listings vary by offer",
@@ -381,7 +456,12 @@
         "Prime Video series details",
         "https://www.primevideo.com/detail/0S1ZH9C1N3QUGWOK6Q0UYCXY1X"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "An Idiot Abroad": {
     "availability": "No subscription or free U.S. streaming offer verified; digital purchase and DVD options listed",
@@ -400,8 +480,18 @@
       [
         "JustWatch U.S. listing",
         "https://www.justwatch.com/us/tv-show/an-idiot-abroad"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/an-idiot-abroad/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/an-idiot-abroad/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bargain Block": {
     "availability": "Max, Discovery+, YouTube TV and Philo; free with ads on HGTV; purchase options also listed",
@@ -427,7 +517,12 @@
         "JustWatch U.S. availability, seasons and details",
         "https://www.justwatch.com/us/tv-show/bargain-block"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Big Dreams Small Spaces": {
     "availability": "Amazon Prime Video, Tastemade Apple TV Channel and Tastemade Amazon Channel; free with ads on Tubi and The Roku Channel; Hoopla free",
@@ -453,7 +548,12 @@
         "JustWatch U.S. availability, seasons and details",
         "https://www.justwatch.com/us/tv-show/big-dreams-small-spaces"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Building Roots": {
     "availability": "Max, Discovery+, YouTube TV and Philo; free with ads on HGTV, The Roku Channel, Pluto TV and Tubi",
@@ -482,7 +582,12 @@
         "JustWatch U.S. availability, seasons, rating and cast",
         "https://www.justwatch.com/us/tv-show/building-roots"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Detectorists": {
     "availability": "Acorn TV and Acorn TV add-on channels; free with ads on The Roku Channel, Plex and Tubi; Hoopla and other free options listed",
@@ -507,8 +612,18 @@
       [
         "JustWatch U.S. availability, rating and details",
         "https://www.justwatch.com/us/tv-show/detectorists"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/detectorists/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/detectorists/",
+      "checked": "November 7, 2026"
+    }
   },
   "Antiques Roadshow": {
     "availability": "Netflix and PBS Living Amazon Channel; free with ads on KQED, Philo and Tubi",
@@ -534,7 +649,12 @@
         "JustWatch U.S. availability, seasons, rating and details",
         "https://www.justwatch.com/us/tv-show/antiques-roadshow"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Death in Paradise": {
     "availability": "Subscription streaming offers vary; current JustWatch U.S. listing shows purchase options and subscription listings",
@@ -555,8 +675,18 @@
       [
         "JustWatch U.S. availability, seasons, rating and details",
         "https://www.justwatch.com/us/tv-show/death-in-paradise"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/death-in-paradise/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 60,
+      "reviews": 8,
+      "url": "https://www.metacritic.com/tv/death-in-paradise/",
+      "checked": "November 7, 2026"
+    }
   },
   "Down to Earth with Zac Efron": {
     "availability": "Netflix; free on The CW and Hoopla; purchase on Amazon Video and Apple TV Store",
@@ -579,8 +709,18 @@
       [
         "JustWatch U.S. availability, seasons, ratings and details",
         "https://www.justwatch.com/us/tv-show/down-to-earth-with-zac-efron"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/down-to-earth-with-zac-efron/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 60,
+      "reviews": 4,
+      "url": "https://www.metacritic.com/tv/down-to-earth-with-zac-efron/",
+      "checked": "November 7, 2026"
+    }
   },
   "The Reluctant Traveler": {
     "availability": "Apple TV+; Apple TV Amazon Channel",
@@ -605,8 +745,18 @@
       [
         "Apple TV official series page",
         "https://tv.apple.com/us/show/the-reluctant-traveler/umc.cmc.4x7zv6j2q4w7m8v8"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/the-reluctant-traveler/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 69,
+      "reviews": 9,
+      "url": "https://www.metacritic.com/tv/the-reluctant-traveler/",
+      "checked": "November 7, 2026"
+    }
   },
   "Escape to the Chateau": {
     "availability": "Peacock Premium and Peacock Premium Plus",
@@ -632,7 +782,12 @@
         "Roku title and cast listing",
         "https://www.roku.com/whats-on/tv-shows/escape-to-the-chateau?id=7ee79d4a5931584d917ba9063f1d1a5c"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Designing the Hebrides": {
     "availability": "Prime Video; free with ads on Tubi and Prime Video Free with Ads",
@@ -656,7 +811,12 @@
         "JustWatch U.S. streaming, seasons, IMDb and synopsis",
         "https://www.justwatch.com/us/tv-show/designing-the-hebrides"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Grand Designs": {
     "availability": "BritBox, BBC Select, Prime Video, YouTube TV, Philo and Tastemade channels; free with ads on Tubi, The Roku Channel and Plex",
@@ -689,8 +849,18 @@
       [
         "Rotten Tomatoes season listing",
         "https://www.rottentomatoes.com/tv/grand_designs"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/grand-designs/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/grand-designs/",
+      "checked": "November 7, 2026"
+    }
   },
   "Escape to the Chateau: DIY": {
     "availability": "Peacock Premium, Prime Video and Prime Video Free with Ads; free with ads on Amazon MX Player",
@@ -714,7 +884,12 @@
         "Rotten Tomatoes series information, seasons and rating",
         "https://www.rottentomatoes.com/tv/escape_to_the_chateau_diy"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Home Town": {
     "availability": "Max, Discovery+, YouTube TV and Philo; free with ads on HGTV, The Roku Channel and Tubi (availability varies by season)",
@@ -746,7 +921,12 @@
         "JustWatch U.S. listing",
         "https://www.justwatch.com/us/tv-show/home-town"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "The Nate and Jeremiah Home Project": {
     "availability": "Max, Discovery+, YouTube TV, Philo and HGTV; free with ads on HGTV",
@@ -780,7 +960,12 @@
         "Roku series guide",
         "https://www.roku.com/whats-on/tv-shows/the-nate-and-jeremiah-home-project?id=2076e7c933385859a6750d34aa6b6f3e"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Your Home Made Perfect": {
     "availability": "Prime Video (selected seasons); Tubi (free with ads)",
@@ -807,7 +992,12 @@
         "Roku official title and streaming options",
         "https://www.roku.com/whats-on/tv-shows/your-home-made-perfect?id=cdf747e878825fd6ab3daf6a9ec4ae04"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "The Hotel Inspector": {
     "availability": "Peacock Premium and Prime Video; free with ads on The Roku Channel, Pluto TV, Tubi and Plex",
@@ -833,8 +1023,18 @@
       [
         "JustWatch U.S. streaming, seasons and details",
         "https://www.justwatch.com/us/tv-show/the-hotel-inspector"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/the-hotel-inspector/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/the-hotel-inspector/",
+      "checked": "November 7, 2026"
+    }
   },
   "The World's Most Extraordinary Homes": {
     "availability": "Not currently available to stream in the U.S.; previously on Netflix and Google Play",
@@ -854,7 +1054,12 @@
         "JustWatch U.S. streaming history, seasons, rating and synopsis",
         "https://www.justwatch.com/us/tv-show/the-worlds-most-extraordinary-homes"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "11.22.63": {
     "availability": "Netflix and Netflix Standard with Ads; purchase on Fandango, Apple TV Store and Amazon Video",
@@ -883,8 +1088,18 @@
       [
         "IMDb",
         "https://www.imdb.com/title/tt2879552/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/112263/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 69,
+      "reviews": 35,
+      "url": "https://www.metacritic.com/tv/112263/",
+      "checked": "November 7, 2026"
+    }
   },
   "Abbott Elementary": {
     "availability": "Disney+, Hulu and Max; your subscriptions include all three",
@@ -907,8 +1122,18 @@
       [
         "Rotten Tomatoes streaming, scores and season details",
         "https://www.rottentomatoes.com/tv/abbott_elementary"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/abbott-elementary/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 83,
+      "reviews": 41,
+      "url": "https://www.metacritic.com/tv/abbott-elementary/",
+      "checked": "November 7, 2026"
+    }
   },
   "Anthony Bourdain: Parts Unknown": {
     "availability": "Max; free with ads on Plex, Xumo Play, The Roku Channel and Pluto TV",
@@ -933,8 +1158,18 @@
       [
         "JustWatch U.S. availability, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/anthony-bourdain-parts-unknown"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/anthony-bourdain-parts-unknown/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/anthony-bourdain-parts-unknown/",
+      "checked": "November 7, 2026"
+    }
   },
   "Black Mirror": {
     "availability": "Netflix and Netflix Standard with Ads",
@@ -955,8 +1190,18 @@
       [
         "JustWatch U.S. availability, IMDb, seasons and rating",
         "https://www.justwatch.com/us/tv-show/black-mirror"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/black-mirror/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 115,
+      "url": "https://www.metacritic.com/tv/black-mirror/",
+      "checked": "November 7, 2026"
+    }
   },
   "Blue Lights": {
     "availability": "BritBox, HBO Max and Hoopla (free); purchase options on digital stores",
@@ -979,8 +1224,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/blue-lights"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/blue-lights/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 82,
+      "reviews": 22,
+      "url": "https://www.metacritic.com/tv/blue-lights/",
+      "checked": "November 7, 2026"
+    }
   },
   "Blue Bloods": {
     "availability": "Paramount+, Prime Video, Philo and YouTube TV; free with ads on Pluto TV",
@@ -1005,8 +1260,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/blue-bloods"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/blue-bloods/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 70,
+      "reviews": 25,
+      "url": "https://www.metacritic.com/tv/blue-bloods/",
+      "checked": "November 7, 2026"
+    }
   },
   "Boardwalk Empire": {
     "availability": "Max and HBO Max Amazon Channel",
@@ -1027,8 +1292,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/boardwalk-empire"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/boardwalk-empire/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 83,
+      "reviews": 85,
+      "url": "https://www.metacritic.com/tv/boardwalk-empire/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bosch": {
     "availability": "Prime Video; selected seasons also listed on Prime Video Free with Ads",
@@ -1054,8 +1329,18 @@
       [
         "Michael Connelly official series information",
         "https://www.michaelconnelly.com/bosch-tv/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/bosch/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 73,
+      "reviews": 35,
+      "url": "https://www.metacritic.com/tv/bosch/",
+      "checked": "November 7, 2026"
+    }
   },
   "Broadchurch": {
     "availability": "Netflix, Peacock, PBS and free with ads on Roku, Pluto TV, Plex, Xumo Play and Tubi",
@@ -1083,8 +1368,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/broadchurch"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/broadchurch/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 84,
+      "reviews": 62,
+      "url": "https://www.metacritic.com/tv/broadchurch/",
+      "checked": "November 7, 2026"
+    }
   },
   "Borgen": {
     "availability": "Netflix and Netflix Standard with Ads",
@@ -1105,8 +1400,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/borgen"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/borgen/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 91,
+      "reviews": 12,
+      "url": "https://www.metacritic.com/tv/borgen/",
+      "checked": "November 7, 2026"
+    }
   },
   "All Creatures Great and Small (original)": {
     "availability": "BritBox, BritBox Apple TV Channel and PBS; no free U.S. streaming option currently listed",
@@ -1128,8 +1433,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/all-creatures-great-and-small"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/all-creatures-great-and-small/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/all-creatures-great-and-small/",
+      "checked": "November 7, 2026"
+    }
   },
   "Black Books": {
     "availability": "fuboTV; free with ads on The Roku Channel, Plex, Amazon Prime Video Free with Ads and Tubi",
@@ -1154,8 +1469,18 @@
       [
         "JustWatch U.S. availability, seasons, IMDb and RT score",
         "https://www.justwatch.com/us/tv-show/black-books"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/black-books/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/black-books/",
+      "checked": "November 7, 2026"
+    }
   },
   "Californication": {
     "availability": "fuboTV, Paramount+ Premium and Paramount+ channels; purchase on Amazon, Apple TV and Fandango",
@@ -1180,8 +1505,18 @@
       [
         "Rotten Tomatoes scores and content summary",
         "https://www.rottentomatoes.com/tv/californication"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/californication/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 64,
+      "reviews": 50,
+      "url": "https://www.metacritic.com/tv/californication/",
+      "checked": "November 7, 2026"
+    }
   },
   "Burn Notice": {
     "availability": "Hulu; free with ads on Pluto TV",
@@ -1203,8 +1538,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/burn-notice"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/burn-notice/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 70,
+      "reviews": 38,
+      "url": "https://www.metacritic.com/tv/burn-notice/",
+      "checked": "November 7, 2026"
+    }
   },
   "Agatha Raisin": {
     "availability": "No subscription streaming option verified in the current U.S. listing; digital purchase options listed",
@@ -1224,7 +1569,12 @@
         "JustWatch U.S. listing, seasons, rating and IMDb",
         "https://www.justwatch.com/us/tv-show/agatha-raisin"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "All Creatures Great and Small (modern)": {
     "availability": "PBS / PBS Passport and select digital purchase offers; current subscription streaming availability varies by season",
@@ -1245,8 +1595,18 @@
       [
         "JustWatch U.S. listing, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/all-creatures-great-and-small-2020"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/all-creatures-great-and-small-2021/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 84,
+      "reviews": 32,
+      "url": "https://www.metacritic.com/tv/all-creatures-great-and-small-2021/",
+      "checked": "November 7, 2026"
+    }
   },
   "Belgravia": {
     "availability": "BritBox, MGM+, fuboTV, Philo and Spectrum On Demand; purchase options also listed",
@@ -1267,8 +1627,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/belgravia"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/belgravia/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 70,
+      "reviews": 17,
+      "url": "https://www.metacritic.com/tv/belgravia/",
+      "checked": "November 7, 2026"
+    }
   },
   "Belgravia: The Next Chapter": {
     "availability": "MGM+, fuboTV and MGM+ Amazon Channel; digital purchase options",
@@ -1287,8 +1657,18 @@
       [
         "JustWatch U.S. streaming, season, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/belgravia-the-next-chapter"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/belgravia-the-next-chapter/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/belgravia-the-next-chapter/",
+      "checked": "November 7, 2026"
+    }
   },
   "Battlestar Galactica": {
     "availability": "Paramount+ Premium and Paramount+ channels; free with ads on Pluto TV",
@@ -1310,8 +1690,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and rating",
         "https://www.justwatch.com/us/tv-show/battlestar-galactica"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/battlestar-galactica-2003/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 89,
+      "reviews": 62,
+      "url": "https://www.metacritic.com/tv/battlestar-galactica-2003/",
+      "checked": "November 7, 2026"
+    }
   },
   "Brothers & Sisters": {
     "availability": "Hulu",
@@ -1332,8 +1722,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/brothers-and-sisters-2006"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/brothers-sisters/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 51,
+      "reviews": 55,
+      "url": "https://www.metacritic.com/tv/brothers-sisters/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bargain Mansions": {
     "availability": "Max; purchase on Fandango",
@@ -1355,7 +1755,12 @@
         "Rotten Tomatoes show page, seasons, cast, synopsis and TV-G rating",
         "https://www.rottentomatoes.com/tv/bargain_mansions"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "12 Monkeys": {
     "availability": "Prime Video; MyOutdoorTV (free)",
@@ -1377,8 +1782,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/12-monkeys"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/12-monkeys-2015/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 57,
+      "reviews": 28,
+      "url": "https://www.metacritic.com/tv/12-monkeys-2015/",
+      "checked": "November 7, 2026"
+    }
   },
   "30 Rock": {
     "availability": "Hulu; Peacock",
@@ -1404,8 +1819,18 @@
       [
         "Rotten Tomatoes",
         "https://www.rottentomatoes.com/tv/30-rock"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/30-rock/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 73,
+      "reviews": 68,
+      "url": "https://www.metacritic.com/tv/30-rock/",
+      "checked": "November 7, 2026"
+    }
   },
   "A Discovery of Witches": {
     "availability": "Netflix (subscription listing); purchase options also listed",
@@ -1426,8 +1851,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/a-discovery-of-witches"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/a-discovery-of-witches/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 67,
+      "reviews": 16,
+      "url": "https://www.metacritic.com/tv/a-discovery-of-witches/",
+      "checked": "November 7, 2026"
+    }
   },
   "A Gentleman in Moscow": {
     "availability": "fuboTV; Paramount+ and Paramount+ channel options",
@@ -1449,8 +1884,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/a-gentleman-in-moscow"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/a-gentleman-in-moscow/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 22,
+      "url": "https://www.metacritic.com/tv/a-gentleman-in-moscow/",
+      "checked": "November 7, 2026"
+    }
   },
   "A Man on the Inside": {
     "availability": "Netflix",
@@ -1471,8 +1916,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/a-man-on-the-inside"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/a-man-on-the-inside/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 35,
+      "url": "https://www.metacritic.com/tv/a-man-on-the-inside/",
+      "checked": "November 7, 2026"
+    }
   },
   "A Series of Unfortunate Events": {
     "availability": "Netflix",
@@ -1493,8 +1948,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/a-series-of-unfortunate-events"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/lemony-snickets-a-series-of-unfortunate-events-2017/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 81,
+      "reviews": 27,
+      "url": "https://www.metacritic.com/tv/lemony-snickets-a-series-of-unfortunate-events-2017/",
+      "checked": "November 7, 2026"
+    }
   },
   "Andor": {
     "availability": "Disney+",
@@ -1515,8 +1980,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/andor"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/andor/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 84,
+      "reviews": 65,
+      "url": "https://www.metacritic.com/tv/andor/",
+      "checked": "November 7, 2026"
+    }
   },
   "Acapulco": {
     "availability": "Apple TV+",
@@ -1537,8 +2012,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/acapulco"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/acapulco-2021/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 7,
+      "url": "https://www.metacritic.com/tv/acapulco-2021/",
+      "checked": "November 7, 2026"
+    }
   },
   "Alma's Not Normal": {
     "availability": "Not currently available to stream in the U.S. in the checked listing",
@@ -1558,7 +2043,12 @@
         "JustWatch U.S. availability, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/almas-not-normal"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "A.P. Bio": {
     "availability": "No subscription streaming option verified in the checked U.S. listing; purchase listings available",
@@ -1577,8 +2067,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/a-p-bio"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/ap-bio/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 61,
+      "reviews": 21,
+      "url": "https://www.metacritic.com/tv/ap-bio/",
+      "checked": "November 7, 2026"
+    }
   },
   "Alone": {
     "availability": "Netflix; Prime Video; Disney+; Hulu (season availability varies)",
@@ -1607,7 +2107,12 @@
         "Rotten Tomatoes",
         "https://www.rottentomatoes.com/tv/alone"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "A Million Little Things": {
     "availability": "Disney+; Hulu",
@@ -1633,8 +2138,18 @@
       [
         "Rotten Tomatoes",
         "https://www.rottentomatoes.com/tv/a_million_little_things"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/a-million-little-things/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 51,
+      "reviews": 18,
+      "url": "https://www.metacritic.com/tv/a-million-little-things/",
+      "checked": "November 7, 2026"
+    }
   },
   "Arrested Development": {
     "availability": "Netflix",
@@ -1655,8 +2170,18 @@
       [
         "Rotten Tomatoes series page, ratings and synopsis",
         "https://www.rottentomatoes.com/tv/arrested_development"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/arrested-development/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 78,
+      "reviews": 102,
+      "url": "https://www.metacritic.com/tv/arrested-development/",
+      "checked": "November 7, 2026"
+    }
   },
   "Atlanta": {
     "availability": "Hulu",
@@ -1677,8 +2202,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/atlanta"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/atlanta/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 92,
+      "reviews": 98,
+      "url": "https://www.metacritic.com/tv/atlanta/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bosch: Legacy": {
     "availability": "Prime Video",
@@ -1699,8 +2234,18 @@
       [
         "Michael Connelly official Bosch TV guide and season information",
         "https://www.michaelconnelly.com/bosch-tv/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/bosch-legacy/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 11,
+      "url": "https://www.metacritic.com/tv/bosch-legacy/",
+      "checked": "November 7, 2026"
+    }
   },
   "Breaking Bad": {
     "availability": "Netflix",
@@ -1721,8 +2266,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/breaking-bad"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/breaking-bad/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 87,
+      "reviews": 98,
+      "url": "https://www.metacritic.com/tv/breaking-bad/",
+      "checked": "November 7, 2026"
+    }
   },
   "Better Call Saul": {
     "availability": "Netflix",
@@ -1743,8 +2298,18 @@
       [
         "JustWatch U.S. streaming, seasons and ratings",
         "https://www.justwatch.com/us/tv-show/better-call-saul"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/better-call-saul/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 86,
+      "reviews": 139,
+      "url": "https://www.metacritic.com/tv/better-call-saul/",
+      "checked": "November 7, 2026"
+    }
   },
   "A Very English Scandal": {
     "availability": "Prime Video (subscription or ads); no free option listed",
@@ -1769,8 +2334,18 @@
       [
         "Rotten Tomatoes critic and audience scores",
         "https://www.rottentomatoes.com/tv/a_very_english_scandal"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/a-very-english-scandal/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 84,
+      "reviews": 17,
+      "url": "https://www.metacritic.com/tv/a-very-english-scandal/",
+      "checked": "November 7, 2026"
+    }
   },
   "Annika": {
     "availability": "PBS / PBS Masterpiece channels; selected free ad-supported public-TV streams",
@@ -1798,8 +2373,18 @@
       [
         "Rotten Tomatoes scores and synopsis",
         "https://www.rottentomatoes.com/tv/annika"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/annika/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 64,
+      "reviews": 9,
+      "url": "https://www.metacritic.com/tv/annika/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bad Sisters": {
     "availability": "Apple TV; Apple TV Amazon Channel",
@@ -1820,8 +2405,18 @@
       [
         "JustWatch U.S. streaming and IMDb score",
         "https://www.justwatch.com/us/tv-show/bad-sisters"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/bad-sisters/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 76,
+      "reviews": 39,
+      "url": "https://www.metacritic.com/tv/bad-sisters/",
+      "checked": "November 7, 2026"
+    }
   },
   "Beyond Paradise": {
     "availability": "PBS Masterpiece channel; purchase options also listed",
@@ -1842,8 +2437,18 @@
       [
         "JustWatch U.S. seasons, rating and streaming listings",
         "https://www.justwatch.com/us/tv-show/beyond-paradise"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/beyond-paradise/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 60,
+      "reviews": 9,
+      "url": "https://www.metacritic.com/tv/beyond-paradise/",
+      "checked": "November 7, 2026"
+    }
   },
   "Big Little Lies": {
     "availability": "Max (HBO Max); purchase options",
@@ -1868,8 +2473,18 @@
       [
         "Rotten Tomatoes series details and streaming",
         "https://www.rottentomatoes.com/tv/big_little_lies"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/big-little-lies/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 78,
+      "reviews": 78,
+      "url": "https://www.metacritic.com/tv/big-little-lies/",
+      "checked": "November 7, 2026"
+    }
   },
   "Chernobyl": {
     "availability": "Max (HBO Max); purchase options",
@@ -1890,8 +2505,18 @@
       [
         "JustWatch U.S. seasons, IMDb and RT score",
         "https://www.justwatch.com/us/tv-show/chernobyl"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/chernobyl/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 82,
+      "reviews": 27,
+      "url": "https://www.metacritic.com/tv/chernobyl/",
+      "checked": "November 7, 2026"
+    }
   },
   "Chuck": {
     "availability": "No current U.S. subscription streamer confirmed in this check; digital purchase listed",
@@ -1910,8 +2535,18 @@
       [
         "JustWatch U.S. seasons, IMDb, RT and availability",
         "https://www.justwatch.com/us/tv-show/chuck"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/chuck/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 51,
+      "url": "https://www.metacritic.com/tv/chuck/",
+      "checked": "November 7, 2026"
+    }
   },
   "Call the Midwife": {
     "availability": "Netflix; free on Hoopla; purchase options",
@@ -1937,8 +2572,18 @@
       [
         "IMDb rating",
         "https://www.imdb.com/title/tt1983079/ratings/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/call-the-midwife/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 81,
+      "reviews": 21,
+      "url": "https://www.metacritic.com/tv/call-the-midwife/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bodyguard": {
     "availability": "U.S. subscription availability not confirmed in this check; verify before watching",
@@ -1957,8 +2602,18 @@
       [
         "JustWatch U.S. IMDb, RT and genre details",
         "https://www.justwatch.com/us/tv-show/bodyguard"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/bodyguard/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 79,
+      "reviews": 12,
+      "url": "https://www.metacritic.com/tv/bodyguard/",
+      "checked": "November 7, 2026"
+    }
   },
   "American Housewife": {
     "availability": "Hulu and Disney+; purchase options",
@@ -1980,8 +2635,18 @@
       [
         "Rotten Tomatoes U.S. streaming and season information",
         "https://www.rottentomatoes.com/tv/american_housewife"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/american-housewife/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 60,
+      "reviews": 25,
+      "url": "https://www.metacritic.com/tv/american-housewife/",
+      "checked": "November 7, 2026"
+    }
   },
   "Back": {
     "availability": "Spectrum On Demand and Philo; digital purchase",
@@ -2007,8 +2672,18 @@
       [
         "Rotten Tomatoes season scores",
         "https://www.rottentomatoes.com/tv/back"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/back/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 85,
+      "reviews": 12,
+      "url": "https://www.metacritic.com/tv/back/",
+      "checked": "November 7, 2026"
+    }
   },
   "Better Things": {
     "availability": "Hulu; Disney+; purchase options",
@@ -2034,8 +2709,18 @@
       [
         "Rotten Tomatoes series scores and synopsis",
         "https://www.rottentomatoes.com/tv/better_things"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/better-things/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 88,
+      "reviews": 83,
+      "url": "https://www.metacritic.com/tv/better-things/",
+      "checked": "November 7, 2026"
+    }
   },
   "Big Boys": {
     "availability": "Hulu and Disney+; Prime Video purchase options",
@@ -2057,8 +2742,18 @@
       [
         "Rotten Tomatoes seasons, ratings and streaming",
         "https://www.rottentomatoes.com/tv/big_boys"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/big-boys/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 84,
+      "reviews": 14,
+      "url": "https://www.metacritic.com/tv/big-boys/",
+      "checked": "November 7, 2026"
+    }
   },
   "Billions": {
     "availability": "Paramount+; purchase options",
@@ -2083,8 +2778,18 @@
       [
         "Rotten Tomatoes season information and synopsis",
         "https://www.rottentomatoes.com/tv/billions"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/billions/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 71,
+      "reviews": 64,
+      "url": "https://www.metacritic.com/tv/billions/",
+      "checked": "November 7, 2026"
+    }
   },
   "Bless This Mess": {
     "availability": "Hulu and Disney+; purchase options",
@@ -2110,8 +2815,18 @@
       [
         "Rotten Tomatoes scores, synopsis and streaming",
         "https://www.rottentomatoes.com/tv/bless_this_mess"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/bless-this-mess/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 60,
+      "reviews": 10,
+      "url": "https://www.metacritic.com/tv/bless-this-mess/",
+      "checked": "November 7, 2026"
+    }
   },
   "Blown Away": {
     "availability": "Netflix",
@@ -2137,7 +2852,12 @@
         "Rotten Tomatoes format, seasons and streaming",
         "https://www.rottentomatoes.com/tv/blown_away"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Blue Planet II": {
     "availability": "Max; purchase options",
@@ -2159,7 +2879,12 @@
         "Rotten Tomatoes seasons, score and streaming",
         "https://www.rottentomatoes.com/tv/blue_planet_ii"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Breeders": {
     "availability": "Hulu and Disney+; purchase options",
@@ -2185,8 +2910,18 @@
       [
         "Rotten Tomatoes season scores, cast and synopsis",
         "https://www.rottentomatoes.com/tv/breeders"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/breeders/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 70,
+      "reviews": 21,
+      "url": "https://www.metacritic.com/tv/breeders/",
+      "checked": "November 7, 2026"
+    }
   },
   "Catastrophe": {
     "availability": "Amazon Prime Video; Prime Video with Ads; purchase options",
@@ -2207,8 +2942,18 @@
       [
         "JustWatch U.S. streaming, seasons, IMDb and RT score",
         "https://www.justwatch.com/us/tv-show/catastrophe"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/catastrophe/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 87,
+      "reviews": 47,
+      "url": "https://www.metacritic.com/tv/catastrophe/",
+      "checked": "November 7, 2026"
+    }
   },
   "Colin from Accounts": {
     "availability": "Paramount+; fuboTV; purchase options",
@@ -2234,8 +2979,18 @@
       [
         "Rotten Tomatoes critic and audience scores",
         "https://www.rottentomatoes.com/tv/colin_from_accounts"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/colin-from-accounts/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 85,
+      "reviews": 25,
+      "url": "https://www.metacritic.com/tv/colin-from-accounts/",
+      "checked": "November 7, 2026"
+    }
   },
   "Cobra Kai": {
     "availability": "Netflix",
@@ -2260,8 +3015,18 @@
       [
         "Rotten Tomatoes critic and audience scores",
         "https://www.rottentomatoes.com/tv/cobra_kai"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/cobra-kai/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 70,
+      "reviews": 59,
+      "url": "https://www.metacritic.com/tv/cobra-kai/",
+      "checked": "November 7, 2026"
+    }
   },
   "Building Off the Grid": {
     "availability": "Max; Discovery+; Magnolia Network; YouTube TV; Tubi (free with ads); Spectrum On Demand",
@@ -2292,7 +3057,12 @@
         "Rotten Tomatoes series details",
         "https://www.rottentomatoes.com/tv/building_off_the_grid"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Black-ish": {
     "availability": "Netflix; Hulu; Disney+; Philo",
@@ -2320,8 +3090,18 @@
       [
         "Rotten Tomatoes critic and audience scores",
         "https://www.rottentomatoes.com/tv/black_ish"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/black-ish/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 77,
+      "reviews": 34,
+      "url": "https://www.metacritic.com/tv/black-ish/",
+      "checked": "November 7, 2026"
+    }
   },
   "Castle": {
     "availability": "Hulu; Hulu on Disney+; purchase options",
@@ -2343,8 +3123,18 @@
       [
         "JustWatch U.S. seasons, IMDb and streaming",
         "https://www.justwatch.com/us/tv-show/castle"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/castle/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 56,
+      "reviews": 46,
+      "url": "https://www.metacritic.com/tv/castle/",
+      "checked": "November 7, 2026"
+    }
   },
   "Chicago P.D.": {
     "availability": "Peacock; Hulu; purchase options",
@@ -2366,8 +3156,18 @@
       [
         "JustWatch U.S. seasons, IMDb and streaming",
         "https://www.justwatch.com/us/tv-show/chicago-pd"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/chicago-pd/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 50,
+      "reviews": 22,
+      "url": "https://www.metacritic.com/tv/chicago-pd/",
+      "checked": "November 7, 2026"
+    }
   },
   "Community": {
     "availability": "Netflix; Hulu; Peacock; purchase options",
@@ -2394,8 +3194,18 @@
       [
         "Rotten Tomatoes series scores and synopsis",
         "https://www.rottentomatoes.com/tv/community"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/community/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 76,
+      "url": "https://www.metacritic.com/tv/community/",
+      "checked": "November 7, 2026"
+    }
   },
   "Conan O'Brien Must Go": {
     "availability": "Max",
@@ -2420,8 +3230,18 @@
       [
         "Rotten Tomatoes score and series details",
         "https://www.rottentomatoes.com/tv/conan_obrien_must_go"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/conan-obrien-must-go/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 77,
+      "reviews": 6,
+      "url": "https://www.metacritic.com/tv/conan-obrien-must-go/",
+      "checked": "November 7, 2026"
+    }
   },
   "Corporate": {
     "availability": "Paramount+; purchase options",
@@ -2446,8 +3266,18 @@
       [
         "Rotten Tomatoes scores and series details",
         "https://www.rottentomatoes.com/tv/corporate"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/corporate/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 75,
+      "reviews": 13,
+      "url": "https://www.metacritic.com/tv/corporate/",
+      "checked": "November 7, 2026"
+    }
   },
   "Cougar Town": {
     "availability": "Hulu; Disney+; purchase options",
@@ -2469,8 +3299,18 @@
       [
         "JustWatch U.S. seasons, IMDb and streaming",
         "https://www.justwatch.com/us/tv-show/cougar-town"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/cougar-town/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 61,
+      "reviews": 43,
+      "url": "https://www.metacritic.com/tv/cougar-town/",
+      "checked": "November 7, 2026"
+    }
   },
   "Crazy Ex-Girlfriend": {
     "availability": "Netflix; purchase options",
@@ -2495,8 +3335,18 @@
       [
         "Rotten Tomatoes scores and synopsis",
         "https://www.rottentomatoes.com/tv/crazy_ex_girlfriend"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/crazy-ex-girlfriend/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 80,
+      "reviews": 36,
+      "url": "https://www.metacritic.com/tv/crazy-ex-girlfriend/",
+      "checked": "November 7, 2026"
+    }
   },
   "Dalgliesh": {
     "availability": "Acorn TV; AMC+; purchase options",
@@ -2518,8 +3368,18 @@
       [
         "JustWatch U.S. seasons, IMDb and streaming",
         "https://www.justwatch.com/us/tv-show/dalgliesh"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/dalgliesh/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 69,
+      "reviews": 9,
+      "url": "https://www.metacritic.com/tv/dalgliesh/",
+      "checked": "November 7, 2026"
+    }
   },
   "Detroiters": {
     "availability": "Paramount+; purchase options",
@@ -2540,8 +3400,18 @@
       [
         "JustWatch U.S. seasons, IMDb and streaming",
         "https://www.justwatch.com/us/tv-show/detroiters"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/detroiters/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 75,
+      "reviews": 13,
+      "url": "https://www.metacritic.com/tv/detroiters/",
+      "checked": "November 7, 2026"
+    }
   },
   "Derry Girls": {
     "availability": "Netflix",
@@ -2566,8 +3436,18 @@
       [
         "Rotten Tomatoes scores and synopsis",
         "https://www.rottentomatoes.com/tv/derry_girls"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/derry-girls/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 87,
+      "reviews": 5,
+      "url": "https://www.metacritic.com/tv/derry-girls/",
+      "checked": "November 7, 2026"
+    }
   },
   "Designated Survivor": {
     "availability": "Netflix; Hulu; purchase options",
@@ -2593,8 +3473,18 @@
       [
         "Rotten Tomatoes scores and synopsis",
         "https://www.rottentomatoes.com/tv/designated_survivor"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/designated-survivor/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 71,
+      "reviews": 39,
+      "url": "https://www.metacritic.com/tv/designated-survivor/",
+      "checked": "November 7, 2026"
+    }
   },
   "Deutschland 83": {
     "availability": "Sundance Now; AMC+; purchase options",
@@ -2620,8 +3510,18 @@
       [
         "Rotten Tomatoes score",
         "https://www.rottentomatoes.com/tv/deutschland_83"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/deutschland-83/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 79,
+      "reviews": 11,
+      "url": "https://www.metacritic.com/tv/deutschland-83/",
+      "checked": "November 7, 2026"
+    }
   },
   "Chef's Table": {
     "availability": "Netflix",
@@ -2646,8 +3546,18 @@
       [
         "IMDb series information",
         "https://www.imdb.com/title/tt4295140/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/chefs-table/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/chefs-table/",
+      "checked": "November 7, 2026"
+    }
   },
   "Christina on the Coast": {
     "availability": "Max; discovery+; HGTV via participating TV providers",
@@ -2674,7 +3584,12 @@
         "JustWatch U.S. streaming search",
         "https://www.justwatch.com/us/search?q=Christina%20on%20the%20Coast"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Christina in the Country": {
     "availability": "Max; discovery+; HGTV via participating TV providers",
@@ -2701,7 +3616,12 @@
         "JustWatch U.S. streaming search",
         "https://www.justwatch.com/us/search?q=Christina%20in%20the%20Country"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Damages": {
     "availability": "Hulu; purchase options",
@@ -2726,8 +3646,18 @@
       [
         "Rotten Tomatoes series information",
         "https://www.rottentomatoes.com/tv/damages"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/damages/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 78,
+      "reviews": 81,
+      "url": "https://www.metacritic.com/tv/damages/",
+      "checked": "November 7, 2026"
+    }
   },
   "Dark Tourist": {
     "availability": "Netflix",
@@ -2752,8 +3682,18 @@
       [
         "IMDb series information",
         "https://www.imdb.com/title/tt813 bize/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/dark-tourist/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 66,
+      "reviews": 5,
+      "url": "https://www.metacritic.com/tv/dark-tourist/",
+      "checked": "November 7, 2026"
+    }
   },
   "Death and Other Details": {
     "availability": "Hulu; Disney+ in some bundles/regions",
@@ -2779,8 +3719,18 @@
       [
         "Rotten Tomatoes scores",
         "https://www.rottentomatoes.com/tv/death_and_other_details"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/death-and-other-details/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 60,
+      "reviews": 19,
+      "url": "https://www.metacritic.com/tv/death-and-other-details/",
+      "checked": "November 7, 2026"
+    }
   },
   "Downton Abbey": {
     "availability": "Peacock; PBS Masterpiece / PBS Passport availability may vary; digital purchase",
@@ -2806,8 +3756,18 @@
       [
         "PBS series information",
         "https://www.pbs.org/wgbh/masterpiece/shows/downton-abbey/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/downton-abbey/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 80,
+      "reviews": 141,
+      "url": "https://www.metacritic.com/tv/downton-abbey/",
+      "checked": "November 7, 2026"
+    }
   },
   "Dream Home Makeover": {
     "availability": "Netflix",
@@ -2833,7 +3793,12 @@
         "IMDb series information",
         "https://www.imdb.com/title/tt12759384/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Elementary": {
     "availability": "Paramount+; Hulu; purchase options",
@@ -2859,8 +3824,18 @@
       [
         "Rotten Tomatoes season score and series details",
         "https://www.rottentomatoes.com/tv/elementary"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/elementary/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 32,
+      "url": "https://www.metacritic.com/tv/elementary/",
+      "checked": "November 7, 2026"
+    }
   },
   "Elsbeth": {
     "availability": "Paramount+; CBS / live TV services; episodes may be available through Hulu",
@@ -2887,8 +3862,18 @@
       [
         "Rotten Tomatoes series scores",
         "https://www.rottentomatoes.com/tv/elsbeth"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/elsbeth/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 69,
+      "reviews": 21,
+      "url": "https://www.metacritic.com/tv/elsbeth/",
+      "checked": "November 7, 2026"
+    }
   },
   "Endeavour": {
     "availability": "BritBox; PBS Passport / Masterpiece availability varies; purchase options",
@@ -2914,8 +3899,18 @@
       [
         "PBS Masterpiece series information",
         "https://www.pbs.org/wgbh/masterpiece/shows/endeavour/"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/endeavour/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 80,
+      "reviews": 15,
+      "url": "https://www.metacritic.com/tv/endeavour/",
+      "checked": "November 7, 2026"
+    }
   },
   "Episodes": {
     "availability": "Paramount+; purchase options",
@@ -2940,8 +3935,18 @@
       [
         "Rotten Tomatoes series information",
         "https://www.rottentomatoes.com/tv/episodes"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/episodes-us/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": 74,
+      "reviews": 50,
+      "url": "https://www.metacritic.com/tv/episodes-us/",
+      "checked": "November 7, 2026"
+    }
   },
   "Father Brown": {
     "availability": "BritBox; PBS Passport; selected seasons on free ad-supported services may vary",
@@ -2968,7 +3973,12 @@
         "BBC series information",
         "https://www.bbc.co.uk/programmes/b03pmw4m"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "Not listed on Metacritic",
+      "checked": "November 7, 2026"
+    }
   },
   "Fisk": {
     "availability": "Netflix; ABC iview availability outside U.S.",
@@ -2993,7 +4003,17 @@
       [
         "Rotten Tomatoes scores and synopsis",
         "https://www.rottentomatoes.com/tv/fisk"
+      ],
+      [
+        "Metacritic",
+        "https://www.metacritic.com/tv/fisk/"
       ]
-    ]
+    ],
+    "metascore": {
+      "score": null,
+      "status": "No Metascore yet (too few critic reviews)",
+      "url": "https://www.metacritic.com/tv/fisk/",
+      "checked": "November 7, 2026"
+    }
   }
 }
