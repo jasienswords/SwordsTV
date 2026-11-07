@@ -76,7 +76,6 @@ function renderHome(){
  const upcoming=all.filter(s=>{const n=(tm(s.title)||{}).nextEpisode;return n&&n.date>=today&&(["Loved","Liked"].includes(s.rating)||["Watching","Want to Watch"].includes(s.libraryStatus))})
   .sort((a,b)=>tm(a.title).nextEpisode.date.localeCompare(tm(b.title).nextEpisode.date));
  if(upcoming.length)html+=heading("New & Upcoming")+gridOf(upcoming,nextEpisodeText);
- html+=`<div class="note">How For You works: every show you haven't seen is scored against your Taste Profile (the genres, countries and channels you rate highly, and TMDB's links to shows you loved), plus its IMDb rating. Shows whose TMDB keywords hit your content limits are pushed down. Rate more shows and the picks adjust automatically.</div>`;
  return html;
 }
 
